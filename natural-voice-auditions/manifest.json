@@ -1,0 +1,935 @@
+{
+  "version": 1,
+  "status": "unreviewed_auditions",
+  "integratedIntoGame": false,
+  "referencePolicy": "text_designed_only",
+  "model": {
+    "directory": "/workspace/voice-models/qwen3-tts-independent-design",
+    "modelId": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "configSha256": "aecd2cc4c1fe9edef1cb7ca7c401685a43879ad43f3f9e883f1c6760b61731e0",
+    "speechTokenizerConfigSha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167",
+    "downloadReceipt": {
+      "repository": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "modelLicense": "apache-2.0",
+      "weightBytes": 4515695644
+    }
+  },
+  "processing": "Original model waveform, WAV and MP3 encoding only. No pitch, formant or tempo effects.",
+  "voices": [
+    {
+      "id": "Gideon",
+      "name": "Гидеон",
+      "age": 12,
+      "kind": "boy",
+      "text": "Привет. Меня зовут Гидеон.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Гидеон 1",
+          "description": "Светлый детский, слегка писклявый; спокойная сухая подача.",
+          "seed": 2434337480,
+          "path": "audio/gideon_1.mp3",
+          "duration": 2.48,
+          "renderSeconds": 11.5,
+          "sha256": "945237c1bd2774ba072c54a0648093b23d63729dcbe6439801b2f25769628828",
+          "instruct": "A native Russian-speaking 12-year-old boy: a naturally light, slender boyish voice with clear head resonance, a small bell-like upper register, and a tiny occasional squeak on stressed vowels. Speak fluent neutral Russian with calm low-key dry wit, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Гидеон 2",
+          "description": "Мягкий мальчишеский, чуть носовой; сдержанный и наблюдательный.",
+          "seed": 3193302342,
+          "path": "audio/gideon_2.mp3",
+          "duration": 3.04,
+          "renderSeconds": 15.09,
+          "sha256": "49298b2bd88934298f55e6a27619dbab4e311b2a1ce06ac64ec5f35d94229c21",
+          "instruct": "A native Russian-speaking 12-year-old boy: a soft, rounded boyish voice with a gently reedy core, a little natural nasal resonance and a narrow youthful mid-high register and a slight natural boyish squeak. Speak fluent neutral Russian with calm low-key dry wit, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Гидеон 3",
+          "description": "Тонкий звонкий детский, с лёгкой хрипотцой; невозмутимый.",
+          "seed": 3003754519,
+          "path": "audio/gideon_3.mp3",
+          "duration": 1.84,
+          "renderSeconds": 8.8,
+          "sha256": "132c29711d557f6310f8917e1be96d5a467ae948b30c49aef85b1237f6cadbe0",
+          "instruct": "A native Russian-speaking 12-year-old boy: a bright, small-framed boyish voice with a forward, lightly twangy resonance and a hint of sandy texture and a slight natural boyish squeak. Speak fluent neutral Russian with calm low-key dry wit, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Pacifica",
+      "name": "Пасифика",
+      "age": 14,
+      "kind": "teen_girl",
+      "text": "Привет. Меня зовут Пасифика.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Пасифика 1",
+          "description": "Звонкий подростковый, энергичный и уверенный.",
+          "seed": 1406143529,
+          "requestedSeed": 1406143529,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 1406143529
+          },
+          "path": "audio/pacifica_1.mp3",
+          "duration": 1.92,
+          "renderSeconds": 11.32,
+          "sha256": "999ec6641f0e1f085d8098157ae92b74efd303ae59aed7b3a8c6167ec77fb7d1",
+          "instruct": "A native Russian-speaking 14-year-old girl: a clear, bright teenage voice with light upper resonance and crisp, lively consonants; a distinct youthful soprano timbre with open vowels. Speak fluent neutral Russian with bright youthful confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Пасифика 2",
+          "description": "Тёплый юный, живой и чуть дерзкий.",
+          "seed": 1406143529,
+          "requestedSeed": 1254821308,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 1406143529
+          },
+          "path": "audio/pacifica_2.mp3",
+          "duration": 2.0,
+          "renderSeconds": 11.32,
+          "sha256": "4648db48f971ba27d7f44fab4eb6568297669fee64c567f3a1bf4e4d557ef7cf",
+          "instruct": "A native Russian-speaking 14-year-old girl: a warm teenage voice with a rounded middle register, soft forward resonance and a slight sunny grain; youthful and open rather than adult-sounding. Speak fluent neutral Russian with bright youthful confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Пасифика 3",
+          "description": "Чёткий подростковый, немного ниже и решительнее.",
+          "seed": 1406143529,
+          "requestedSeed": 3527918193,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 1406143529
+          },
+          "path": "audio/pacifica_3.mp3",
+          "duration": 2.08,
+          "renderSeconds": 11.32,
+          "sha256": "712ad8e90555ae0d1f9dd9ee22cfe17b1c7ec7c800ed79a7c320f8e6f46e4eda",
+          "instruct": "A native Russian-speaking 14-year-old girl: a focused teenage voice with a firmer, slightly lower middle register, a clean edge and compact resonance; still recognizably a young girl. Speak fluent neutral Russian with bright youthful confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Mabel",
+      "name": "Мейбл",
+      "age": 15,
+      "kind": "teen_girl",
+      "text": "Привет. Меня зовут Мейбл.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Мейбл 1",
+          "description": "Яркий подростковый, улыбчивый и самоуверенный.",
+          "seed": 3042669593,
+          "requestedSeed": 3042669593,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 3042669593
+          },
+          "path": "audio/mabel_1.mp3",
+          "duration": 2.24,
+          "renderSeconds": 13.81,
+          "sha256": "610f90e89e3cad59ff535937e8f0ca5b8f263b479b44f2b59eaa2cc67c1d0f90",
+          "instruct": "A native Russian-speaking 15-year-old teenage girl: a sparkling bright teenage voice with a clear upper register, smiling vowels and a lightly forward, ringing resonance. Speak fluent neutral Russian with playful self-assured charm, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Мейбл 2",
+          "description": "Бархатистый юный, игривый и контролирующий.",
+          "seed": 3042669593,
+          "requestedSeed": 1604475462,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 3042669593
+          },
+          "path": "audio/mabel_2.mp3",
+          "duration": 2.32,
+          "renderSeconds": 13.81,
+          "sha256": "573ee66962094155beb1dca813f5fdd3f52ae8f07144d345f0fe26283d8ac709",
+          "instruct": "A native Russian-speaking 15-year-old teenage girl: a smooth, rounded teenage voice with a warm middle register, precise articulation and a subtle dry texture; the sound remains youthful. Speak fluent neutral Russian with playful self-assured charm, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Мейбл 3",
+          "description": "Звонкий подростковый, быстрый и язвительный.",
+          "seed": 3042669593,
+          "requestedSeed": 2427572064,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 3042669593
+          },
+          "path": "audio/mabel_3.mp3",
+          "duration": 2.32,
+          "renderSeconds": 13.81,
+          "sha256": "35b5090c866e1cd5bf3c1a24339966481fcd0155df6b69569f35f6e7fcba6660",
+          "instruct": "A native Russian-speaking 15-year-old teenage girl: a narrow, quick teenage voice with a natural nasal brightness, agile consonants and a light silvery edge. Speak fluent neutral Russian with playful self-assured charm, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Dipper",
+      "name": "Диппер",
+      "age": 15,
+      "kind": "teen_boy",
+      "text": "Привет. Меня зовут Диппер.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Диппер 1",
+          "description": "Молодой подростковый, ровный и холодноватый.",
+          "seed": 523378337,
+          "requestedSeed": 523378337,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 523378337
+          },
+          "path": "audio/dipper_1.mp3",
+          "duration": 2.48,
+          "renderSeconds": 14.59,
+          "sha256": "e6bef90a87be0deebe1a170fef614029d876436ece161aa801d8a0bdfd0946c9",
+          "instruct": "A native Russian-speaking 15-year-old teenage boy: a youthful mid-register boyish voice with a clean, dry core and focused forward resonance; distinct from a fully mature adult bass. Speak fluent neutral Russian with cool restrained intelligence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Диппер 2",
+          "description": "Чуть ниже, собранный и расчётливый.",
+          "seed": 523378337,
+          "requestedSeed": 197100960,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 523378337
+          },
+          "path": "audio/dipper_2.mp3",
+          "duration": 2.08,
+          "renderSeconds": 14.59,
+          "sha256": "128ebb9b3115daedb1d181a001f2db33f2feed66fa1f45b693c8b8dbd508b270",
+          "instruct": "A native Russian-speaking 15-year-old teenage boy: a teenage boy voice with a slightly lower, rounded middle register, gentle natural grain and measured clear consonants; still young in its weight. Speak fluent neutral Russian with cool restrained intelligence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Диппер 3",
+          "description": "Светлый подростковый, сухой и насмешливый.",
+          "seed": 523378337,
+          "requestedSeed": 2117593879,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 523378337
+          },
+          "path": "audio/dipper_3.mp3",
+          "duration": 2.08,
+          "renderSeconds": 14.59,
+          "sha256": "93aab317ae1c17dd79e9ec003bc687be19fc9bee1f906c2ef58e4bdf9299537d",
+          "instruct": "A native Russian-speaking 15-year-old teenage boy: a light teenage male voice with a slender, slightly nasal resonance and a neat, cool edge; quick and precise without squeakiness. Speak fluent neutral Russian with cool restrained intelligence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Wendy",
+      "name": "Венди",
+      "age": 18,
+      "kind": "young_woman",
+      "text": "Привет. Меня зовут Венди.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Венди 1",
+          "description": "Красивый молодой женский, низковатый, расслабленный; лёгкая хрипотца.",
+          "seed": 5378784,
+          "path": "audio/wendy_1.mp3",
+          "duration": 2.16,
+          "renderSeconds": 10.17,
+          "sha256": "da93f4839a3d72a1798b01c4403b44a24da127b830c25bd22f580f826f43f460",
+          "instruct": "A native Russian-speaking 18-year-old young woman: an attractive youthful female voice with a relaxed low-mezzo speaking register, warm chest resonance and a tiny natural husky edge. Speak fluent neutral Russian with relaxed youthful confidence and a small teasing smile, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Венди 2",
+          "description": "Чистый и тёплый молодой женский; уверенный, с дерзкой улыбкой.",
+          "seed": 2350886966,
+          "path": "audio/wendy_2.mp3",
+          "duration": 2.08,
+          "renderSeconds": 9.73,
+          "sha256": "b8a2b53547405372cbfde27c6a1746b1682b21e446a5eb7eae887ea05e8bc7f9",
+          "instruct": "A native Russian-speaking 18-year-old young woman: an attractive clear young female voice with an open middle register, smooth bright vowels and a soft, warm ring. Speak fluent neutral Russian with relaxed youthful confidence and a small teasing smile, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Венди 3",
+          "description": "Бархатистый молодой женский, немного носовой; ленивый сарказм.",
+          "seed": 3233103344,
+          "path": "audio/wendy_3.mp3",
+          "duration": 2.72,
+          "renderSeconds": 12.09,
+          "sha256": "c0850ad19f6e332fd83ba84d6333653142ce23c1e84b4292a01f3a16c700a510",
+          "instruct": "A native Russian-speaking 18-year-old young woman: an attractive velvet-textured young female voice in a middle-low register, a faint smoky grain and a little intimate forward resonance. Speak fluent neutral Russian with relaxed youthful confidence and a small teasing smile, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "sooS",
+      "name": "Зус",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Зус.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Зус 1",
+          "description": "Тёплый низкий мужской, мягкий и добродушный.",
+          "seed": 3083613753,
+          "requestedSeed": 3083613753,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 3083613753
+          },
+          "path": "audio/soos_1.mp3",
+          "duration": 2.08,
+          "renderSeconds": 11.95,
+          "sha256": "82a89d3e37434c624040957ad8d3a41dee0ad551e1a6917d0385d0fef0bf7a33",
+          "instruct": "A native Russian-speaking adult man: a naturally low, broad male voice with warm chest resonance, soft rounded vowels and a gentle fuzzy grain. Speak fluent neutral Russian with warm sincere friendliness, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Зус 2",
+          "description": "Густой округлый мужской, простодушный и комедийный.",
+          "seed": 3083613753,
+          "requestedSeed": 1352580764,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 3083613753
+          },
+          "path": "audio/soos_2.mp3",
+          "duration": 2.24,
+          "renderSeconds": 11.95,
+          "sha256": "438aea3b9fce3125990f6b2b42df66f7e6fd3a523d2b6703779b8a2bd6e84aa1",
+          "instruct": "A native Russian-speaking adult man: a full, medium-low male voice with a rounded, buoyant resonance and a mild naturally breathy softness. Speak fluent neutral Russian with warm sincere friendliness, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Зус 3",
+          "description": "Чуть носовой средний мужской, живой и разговорный.",
+          "seed": 3083613753,
+          "requestedSeed": 465342512,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 3083613753
+          },
+          "path": "audio/soos_3.mp3",
+          "duration": 1.76,
+          "renderSeconds": 11.95,
+          "sha256": "b3cb9d7e5c9322c172691f7c00375931b81b659f9217c23caa153535e189094d",
+          "instruct": "A native Russian-speaking adult man: a friendly middle-register male voice with a light nasal coloring, flexible consonants and a conversational textured core. Speak fluent neutral Russian with warm sincere friendliness, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Will",
+      "name": "Уилл",
+      "kind": "young_man",
+      "text": "Привет. Меня зовут Уилл.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Уилл 1",
+          "description": "Мягкий светлый мужской, тихий и загадочный.",
+          "seed": 3492153511,
+          "requestedSeed": 3492153511,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 3492153511
+          },
+          "path": "audio/will_1.mp3",
+          "duration": 2.48,
+          "renderSeconds": 13.88,
+          "sha256": "debb70805b8a1c9e257685200888537b8d137559963fd3ebc019698cb28dc7a9",
+          "instruct": "A native Russian-speaking male voice with a youthful sound; no particular chronological age is implied: a soft, light male voice with clear head resonance, a narrow airy edge and fine, delicate consonants. Speak fluent neutral Russian with quiet guarded curiosity, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Уилл 2",
+          "description": "Тонкий молодой мужской, осторожный и чуть нервный.",
+          "seed": 3492153511,
+          "requestedSeed": 2977273908,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 3492153511
+          },
+          "path": "audio/will_2.mp3",
+          "duration": 2.24,
+          "renderSeconds": 13.88,
+          "sha256": "a5e6150d62adb6dccf704d82116f5b999725a5d3f4656c99795a91e703e4d605",
+          "instruct": "A native Russian-speaking male voice with a youthful sound; no particular chronological age is implied: a gently reedy male voice with a youthful middle-high register, a trace of nasal resonance and a quiet warm core. Speak fluent neutral Russian with quiet guarded curiosity, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Уилл 3",
+          "description": "Спокойный бархатистый мужской, ровный и неоднозначный.",
+          "seed": 3492153511,
+          "requestedSeed": 1610981673,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 3492153511
+          },
+          "path": "audio/will_3.mp3",
+          "duration": 2.72,
+          "renderSeconds": 13.88,
+          "sha256": "3b37a35882b5872af441998b002ea379cae857378e677b9262e490707fbb9897",
+          "instruct": "A native Russian-speaking male voice with a youthful sound; no particular chronological age is implied: a smooth male voice with a softer middle register, velvety resonance and a faint dry grain. Speak fluent neutral Russian with quiet guarded curiosity, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Bill",
+      "name": "Билл",
+      "kind": "stylized_man",
+      "text": "Привет. Меня зовут Билл.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Билл 1",
+          "description": "Высоковатый мужской, звонкий и театрально насмешливый.",
+          "seed": 1183358459,
+          "requestedSeed": 1183358459,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 1183358459
+          },
+          "path": "audio/bill_1.mp3",
+          "duration": 1.6,
+          "renderSeconds": 14.29,
+          "sha256": "c4a05287b40c6d190808d19bedcafcb7398e78b9a94f1a0b06bc4a4fbf3035a1",
+          "instruct": "An original native Russian-speaking masculine character voice: a naturally bright male tenor with ringing forward resonance, a slight reedy edge and very agile articulation. Speak fluent neutral Russian with mischievous self-confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Билл 2",
+          "description": "Средний суховатый мужской, уверенный и ехидный.",
+          "seed": 1183358459,
+          "requestedSeed": 3446022734,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 1183358459
+          },
+          "path": "audio/bill_2.mp3",
+          "duration": 2.24,
+          "renderSeconds": 14.29,
+          "sha256": "641e3391c3633c85f4ac6af3d488f625be1aaa04799a098c071a982d046ebf21",
+          "instruct": "An original native Russian-speaking masculine character voice: a dry middle-register male voice with compact nasal resonance, sharp consonants and a clear, wiry core. Speak fluent neutral Russian with mischievous self-confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Билл 3",
+          "description": "Глубокий мужской, гладкий и тревожно приветливый.",
+          "seed": 1183358459,
+          "requestedSeed": 117822115,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 1183358459
+          },
+          "path": "audio/bill_3.mp3",
+          "duration": 2.64,
+          "renderSeconds": 14.29,
+          "sha256": "2ec12c8df7c399c4880d3d31630a9c2d00538d17a25cd2fdf60225fc0e61cda3",
+          "instruct": "An original native Russian-speaking masculine character voice: a smooth low-middle male voice with rich round resonance, precise vowels and a faint dark grain. Speak fluent neutral Russian with mischievous self-confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Robbie",
+      "name": "Робби",
+      "kind": "young_man",
+      "text": "Привет. Меня зовут Робби.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Робби 1",
+          "description": "Молодой низковатый мужской, ленивый и слегка хриплый.",
+          "seed": 2832907529,
+          "requestedSeed": 2832907529,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 2832907529
+          },
+          "path": "audio/robbie_1.mp3",
+          "duration": 2.0,
+          "renderSeconds": 12.73,
+          "sha256": "fae969de621987403622cf86d774d038bacca8dbb8327af3e568f8321a6eb460",
+          "instruct": "A native Russian-speaking male voice with a youthful sound: a naturally low-middle youthful male voice with a slight rough grain, loose vowels and a soft chest resonance. Speak fluent neutral Russian with casual low-key sarcasm, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Робби 2",
+          "description": "Сухой молодой мужской, отстранённый и носовой.",
+          "seed": 2832907529,
+          "requestedSeed": 423392343,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 2832907529
+          },
+          "path": "audio/robbie_2.mp3",
+          "duration": 2.32,
+          "renderSeconds": 12.73,
+          "sha256": "226e3d7d3ac8b612c12e9fffc60e0bbe758226b73a87e286a5a49fb254bbc32b",
+          "instruct": "A native Russian-speaking male voice with a youthful sound: a dry youthful male voice with a slender middle register, mild nasal color and lightly blurred consonant edges. Speak fluent neutral Russian with casual low-key sarcasm, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Робби 3",
+          "description": "Тёплый средний мужской, негромкий и мрачноватый.",
+          "seed": 2832907529,
+          "requestedSeed": 804218616,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 2832907529
+          },
+          "path": "audio/robbie_3.mp3",
+          "duration": 1.92,
+          "renderSeconds": 12.73,
+          "sha256": "182b3155dbdad1103601a613dab111ab0b8f108a857e323a8e8db5b4928af441",
+          "instruct": "A native Russian-speaking male voice with a youthful sound: a warm youthful male voice with a smooth middle register, soft forward resonance and a small airy undertone. Speak fluent neutral Russian with casual low-key sarcasm, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Candy",
+      "name": "Кэнди",
+      "kind": "young_girl",
+      "text": "Привет. Меня зовут Кэнди.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Кэнди 1",
+          "description": "Светлый юный женский, быстрый и любопытный.",
+          "seed": 467792062,
+          "requestedSeed": 467792062,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 467792062
+          },
+          "path": "audio/candy_1.mp3",
+          "duration": 2.08,
+          "renderSeconds": 11.53,
+          "sha256": "1a3e231749b4a676fe074f81a9ab1dfba81bb210c96dc5dbfd7be6bc40179ed9",
+          "instruct": "A native Russian-speaking youthful feminine voice; no numeric age is asserted: a light, high youthful female voice with a clear, thin ring and bright neat consonants. Speak fluent neutral Russian with fresh curious energy, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Кэнди 2",
+          "description": "Мягкий высокий женский, немного носовой и стеснительный.",
+          "seed": 467792062,
+          "requestedSeed": 1690756098,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 467792062
+          },
+          "path": "audio/candy_2.mp3",
+          "duration": 2.08,
+          "renderSeconds": 11.53,
+          "sha256": "139e9e23961ae0472aa5d88d9ed220456b5ea9dd8eeff1a3fd3560b98d316c20",
+          "instruct": "A native Russian-speaking youthful feminine voice; no numeric age is asserted: a soft youthful female voice with a rounded high-middle register, gentle nasal resonance and delicate articulation. Speak fluent neutral Russian with fresh curious energy, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Кэнди 3",
+          "description": "Звонкий юный женский, чёткий и уверенный.",
+          "seed": 467792062,
+          "requestedSeed": 186260126,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 467792062
+          },
+          "path": "audio/candy_3.mp3",
+          "duration": 1.76,
+          "renderSeconds": 11.53,
+          "sha256": "b63504cf030a939a7a658bc5ba826a99d2cbdf4471c831d014101ec365a798fb",
+          "instruct": "A native Russian-speaking youthful feminine voice; no numeric age is asserted: a lively youthful female voice with a forward middle-high register, a little dry grain and clear open vowels. Speak fluent neutral Russian with fresh curious energy, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Grenda",
+      "name": "Гренда",
+      "kind": "young_girl",
+      "text": "Привет. Меня зовут Гренда.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Гренда 1",
+          "description": "Юный женский с густым низковатым тембром, уверенный.",
+          "seed": 2056007648,
+          "requestedSeed": 2056007648,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 2056007648
+          },
+          "path": "audio/grenda_1.mp3",
+          "duration": 2.24,
+          "renderSeconds": 15.36,
+          "sha256": "8224aa199c100aa160436042a0982b5df51e1a9800ed4e2966d98274264110db",
+          "instruct": "A native Russian-speaking youthful feminine voice; no numeric age is asserted: a naturally full, lower-register youthful female voice with strong chest resonance and rounded consonants; distinctly female without a delicate high tone. Speak fluent neutral Russian with plain direct confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Гренда 2",
+          "description": "Низкий хрипловатый женский, громкий и прямой.",
+          "seed": 2056007648,
+          "requestedSeed": 4128968249,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 2056007648
+          },
+          "path": "audio/grenda_2.mp3",
+          "duration": 2.32,
+          "renderSeconds": 15.36,
+          "sha256": "6373dac704a6cf5fe5ae01a52e7e3bd5fdd6fb81b28482bcfab18e35843df402",
+          "instruct": "A native Russian-speaking youthful feminine voice; no numeric age is asserted: a low feminine voice with a compact husky core and dry natural texture, balanced by clear young-sounding vowels. Speak fluent neutral Russian with plain direct confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Гренда 3",
+          "description": "Средний округлый женский, энергичный и дружелюбный.",
+          "seed": 2056007648,
+          "requestedSeed": 2986904502,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 2056007648
+          },
+          "path": "audio/grenda_3.mp3",
+          "duration": 2.32,
+          "renderSeconds": 15.36,
+          "sha256": "7d1bacd2e999f672582bb6933159660320042ef091f7a4329585b84cf88c929b",
+          "instruct": "A native Russian-speaking youthful feminine voice; no numeric age is asserted: a robust middle-register feminine voice with broad resonant vowels, a slightly nasal edge and a lively youthful sound. Speak fluent neutral Russian with plain direct confidence, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Bud",
+      "name": "Бад",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Бад.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Бад 1",
+          "description": "Низкий густой мужской, грубоватый и размеренный.",
+          "seed": 3806445016,
+          "requestedSeed": 3806445016,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 3806445016
+          },
+          "path": "audio/bud_1.mp3",
+          "duration": 2.32,
+          "renderSeconds": 15.28,
+          "sha256": "719f12bbd7736dd572a50b52fb8e77033841372b0a4f285da412751e00a7b2e6",
+          "instruct": "A native Russian-speaking adult man: a deep male voice with broad chest resonance, coarse natural grain and heavy rounded vowels. Speak fluent neutral Russian with blunt weary self-assurance, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Бад 2",
+          "description": "Средний мужской с хрипотцой, усталый и ворчливый.",
+          "seed": 3806445016,
+          "requestedSeed": 135768847,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 3806445016
+          },
+          "path": "audio/bud_2.mp3",
+          "duration": 1.84,
+          "renderSeconds": 15.28,
+          "sha256": "0ca130fe54dca430a288a37b4363ff826b962c9579c201ec3deadfe796834b27",
+          "instruct": "A native Russian-speaking adult man: a middle-register adult male voice with a dry, worn texture, a slight nasal edge and close, compressed resonance. Speak fluent neutral Russian with blunt weary self-assurance, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Бад 3",
+          "description": "Глубокий мужской, напористый и властный.",
+          "seed": 3806445016,
+          "requestedSeed": 3714858539,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 3806445016
+          },
+          "path": "audio/bud_3.mp3",
+          "duration": 2.8,
+          "renderSeconds": 15.28,
+          "sha256": "b82785ca0608a2070ba1c15c9eb0b371403c1bc1d388abb0a82323aa85f74226",
+          "instruct": "A native Russian-speaking adult man: a low male voice with a dense smooth core, deliberate consonants and firm resonant vowels. Speak fluent neutral Russian with blunt weary self-assurance, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Preston",
+      "name": "Престон",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Престон.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Престон 1",
+          "description": "Глубокий мужской, строгий и сдержанный.",
+          "seed": 2414362900,
+          "requestedSeed": 2414362900,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 2414362900
+          },
+          "path": "audio/preston_1.mp3",
+          "duration": 2.88,
+          "renderSeconds": 15.74,
+          "sha256": "fcfb41c6cc2d8933b6709bf6981dff95139f9c51d2ccb5daa617f402c68e45ab",
+          "instruct": "A native Russian-speaking adult man: a low baritone with polished chest resonance, a dry edge and clearly separated consonants. Speak fluent neutral Russian with cool controlled formality, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Престон 2",
+          "description": "Средний гладкий мужской, холодно-вежливый.",
+          "seed": 2414362900,
+          "requestedSeed": 3260997039,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 2414362900
+          },
+          "path": "audio/preston_2.mp3",
+          "duration": 2.64,
+          "renderSeconds": 15.74,
+          "sha256": "4adfef9b88e7cb53b1f6e2a70c8e20bfb27e87ecf76b4c63ccfc054cbcc0169d",
+          "instruct": "A native Russian-speaking adult man: a smooth male middle register with compact forward resonance, clean vowels and very controlled airflow. Speak fluent neutral Russian with cool controlled formality, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Престон 3",
+          "description": "Низкий сухой мужской, резкий и требовательный.",
+          "seed": 2414362900,
+          "requestedSeed": 25506732,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 2414362900
+          },
+          "path": "audio/preston_3.mp3",
+          "duration": 2.64,
+          "renderSeconds": 15.74,
+          "sha256": "31de24061416ce3f79c472cec64a0081405e11a98615f49fac835dbc509bdaa3",
+          "instruct": "A native Russian-speaking adult man: a firm, medium-low male voice with a narrow resonant core, a trace of grit and precise consonants. Speak fluent neutral Russian with cool controlled formality, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Priscilla",
+      "name": "Присцилла",
+      "kind": "adult_woman",
+      "text": "Привет. Меня зовут Присцилла.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Присцилла 1",
+          "description": "Средний женский, собранный и холодно-вежливый.",
+          "seed": 2358715143,
+          "requestedSeed": 2358715143,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 2358715143
+          },
+          "path": "audio/priscilla_1.mp3",
+          "duration": 2.16,
+          "renderSeconds": 13.24,
+          "sha256": "b2d13be9e0716dba5d24a30620fb90a4c23ff19e89a992863ff1a02c176aee15",
+          "instruct": "A native Russian-speaking adult woman: a clear female middle register with a fine dry edge, focused resonance and very neat consonants. Speak fluent neutral Russian with composed polite distance, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Присцилла 2",
+          "description": "Низковатый бархатистый женский, уверенный.",
+          "seed": 2358715143,
+          "requestedSeed": 1859901059,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 2358715143
+          },
+          "path": "audio/priscilla_2.mp3",
+          "duration": 2.48,
+          "renderSeconds": 13.24,
+          "sha256": "4c4e3986fd3c005164029c5db56301fd089ee08e43b43182d382654fdcccc79e",
+          "instruct": "A native Russian-speaking adult woman: a naturally low-middle female voice with a rich rounded tone and a smooth velvety texture. Speak fluent neutral Russian with composed polite distance, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Присцилла 3",
+          "description": "Высоковатый чёткий женский, требовательный и отрывистый.",
+          "seed": 2358715143,
+          "requestedSeed": 679125645,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 2358715143
+          },
+          "path": "audio/priscilla_3.mp3",
+          "duration": 2.16,
+          "renderSeconds": 13.24,
+          "sha256": "1a281ca7312bdedd302d0aff181daeb06df8916181fb571f2895feaaad353b09",
+          "instruct": "A native Russian-speaking adult woman: a brighter feminine voice with a narrow forward resonance, a slight nasal ring and crisp vowels. Speak fluent neutral Russian with composed polite distance, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Blubs",
+      "name": "Блабс",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Блабс.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Блабс 1",
+          "description": "Низкий округлый мужской, неторопливый.",
+          "seed": 2676799363,
+          "requestedSeed": 2676799363,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 2676799363
+          },
+          "path": "audio/blubs_1.mp3",
+          "duration": 2.96,
+          "renderSeconds": 15.48,
+          "sha256": "747d9af19f2b0500281ef84b76d268a44b631ef372937b04b5491e6efa26f45b",
+          "instruct": "A native Russian-speaking adult man: a broad low male voice with rounded chest resonance and a soft, weighty grain. Speak fluent neutral Russian with grounded quiet authority, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Блабс 2",
+          "description": "Средний хрипловатый мужской, деловитый и простой.",
+          "seed": 2676799363,
+          "requestedSeed": 3830910142,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 2676799363
+          },
+          "path": "audio/blubs_2.mp3",
+          "duration": 1.92,
+          "renderSeconds": 15.48,
+          "sha256": "6c5fa10313166626bb9c765e054ad23b26765d511033875574a9d4c1c85706f2",
+          "instruct": "A native Russian-speaking adult man: a medium-low male voice with a roughened core, dry consonants and slightly forward resonance. Speak fluent neutral Russian with grounded quiet authority, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Блабс 3",
+          "description": "Густой мужской, громкий и комедийно серьёзный.",
+          "seed": 2676799363,
+          "requestedSeed": 1677282695,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 2676799363
+          },
+          "path": "audio/blubs_3.mp3",
+          "duration": 2.8,
+          "renderSeconds": 15.48,
+          "sha256": "d80a3e49b211592ad4acc2307b6dc61177e6cf11d18ddd9af36ea8694deef52a",
+          "instruct": "A native Russian-speaking adult man: a resonant middle-register male voice with open vowels, a natural nasal undertone and a solid full texture. Speak fluent neutral Russian with grounded quiet authority, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    },
+    {
+      "id": "Constable",
+      "name": "Констебль",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Констебль.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Констебль 1",
+          "description": "Средний мужской, официальный и чёткий.",
+          "seed": 2465442484,
+          "requestedSeed": 2465442484,
+          "samplingBatch": {
+            "size": 3,
+            "index": 0,
+            "seed": 2465442484
+          },
+          "path": "audio/constable_1.mp3",
+          "duration": 2.08,
+          "renderSeconds": 14.43,
+          "sha256": "7584c9a38bb7643a03fc4a8d6008c0bee4d1f1037e6645ea5336c5e26333bc87",
+          "instruct": "A native Russian-speaking adult man: a clean male middle register with light chest resonance, even airflow and sharp articulation. Speak fluent neutral Russian with practical alert clarity, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 2,
+          "label": "Констебль 2",
+          "description": "Низковатый сухой мужской, серьёзный.",
+          "seed": 2465442484,
+          "requestedSeed": 3823541830,
+          "samplingBatch": {
+            "size": 3,
+            "index": 1,
+            "seed": 2465442484
+          },
+          "path": "audio/constable_2.mp3",
+          "duration": 2.8,
+          "renderSeconds": 14.43,
+          "sha256": "12286da02680e2ed4ae049409c9128fe89f24229708e727d60b8d96004f592e6",
+          "instruct": "A native Russian-speaking adult man: a low-middle male voice with a dry compact core, understated grain and clipped but natural consonants. Speak fluent neutral Russian with practical alert clarity, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        },
+        {
+          "number": 3,
+          "label": "Констебль 3",
+          "description": "Светлый мужской, немного носовой и деловитый.",
+          "seed": 2465442484,
+          "requestedSeed": 3466592157,
+          "samplingBatch": {
+            "size": 3,
+            "index": 2,
+            "seed": 2465442484
+          },
+          "path": "audio/constable_3.mp3",
+          "duration": 2.16,
+          "renderSeconds": 14.43,
+          "sha256": "3abe571940796f15fc2b95b28ed4eb506f2d03ed7a71100ee85ea6585f4bec9c",
+          "instruct": "A native Russian-speaking adult man: a light male tenor with a slightly nasal forward resonance, thin clear vowels and an alert sound. Speak fluent neutral Russian with practical alert clarity, natural conversational timing and connected words, not singing, broadcasting or a processed voice."
+        }
+      ]
+    }
+  ],
+  "dtype": "bfloat16"
+}

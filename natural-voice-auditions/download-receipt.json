@@ -1,0 +1,8 @@
+{
+  "repository": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "modelLicense": "apache-2.0",
+  "weightBytes": 4515695644,
+  "officialCodeRevisionReviewed": "022e286b98fbec7e1e916cb940cdf532cd9f488e",
+  "purpose": "Independently designed fictional character voice previews; no actor recordings."
+}

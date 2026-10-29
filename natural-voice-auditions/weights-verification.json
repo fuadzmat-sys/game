@@ -1,0 +1,15 @@
+{
+  "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "verified": [
+    {
+      "file": "model.safetensors",
+      "sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+      "bytes": 3833402552
+    },
+    {
+      "file": "speech_tokenizer/model.safetensors",
+      "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+      "bytes": 682293092
+    }
+  ]
+}
