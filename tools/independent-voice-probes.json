@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "status": "preview_plan",
+  "language": "Russian",
+  "referencePolicy": "text_designed_only",
+  "voices": [
+    {
+      "speaker": "Gideon",
+      "age": 12,
+      "seed": 13127,
+      "description": "An independently designed voice for a fictional twelve-year-old boy speaking fluent native Russian. A natural youthful light male timbre, relaxed middle pitch, slightly dry and understated. Clear consonants and easy conversational breath. Calm and observant; sarcasm is subtle, not theatrical. Use varied sentence rhythm and natural pauses at punctuation. Never squeaky, cartoonishly childish, heavily pitched, monotone or robotic. Do not imitate or name any existing actor, celebrity, recording, or game performance.",
+      "anchorText": "Мы вроде договорились. Я двенадцатилетний ребёнок в лесу. Снизь ожидания. И это обычно полезная эмоция, когда тебя может съесть неизвестное существо.",
+      "samples": [
+        {
+          "id": "2ffad98a2c26abec1e0b4187",
+          "script": "chapter_1_v3/start",
+          "language": "russian",
+          "sourceLine": 141,
+          "text": "Мы вроде договорились.",
+          "direction": "neutral",
+          "briefSourceLine": 323
+        },
+        {
+          "id": "72095e4d35a32edbc1c6f5e9",
+          "script": "chapter_1_v3/clearing",
+          "language": "russian",
+          "sourceLine": 63,
+          "text": "Я двенадцатилетний ребёнок в лесу. Снизь ожидания.",
+          "direction": "dry sarcasm",
+          "briefSourceLine": 1636
+        },
+        {
+          "id": "a32c04c015f15b99fef79439",
+          "script": "chapter_1_v3/ending_cautious",
+          "language": "russian",
+          "sourceLine": 17,
+          "text": "И это обычно полезная эмоция, когда тебя может съесть неизвестное существо.",
+          "direction": "restrained fear",
+          "briefSourceLine": 1845
+        }
+      ]
+    },
+    {
+      "speaker": "Pacifica",
+      "age": 14,
+      "seed": 24709,
+      "description": "An independently designed voice for a fictional fourteen-year-old teenage girl speaking fluent native Russian. Natural youthful female timbre, bright and energetic, confident and curious, with a little stubbornness. Conversational intonation and varied pacing: a firm plan, irritated disbelief, then a softer admission of trust. Keep the voice grounded and expressive, with natural breaths. Never shrill, artificially high-pitched, monotonous or robotic. Do not imitate or name any existing actor, celebrity, recording, or game performance.",
+      "anchorText": "Мы идём по следам. Ничего не трогаем, пока не поймём, что это. Если увидим существо — сначала наблюдаем. Ты можешь хоть раз просто согласиться? Я умею признавать, когда кто-то говорит разумные вещи.",
+      "samples": [
+        {
+          "id": "5eea0df24f562dcbad86459c",
+          "script": "chapter_1_v3/forest_edge",
+          "language": "russian",
+          "sourceLine": 41,
+          "text": "Мы идём по следам. Ничего не трогаем, пока не поймём, что это. Если увидим существо — сначала наблюдаем.",
+          "direction": "confident plan",
+          "briefSourceLine": 1021
+        },
+        {
+          "id": "29db31340ec586f9fae340ee",
+          "script": "chapter_1_v3/deep_forest",
+          "language": "russian",
+          "sourceLine": 86,
+          "text": "Ты можешь хоть раз просто согласиться?",
+          "direction": "frustrated",
+          "briefSourceLine": 1473
+        },
+        {
+          "id": "eb32cb5ee129268a6edff9fe",
+          "script": "chapter_1_v3/clearing_after",
+          "language": "russian",
+          "sourceLine": 85,
+          "text": "Я умею признавать, когда кто-то говорит разумные вещи.",
+          "direction": "softened trust",
+          "briefSourceLine": 1757
+        }
+      ]
+    }
+  ]
+}
