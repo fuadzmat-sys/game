@@ -1,0 +1,1865 @@
+{
+  "version": 1,
+  "status": "unreviewed_auditions",
+  "integratedIntoGame": false,
+  "language": "russian",
+  "method": "Local Piper VITS / sherpa-onnx 1.12.30, independent pitch/formant/rate treatments with FFmpeg Rubber Band. No actor or game recordings supplied as input.",
+  "limitations": "Four base models only. Female variants primarily use one Irina base with different timbre/rate treatments; these are not three different actresses. Descriptions are target directions, not verified acting/age claims.",
+  "models": {
+    "version": 1,
+    "models": [
+      {
+        "name": "vits-piper-ru_RU-denis-medium",
+        "archiveUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-denis-medium.tar.bz2",
+        "archiveSha256": "efa4c18e0b5e32b81d1b6df36b9d312831e5d545200e27848ef926a4cd930300",
+        "archiveBytes": 67190991,
+        "directory": "/workspace/voice-audition-models/vits-piper-ru_RU-denis-medium",
+        "modelFiles": [
+          "ru_RU-denis-medium.onnx"
+        ],
+        "verifiedAgainst": "https://github.com/k2-fsa/sherpa-onnx/releases/expanded_assets/tts-models"
+      },
+      {
+        "name": "vits-piper-ru_RU-dmitri-medium",
+        "archiveUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-dmitri-medium.tar.bz2",
+        "archiveSha256": "c86d0803737de13d441923ff3b3f309482fab8d7af3ec85949942809eb9a3660",
+        "archiveBytes": 67188551,
+        "directory": "/workspace/voice-audition-models/vits-piper-ru_RU-dmitri-medium",
+        "modelFiles": [
+          "ru_RU-dmitri-medium.onnx"
+        ],
+        "verifiedAgainst": "https://github.com/k2-fsa/sherpa-onnx/releases/expanded_assets/tts-models"
+      },
+      {
+        "name": "vits-piper-ru_RU-irina-medium",
+        "archiveUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-irina-medium.tar.bz2",
+        "archiveSha256": "1fc0f54e5e084fe287c07909f2f6e0ba6d857864cf800e3ab80286a4e8233008",
+        "archiveBytes": 67153308,
+        "directory": "/workspace/voice-audition-models/vits-piper-ru_RU-irina-medium",
+        "modelFiles": [
+          "ru_RU-irina-medium.onnx"
+        ],
+        "verifiedAgainst": "https://github.com/k2-fsa/sherpa-onnx/releases/expanded_assets/tts-models"
+      },
+      {
+        "name": "vits-piper-ru_RU-ruslan-medium",
+        "archiveUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-ruslan-medium.tar.bz2",
+        "archiveSha256": "0690b1cad01f86e8db9ba988af24898bdc1af774e23cb2e46b9c730269b6fd83",
+        "archiveBytes": 67210684,
+        "directory": "/workspace/voice-audition-models/vits-piper-ru_RU-ruslan-medium",
+        "modelFiles": [
+          "ru_RU-ruslan-medium.onnx"
+        ],
+        "verifiedAgainst": "https://github.com/k2-fsa/sherpa-onnx/releases/expanded_assets/tts-models"
+      }
+    ]
+  },
+  "renderSeconds": 32.57,
+  "voices": [
+    {
+      "id": "Gideon",
+      "name": "Гидеон",
+      "kind": "boy",
+      "text": "Привет. Меня зовут Гидеон.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Гидеон 1",
+          "description": "Светлый детский, слегка писклявый; спокойная сухая подача.",
+          "model": "denis",
+          "pitch": 1.42,
+          "formant": 1.15,
+          "speed": 1.02,
+          "path": "audio/gideon_1.mp3",
+          "duration": 1.957,
+          "peak": 0.7454,
+          "rms": 0.11897,
+          "sha256": "695a76c8ee366a2e8b3a08f3da0bd616350589007698f770632534f2e0efc07f"
+        },
+        {
+          "number": 2,
+          "label": "Гидеон 2",
+          "description": "Мягкий мальчишеский, чуть носовой; сдержанный и наблюдательный.",
+          "model": "irina",
+          "pitch": 1.03,
+          "formant": 1.04,
+          "speed": 1.0,
+          "path": "audio/gideon_2.mp3",
+          "duration": 2.148,
+          "peak": 0.6988,
+          "rms": 0.12569,
+          "sha256": "204571fd70487ffddaa4646c68a98de599119cc628daa09298e07b8f1df1ad3e"
+        },
+        {
+          "number": 3,
+          "label": "Гидеон 3",
+          "description": "Тонкий звонкий детский, с лёгкой хрипотцой; невозмутимый.",
+          "model": "ruslan",
+          "pitch": 1.35,
+          "formant": 1.12,
+          "speed": 1.08,
+          "path": "audio/gideon_3.mp3",
+          "duration": 1.902,
+          "peak": 0.75098,
+          "rms": 0.11388,
+          "sha256": "f9695104cea28c716424b59734dd120d1c5be9668c03a3dbf8152291da4f930d"
+        }
+      ],
+      "age": 12
+    },
+    {
+      "id": "Pacifica",
+      "name": "Пасифика",
+      "kind": "teen_girl",
+      "text": "Привет. Меня зовут Пасифика.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Пасифика 1",
+          "description": "Звонкий подростковый, энергичный и уверенный.",
+          "model": "irina",
+          "pitch": 1.15,
+          "formant": 1.08,
+          "speed": 1.06,
+          "path": "audio/pacifica_1.mp3",
+          "duration": 2.011,
+          "peak": 0.74676,
+          "rms": 0.09549,
+          "sha256": "3057dc7fcb0d6545de751084d83d8a04595e3aebd72ab0948827c88c82f7c480"
+        },
+        {
+          "number": 2,
+          "label": "Пасифика 2",
+          "description": "Тёплый юный, живой и чуть дерзкий.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.02,
+          "speed": 1.0,
+          "path": "audio/pacifica_2.mp3",
+          "duration": 2.136,
+          "peak": 0.75102,
+          "rms": 0.09576,
+          "sha256": "1ffec6c87133ad4d7db9af56eda255f70473e53198e54aaebd397f98aaf95ce6"
+        },
+        {
+          "number": 3,
+          "label": "Пасифика 3",
+          "description": "Чёткий подростковый, немного ниже и решительнее.",
+          "model": "irina",
+          "pitch": 0.98,
+          "formant": 0.98,
+          "speed": 0.98,
+          "path": "audio/pacifica_3.mp3",
+          "duration": 2.185,
+          "peak": 0.75452,
+          "rms": 0.09418,
+          "sha256": "a0efc4a1fe1c2cbdf850f68a033daf7771df220b02167d885adfe93c1c61c279"
+        }
+      ],
+      "age": 14
+    },
+    {
+      "id": "Mabel",
+      "name": "Мейбл",
+      "kind": "teen_girl",
+      "text": "Привет. Меня зовут Мейбл.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Мейбл 1",
+          "description": "Яркий подростковый, улыбчивый и самоуверенный.",
+          "model": "irina",
+          "pitch": 1.1,
+          "formant": 1.06,
+          "speed": 1.06,
+          "path": "audio/mabel_1.mp3",
+          "duration": 1.9,
+          "peak": 0.75403,
+          "rms": 0.102,
+          "sha256": "1dd2c152f49e5cccfc061f4cc93f1cc9ce1dda240e48c27d2ae711dc63d49656"
+        },
+        {
+          "number": 2,
+          "label": "Мейбл 2",
+          "description": "Бархатистый юный, игривый и контролирующий.",
+          "model": "irina",
+          "pitch": 0.99,
+          "formant": 0.98,
+          "speed": 0.96,
+          "path": "audio/mabel_2.mp3",
+          "duration": 2.114,
+          "peak": 0.74837,
+          "rms": 0.12189,
+          "sha256": "bb88e7e36bfaa678b8df6580b9005e6b3425b51870610025df34966f714975f4"
+        },
+        {
+          "number": 3,
+          "label": "Мейбл 3",
+          "description": "Звонкий подростковый, быстрый и язвительный.",
+          "model": "irina",
+          "pitch": 1.2,
+          "formant": 1.09,
+          "speed": 1.11,
+          "path": "audio/mabel_3.mp3",
+          "duration": 1.813,
+          "peak": 0.75357,
+          "rms": 0.11585,
+          "sha256": "03feadf9d2dbdd67679ed5971152b8f71e05dc348b9bf1b8392c3867b21323a2"
+        }
+      ],
+      "age": 15
+    },
+    {
+      "id": "Dipper",
+      "name": "Диппер",
+      "kind": "teen_boy",
+      "text": "Привет. Меня зовут Диппер.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Диппер 1",
+          "description": "Молодой подростковый, ровный и холодноватый.",
+          "model": "denis",
+          "pitch": 1.16,
+          "formant": 1.06,
+          "speed": 1.0,
+          "path": "audio/dipper_1.mp3",
+          "duration": 1.902,
+          "peak": 0.63683,
+          "rms": 0.12221,
+          "sha256": "b2d7b54801dbd3f6286329c579744079310683f4d4de67d7442697f5f1ee0306"
+        },
+        {
+          "number": 2,
+          "label": "Диппер 2",
+          "description": "Чуть ниже, собранный и расчётливый.",
+          "model": "dmitri",
+          "pitch": 1.12,
+          "formant": 1.04,
+          "speed": 0.96,
+          "path": "audio/dipper_2.mp3",
+          "duration": 1.701,
+          "peak": 0.75195,
+          "rms": 0.08373,
+          "sha256": "b15d9b608c71a7eba067c4cf35482bf750f680fb70aaff4fa941f157a26082fd"
+        },
+        {
+          "number": 3,
+          "label": "Диппер 3",
+          "description": "Светлый подростковый, сухой и насмешливый.",
+          "model": "ruslan",
+          "pitch": 1.22,
+          "formant": 1.09,
+          "speed": 1.04,
+          "path": "audio/dipper_3.mp3",
+          "duration": 1.636,
+          "peak": 0.72966,
+          "rms": 0.09992,
+          "sha256": "d23c0b22c71dcbe8148b655a5ccbcd676cd52d5aab6b7399e165a3e75d84c220"
+        }
+      ],
+      "age": 15
+    },
+    {
+      "id": "Wendy",
+      "name": "Венди",
+      "kind": "young_woman",
+      "text": "Привет. Меня зовут Венди.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Венди 1",
+          "description": "Красивый молодой женский, низковатый, расслабленный; лёгкая хрипотца.",
+          "model": "irina",
+          "pitch": 0.94,
+          "formant": 0.98,
+          "speed": 0.96,
+          "path": "audio/wendy_1.mp3",
+          "duration": 2.139,
+          "peak": 0.75577,
+          "rms": 0.10599,
+          "sha256": "c11243acf056b2858fadb3094c72201de65ed0ca199b8e352bec8afe624eaee6"
+        },
+        {
+          "number": 2,
+          "label": "Венди 2",
+          "description": "Чистый и тёплый молодой женский; уверенный, с дерзкой улыбкой.",
+          "model": "irina",
+          "pitch": 1.06,
+          "formant": 1.03,
+          "speed": 1.04,
+          "path": "audio/wendy_2.mp3",
+          "duration": 1.956,
+          "peak": 0.74924,
+          "rms": 0.10027,
+          "sha256": "37a99dc2fb90737844ac360cda0978c8f50f7f3684a393acb36f55031c129020"
+        },
+        {
+          "number": 3,
+          "label": "Венди 3",
+          "description": "Бархатистый молодой женский, немного носовой; ленивый сарказм.",
+          "model": "irina",
+          "pitch": 0.99,
+          "formant": 0.94,
+          "speed": 1.0,
+          "path": "audio/wendy_3.mp3",
+          "duration": 2.06,
+          "peak": 0.74446,
+          "rms": 0.12022,
+          "sha256": "e1c479020bce851342dfe875d190d10511095da90b878c16c3b656999250670d"
+        }
+      ],
+      "age": 18
+    },
+    {
+      "id": "sooS",
+      "name": "Зус",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Зус.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Зус 1",
+          "description": "Тёплый низкий мужской, мягкий и добродушный.",
+          "model": "dmitri",
+          "pitch": 0.91,
+          "formant": 0.97,
+          "speed": 0.96,
+          "path": "audio/soos_1.mp3",
+          "duration": 1.553,
+          "peak": 0.75514,
+          "rms": 0.06851,
+          "sha256": "5ba6f8d42e6990a89589c39fbd92ddc83d39d03a04e4a8330a8b6b3cc7c12ae4"
+        },
+        {
+          "number": 2,
+          "label": "Зус 2",
+          "description": "Густой округлый мужской, простодушный и комедийный.",
+          "model": "ruslan",
+          "pitch": 0.94,
+          "formant": 0.94,
+          "speed": 1.0,
+          "path": "audio/soos_2.mp3",
+          "duration": 1.962,
+          "peak": 0.75436,
+          "rms": 0.0861,
+          "sha256": "0389ab751e3743ea05cc7f8dac0b8a7a2b436b0d6931d35cdfed5c98aa50b4d9"
+        },
+        {
+          "number": 3,
+          "label": "Зус 3",
+          "description": "Чуть носовой средний мужской, живой и разговорный.",
+          "model": "denis",
+          "pitch": 0.94,
+          "formant": 0.97,
+          "speed": 1.02,
+          "path": "audio/soos_3.mp3",
+          "duration": 1.633,
+          "peak": 0.7451,
+          "rms": 0.10994,
+          "sha256": "4fa4fbcd09c1d655450ad508234bbd45df3fd2628b7a0930f4355de4b61e8263"
+        }
+      ]
+    },
+    {
+      "id": "Will",
+      "name": "Уилл",
+      "kind": "young_man",
+      "text": "Привет. Меня зовут Уилл.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Уилл 1",
+          "description": "Мягкий светлый мужской, тихий и загадочный.",
+          "model": "denis",
+          "pitch": 1.19,
+          "formant": 1.08,
+          "speed": 0.98,
+          "path": "audio/will_1.mp3",
+          "duration": 1.894,
+          "peak": 0.75367,
+          "rms": 0.11845,
+          "sha256": "0d8635ab27fe9fa8231769156ad536da39eeb526d41ffe1578b134244e3336d1"
+        },
+        {
+          "number": 2,
+          "label": "Уилл 2",
+          "description": "Тонкий молодой мужской, осторожный и чуть нервный.",
+          "model": "ruslan",
+          "pitch": 1.27,
+          "formant": 1.1,
+          "speed": 1.02,
+          "path": "audio/will_2.mp3",
+          "duration": 1.868,
+          "peak": 0.75531,
+          "rms": 0.12519,
+          "sha256": "fca680a947dcacfb1874a3837a3c458769591eaf56aac9a8407b3f6d252c5177"
+        },
+        {
+          "number": 3,
+          "label": "Уилл 3",
+          "description": "Спокойный бархатистый мужской, ровный и неоднозначный.",
+          "model": "dmitri",
+          "pitch": 1.15,
+          "formant": 1.04,
+          "speed": 0.99,
+          "path": "audio/will_3.mp3",
+          "duration": 1.53,
+          "peak": 0.74458,
+          "rms": 0.07196,
+          "sha256": "4794ed5f655dda12a136d8eea65e969ab5141857a222428371099c8c2fd2f944"
+        }
+      ]
+    },
+    {
+      "id": "Bill",
+      "name": "Билл",
+      "kind": "stylized_man",
+      "text": "Привет. Меня зовут Билл.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Билл 1",
+          "description": "Высоковатый мужской, звонкий и театрально насмешливый.",
+          "model": "denis",
+          "pitch": 1.18,
+          "formant": 1.06,
+          "speed": 1.04,
+          "path": "audio/bill_1.mp3",
+          "duration": 1.756,
+          "peak": 0.65726,
+          "rms": 0.11963,
+          "sha256": "06aba59ed2a781faad7e4d5559f5526ae6901dc66ba40de2fd3c9a025f3d72ad"
+        },
+        {
+          "number": 2,
+          "label": "Билл 2",
+          "description": "Средний суховатый мужской, уверенный и ехидный.",
+          "model": "ruslan",
+          "pitch": 1.04,
+          "formant": 0.99,
+          "speed": 1.01,
+          "path": "audio/bill_2.mp3",
+          "duration": 1.665,
+          "peak": 0.7526,
+          "rms": 0.09717,
+          "sha256": "88348e40a3ca7dbbf1dfa861be16f9f3d131e151bfbfc1c3e0eb7395980a07e3"
+        },
+        {
+          "number": 3,
+          "label": "Билл 3",
+          "description": "Глубокий мужской, гладкий и тревожно приветливый.",
+          "model": "dmitri",
+          "pitch": 0.94,
+          "formant": 0.96,
+          "speed": 0.95,
+          "path": "audio/bill_3.mp3",
+          "duration": 1.555,
+          "peak": 0.7556,
+          "rms": 0.09378,
+          "sha256": "9847bf8bdfd54b053dc7a030ae1008ae4ce8b6942f812cc64932d8ac314602b7"
+        }
+      ]
+    },
+    {
+      "id": "Robbie",
+      "name": "Робби",
+      "kind": "young_man",
+      "text": "Привет. Меня зовут Робби.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Робби 1",
+          "description": "Молодой низковатый мужской, ленивый и слегка хриплый.",
+          "model": "denis",
+          "pitch": 1.08,
+          "formant": 1.03,
+          "speed": 1.0,
+          "path": "audio/robbie_1.mp3",
+          "duration": 1.794,
+          "peak": 0.6952,
+          "rms": 0.11698,
+          "sha256": "e92a456418cad0569f030ccc8735cc21e6fa5b76ffa57251b1dfcfada38d01f3"
+        },
+        {
+          "number": 2,
+          "label": "Робби 2",
+          "description": "Сухой молодой мужской, отстранённый и носовой.",
+          "model": "ruslan",
+          "pitch": 1.13,
+          "formant": 1.06,
+          "speed": 0.98,
+          "path": "audio/robbie_2.mp3",
+          "duration": 1.805,
+          "peak": 0.74419,
+          "rms": 0.10758,
+          "sha256": "0873e3193b4b461c56f79b2eb7043fb38b13cd2b472ed3c50e547ce3afa7fb44"
+        },
+        {
+          "number": 3,
+          "label": "Робби 3",
+          "description": "Тёплый средний мужской, негромкий и мрачноватый.",
+          "model": "dmitri",
+          "pitch": 1.06,
+          "formant": 1.02,
+          "speed": 1.04,
+          "path": "audio/robbie_3.mp3",
+          "duration": 1.659,
+          "peak": 0.7472,
+          "rms": 0.08993,
+          "sha256": "49e0dca65ad35337812464a1efc27f9788c46ce9dc79f93b5cdfadabdf9b847e"
+        }
+      ]
+    },
+    {
+      "id": "Candy",
+      "name": "Кэнди",
+      "kind": "young_girl",
+      "text": "Привет. Меня зовут Кэнди.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Кэнди 1",
+          "description": "Светлый юный женский, быстрый и любопытный.",
+          "model": "irina",
+          "pitch": 1.2,
+          "formant": 1.11,
+          "speed": 1.08,
+          "path": "audio/candy_1.mp3",
+          "duration": 1.792,
+          "peak": 0.75144,
+          "rms": 0.10666,
+          "sha256": "b77012a8b67994785b76220b89ac98f4204fe3e3c7918d3beef845b5eea95c19"
+        },
+        {
+          "number": 2,
+          "label": "Кэнди 2",
+          "description": "Мягкий высокий женский, немного носовой и стеснительный.",
+          "model": "irina",
+          "pitch": 1.11,
+          "formant": 1.05,
+          "speed": 1.02,
+          "path": "audio/candy_2.mp3",
+          "duration": 1.899,
+          "peak": 0.75337,
+          "rms": 0.11474,
+          "sha256": "aeef9fbd35250c0785a6dabf822a355d3f9686a0b1727bedcad50a2ad0bc9199"
+        },
+        {
+          "number": 3,
+          "label": "Кэнди 3",
+          "description": "Звонкий юный женский, чёткий и уверенный.",
+          "model": "irina",
+          "pitch": 1.02,
+          "formant": 1.0,
+          "speed": 1.04,
+          "path": "audio/candy_3.mp3",
+          "duration": 1.871,
+          "peak": 0.74507,
+          "rms": 0.11783,
+          "sha256": "1d609ebcc2b8f8f55fb462dcc0f86d88d2f0dcf3aa7c940f7cb800933e44726a"
+        }
+      ]
+    },
+    {
+      "id": "Grenda",
+      "name": "Гренда",
+      "kind": "young_girl",
+      "text": "Привет. Меня зовут Гренда.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Гренда 1",
+          "description": "Юный женский с густым низковатым тембром, уверенный.",
+          "model": "irina",
+          "pitch": 0.84,
+          "formant": 0.9,
+          "speed": 0.98,
+          "path": "audio/grenda_1.mp3",
+          "duration": 2.196,
+          "peak": 0.74258,
+          "rms": 0.11943,
+          "sha256": "536fa8b0f53a67fdf3a37981c209db6fdd104047a023946766cf0c62023ba025"
+        },
+        {
+          "number": 2,
+          "label": "Гренда 2",
+          "description": "Низкий хрипловатый женский, громкий и прямой.",
+          "model": "dmitri",
+          "pitch": 1.12,
+          "formant": 1.04,
+          "speed": 1.02,
+          "path": "audio/grenda_2.mp3",
+          "duration": 1.546,
+          "peak": 0.72679,
+          "rms": 0.07611,
+          "sha256": "6397afd2aaf34f71c0aea1c6d21f95104e02b97f117b88eb29f71d243e5217b6"
+        },
+        {
+          "number": 3,
+          "label": "Гренда 3",
+          "description": "Средний округлый женский, энергичный и дружелюбный.",
+          "model": "irina",
+          "pitch": 0.94,
+          "formant": 0.94,
+          "speed": 1.03,
+          "path": "audio/grenda_3.mp3",
+          "duration": 2.084,
+          "peak": 0.69111,
+          "rms": 0.12246,
+          "sha256": "f619d7b273babebfb0ed6b126edfdf297bb6c68618e0ccd4f1f60611f9b54fc7"
+        }
+      ]
+    },
+    {
+      "id": "Bud",
+      "name": "Бад",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Бад.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Бад 1",
+          "description": "Низкий густой мужской, грубоватый и размеренный.",
+          "model": "dmitri",
+          "pitch": 0.9,
+          "formant": 0.94,
+          "speed": 0.96,
+          "path": "audio/bud_1.mp3",
+          "duration": 1.636,
+          "peak": 0.74563,
+          "rms": 0.10228,
+          "sha256": "654b49760a606405a4bf8968c9e87c4cf30d8a030e192bcd1b9aece4411a54ed"
+        },
+        {
+          "number": 2,
+          "label": "Бад 2",
+          "description": "Средний мужской с хрипотцой, усталый и ворчливый.",
+          "model": "ruslan",
+          "pitch": 0.95,
+          "formant": 0.96,
+          "speed": 0.98,
+          "path": "audio/bud_2.mp3",
+          "duration": 1.735,
+          "peak": 0.73833,
+          "rms": 0.09487,
+          "sha256": "38a7abe970c46ecb61e6e7bb09ad854fcb4537ff00cdde3dbd542659d284b0f0"
+        },
+        {
+          "number": 3,
+          "label": "Бад 3",
+          "description": "Глубокий мужской, напористый и властный.",
+          "model": "denis",
+          "pitch": 0.98,
+          "formant": 0.98,
+          "speed": 1.0,
+          "path": "audio/bud_3.mp3",
+          "duration": 1.711,
+          "peak": 0.64507,
+          "rms": 0.12261,
+          "sha256": "854997d4ec119980a15de95869bcd9da829464ff8f9f4c3a35345e2a734d58d5"
+        }
+      ]
+    },
+    {
+      "id": "Preston",
+      "name": "Престон",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Престон.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Престон 1",
+          "description": "Глубокий мужской, строгий и сдержанный.",
+          "model": "ruslan",
+          "pitch": 0.96,
+          "formant": 0.97,
+          "speed": 0.96,
+          "path": "audio/preston_1.mp3",
+          "duration": 1.851,
+          "peak": 0.75342,
+          "rms": 0.10299,
+          "sha256": "f589548a1ff75289f0a218f8b9843f5c960892bf21744700cd9610e7c32c3294"
+        },
+        {
+          "number": 2,
+          "label": "Престон 2",
+          "description": "Средний гладкий мужской, холодно-вежливый.",
+          "model": "dmitri",
+          "pitch": 0.96,
+          "formant": 0.98,
+          "speed": 0.98,
+          "path": "audio/preston_2.mp3",
+          "duration": 1.717,
+          "peak": 0.75175,
+          "rms": 0.09853,
+          "sha256": "56d35faa5a9c799275a1ba41b9ab8cd30af9b40b900aeb4345d285f2c4ca4a9e"
+        },
+        {
+          "number": 3,
+          "label": "Престон 3",
+          "description": "Низкий сухой мужской, резкий и требовательный.",
+          "model": "denis",
+          "pitch": 1.01,
+          "formant": 1.0,
+          "speed": 0.99,
+          "path": "audio/preston_3.mp3",
+          "duration": 1.967,
+          "peak": 0.69112,
+          "rms": 0.11495,
+          "sha256": "bb3a421cb534e766b372c110790e3a1e91846d367ffec2be2f777976ca7a8183"
+        }
+      ]
+    },
+    {
+      "id": "Priscilla",
+      "name": "Присцилла",
+      "kind": "adult_woman",
+      "text": "Привет. Меня зовут Присцилла.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Присцилла 1",
+          "description": "Средний женский, собранный и холодно-вежливый.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.03,
+          "speed": 1.02,
+          "path": "audio/priscilla_1.mp3",
+          "duration": 2.458,
+          "peak": 0.75379,
+          "rms": 0.10062,
+          "sha256": "3da0f384a3560362ae64bfee660225916b3ba27458704e178f93fc07342fdcda"
+        },
+        {
+          "number": 2,
+          "label": "Присцилла 2",
+          "description": "Низковатый бархатистый женский, уверенный.",
+          "model": "irina",
+          "pitch": 0.91,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/priscilla_2.mp3",
+          "duration": 2.608,
+          "peak": 0.75416,
+          "rms": 0.09934,
+          "sha256": "ec3cdf400a37fdbbd25c500f4cb8df8cbd433b71408ab245d1b0ed73febbb436"
+        },
+        {
+          "number": 3,
+          "label": "Присцилла 3",
+          "description": "Высоковатый чёткий женский, требовательный и отрывистый.",
+          "model": "irina",
+          "pitch": 1.13,
+          "formant": 1.07,
+          "speed": 1.06,
+          "path": "audio/priscilla_3.mp3",
+          "duration": 2.362,
+          "peak": 0.75312,
+          "rms": 0.10518,
+          "sha256": "2de7d38e785714205cdccfafec6f8ccd7e6ef63ab0f7480bb8a0321d965d2832"
+        }
+      ]
+    },
+    {
+      "id": "Blubs",
+      "name": "Блабс",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Блабс.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Блабс 1",
+          "description": "Низкий округлый мужской, неторопливый.",
+          "model": "dmitri",
+          "pitch": 0.9,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/blubs_1.mp3",
+          "duration": 1.552,
+          "peak": 0.74672,
+          "rms": 0.08007,
+          "sha256": "f0a4a1c6c709015f98999d9745c9e1f9bc146b8fabc89ffa737f1716d1d6ef46"
+        },
+        {
+          "number": 2,
+          "label": "Блабс 2",
+          "description": "Средний хрипловатый мужской, деловитый и простой.",
+          "model": "ruslan",
+          "pitch": 0.93,
+          "formant": 0.96,
+          "speed": 1.0,
+          "path": "audio/blubs_2.mp3",
+          "duration": 1.92,
+          "peak": 0.73453,
+          "rms": 0.10251,
+          "sha256": "9f0ae450e77f85be97dddd4eb80db516eef0813d0ba88f81959804c60b1bcdd0"
+        },
+        {
+          "number": 3,
+          "label": "Блабс 3",
+          "description": "Густой мужской, громкий и комедийно серьёзный.",
+          "model": "denis",
+          "pitch": 0.95,
+          "formant": 0.98,
+          "speed": 1.01,
+          "path": "audio/blubs_3.mp3",
+          "duration": 1.891,
+          "peak": 0.69819,
+          "rms": 0.11871,
+          "sha256": "524d50b70930c58d8c5f2ab88375172d9dcbfe47915ba8a048f21e9e1e21941f"
+        }
+      ]
+    },
+    {
+      "id": "Constable",
+      "name": "Констебль",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Констебль.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Констебль 1",
+          "description": "Средний мужской, официальный и чёткий.",
+          "model": "dmitri",
+          "pitch": 0.98,
+          "formant": 0.99,
+          "speed": 0.98,
+          "path": "audio/constable_1.mp3",
+          "duration": 1.944,
+          "peak": 0.743,
+          "rms": 0.08673,
+          "sha256": "84b30f12c071ea836522c3bc9479e2a2ad45ca65abe8ea13c71e2435ccf3b35b"
+        },
+        {
+          "number": 2,
+          "label": "Констебль 2",
+          "description": "Низковатый сухой мужской, серьёзный.",
+          "model": "ruslan",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.0,
+          "path": "audio/constable_2.mp3",
+          "duration": 1.985,
+          "peak": 0.75497,
+          "rms": 0.08914,
+          "sha256": "be0258641a401dc31bfc1447fedc4b074a59efe309d5a84eb4bbb17c0a28ba64"
+        },
+        {
+          "number": 3,
+          "label": "Констебль 3",
+          "description": "Светлый мужской, немного носовой и деловитый.",
+          "model": "denis",
+          "pitch": 1.02,
+          "formant": 1.01,
+          "speed": 1.04,
+          "path": "audio/constable_3.mp3",
+          "duration": 1.842,
+          "peak": 0.75243,
+          "rms": 0.11864,
+          "sha256": "12b425cbe5a6024858e48a5ebe716351caaad4d32174ee156435d3646e990192"
+        }
+      ]
+    },
+    {
+      "id": "Toby",
+      "name": "Тоби",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Тоби.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Тоби 1",
+          "description": "Мягкий средний мужской, чуть гнусавый.",
+          "model": "dmitri",
+          "pitch": 0.98,
+          "formant": 0.99,
+          "speed": 0.98,
+          "path": "audio/toby_1.mp3",
+          "duration": 1.603,
+          "peak": 0.74536,
+          "rms": 0.09065,
+          "sha256": "a7055ee68e18be56deadc524de4b9b43a480736f061ae2b26a90831a2c794dee"
+        },
+        {
+          "number": 2,
+          "label": "Тоби 2",
+          "description": "Низковатый усталый мужской, медленный.",
+          "model": "ruslan",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.0,
+          "path": "audio/toby_2.mp3",
+          "duration": 1.614,
+          "peak": 0.75302,
+          "rms": 0.10051,
+          "sha256": "ab6795ce54e16a7df8775ced0dfbd06faf6dc30686d23e3a29c36f12b7d1e71b"
+        },
+        {
+          "number": 3,
+          "label": "Тоби 3",
+          "description": "Высоковатый разговорный мужской, суетливый.",
+          "model": "denis",
+          "pitch": 1.02,
+          "formant": 1.01,
+          "speed": 1.04,
+          "path": "audio/toby_3.mp3",
+          "duration": 1.685,
+          "peak": 0.70302,
+          "rms": 0.11837,
+          "sha256": "fd5b808f5c7349eff8c67d0bdccbb9034cf158d6aa31412448ad961c3c8463ed"
+        }
+      ]
+    },
+    {
+      "id": "Scot",
+      "name": "Скот",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Скот.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Скот 1",
+          "description": "Густой мужской, громкий и уверенный.",
+          "model": "dmitri",
+          "pitch": 0.98,
+          "formant": 0.99,
+          "speed": 0.98,
+          "path": "audio/scot_1.mp3",
+          "duration": 1.571,
+          "peak": 0.74898,
+          "rms": 0.07845,
+          "sha256": "98955ede9c58ca66db0ee8d8f983e8b077f83090f12b1241b8e2e889402497ee"
+        },
+        {
+          "number": 2,
+          "label": "Скот 2",
+          "description": "Средний мужской с хрипотцой, резкий.",
+          "model": "ruslan",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.0,
+          "path": "audio/scot_2.mp3",
+          "duration": 1.66,
+          "peak": 0.75373,
+          "rms": 0.09157,
+          "sha256": "967d6751b39ec104bb096a30d3c314560824d4e2c1fa2e18a0f99bf30c64efdf"
+        },
+        {
+          "number": 3,
+          "label": "Скот 3",
+          "description": "Светлый мужской, быстрый и напористый.",
+          "model": "denis",
+          "pitch": 1.02,
+          "formant": 1.01,
+          "speed": 1.04,
+          "path": "audio/scot_3.mp3",
+          "duration": 1.596,
+          "peak": 0.666,
+          "rms": 0.11749,
+          "sha256": "1df7d446379c4efee405a00da12aa94c72e6d34827ff1e5df29a99cbaa57b4f3"
+        }
+      ]
+    },
+    {
+      "id": "Gumball",
+      "name": "Гамбол",
+      "kind": "young_boy",
+      "text": "Привет. Меня зовут Гамбол.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Гамбол 1",
+          "description": "Звонкий юный мужской, быстрый и озорной.",
+          "model": "denis",
+          "pitch": 1.42,
+          "formant": 1.15,
+          "speed": 1.02,
+          "path": "audio/gumball_1.mp3",
+          "duration": 1.866,
+          "peak": 0.65936,
+          "rms": 0.11817,
+          "sha256": "1394a43aabc9c86ed580d5cf5e7fa9b7df41ea5133f42770b0c11304a0f9d1a9"
+        },
+        {
+          "number": 2,
+          "label": "Гамбол 2",
+          "description": "Светлый слегка носовой мальчишеский, разговорный.",
+          "model": "irina",
+          "pitch": 1.03,
+          "formant": 1.04,
+          "speed": 1.0,
+          "path": "audio/gumball_2.mp3",
+          "duration": 2.106,
+          "peak": 0.74687,
+          "rms": 0.11609,
+          "sha256": "cc41c7e40953c48c1b98be954e06a1c92427dcb8e2727ea22625e85b65aca7b9"
+        },
+        {
+          "number": 3,
+          "label": "Гамбол 3",
+          "description": "Средний юный мужской, самоуверенный и насмешливый.",
+          "model": "ruslan",
+          "pitch": 1.35,
+          "formant": 1.12,
+          "speed": 1.08,
+          "path": "audio/gumball_3.mp3",
+          "duration": 1.826,
+          "peak": 0.74945,
+          "rms": 0.11761,
+          "sha256": "c0b2a26187ad70cdc97f33711212451fdb757420f2e4b39d203bc469849d1155"
+        }
+      ]
+    },
+    {
+      "id": "Darwin",
+      "name": "Дарвин",
+      "kind": "young_boy",
+      "text": "Привет. Меня зовут Дарвин.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Дарвин 1",
+          "description": "Мягкий высокий мальчишеский, добрый и живой.",
+          "model": "denis",
+          "pitch": 1.42,
+          "formant": 1.15,
+          "speed": 1.02,
+          "path": "audio/darwin_1.mp3",
+          "duration": 1.893,
+          "peak": 0.69743,
+          "rms": 0.11739,
+          "sha256": "c3f1477f0c084b174e798ffb27088c0c361553e740be6fda94cebc047b788fd5"
+        },
+        {
+          "number": 2,
+          "label": "Дарвин 2",
+          "description": "Звонкий юный мужской, наивный и быстрый.",
+          "model": "irina",
+          "pitch": 1.03,
+          "formant": 1.04,
+          "speed": 1.0,
+          "path": "audio/darwin_2.mp3",
+          "duration": 1.957,
+          "peak": 0.75314,
+          "rms": 0.10035,
+          "sha256": "9280402c576f592f597fafff449f4a50342ff0d6173a46aba22cae44e0450a12"
+        },
+        {
+          "number": 3,
+          "label": "Дарвин 3",
+          "description": "Тёплый мальчишеский, чуть носовой и спокойный.",
+          "model": "ruslan",
+          "pitch": 1.35,
+          "formant": 1.12,
+          "speed": 1.08,
+          "path": "audio/darwin_3.mp3",
+          "duration": 1.812,
+          "peak": 0.75267,
+          "rms": 0.08126,
+          "sha256": "83db3a346fb0a9c37b8230a805c78d3f0909969ad0b7bbb21678ff587f24d40a"
+        }
+      ]
+    },
+    {
+      "id": "Nicole",
+      "name": "Николь",
+      "kind": "adult_woman",
+      "text": "Привет. Меня зовут Николь.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Николь 1",
+          "description": "Чёткий средний женский, собранный и уверенный.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.03,
+          "speed": 1.02,
+          "path": "audio/nicole_1.mp3",
+          "duration": 1.833,
+          "peak": 0.75459,
+          "rms": 0.12273,
+          "sha256": "b121f89e1bb0b6e31d13e56bd7dc87bfac7fc1fc46d665cb5ef4a6dfe8a370b7"
+        },
+        {
+          "number": 2,
+          "label": "Николь 2",
+          "description": "Низковатый густой женский, строгий.",
+          "model": "irina",
+          "pitch": 0.91,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/nicole_2.mp3",
+          "duration": 1.943,
+          "peak": 0.7535,
+          "rms": 0.11823,
+          "sha256": "8c27f96963455585b0278539ac0743306caf7eb70dea1f8c5cab10a777811fc6"
+        },
+        {
+          "number": 3,
+          "label": "Николь 3",
+          "description": "Светлый взрослый женский, энергичный и прямой.",
+          "model": "irina",
+          "pitch": 1.13,
+          "formant": 1.07,
+          "speed": 1.06,
+          "path": "audio/nicole_3.mp3",
+          "duration": 1.764,
+          "peak": 0.73384,
+          "rms": 0.1265,
+          "sha256": "cd0d8f3eca1619c84bfcd5c091f962de1a7fa4807b8b158058854cb3627c8aa8"
+        }
+      ]
+    },
+    {
+      "id": "Ducktective",
+      "name": "Утка-Тив",
+      "kind": "stylized_man",
+      "text": "Привет. Меня зовут Утка-Тив.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Утка-Тив 1",
+          "description": "Хриплый высокий мультяшный, чётко различимая речь.",
+          "model": "denis",
+          "pitch": 1.18,
+          "formant": 1.06,
+          "speed": 1.04,
+          "path": "audio/ducktective_1.mp3",
+          "duration": 1.896,
+          "peak": 0.71827,
+          "rms": 0.12126,
+          "sha256": "1aff1cc1fb3402cfe3e5a7dd5e035f2adc4a4ef88d45346f0d640f069e117ef2"
+        },
+        {
+          "number": 2,
+          "label": "Утка-Тив 2",
+          "description": "Низкий ворчливый мультяшный, детективная серьёзность.",
+          "model": "ruslan",
+          "pitch": 1.04,
+          "formant": 0.99,
+          "speed": 1.01,
+          "path": "audio/ducktective_2.mp3",
+          "duration": 1.85,
+          "peak": 0.75009,
+          "rms": 0.08397,
+          "sha256": "032a3389dbcd7e423f56160a3fe78bc20d5230509cb3f6619fa241c8d683856d"
+        },
+        {
+          "number": 3,
+          "label": "Утка-Тив 3",
+          "description": "Средний гнусавый мультяшный, быстрый и комедийный.",
+          "model": "dmitri",
+          "pitch": 0.94,
+          "formant": 0.96,
+          "speed": 0.95,
+          "path": "audio/ducktective_3.mp3",
+          "duration": 1.893,
+          "peak": 0.75409,
+          "rms": 0.07121,
+          "sha256": "0bcfbd28a248fc4c1c86b8cc9cb4e5e4ac5af056b610886541d9aa032771279a"
+        }
+      ]
+    },
+    {
+      "id": "Mallardarty",
+      "name": "Маллардарти",
+      "kind": "stylized_man",
+      "text": "Привет. Меня зовут Маллардарти.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Маллардарти 1",
+          "description": "Глубокий театральный мужской, размеренный.",
+          "model": "denis",
+          "pitch": 1.18,
+          "formant": 1.06,
+          "speed": 1.04,
+          "path": "audio/mallardarty_1.mp3",
+          "duration": 1.997,
+          "peak": 0.73176,
+          "rms": 0.11636,
+          "sha256": "cdc1e7d441f773b8e00017bb17f5c10be5591b1d437c605190a0def57648d59f"
+        },
+        {
+          "number": 2,
+          "label": "Маллардарти 2",
+          "description": "Средний носовой мужской, ехидный.",
+          "model": "ruslan",
+          "pitch": 1.04,
+          "formant": 0.99,
+          "speed": 1.01,
+          "path": "audio/mallardarty_2.mp3",
+          "duration": 2.229,
+          "peak": 0.75266,
+          "rms": 0.1012,
+          "sha256": "873df99c2ba41fc5d5566ac486983cc228168b983241cc58a41e6f6c066f7940"
+        },
+        {
+          "number": 3,
+          "label": "Маллардарти 3",
+          "description": "Сухой высокий мужской, острый и эксцентричный.",
+          "model": "dmitri",
+          "pitch": 0.94,
+          "formant": 0.96,
+          "speed": 0.95,
+          "path": "audio/mallardarty_3.mp3",
+          "duration": 1.866,
+          "peak": 0.75047,
+          "rms": 0.09151,
+          "sha256": "7e75328d94a7db8aa84a1f5f04dd95653cb955ccceb154eaf634f50d49430f41"
+        }
+      ]
+    },
+    {
+      "id": "Mothman",
+      "name": "Человек-мотылёк",
+      "kind": "creature",
+      "text": "Привет. Меня зовут Человек-мотылёк.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Человек-мотылёк 1",
+          "description": "Очень низкий шершавый, медленный, но разборчивый.",
+          "model": "dmitri",
+          "pitch": 0.82,
+          "formant": 0.9,
+          "speed": 0.92,
+          "path": "audio/mothman_1.mp3",
+          "duration": 2.263,
+          "peak": 0.73424,
+          "rms": 0.0902,
+          "sha256": "5d2a0e56c3d908deb378894650da4a4bed60e9954f15042b6ca40d4423141826"
+        },
+        {
+          "number": 2,
+          "label": "Человек-мотылёк 2",
+          "description": "Средний хриплый, воздушный и тревожный.",
+          "model": "ruslan",
+          "pitch": 0.91,
+          "formant": 0.96,
+          "speed": 0.98,
+          "path": "audio/mothman_2.mp3",
+          "duration": 2.481,
+          "peak": 0.75239,
+          "rms": 0.11146,
+          "sha256": "a48d6bfeb0b6072601a418bef1376b0fe0938c1c4fd39e5abd8c2bdb2aa31795"
+        },
+        {
+          "number": 3,
+          "label": "Человек-мотылёк 3",
+          "description": "Густой низкий резонирующий, с осторожной тихой подачей.",
+          "model": "denis",
+          "pitch": 1.06,
+          "formant": 0.97,
+          "speed": 0.96,
+          "path": "audio/mothman_3.mp3",
+          "duration": 2.4,
+          "peak": 0.75214,
+          "rms": 0.10548,
+          "sha256": "ad0a908adeeb1891ad09ae03de00f212a7f8977fd7cd94f96c208385a0c81aff"
+        }
+      ]
+    },
+    {
+      "id": "Helvest",
+      "name": "Хелвест",
+      "kind": "adult_man",
+      "text": "Привет. Меня зовут Хелвест.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Хелвест 1",
+          "description": "Спокойный средний мужской, нейтральный.",
+          "model": "dmitri",
+          "pitch": 0.98,
+          "formant": 0.99,
+          "speed": 0.98,
+          "path": "audio/helvest_1.mp3",
+          "duration": 1.655,
+          "peak": 0.74408,
+          "rms": 0.08491,
+          "sha256": "3d25ee8dcef4b7e4d29b1e939c443f030392dc809a4468f1486d8941886c8362"
+        },
+        {
+          "number": 2,
+          "label": "Хелвест 2",
+          "description": "Тёплый низковатый мужской, дружелюбный.",
+          "model": "ruslan",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.0,
+          "path": "audio/helvest_2.mp3",
+          "duration": 2.078,
+          "peak": 0.75436,
+          "rms": 0.11151,
+          "sha256": "cc53536fd6724fba01f278746520aa7cb57d220698fc5ab2197c31dd8287a2ac"
+        },
+        {
+          "number": 3,
+          "label": "Хелвест 3",
+          "description": "Светлый молодой мужской, живой и разговорный.",
+          "model": "denis",
+          "pitch": 1.02,
+          "formant": 1.01,
+          "speed": 1.04,
+          "path": "audio/helvest_3.mp3",
+          "duration": 1.883,
+          "peak": 0.71553,
+          "rms": 0.11752,
+          "sha256": "78cb1156918ca530b7a3b29635078ba7a8b08ee50511c7be94c06713e23f47e9"
+        }
+      ]
+    },
+    {
+      "id": "Narrator",
+      "name": "Рассказчик",
+      "kind": "narrator",
+      "text": "Здравствуйте. Я рассказчик этой истории.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Рассказчик 1",
+          "description": "Тёплый мужской средний тембр, ясная спокойная речь.",
+          "model": "denis",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 0.97,
+          "path": "audio/narrator_1.mp3",
+          "duration": 2.708,
+          "peak": 0.74882,
+          "rms": 0.09416,
+          "sha256": "3f87dd45825c20e9d1a055e887dfb94106d259528a981baf9cb7c0d379dcb355"
+        },
+        {
+          "number": 2,
+          "label": "Рассказчик 2",
+          "description": "Глубокий мужской, сдержанный и атмосферный.",
+          "model": "dmitri",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 0.97,
+          "path": "audio/narrator_2.mp3",
+          "duration": 2.13,
+          "peak": 0.75483,
+          "rms": 0.07426,
+          "sha256": "d66f8734f494bcf911cb95ab8f04aa216fa860f18c3ae13115d835ee8ef9d5a0"
+        },
+        {
+          "number": 3,
+          "label": "Рассказчик 3",
+          "description": "Мягкий взрослый женский, ровный и выразительный.",
+          "model": "ruslan",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 0.97,
+          "path": "audio/narrator_3.mp3",
+          "duration": 2.801,
+          "peak": 0.75175,
+          "rms": 0.06933,
+          "sha256": "4e55575319e0d10eb77043f3635954e0c63515257f71b30c33e3eab656cd5d82"
+        }
+      ]
+    },
+    {
+      "id": "Arcade_Owner",
+      "name": "Владелец игровых автоматов",
+      "kind": "adult_man",
+      "text": "Здравствуйте. Я владелец игровых автоматов.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Владелец игровых автоматов 1",
+          "description": "Громкий средний мужской, деловой.",
+          "model": "dmitri",
+          "pitch": 0.98,
+          "formant": 0.99,
+          "speed": 0.98,
+          "path": "audio/arcade_owner_1.mp3",
+          "duration": 2.58,
+          "peak": 0.75413,
+          "rms": 0.0859,
+          "sha256": "c545289465292a8558fd0c573ac463249b05e2c1867d7bca58345e6af0e625bb"
+        },
+        {
+          "number": 2,
+          "label": "Владелец игровых автоматов 2",
+          "description": "Низкий грубоватый мужской, ворчливый.",
+          "model": "ruslan",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.0,
+          "path": "audio/arcade_owner_2.mp3",
+          "duration": 2.705,
+          "peak": 0.75296,
+          "rms": 0.09443,
+          "sha256": "32b5d49776f4b9d5c62c16b1e9e49f3f86f9a56996e2bf0e2348d66e84355cb9"
+        },
+        {
+          "number": 3,
+          "label": "Владелец игровых автоматов 3",
+          "description": "Высоковатый носовой мужской, быстрый и раздражительный.",
+          "model": "denis",
+          "pitch": 1.02,
+          "formant": 1.01,
+          "speed": 1.04,
+          "path": "audio/arcade_owner_3.mp3",
+          "duration": 2.945,
+          "peak": 0.75476,
+          "rms": 0.10564,
+          "sha256": "a32ae2970ccb415e39d17221e92ae9310196243beb10a399c8d968735e632c3f"
+        }
+      ]
+    },
+    {
+      "id": "Cashier",
+      "name": "Кассир",
+      "kind": "adult_man",
+      "text": "Здравствуйте. Я кассир.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Кассир 1",
+          "description": "Нейтральный средний мужской, спокойный.",
+          "model": "dmitri",
+          "pitch": 0.98,
+          "formant": 0.99,
+          "speed": 0.98,
+          "path": "audio/cashier_1.mp3",
+          "duration": 1.336,
+          "peak": 0.74743,
+          "rms": 0.08779,
+          "sha256": "cc36606bad62acf70c476a2f6bba4b1973f60952cb2060c29d8395dd28dc5387"
+        },
+        {
+          "number": 2,
+          "label": "Кассир 2",
+          "description": "Светлый молодой мужской, быстрый и вежливый.",
+          "model": "ruslan",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.0,
+          "path": "audio/cashier_2.mp3",
+          "duration": 1.37,
+          "peak": 0.75151,
+          "rms": 0.07779,
+          "sha256": "bccbd801413e5bc796aa8f47a36bcf7255f88017346e02798d041788278e4252"
+        },
+        {
+          "number": 3,
+          "label": "Кассир 3",
+          "description": "Низковатый усталый мужской, неторопливый.",
+          "model": "denis",
+          "pitch": 1.02,
+          "formant": 1.01,
+          "speed": 1.04,
+          "path": "audio/cashier_3.mp3",
+          "duration": 1.564,
+          "peak": 0.7537,
+          "rms": 0.10325,
+          "sha256": "7d4d9b737c08307555c56fd4e30ae593d50c4f6bb760ab7d1fc91658dc59951f"
+        }
+      ]
+    },
+    {
+      "id": "Customer_1",
+      "name": "Покупательница 1",
+      "kind": "adult_woman",
+      "text": "Здравствуйте. Я покупательница.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Покупательница 1 1",
+          "description": "Звонкий взрослый женский, возмущённый и эмоциональный.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.03,
+          "speed": 1.02,
+          "path": "audio/customer_1_1.mp3",
+          "duration": 2.233,
+          "peak": 0.74912,
+          "rms": 0.07323,
+          "sha256": "2fca8b074585431c832e51660d411130fb672566b2e3c53f0f32f68f55103553"
+        },
+        {
+          "number": 2,
+          "label": "Покупательница 1 2",
+          "description": "Низковатый женский, уверенный и выразительный.",
+          "model": "irina",
+          "pitch": 0.91,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/customer_1_2.mp3",
+          "duration": 2.354,
+          "peak": 0.75409,
+          "rms": 0.07686,
+          "sha256": "bc8dcc4d050eb64d8bcc472239457fe3aedbd71372fff04f02ba94c121bad6e9"
+        },
+        {
+          "number": 3,
+          "label": "Покупательница 1 3",
+          "description": "Высоковатый носовой женский, быстрый.",
+          "model": "irina",
+          "pitch": 1.13,
+          "formant": 1.07,
+          "speed": 1.06,
+          "path": "audio/customer_1_3.mp3",
+          "duration": 2.146,
+          "peak": 0.75394,
+          "rms": 0.08584,
+          "sha256": "4283f7584e984f3ed8dff682849b13bc081dff60e72c78ca495086e8e15d69f6"
+        }
+      ]
+    },
+    {
+      "id": "Customer_2",
+      "name": "Покупательница 2",
+      "kind": "adult_woman",
+      "text": "Здравствуйте. Я покупательница.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Покупательница 2 1",
+          "description": "Мягкий средний женский, оживлённый.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.03,
+          "speed": 1.02,
+          "path": "audio/customer_2_1.mp3",
+          "duration": 2.233,
+          "peak": 0.74912,
+          "rms": 0.07323,
+          "sha256": "2fca8b074585431c832e51660d411130fb672566b2e3c53f0f32f68f55103553"
+        },
+        {
+          "number": 2,
+          "label": "Покупательница 2 2",
+          "description": "Светлый женский, суховато-ироничный.",
+          "model": "irina",
+          "pitch": 0.91,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/customer_2_2.mp3",
+          "duration": 2.354,
+          "peak": 0.75409,
+          "rms": 0.07686,
+          "sha256": "bc8dcc4d050eb64d8bcc472239457fe3aedbd71372fff04f02ba94c121bad6e9"
+        },
+        {
+          "number": 3,
+          "label": "Покупательница 2 3",
+          "description": "Густой взрослый женский, спокойный и разговорный.",
+          "model": "irina",
+          "pitch": 1.13,
+          "formant": 1.07,
+          "speed": 1.06,
+          "path": "audio/customer_2_3.mp3",
+          "duration": 2.146,
+          "peak": 0.75394,
+          "rms": 0.08584,
+          "sha256": "4283f7584e984f3ed8dff682849b13bc081dff60e72c78ca495086e8e15d69f6"
+        }
+      ]
+    },
+    {
+      "id": "Crowd",
+      "name": "Толпа",
+      "kind": "crowd",
+      "text": "Привет! Мы жители этого города.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Толпа 1",
+          "description": "Мужской ведущий голос толпы, средний и энергичный.",
+          "model": "denis",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.03,
+          "path": "audio/crowd_1.mp3",
+          "duration": 2.158,
+          "peak": 0.63071,
+          "rms": 0.12178,
+          "sha256": "1f63b328e7ae0996820bf69711dcc3d26b1805186949c024bb2a61cdd2d3459e"
+        },
+        {
+          "number": 2,
+          "label": "Толпа 2",
+          "description": "Женский ведущий голос толпы, звонкий и разговорный.",
+          "model": "dmitri",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.03,
+          "path": "audio/crowd_2.mp3",
+          "duration": 2.198,
+          "peak": 0.75297,
+          "rms": 0.10971,
+          "sha256": "44bcb30598bdac74957a767332b3f4df5195868f515dda0fc02fe39f1b3b3d1d"
+        },
+        {
+          "number": 3,
+          "label": "Толпа 3",
+          "description": "Низковатый мужской ведущий голос толпы, размеренный.",
+          "model": "irina",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.03,
+          "path": "audio/crowd_3.mp3",
+          "duration": 2.402,
+          "peak": 0.688,
+          "rms": 0.1231,
+          "sha256": "74e5b109ff91e7a153cb195bf28ad951dfffb6e3dc2f1c22b6fbcfe414373224"
+        }
+      ]
+    },
+    {
+      "id": "Waitress",
+      "name": "Официантка",
+      "kind": "adult_woman",
+      "text": "Здравствуйте. Я официантка.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Официантка 1",
+          "description": "Молодой женский, тёплый и приветливый.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.03,
+          "speed": 1.02,
+          "path": "audio/waitress_1.mp3",
+          "duration": 1.95,
+          "peak": 0.75462,
+          "rms": 0.07775,
+          "sha256": "a344db40d10c65ad60304a7b88fc63d29c95e8cd1d4d8087542e5a95862301a2"
+        },
+        {
+          "number": 2,
+          "label": "Официантка 2",
+          "description": "Чёткий средний женский, деловой.",
+          "model": "irina",
+          "pitch": 0.91,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/waitress_2.mp3",
+          "duration": 2.067,
+          "peak": 0.74846,
+          "rms": 0.08058,
+          "sha256": "4377717d3e9a0530e4c02242bddb2e68772c20fb2427a78975f4b78d35a7857c"
+        },
+        {
+          "number": 3,
+          "label": "Официантка 3",
+          "description": "Низковатый спокойный женский, чуть усталый.",
+          "model": "irina",
+          "pitch": 1.13,
+          "formant": 1.07,
+          "speed": 1.06,
+          "path": "audio/waitress_3.mp3",
+          "duration": 1.875,
+          "peak": 0.75475,
+          "rms": 0.08133,
+          "sha256": "5df8e3d0d70b425ebc1d145dae26c3d9d384df8630f5b8780eb9374712ca94a5"
+        }
+      ]
+    },
+    {
+      "id": "Woman_1",
+      "name": "Женщина 1",
+      "kind": "adult_woman",
+      "text": "Здравствуйте. Я посетительница кафе.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Женщина 1 1",
+          "description": "Зрелый женский, низковатый и обеспокоенный.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.03,
+          "speed": 1.02,
+          "path": "audio/woman_1_1.mp3",
+          "duration": 2.547,
+          "peak": 0.7476,
+          "rms": 0.06831,
+          "sha256": "efec324a69eb8a614c8cbd3a5aab30ea47747e2ef2f06a6a71abbb1e556d13bc"
+        },
+        {
+          "number": 2,
+          "label": "Женщина 1 2",
+          "description": "Средний женский, быстрый и взволнованный.",
+          "model": "irina",
+          "pitch": 0.91,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/woman_1_2.mp3",
+          "duration": 2.683,
+          "peak": 0.75182,
+          "rms": 0.0683,
+          "sha256": "74fd041a07a0a8013890ce4adeb07e741c4b692ab10e550770c2591e82f06509"
+        },
+        {
+          "number": 3,
+          "label": "Женщина 1 3",
+          "description": "Мягкий женский, тихий и серьёзный.",
+          "model": "irina",
+          "pitch": 1.13,
+          "formant": 1.07,
+          "speed": 1.06,
+          "path": "audio/woman_1_3.mp3",
+          "duration": 2.446,
+          "peak": 0.74677,
+          "rms": 0.06846,
+          "sha256": "8db58f0ed23c9cab1f1798e59011260c9fbdec37e337e5655adbfa38a61ef713"
+        }
+      ]
+    },
+    {
+      "id": "Woman_2",
+      "name": "Женщина 2",
+      "kind": "adult_woman",
+      "text": "Здравствуйте. Я посетительница кафе.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Женщина 2 1",
+          "description": "Светлый взрослый женский, разговорный.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.03,
+          "speed": 1.02,
+          "path": "audio/woman_2_1.mp3",
+          "duration": 2.547,
+          "peak": 0.7476,
+          "rms": 0.06831,
+          "sha256": "efec324a69eb8a614c8cbd3a5aab30ea47747e2ef2f06a6a71abbb1e556d13bc"
+        },
+        {
+          "number": 2,
+          "label": "Женщина 2 2",
+          "description": "Густой средний женский, уверенный.",
+          "model": "irina",
+          "pitch": 0.91,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/woman_2_2.mp3",
+          "duration": 2.683,
+          "peak": 0.75182,
+          "rms": 0.0683,
+          "sha256": "74fd041a07a0a8013890ce4adeb07e741c4b692ab10e550770c2591e82f06509"
+        },
+        {
+          "number": 3,
+          "label": "Женщина 2 3",
+          "description": "Немного носовой женский, быстрый и любопытный.",
+          "model": "irina",
+          "pitch": 1.13,
+          "formant": 1.07,
+          "speed": 1.06,
+          "path": "audio/woman_2_3.mp3",
+          "duration": 2.446,
+          "peak": 0.74677,
+          "rms": 0.06846,
+          "sha256": "8db58f0ed23c9cab1f1798e59011260c9fbdec37e337e5655adbfa38a61ef713"
+        }
+      ]
+    },
+    {
+      "id": "Woman",
+      "name": "Женщина",
+      "kind": "adult_woman",
+      "text": "Здравствуйте. Я живу в этом городе.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Женщина 1",
+          "description": "Средний взрослый женский, размеренный.",
+          "model": "irina",
+          "pitch": 1.04,
+          "formant": 1.03,
+          "speed": 1.02,
+          "path": "audio/woman_1.mp3",
+          "duration": 2.363,
+          "peak": 0.75331,
+          "rms": 0.08881,
+          "sha256": "11649e037be1eb6a9e3f654dfb819eddbdc26362930bcc3e15fbba46923eaae1"
+        },
+        {
+          "number": 2,
+          "label": "Женщина 2",
+          "description": "Низковатый женский с лёгкой хрипотцой, серьёзный.",
+          "model": "irina",
+          "pitch": 0.91,
+          "formant": 0.95,
+          "speed": 0.97,
+          "path": "audio/woman_2.mp3",
+          "duration": 2.503,
+          "peak": 0.75328,
+          "rms": 0.09365,
+          "sha256": "dd6d1c70f83ace805959b723c319b10fcaf42113c56b8a5aad848ab55d107f53"
+        },
+        {
+          "number": 3,
+          "label": "Женщина 3",
+          "description": "Светлый женский, мягкий и тревожный.",
+          "model": "irina",
+          "pitch": 1.13,
+          "formant": 1.07,
+          "speed": 1.06,
+          "path": "audio/woman_3.mp3",
+          "duration": 2.275,
+          "peak": 0.75501,
+          "rms": 0.08524,
+          "sha256": "8ae23d7151413c81ca5db15c895cf422826ab5dadf8bf156c6235ddd8ea49a67"
+        }
+      ]
+    },
+    {
+      "id": "Man",
+      "name": "Мужчина",
+      "kind": "adult_man",
+      "text": "Здравствуйте. Я живу в этом городе.",
+      "variants": [
+        {
+          "number": 1,
+          "label": "Мужчина 1",
+          "description": "Средний взрослый мужской, разговорный.",
+          "model": "dmitri",
+          "pitch": 0.98,
+          "formant": 0.99,
+          "speed": 0.98,
+          "path": "audio/man_1.mp3",
+          "duration": 2.067,
+          "peak": 0.75398,
+          "rms": 0.0861,
+          "sha256": "7446995dbceea94c608d09ccf59bc5cb68a3ca4e9daeb4d47c2b5226a14e0aca"
+        },
+        {
+          "number": 2,
+          "label": "Мужчина 2",
+          "description": "Низкий хрипловатый мужской, серьёзный.",
+          "model": "ruslan",
+          "pitch": 1.0,
+          "formant": 1.0,
+          "speed": 1.0,
+          "path": "audio/man_2.mp3",
+          "duration": 2.426,
+          "peak": 0.75439,
+          "rms": 0.06344,
+          "sha256": "8fd1ae5167d6e8dca4ab98bf34e7c6a1e831c829b4fb568284cda00be7ad0985"
+        },
+        {
+          "number": 3,
+          "label": "Мужчина 3",
+          "description": "Светлый мужской, чёткий и немного взволнованный.",
+          "model": "denis",
+          "pitch": 1.02,
+          "formant": 1.01,
+          "speed": 1.04,
+          "path": "audio/man_3.mp3",
+          "duration": 2.249,
+          "peak": 0.751,
+          "rms": 0.10911,
+          "sha256": "ecb129cf25cbdca2b208944edca5eb8659867a6c69d64b803d9aee604782c0ca"
+        }
+      ]
+    }
+  ]
+}

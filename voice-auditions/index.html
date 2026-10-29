@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Reverse Falls — выбор голосов</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark;background:#07111d;color:#e7f0f7;--muted:#a8bed0;--accent:#a6e1f1;--line:#284358}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 90% 0,#19495755,transparent 45%);min-height:100vh}main{max-width:1260px;margin:auto;padding:48px 24px 60px}.eyebrow{font-size:.77rem;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin:0 0 14px}h1{font-weight:600;font-size:clamp(2rem,5vw,3.3rem);line-height:1.13;margin:0 0 20px}header p{max-width:900px;color:var(--muted);line-height:1.65;margin:10px 0}.status{display:inline-block;color:#d7e8cd;background:#294234;padding:6px 10px;border-radius:5px;font-size:.84rem;margin-bottom:10px}.controls{display:flex;gap:14px;align-items:end;flex-wrap:wrap;margin:30px 0 18px}.search{display:flex;flex-direction:column;gap:8px;flex:1;min-width:230px;font-size:.84rem;color:var(--muted)}input,button{font:inherit}input{padding:12px 14px;background:#0b1d2b;border:1px solid #406177;color:#eef7ff;border-radius:7px;min-height:46px}button{padding:11px 15px;background:#163245;border:1px solid #4f7790;color:#e3f3fc;border-radius:7px;cursor:pointer;min-height:44px}button:hover{background:#20465e}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #bef2ff;outline-offset:4px}button[aria-pressed=true]{background:#b0e5f1;border-color:#d5f4ff;color:#071722}button.secondary{background:transparent;color:var(--muted)}#summary{font-size:.88rem;color:var(--muted);min-height:1.5em;margin:0 0 26px}#message{color:var(--accent);min-height:1.5em;font-size:.9rem}.voice-card{padding:26px;margin-bottom:24px;border:1px solid var(--line);border-radius:13px;background:#0d2030bd}.card-heading{display:flex;align-items:center;justify-content:space-between;gap:14px}.card-heading h2{margin:0;font-size:1.65rem;font-weight:600}.age{font-size:.9rem;color:#b8d1e0;white-space:nowrap}.transcript{font-size:.94rem;color:var(--muted);line-height:1.5;margin:12px 0 24px}.variants{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.variant{min-width:0;padding:18px;border:1px solid #274356;border-radius:9px;background:#0a1827}.variant.selected{border-color:#a6e1f1;background:#123347}.variant-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px}h3{font-size:1rem;font-weight:600;margin:0}.choice-state{color:var(--accent);font-size:.75rem;white-space:nowrap}.direction{font-size:.86rem;line-height:1.55;color:var(--muted);min-height:4.65em;margin:12px 0 18px}audio{display:block;width:100%;height:42px;margin:0 0 16px}.variant-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.choose{font-size:.82rem;padding:9px 10px}.variant-actions a{font-size:.8rem;margin-left:auto;color:#b5dfef;text-underline-offset:3px}.empty{padding:36px 12px;color:var(--muted);text-align:center}footer{font-size:.85rem;color:var(--muted);line-height:1.65;margin-top:30px}footer p{margin:10px 0}[hidden]{display:none!important}@media(max-width:930px){.variants{grid-template-columns:1fr}.direction{min-height:0}.variant-actions{justify-content:space-between}.variant-actions a{margin-left:0}.voice-card{padding:20px}}@media(max-width:560px){main{padding:30px 14px 42px}.controls>button{flex:1;font-size:.84rem}.voice-card{padding:16px}.variant{padding:15px}.card-heading h2{font-size:1.4rem}.controls{gap:10px}.search{flex-basis:100%}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="eyebrow">Reverse Falls · пробы озвучки</p>
+<h1>Выбери голоса персонажей</h1>
+<span class="status">Экспериментальные образцы · пока не одобрены</span>
+<p>Для каждого персонажа — три коротких варианта одной фразы. Послушай их и отметь понравившийся. Это только пробы: в игру озвучка не добавлена.</p>
+<p>Варианты созданы синтетически на четырёх базовых моделях. В том числе три женских варианта — разные обработки одного базового голоса Ирины, а не три актрисы.</p>
+</header>
+<div class="controls">
+<label class="search" for="search">Найти персонажа<input id="search" type="search" autocomplete="off" placeholder="Гидеон, Венди, Мейбл…"></label>
+<button id="export" type="button">Скачать мой выбор</button>
+<button id="clear" class="secondary" type="button">Сбросить выбор</button>
+</div>
+<p id="summary" role="status" aria-live="polite"></p>
+<p id="message" role="status" aria-live="polite"></p>
+<section id="voices" aria-label="Варианты голосов"><article class="voice-card" data-search="гидеон gideon" aria-labelledby="voice-0">
+      <div class="card-heading"><h2 id="voice-0">Гидеон</h2><span class=age>12 лет</span></div>
+      <p class="transcript">«Привет. Меня зовут Гидеон.»</p>
+      <div class="variants"><section class="variant" data-voice="Gideon" data-number="1">
+          <div class="variant-heading"><h3>Гидеон 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый детский, слегка писклявый; спокойная сухая подача.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гидеон 1" src="audio/gideon_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Gideon" data-number="1" aria-pressed="false">Выбрать Гидеон 1</button><a href="audio/gideon_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Gideon" data-number="2">
+          <div class="variant-heading"><h3>Гидеон 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мягкий мальчишеский, чуть носовой; сдержанный и наблюдательный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гидеон 2" src="audio/gideon_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Gideon" data-number="2" aria-pressed="false">Выбрать Гидеон 2</button><a href="audio/gideon_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Gideon" data-number="3">
+          <div class="variant-heading"><h3>Гидеон 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Тонкий звонкий детский, с лёгкой хрипотцой; невозмутимый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гидеон 3" src="audio/gideon_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Gideon" data-number="3" aria-pressed="false">Выбрать Гидеон 3</button><a href="audio/gideon_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="пасифика pacifica" aria-labelledby="voice-1">
+      <div class="card-heading"><h2 id="voice-1">Пасифика</h2><span class=age>14 лет</span></div>
+      <p class="transcript">«Привет. Меня зовут Пасифика.»</p>
+      <div class="variants"><section class="variant" data-voice="Pacifica" data-number="1">
+          <div class="variant-heading"><h3>Пасифика 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Звонкий подростковый, энергичный и уверенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Пасифика 1" src="audio/pacifica_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Pacifica" data-number="1" aria-pressed="false">Выбрать Пасифика 1</button><a href="audio/pacifica_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Pacifica" data-number="2">
+          <div class="variant-heading"><h3>Пасифика 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Тёплый юный, живой и чуть дерзкий.</p>
+          <audio controls preload="none" aria-label="Прослушать: Пасифика 2" src="audio/pacifica_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Pacifica" data-number="2" aria-pressed="false">Выбрать Пасифика 2</button><a href="audio/pacifica_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Pacifica" data-number="3">
+          <div class="variant-heading"><h3>Пасифика 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Чёткий подростковый, немного ниже и решительнее.</p>
+          <audio controls preload="none" aria-label="Прослушать: Пасифика 3" src="audio/pacifica_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Pacifica" data-number="3" aria-pressed="false">Выбрать Пасифика 3</button><a href="audio/pacifica_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="мейбл mabel" aria-labelledby="voice-2">
+      <div class="card-heading"><h2 id="voice-2">Мейбл</h2><span class=age>15 лет</span></div>
+      <p class="transcript">«Привет. Меня зовут Мейбл.»</p>
+      <div class="variants"><section class="variant" data-voice="Mabel" data-number="1">
+          <div class="variant-heading"><h3>Мейбл 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Яркий подростковый, улыбчивый и самоуверенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Мейбл 1" src="audio/mabel_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mabel" data-number="1" aria-pressed="false">Выбрать Мейбл 1</button><a href="audio/mabel_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Mabel" data-number="2">
+          <div class="variant-heading"><h3>Мейбл 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Бархатистый юный, игривый и контролирующий.</p>
+          <audio controls preload="none" aria-label="Прослушать: Мейбл 2" src="audio/mabel_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mabel" data-number="2" aria-pressed="false">Выбрать Мейбл 2</button><a href="audio/mabel_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Mabel" data-number="3">
+          <div class="variant-heading"><h3>Мейбл 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Звонкий подростковый, быстрый и язвительный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Мейбл 3" src="audio/mabel_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mabel" data-number="3" aria-pressed="false">Выбрать Мейбл 3</button><a href="audio/mabel_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="диппер dipper" aria-labelledby="voice-3">
+      <div class="card-heading"><h2 id="voice-3">Диппер</h2><span class=age>15 лет</span></div>
+      <p class="transcript">«Привет. Меня зовут Диппер.»</p>
+      <div class="variants"><section class="variant" data-voice="Dipper" data-number="1">
+          <div class="variant-heading"><h3>Диппер 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Молодой подростковый, ровный и холодноватый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Диппер 1" src="audio/dipper_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Dipper" data-number="1" aria-pressed="false">Выбрать Диппер 1</button><a href="audio/dipper_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Dipper" data-number="2">
+          <div class="variant-heading"><h3>Диппер 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Чуть ниже, собранный и расчётливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Диппер 2" src="audio/dipper_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Dipper" data-number="2" aria-pressed="false">Выбрать Диппер 2</button><a href="audio/dipper_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Dipper" data-number="3">
+          <div class="variant-heading"><h3>Диппер 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый подростковый, сухой и насмешливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Диппер 3" src="audio/dipper_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Dipper" data-number="3" aria-pressed="false">Выбрать Диппер 3</button><a href="audio/dipper_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="венди wendy" aria-labelledby="voice-4">
+      <div class="card-heading"><h2 id="voice-4">Венди</h2><span class=age>18 лет</span></div>
+      <p class="transcript">«Привет. Меня зовут Венди.»</p>
+      <div class="variants"><section class="variant" data-voice="Wendy" data-number="1">
+          <div class="variant-heading"><h3>Венди 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Красивый молодой женский, низковатый, расслабленный; лёгкая хрипотца.</p>
+          <audio controls preload="none" aria-label="Прослушать: Венди 1" src="audio/wendy_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Wendy" data-number="1" aria-pressed="false">Выбрать Венди 1</button><a href="audio/wendy_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Wendy" data-number="2">
+          <div class="variant-heading"><h3>Венди 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Чистый и тёплый молодой женский; уверенный, с дерзкой улыбкой.</p>
+          <audio controls preload="none" aria-label="Прослушать: Венди 2" src="audio/wendy_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Wendy" data-number="2" aria-pressed="false">Выбрать Венди 2</button><a href="audio/wendy_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Wendy" data-number="3">
+          <div class="variant-heading"><h3>Венди 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Бархатистый молодой женский, немного носовой; ленивый сарказм.</p>
+          <audio controls preload="none" aria-label="Прослушать: Венди 3" src="audio/wendy_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Wendy" data-number="3" aria-pressed="false">Выбрать Венди 3</button><a href="audio/wendy_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="зус soos" aria-labelledby="voice-5">
+      <div class="card-heading"><h2 id="voice-5">Зус</h2></div>
+      <p class="transcript">«Привет. Меня зовут Зус.»</p>
+      <div class="variants"><section class="variant" data-voice="sooS" data-number="1">
+          <div class="variant-heading"><h3>Зус 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Тёплый низкий мужской, мягкий и добродушный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Зус 1" src="audio/soos_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="sooS" data-number="1" aria-pressed="false">Выбрать Зус 1</button><a href="audio/soos_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="sooS" data-number="2">
+          <div class="variant-heading"><h3>Зус 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Густой округлый мужской, простодушный и комедийный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Зус 2" src="audio/soos_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="sooS" data-number="2" aria-pressed="false">Выбрать Зус 2</button><a href="audio/soos_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="sooS" data-number="3">
+          <div class="variant-heading"><h3>Зус 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Чуть носовой средний мужской, живой и разговорный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Зус 3" src="audio/soos_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="sooS" data-number="3" aria-pressed="false">Выбрать Зус 3</button><a href="audio/soos_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="уилл will" aria-labelledby="voice-6">
+      <div class="card-heading"><h2 id="voice-6">Уилл</h2></div>
+      <p class="transcript">«Привет. Меня зовут Уилл.»</p>
+      <div class="variants"><section class="variant" data-voice="Will" data-number="1">
+          <div class="variant-heading"><h3>Уилл 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мягкий светлый мужской, тихий и загадочный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Уилл 1" src="audio/will_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Will" data-number="1" aria-pressed="false">Выбрать Уилл 1</button><a href="audio/will_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Will" data-number="2">
+          <div class="variant-heading"><h3>Уилл 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Тонкий молодой мужской, осторожный и чуть нервный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Уилл 2" src="audio/will_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Will" data-number="2" aria-pressed="false">Выбрать Уилл 2</button><a href="audio/will_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Will" data-number="3">
+          <div class="variant-heading"><h3>Уилл 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Спокойный бархатистый мужской, ровный и неоднозначный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Уилл 3" src="audio/will_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Will" data-number="3" aria-pressed="false">Выбрать Уилл 3</button><a href="audio/will_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="билл bill" aria-labelledby="voice-7">
+      <div class="card-heading"><h2 id="voice-7">Билл</h2></div>
+      <p class="transcript">«Привет. Меня зовут Билл.»</p>
+      <div class="variants"><section class="variant" data-voice="Bill" data-number="1">
+          <div class="variant-heading"><h3>Билл 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Высоковатый мужской, звонкий и театрально насмешливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Билл 1" src="audio/bill_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Bill" data-number="1" aria-pressed="false">Выбрать Билл 1</button><a href="audio/bill_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Bill" data-number="2">
+          <div class="variant-heading"><h3>Билл 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний суховатый мужской, уверенный и ехидный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Билл 2" src="audio/bill_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Bill" data-number="2" aria-pressed="false">Выбрать Билл 2</button><a href="audio/bill_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Bill" data-number="3">
+          <div class="variant-heading"><h3>Билл 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Глубокий мужской, гладкий и тревожно приветливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Билл 3" src="audio/bill_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Bill" data-number="3" aria-pressed="false">Выбрать Билл 3</button><a href="audio/bill_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="робби robbie" aria-labelledby="voice-8">
+      <div class="card-heading"><h2 id="voice-8">Робби</h2></div>
+      <p class="transcript">«Привет. Меня зовут Робби.»</p>
+      <div class="variants"><section class="variant" data-voice="Robbie" data-number="1">
+          <div class="variant-heading"><h3>Робби 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Молодой низковатый мужской, ленивый и слегка хриплый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Робби 1" src="audio/robbie_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Robbie" data-number="1" aria-pressed="false">Выбрать Робби 1</button><a href="audio/robbie_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Robbie" data-number="2">
+          <div class="variant-heading"><h3>Робби 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Сухой молодой мужской, отстранённый и носовой.</p>
+          <audio controls preload="none" aria-label="Прослушать: Робби 2" src="audio/robbie_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Robbie" data-number="2" aria-pressed="false">Выбрать Робби 2</button><a href="audio/robbie_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Robbie" data-number="3">
+          <div class="variant-heading"><h3>Робби 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Тёплый средний мужской, негромкий и мрачноватый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Робби 3" src="audio/robbie_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Robbie" data-number="3" aria-pressed="false">Выбрать Робби 3</button><a href="audio/robbie_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="кэнди candy" aria-labelledby="voice-9">
+      <div class="card-heading"><h2 id="voice-9">Кэнди</h2></div>
+      <p class="transcript">«Привет. Меня зовут Кэнди.»</p>
+      <div class="variants"><section class="variant" data-voice="Candy" data-number="1">
+          <div class="variant-heading"><h3>Кэнди 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый юный женский, быстрый и любопытный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Кэнди 1" src="audio/candy_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Candy" data-number="1" aria-pressed="false">Выбрать Кэнди 1</button><a href="audio/candy_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Candy" data-number="2">
+          <div class="variant-heading"><h3>Кэнди 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мягкий высокий женский, немного носовой и стеснительный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Кэнди 2" src="audio/candy_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Candy" data-number="2" aria-pressed="false">Выбрать Кэнди 2</button><a href="audio/candy_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Candy" data-number="3">
+          <div class="variant-heading"><h3>Кэнди 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Звонкий юный женский, чёткий и уверенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Кэнди 3" src="audio/candy_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Candy" data-number="3" aria-pressed="false">Выбрать Кэнди 3</button><a href="audio/candy_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="гренда grenda" aria-labelledby="voice-10">
+      <div class="card-heading"><h2 id="voice-10">Гренда</h2></div>
+      <p class="transcript">«Привет. Меня зовут Гренда.»</p>
+      <div class="variants"><section class="variant" data-voice="Grenda" data-number="1">
+          <div class="variant-heading"><h3>Гренда 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Юный женский с густым низковатым тембром, уверенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гренда 1" src="audio/grenda_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Grenda" data-number="1" aria-pressed="false">Выбрать Гренда 1</button><a href="audio/grenda_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Grenda" data-number="2">
+          <div class="variant-heading"><h3>Гренда 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низкий хрипловатый женский, громкий и прямой.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гренда 2" src="audio/grenda_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Grenda" data-number="2" aria-pressed="false">Выбрать Гренда 2</button><a href="audio/grenda_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Grenda" data-number="3">
+          <div class="variant-heading"><h3>Гренда 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний округлый женский, энергичный и дружелюбный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гренда 3" src="audio/grenda_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Grenda" data-number="3" aria-pressed="false">Выбрать Гренда 3</button><a href="audio/grenda_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="бад bud" aria-labelledby="voice-11">
+      <div class="card-heading"><h2 id="voice-11">Бад</h2></div>
+      <p class="transcript">«Привет. Меня зовут Бад.»</p>
+      <div class="variants"><section class="variant" data-voice="Bud" data-number="1">
+          <div class="variant-heading"><h3>Бад 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низкий густой мужской, грубоватый и размеренный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Бад 1" src="audio/bud_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Bud" data-number="1" aria-pressed="false">Выбрать Бад 1</button><a href="audio/bud_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Bud" data-number="2">
+          <div class="variant-heading"><h3>Бад 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний мужской с хрипотцой, усталый и ворчливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Бад 2" src="audio/bud_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Bud" data-number="2" aria-pressed="false">Выбрать Бад 2</button><a href="audio/bud_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Bud" data-number="3">
+          <div class="variant-heading"><h3>Бад 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Глубокий мужской, напористый и властный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Бад 3" src="audio/bud_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Bud" data-number="3" aria-pressed="false">Выбрать Бад 3</button><a href="audio/bud_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="престон preston" aria-labelledby="voice-12">
+      <div class="card-heading"><h2 id="voice-12">Престон</h2></div>
+      <p class="transcript">«Привет. Меня зовут Престон.»</p>
+      <div class="variants"><section class="variant" data-voice="Preston" data-number="1">
+          <div class="variant-heading"><h3>Престон 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Глубокий мужской, строгий и сдержанный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Престон 1" src="audio/preston_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Preston" data-number="1" aria-pressed="false">Выбрать Престон 1</button><a href="audio/preston_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Preston" data-number="2">
+          <div class="variant-heading"><h3>Престон 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний гладкий мужской, холодно-вежливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Престон 2" src="audio/preston_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Preston" data-number="2" aria-pressed="false">Выбрать Престон 2</button><a href="audio/preston_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Preston" data-number="3">
+          <div class="variant-heading"><h3>Престон 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низкий сухой мужской, резкий и требовательный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Престон 3" src="audio/preston_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Preston" data-number="3" aria-pressed="false">Выбрать Престон 3</button><a href="audio/preston_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="присцилла priscilla" aria-labelledby="voice-13">
+      <div class="card-heading"><h2 id="voice-13">Присцилла</h2></div>
+      <p class="transcript">«Привет. Меня зовут Присцилла.»</p>
+      <div class="variants"><section class="variant" data-voice="Priscilla" data-number="1">
+          <div class="variant-heading"><h3>Присцилла 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний женский, собранный и холодно-вежливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Присцилла 1" src="audio/priscilla_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Priscilla" data-number="1" aria-pressed="false">Выбрать Присцилла 1</button><a href="audio/priscilla_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Priscilla" data-number="2">
+          <div class="variant-heading"><h3>Присцилла 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый бархатистый женский, уверенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Присцилла 2" src="audio/priscilla_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Priscilla" data-number="2" aria-pressed="false">Выбрать Присцилла 2</button><a href="audio/priscilla_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Priscilla" data-number="3">
+          <div class="variant-heading"><h3>Присцилла 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Высоковатый чёткий женский, требовательный и отрывистый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Присцилла 3" src="audio/priscilla_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Priscilla" data-number="3" aria-pressed="false">Выбрать Присцилла 3</button><a href="audio/priscilla_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="блабс blubs" aria-labelledby="voice-14">
+      <div class="card-heading"><h2 id="voice-14">Блабс</h2></div>
+      <p class="transcript">«Привет. Меня зовут Блабс.»</p>
+      <div class="variants"><section class="variant" data-voice="Blubs" data-number="1">
+          <div class="variant-heading"><h3>Блабс 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низкий округлый мужской, неторопливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Блабс 1" src="audio/blubs_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Blubs" data-number="1" aria-pressed="false">Выбрать Блабс 1</button><a href="audio/blubs_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Blubs" data-number="2">
+          <div class="variant-heading"><h3>Блабс 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний хрипловатый мужской, деловитый и простой.</p>
+          <audio controls preload="none" aria-label="Прослушать: Блабс 2" src="audio/blubs_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Blubs" data-number="2" aria-pressed="false">Выбрать Блабс 2</button><a href="audio/blubs_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Blubs" data-number="3">
+          <div class="variant-heading"><h3>Блабс 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Густой мужской, громкий и комедийно серьёзный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Блабс 3" src="audio/blubs_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Blubs" data-number="3" aria-pressed="false">Выбрать Блабс 3</button><a href="audio/blubs_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="констебль constable" aria-labelledby="voice-15">
+      <div class="card-heading"><h2 id="voice-15">Констебль</h2></div>
+      <p class="transcript">«Привет. Меня зовут Констебль.»</p>
+      <div class="variants"><section class="variant" data-voice="Constable" data-number="1">
+          <div class="variant-heading"><h3>Констебль 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний мужской, официальный и чёткий.</p>
+          <audio controls preload="none" aria-label="Прослушать: Констебль 1" src="audio/constable_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Constable" data-number="1" aria-pressed="false">Выбрать Констебль 1</button><a href="audio/constable_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Constable" data-number="2">
+          <div class="variant-heading"><h3>Констебль 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый сухой мужской, серьёзный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Констебль 2" src="audio/constable_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Constable" data-number="2" aria-pressed="false">Выбрать Констебль 2</button><a href="audio/constable_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Constable" data-number="3">
+          <div class="variant-heading"><h3>Констебль 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый мужской, немного носовой и деловитый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Констебль 3" src="audio/constable_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Constable" data-number="3" aria-pressed="false">Выбрать Констебль 3</button><a href="audio/constable_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="тоби toby" aria-labelledby="voice-16">
+      <div class="card-heading"><h2 id="voice-16">Тоби</h2></div>
+      <p class="transcript">«Привет. Меня зовут Тоби.»</p>
+      <div class="variants"><section class="variant" data-voice="Toby" data-number="1">
+          <div class="variant-heading"><h3>Тоби 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мягкий средний мужской, чуть гнусавый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Тоби 1" src="audio/toby_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Toby" data-number="1" aria-pressed="false">Выбрать Тоби 1</button><a href="audio/toby_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Toby" data-number="2">
+          <div class="variant-heading"><h3>Тоби 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый усталый мужской, медленный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Тоби 2" src="audio/toby_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Toby" data-number="2" aria-pressed="false">Выбрать Тоби 2</button><a href="audio/toby_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Toby" data-number="3">
+          <div class="variant-heading"><h3>Тоби 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Высоковатый разговорный мужской, суетливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Тоби 3" src="audio/toby_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Toby" data-number="3" aria-pressed="false">Выбрать Тоби 3</button><a href="audio/toby_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="скот scot" aria-labelledby="voice-17">
+      <div class="card-heading"><h2 id="voice-17">Скот</h2></div>
+      <p class="transcript">«Привет. Меня зовут Скот.»</p>
+      <div class="variants"><section class="variant" data-voice="Scot" data-number="1">
+          <div class="variant-heading"><h3>Скот 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Густой мужской, громкий и уверенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Скот 1" src="audio/scot_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Scot" data-number="1" aria-pressed="false">Выбрать Скот 1</button><a href="audio/scot_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Scot" data-number="2">
+          <div class="variant-heading"><h3>Скот 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний мужской с хрипотцой, резкий.</p>
+          <audio controls preload="none" aria-label="Прослушать: Скот 2" src="audio/scot_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Scot" data-number="2" aria-pressed="false">Выбрать Скот 2</button><a href="audio/scot_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Scot" data-number="3">
+          <div class="variant-heading"><h3>Скот 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый мужской, быстрый и напористый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Скот 3" src="audio/scot_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Scot" data-number="3" aria-pressed="false">Выбрать Скот 3</button><a href="audio/scot_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="гамбол gumball" aria-labelledby="voice-18">
+      <div class="card-heading"><h2 id="voice-18">Гамбол</h2></div>
+      <p class="transcript">«Привет. Меня зовут Гамбол.»</p>
+      <div class="variants"><section class="variant" data-voice="Gumball" data-number="1">
+          <div class="variant-heading"><h3>Гамбол 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Звонкий юный мужской, быстрый и озорной.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гамбол 1" src="audio/gumball_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Gumball" data-number="1" aria-pressed="false">Выбрать Гамбол 1</button><a href="audio/gumball_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Gumball" data-number="2">
+          <div class="variant-heading"><h3>Гамбол 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый слегка носовой мальчишеский, разговорный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гамбол 2" src="audio/gumball_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Gumball" data-number="2" aria-pressed="false">Выбрать Гамбол 2</button><a href="audio/gumball_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Gumball" data-number="3">
+          <div class="variant-heading"><h3>Гамбол 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний юный мужской, самоуверенный и насмешливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Гамбол 3" src="audio/gumball_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Gumball" data-number="3" aria-pressed="false">Выбрать Гамбол 3</button><a href="audio/gumball_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="дарвин darwin" aria-labelledby="voice-19">
+      <div class="card-heading"><h2 id="voice-19">Дарвин</h2></div>
+      <p class="transcript">«Привет. Меня зовут Дарвин.»</p>
+      <div class="variants"><section class="variant" data-voice="Darwin" data-number="1">
+          <div class="variant-heading"><h3>Дарвин 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мягкий высокий мальчишеский, добрый и живой.</p>
+          <audio controls preload="none" aria-label="Прослушать: Дарвин 1" src="audio/darwin_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Darwin" data-number="1" aria-pressed="false">Выбрать Дарвин 1</button><a href="audio/darwin_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Darwin" data-number="2">
+          <div class="variant-heading"><h3>Дарвин 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Звонкий юный мужской, наивный и быстрый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Дарвин 2" src="audio/darwin_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Darwin" data-number="2" aria-pressed="false">Выбрать Дарвин 2</button><a href="audio/darwin_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Darwin" data-number="3">
+          <div class="variant-heading"><h3>Дарвин 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Тёплый мальчишеский, чуть носовой и спокойный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Дарвин 3" src="audio/darwin_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Darwin" data-number="3" aria-pressed="false">Выбрать Дарвин 3</button><a href="audio/darwin_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="николь nicole" aria-labelledby="voice-20">
+      <div class="card-heading"><h2 id="voice-20">Николь</h2></div>
+      <p class="transcript">«Привет. Меня зовут Николь.»</p>
+      <div class="variants"><section class="variant" data-voice="Nicole" data-number="1">
+          <div class="variant-heading"><h3>Николь 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Чёткий средний женский, собранный и уверенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Николь 1" src="audio/nicole_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Nicole" data-number="1" aria-pressed="false">Выбрать Николь 1</button><a href="audio/nicole_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Nicole" data-number="2">
+          <div class="variant-heading"><h3>Николь 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый густой женский, строгий.</p>
+          <audio controls preload="none" aria-label="Прослушать: Николь 2" src="audio/nicole_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Nicole" data-number="2" aria-pressed="false">Выбрать Николь 2</button><a href="audio/nicole_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Nicole" data-number="3">
+          <div class="variant-heading"><h3>Николь 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый взрослый женский, энергичный и прямой.</p>
+          <audio controls preload="none" aria-label="Прослушать: Николь 3" src="audio/nicole_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Nicole" data-number="3" aria-pressed="false">Выбрать Николь 3</button><a href="audio/nicole_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="утка-тив ducktective" aria-labelledby="voice-21">
+      <div class="card-heading"><h2 id="voice-21">Утка-Тив</h2></div>
+      <p class="transcript">«Привет. Меня зовут Утка-Тив.»</p>
+      <div class="variants"><section class="variant" data-voice="Ducktective" data-number="1">
+          <div class="variant-heading"><h3>Утка-Тив 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Хриплый высокий мультяшный, чётко различимая речь.</p>
+          <audio controls preload="none" aria-label="Прослушать: Утка-Тив 1" src="audio/ducktective_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Ducktective" data-number="1" aria-pressed="false">Выбрать Утка-Тив 1</button><a href="audio/ducktective_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Ducktective" data-number="2">
+          <div class="variant-heading"><h3>Утка-Тив 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низкий ворчливый мультяшный, детективная серьёзность.</p>
+          <audio controls preload="none" aria-label="Прослушать: Утка-Тив 2" src="audio/ducktective_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Ducktective" data-number="2" aria-pressed="false">Выбрать Утка-Тив 2</button><a href="audio/ducktective_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Ducktective" data-number="3">
+          <div class="variant-heading"><h3>Утка-Тив 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний гнусавый мультяшный, быстрый и комедийный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Утка-Тив 3" src="audio/ducktective_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Ducktective" data-number="3" aria-pressed="false">Выбрать Утка-Тив 3</button><a href="audio/ducktective_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="маллардарти mallardarty" aria-labelledby="voice-22">
+      <div class="card-heading"><h2 id="voice-22">Маллардарти</h2></div>
+      <p class="transcript">«Привет. Меня зовут Маллардарти.»</p>
+      <div class="variants"><section class="variant" data-voice="Mallardarty" data-number="1">
+          <div class="variant-heading"><h3>Маллардарти 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Глубокий театральный мужской, размеренный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Маллардарти 1" src="audio/mallardarty_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mallardarty" data-number="1" aria-pressed="false">Выбрать Маллардарти 1</button><a href="audio/mallardarty_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Mallardarty" data-number="2">
+          <div class="variant-heading"><h3>Маллардарти 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний носовой мужской, ехидный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Маллардарти 2" src="audio/mallardarty_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mallardarty" data-number="2" aria-pressed="false">Выбрать Маллардарти 2</button><a href="audio/mallardarty_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Mallardarty" data-number="3">
+          <div class="variant-heading"><h3>Маллардарти 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Сухой высокий мужской, острый и эксцентричный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Маллардарти 3" src="audio/mallardarty_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mallardarty" data-number="3" aria-pressed="false">Выбрать Маллардарти 3</button><a href="audio/mallardarty_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="человек-мотылёк mothman" aria-labelledby="voice-23">
+      <div class="card-heading"><h2 id="voice-23">Человек-мотылёк</h2></div>
+      <p class="transcript">«Привет. Меня зовут Человек-мотылёк.»</p>
+      <div class="variants"><section class="variant" data-voice="Mothman" data-number="1">
+          <div class="variant-heading"><h3>Человек-мотылёк 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Очень низкий шершавый, медленный, но разборчивый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Человек-мотылёк 1" src="audio/mothman_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mothman" data-number="1" aria-pressed="false">Выбрать Человек-мотылёк 1</button><a href="audio/mothman_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Mothman" data-number="2">
+          <div class="variant-heading"><h3>Человек-мотылёк 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний хриплый, воздушный и тревожный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Человек-мотылёк 2" src="audio/mothman_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mothman" data-number="2" aria-pressed="false">Выбрать Человек-мотылёк 2</button><a href="audio/mothman_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Mothman" data-number="3">
+          <div class="variant-heading"><h3>Человек-мотылёк 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Густой низкий резонирующий, с осторожной тихой подачей.</p>
+          <audio controls preload="none" aria-label="Прослушать: Человек-мотылёк 3" src="audio/mothman_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Mothman" data-number="3" aria-pressed="false">Выбрать Человек-мотылёк 3</button><a href="audio/mothman_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="хелвест helvest" aria-labelledby="voice-24">
+      <div class="card-heading"><h2 id="voice-24">Хелвест</h2></div>
+      <p class="transcript">«Привет. Меня зовут Хелвест.»</p>
+      <div class="variants"><section class="variant" data-voice="Helvest" data-number="1">
+          <div class="variant-heading"><h3>Хелвест 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Спокойный средний мужской, нейтральный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Хелвест 1" src="audio/helvest_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Helvest" data-number="1" aria-pressed="false">Выбрать Хелвест 1</button><a href="audio/helvest_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Helvest" data-number="2">
+          <div class="variant-heading"><h3>Хелвест 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Тёплый низковатый мужской, дружелюбный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Хелвест 2" src="audio/helvest_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Helvest" data-number="2" aria-pressed="false">Выбрать Хелвест 2</button><a href="audio/helvest_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Helvest" data-number="3">
+          <div class="variant-heading"><h3>Хелвест 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый молодой мужской, живой и разговорный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Хелвест 3" src="audio/helvest_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Helvest" data-number="3" aria-pressed="false">Выбрать Хелвест 3</button><a href="audio/helvest_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="рассказчик narrator" aria-labelledby="voice-25">
+      <div class="card-heading"><h2 id="voice-25">Рассказчик</h2></div>
+      <p class="transcript">«Здравствуйте. Я рассказчик этой истории.»</p>
+      <div class="variants"><section class="variant" data-voice="Narrator" data-number="1">
+          <div class="variant-heading"><h3>Рассказчик 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Тёплый мужской средний тембр, ясная спокойная речь.</p>
+          <audio controls preload="none" aria-label="Прослушать: Рассказчик 1" src="audio/narrator_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Narrator" data-number="1" aria-pressed="false">Выбрать Рассказчик 1</button><a href="audio/narrator_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Narrator" data-number="2">
+          <div class="variant-heading"><h3>Рассказчик 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Глубокий мужской, сдержанный и атмосферный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Рассказчик 2" src="audio/narrator_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Narrator" data-number="2" aria-pressed="false">Выбрать Рассказчик 2</button><a href="audio/narrator_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Narrator" data-number="3">
+          <div class="variant-heading"><h3>Рассказчик 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мягкий взрослый женский, ровный и выразительный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Рассказчик 3" src="audio/narrator_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Narrator" data-number="3" aria-pressed="false">Выбрать Рассказчик 3</button><a href="audio/narrator_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="владелец игровых автоматов arcade_owner" aria-labelledby="voice-26">
+      <div class="card-heading"><h2 id="voice-26">Владелец игровых автоматов</h2></div>
+      <p class="transcript">«Здравствуйте. Я владелец игровых автоматов.»</p>
+      <div class="variants"><section class="variant" data-voice="Arcade_Owner" data-number="1">
+          <div class="variant-heading"><h3>Владелец игровых автоматов 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Громкий средний мужской, деловой.</p>
+          <audio controls preload="none" aria-label="Прослушать: Владелец игровых автоматов 1" src="audio/arcade_owner_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Arcade_Owner" data-number="1" aria-pressed="false">Выбрать Владелец игровых автоматов 1</button><a href="audio/arcade_owner_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Arcade_Owner" data-number="2">
+          <div class="variant-heading"><h3>Владелец игровых автоматов 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низкий грубоватый мужской, ворчливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Владелец игровых автоматов 2" src="audio/arcade_owner_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Arcade_Owner" data-number="2" aria-pressed="false">Выбрать Владелец игровых автоматов 2</button><a href="audio/arcade_owner_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Arcade_Owner" data-number="3">
+          <div class="variant-heading"><h3>Владелец игровых автоматов 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Высоковатый носовой мужской, быстрый и раздражительный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Владелец игровых автоматов 3" src="audio/arcade_owner_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Arcade_Owner" data-number="3" aria-pressed="false">Выбрать Владелец игровых автоматов 3</button><a href="audio/arcade_owner_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="кассир cashier" aria-labelledby="voice-27">
+      <div class="card-heading"><h2 id="voice-27">Кассир</h2></div>
+      <p class="transcript">«Здравствуйте. Я кассир.»</p>
+      <div class="variants"><section class="variant" data-voice="Cashier" data-number="1">
+          <div class="variant-heading"><h3>Кассир 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Нейтральный средний мужской, спокойный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Кассир 1" src="audio/cashier_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Cashier" data-number="1" aria-pressed="false">Выбрать Кассир 1</button><a href="audio/cashier_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Cashier" data-number="2">
+          <div class="variant-heading"><h3>Кассир 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый молодой мужской, быстрый и вежливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Кассир 2" src="audio/cashier_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Cashier" data-number="2" aria-pressed="false">Выбрать Кассир 2</button><a href="audio/cashier_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Cashier" data-number="3">
+          <div class="variant-heading"><h3>Кассир 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый усталый мужской, неторопливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Кассир 3" src="audio/cashier_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Cashier" data-number="3" aria-pressed="false">Выбрать Кассир 3</button><a href="audio/cashier_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="покупательница 1 customer_1" aria-labelledby="voice-28">
+      <div class="card-heading"><h2 id="voice-28">Покупательница 1</h2></div>
+      <p class="transcript">«Здравствуйте. Я покупательница.»</p>
+      <div class="variants"><section class="variant" data-voice="Customer_1" data-number="1">
+          <div class="variant-heading"><h3>Покупательница 1 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Звонкий взрослый женский, возмущённый и эмоциональный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Покупательница 1 1" src="audio/customer_1_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Customer_1" data-number="1" aria-pressed="false">Выбрать Покупательница 1 1</button><a href="audio/customer_1_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Customer_1" data-number="2">
+          <div class="variant-heading"><h3>Покупательница 1 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый женский, уверенный и выразительный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Покупательница 1 2" src="audio/customer_1_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Customer_1" data-number="2" aria-pressed="false">Выбрать Покупательница 1 2</button><a href="audio/customer_1_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Customer_1" data-number="3">
+          <div class="variant-heading"><h3>Покупательница 1 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Высоковатый носовой женский, быстрый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Покупательница 1 3" src="audio/customer_1_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Customer_1" data-number="3" aria-pressed="false">Выбрать Покупательница 1 3</button><a href="audio/customer_1_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="покупательница 2 customer_2" aria-labelledby="voice-29">
+      <div class="card-heading"><h2 id="voice-29">Покупательница 2</h2></div>
+      <p class="transcript">«Здравствуйте. Я покупательница.»</p>
+      <div class="variants"><section class="variant" data-voice="Customer_2" data-number="1">
+          <div class="variant-heading"><h3>Покупательница 2 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мягкий средний женский, оживлённый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Покупательница 2 1" src="audio/customer_2_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Customer_2" data-number="1" aria-pressed="false">Выбрать Покупательница 2 1</button><a href="audio/customer_2_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Customer_2" data-number="2">
+          <div class="variant-heading"><h3>Покупательница 2 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый женский, суховато-ироничный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Покупательница 2 2" src="audio/customer_2_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Customer_2" data-number="2" aria-pressed="false">Выбрать Покупательница 2 2</button><a href="audio/customer_2_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Customer_2" data-number="3">
+          <div class="variant-heading"><h3>Покупательница 2 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Густой взрослый женский, спокойный и разговорный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Покупательница 2 3" src="audio/customer_2_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Customer_2" data-number="3" aria-pressed="false">Выбрать Покупательница 2 3</button><a href="audio/customer_2_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="толпа crowd" aria-labelledby="voice-30">
+      <div class="card-heading"><h2 id="voice-30">Толпа</h2></div>
+      <p class="transcript">«Привет! Мы жители этого города.»</p>
+      <div class="variants"><section class="variant" data-voice="Crowd" data-number="1">
+          <div class="variant-heading"><h3>Толпа 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мужской ведущий голос толпы, средний и энергичный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Толпа 1" src="audio/crowd_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Crowd" data-number="1" aria-pressed="false">Выбрать Толпа 1</button><a href="audio/crowd_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Crowd" data-number="2">
+          <div class="variant-heading"><h3>Толпа 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Женский ведущий голос толпы, звонкий и разговорный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Толпа 2" src="audio/crowd_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Crowd" data-number="2" aria-pressed="false">Выбрать Толпа 2</button><a href="audio/crowd_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Crowd" data-number="3">
+          <div class="variant-heading"><h3>Толпа 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый мужской ведущий голос толпы, размеренный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Толпа 3" src="audio/crowd_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Crowd" data-number="3" aria-pressed="false">Выбрать Толпа 3</button><a href="audio/crowd_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="официантка waitress" aria-labelledby="voice-31">
+      <div class="card-heading"><h2 id="voice-31">Официантка</h2></div>
+      <p class="transcript">«Здравствуйте. Я официантка.»</p>
+      <div class="variants"><section class="variant" data-voice="Waitress" data-number="1">
+          <div class="variant-heading"><h3>Официантка 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Молодой женский, тёплый и приветливый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Официантка 1" src="audio/waitress_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Waitress" data-number="1" aria-pressed="false">Выбрать Официантка 1</button><a href="audio/waitress_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Waitress" data-number="2">
+          <div class="variant-heading"><h3>Официантка 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Чёткий средний женский, деловой.</p>
+          <audio controls preload="none" aria-label="Прослушать: Официантка 2" src="audio/waitress_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Waitress" data-number="2" aria-pressed="false">Выбрать Официантка 2</button><a href="audio/waitress_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Waitress" data-number="3">
+          <div class="variant-heading"><h3>Официантка 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый спокойный женский, чуть усталый.</p>
+          <audio controls preload="none" aria-label="Прослушать: Официантка 3" src="audio/waitress_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Waitress" data-number="3" aria-pressed="false">Выбрать Официантка 3</button><a href="audio/waitress_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="женщина 1 woman_1" aria-labelledby="voice-32">
+      <div class="card-heading"><h2 id="voice-32">Женщина 1</h2></div>
+      <p class="transcript">«Здравствуйте. Я посетительница кафе.»</p>
+      <div class="variants"><section class="variant" data-voice="Woman_1" data-number="1">
+          <div class="variant-heading"><h3>Женщина 1 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Зрелый женский, низковатый и обеспокоенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 1 1" src="audio/woman_1_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman_1" data-number="1" aria-pressed="false">Выбрать Женщина 1 1</button><a href="audio/woman_1_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Woman_1" data-number="2">
+          <div class="variant-heading"><h3>Женщина 1 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний женский, быстрый и взволнованный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 1 2" src="audio/woman_1_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman_1" data-number="2" aria-pressed="false">Выбрать Женщина 1 2</button><a href="audio/woman_1_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Woman_1" data-number="3">
+          <div class="variant-heading"><h3>Женщина 1 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Мягкий женский, тихий и серьёзный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 1 3" src="audio/woman_1_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman_1" data-number="3" aria-pressed="false">Выбрать Женщина 1 3</button><a href="audio/woman_1_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="женщина 2 woman_2" aria-labelledby="voice-33">
+      <div class="card-heading"><h2 id="voice-33">Женщина 2</h2></div>
+      <p class="transcript">«Здравствуйте. Я посетительница кафе.»</p>
+      <div class="variants"><section class="variant" data-voice="Woman_2" data-number="1">
+          <div class="variant-heading"><h3>Женщина 2 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый взрослый женский, разговорный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 2 1" src="audio/woman_2_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman_2" data-number="1" aria-pressed="false">Выбрать Женщина 2 1</button><a href="audio/woman_2_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Woman_2" data-number="2">
+          <div class="variant-heading"><h3>Женщина 2 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Густой средний женский, уверенный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 2 2" src="audio/woman_2_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman_2" data-number="2" aria-pressed="false">Выбрать Женщина 2 2</button><a href="audio/woman_2_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Woman_2" data-number="3">
+          <div class="variant-heading"><h3>Женщина 2 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Немного носовой женский, быстрый и любопытный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 2 3" src="audio/woman_2_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman_2" data-number="3" aria-pressed="false">Выбрать Женщина 2 3</button><a href="audio/woman_2_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="женщина woman" aria-labelledby="voice-34">
+      <div class="card-heading"><h2 id="voice-34">Женщина</h2></div>
+      <p class="transcript">«Здравствуйте. Я живу в этом городе.»</p>
+      <div class="variants"><section class="variant" data-voice="Woman" data-number="1">
+          <div class="variant-heading"><h3>Женщина 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний взрослый женский, размеренный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 1" src="audio/woman_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman" data-number="1" aria-pressed="false">Выбрать Женщина 1</button><a href="audio/woman_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Woman" data-number="2">
+          <div class="variant-heading"><h3>Женщина 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низковатый женский с лёгкой хрипотцой, серьёзный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 2" src="audio/woman_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman" data-number="2" aria-pressed="false">Выбрать Женщина 2</button><a href="audio/woman_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Woman" data-number="3">
+          <div class="variant-heading"><h3>Женщина 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый женский, мягкий и тревожный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Женщина 3" src="audio/woman_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Woman" data-number="3" aria-pressed="false">Выбрать Женщина 3</button><a href="audio/woman_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article>
+<article class="voice-card" data-search="мужчина man" aria-labelledby="voice-35">
+      <div class="card-heading"><h2 id="voice-35">Мужчина</h2></div>
+      <p class="transcript">«Здравствуйте. Я живу в этом городе.»</p>
+      <div class="variants"><section class="variant" data-voice="Man" data-number="1">
+          <div class="variant-heading"><h3>Мужчина 1</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Средний взрослый мужской, разговорный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Мужчина 1" src="audio/man_1.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Man" data-number="1" aria-pressed="false">Выбрать Мужчина 1</button><a href="audio/man_1.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Man" data-number="2">
+          <div class="variant-heading"><h3>Мужчина 2</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Низкий хрипловатый мужской, серьёзный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Мужчина 2" src="audio/man_2.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Man" data-number="2" aria-pressed="false">Выбрать Мужчина 2</button><a href="audio/man_2.mp3" download>MP3 ↓</a></div>
+        </section><section class="variant" data-voice="Man" data-number="3">
+          <div class="variant-heading"><h3>Мужчина 3</h3><span class="choice-state" aria-hidden="true"></span></div>
+          <p class="direction">Ориентир: Светлый мужской, чёткий и немного взволнованный.</p>
+          <audio controls preload="none" aria-label="Прослушать: Мужчина 3" src="audio/man_3.mp3"></audio>
+          <div class="variant-actions"><button class="choose" type="button" data-id="Man" data-number="3" aria-pressed="false">Выбрать Мужчина 3</button><a href="audio/man_3.mp3" download>MP3 ↓</a></div>
+        </section></div>
+    </article></section>
+<p id="empty" class="empty" hidden>Персонаж не найден. Попробуй другое имя.</p>
+<footer><p>Выбор запоминается только на этой странице и не меняет сохранения игры. Кнопка «Скачать мой выбор» создаёт JSON, который можно передать вместе с выбранными номерами.</p><p>Для прослушивания распакуй всю папку и открой этот index.html. Интернет не нужен. Все записи запускаются только по нажатию.</p></footer>
+</main>
+<script id="audition-config" type="application/json">[{"id": "Gideon", "name": "Гидеон", "variants": [{"number": 1, "path": "audio/gideon_1.mp3"}, {"number": 2, "path": "audio/gideon_2.mp3"}, {"number": 3, "path": "audio/gideon_3.mp3"}]}, {"id": "Pacifica", "name": "Пасифика", "variants": [{"number": 1, "path": "audio/pacifica_1.mp3"}, {"number": 2, "path": "audio/pacifica_2.mp3"}, {"number": 3, "path": "audio/pacifica_3.mp3"}]}, {"id": "Mabel", "name": "Мейбл", "variants": [{"number": 1, "path": "audio/mabel_1.mp3"}, {"number": 2, "path": "audio/mabel_2.mp3"}, {"number": 3, "path": "audio/mabel_3.mp3"}]}, {"id": "Dipper", "name": "Диппер", "variants": [{"number": 1, "path": "audio/dipper_1.mp3"}, {"number": 2, "path": "audio/dipper_2.mp3"}, {"number": 3, "path": "audio/dipper_3.mp3"}]}, {"id": "Wendy", "name": "Венди", "variants": [{"number": 1, "path": "audio/wendy_1.mp3"}, {"number": 2, "path": "audio/wendy_2.mp3"}, {"number": 3, "path": "audio/wendy_3.mp3"}]}, {"id": "sooS", "name": "Зус", "variants": [{"number": 1, "path": "audio/soos_1.mp3"}, {"number": 2, "path": "audio/soos_2.mp3"}, {"number": 3, "path": "audio/soos_3.mp3"}]}, {"id": "Will", "name": "Уилл", "variants": [{"number": 1, "path": "audio/will_1.mp3"}, {"number": 2, "path": "audio/will_2.mp3"}, {"number": 3, "path": "audio/will_3.mp3"}]}, {"id": "Bill", "name": "Билл", "variants": [{"number": 1, "path": "audio/bill_1.mp3"}, {"number": 2, "path": "audio/bill_2.mp3"}, {"number": 3, "path": "audio/bill_3.mp3"}]}, {"id": "Robbie", "name": "Робби", "variants": [{"number": 1, "path": "audio/robbie_1.mp3"}, {"number": 2, "path": "audio/robbie_2.mp3"}, {"number": 3, "path": "audio/robbie_3.mp3"}]}, {"id": "Candy", "name": "Кэнди", "variants": [{"number": 1, "path": "audio/candy_1.mp3"}, {"number": 2, "path": "audio/candy_2.mp3"}, {"number": 3, "path": "audio/candy_3.mp3"}]}, {"id": "Grenda", "name": "Гренда", "variants": [{"number": 1, "path": "audio/grenda_1.mp3"}, {"number": 2, "path": "audio/grenda_2.mp3"}, {"number": 3, "path": "audio/grenda_3.mp3"}]}, {"id": "Bud", "name": "Бад", "variants": [{"number": 1, "path": "audio/bud_1.mp3"}, {"number": 2, "path": "audio/bud_2.mp3"}, {"number": 3, "path": "audio/bud_3.mp3"}]}, {"id": "Preston", "name": "Престон", "variants": [{"number": 1, "path": "audio/preston_1.mp3"}, {"number": 2, "path": "audio/preston_2.mp3"}, {"number": 3, "path": "audio/preston_3.mp3"}]}, {"id": "Priscilla", "name": "Присцилла", "variants": [{"number": 1, "path": "audio/priscilla_1.mp3"}, {"number": 2, "path": "audio/priscilla_2.mp3"}, {"number": 3, "path": "audio/priscilla_3.mp3"}]}, {"id": "Blubs", "name": "Блабс", "variants": [{"number": 1, "path": "audio/blubs_1.mp3"}, {"number": 2, "path": "audio/blubs_2.mp3"}, {"number": 3, "path": "audio/blubs_3.mp3"}]}, {"id": "Constable", "name": "Констебль", "variants": [{"number": 1, "path": "audio/constable_1.mp3"}, {"number": 2, "path": "audio/constable_2.mp3"}, {"number": 3, "path": "audio/constable_3.mp3"}]}, {"id": "Toby", "name": "Тоби", "variants": [{"number": 1, "path": "audio/toby_1.mp3"}, {"number": 2, "path": "audio/toby_2.mp3"}, {"number": 3, "path": "audio/toby_3.mp3"}]}, {"id": "Scot", "name": "Скот", "variants": [{"number": 1, "path": "audio/scot_1.mp3"}, {"number": 2, "path": "audio/scot_2.mp3"}, {"number": 3, "path": "audio/scot_3.mp3"}]}, {"id": "Gumball", "name": "Гамбол", "variants": [{"number": 1, "path": "audio/gumball_1.mp3"}, {"number": 2, "path": "audio/gumball_2.mp3"}, {"number": 3, "path": "audio/gumball_3.mp3"}]}, {"id": "Darwin", "name": "Дарвин", "variants": [{"number": 1, "path": "audio/darwin_1.mp3"}, {"number": 2, "path": "audio/darwin_2.mp3"}, {"number": 3, "path": "audio/darwin_3.mp3"}]}, {"id": "Nicole", "name": "Николь", "variants": [{"number": 1, "path": "audio/nicole_1.mp3"}, {"number": 2, "path": "audio/nicole_2.mp3"}, {"number": 3, "path": "audio/nicole_3.mp3"}]}, {"id": "Ducktective", "name": "Утка-Тив", "variants": [{"number": 1, "path": "audio/ducktective_1.mp3"}, {"number": 2, "path": "audio/ducktective_2.mp3"}, {"number": 3, "path": "audio/ducktective_3.mp3"}]}, {"id": "Mallardarty", "name": "Маллардарти", "variants": [{"number": 1, "path": "audio/mallardarty_1.mp3"}, {"number": 2, "path": "audio/mallardarty_2.mp3"}, {"number": 3, "path": "audio/mallardarty_3.mp3"}]}, {"id": "Mothman", "name": "Человек-мотылёк", "variants": [{"number": 1, "path": "audio/mothman_1.mp3"}, {"number": 2, "path": "audio/mothman_2.mp3"}, {"number": 3, "path": "audio/mothman_3.mp3"}]}, {"id": "Helvest", "name": "Хелвест", "variants": [{"number": 1, "path": "audio/helvest_1.mp3"}, {"number": 2, "path": "audio/helvest_2.mp3"}, {"number": 3, "path": "audio/helvest_3.mp3"}]}, {"id": "Narrator", "name": "Рассказчик", "variants": [{"number": 1, "path": "audio/narrator_1.mp3"}, {"number": 2, "path": "audio/narrator_2.mp3"}, {"number": 3, "path": "audio/narrator_3.mp3"}]}, {"id": "Arcade_Owner", "name": "Владелец игровых автоматов", "variants": [{"number": 1, "path": "audio/arcade_owner_1.mp3"}, {"number": 2, "path": "audio/arcade_owner_2.mp3"}, {"number": 3, "path": "audio/arcade_owner_3.mp3"}]}, {"id": "Cashier", "name": "Кассир", "variants": [{"number": 1, "path": "audio/cashier_1.mp3"}, {"number": 2, "path": "audio/cashier_2.mp3"}, {"number": 3, "path": "audio/cashier_3.mp3"}]}, {"id": "Customer_1", "name": "Покупательница 1", "variants": [{"number": 1, "path": "audio/customer_1_1.mp3"}, {"number": 2, "path": "audio/customer_1_2.mp3"}, {"number": 3, "path": "audio/customer_1_3.mp3"}]}, {"id": "Customer_2", "name": "Покупательница 2", "variants": [{"number": 1, "path": "audio/customer_2_1.mp3"}, {"number": 2, "path": "audio/customer_2_2.mp3"}, {"number": 3, "path": "audio/customer_2_3.mp3"}]}, {"id": "Crowd", "name": "Толпа", "variants": [{"number": 1, "path": "audio/crowd_1.mp3"}, {"number": 2, "path": "audio/crowd_2.mp3"}, {"number": 3, "path": "audio/crowd_3.mp3"}]}, {"id": "Waitress", "name": "Официантка", "variants": [{"number": 1, "path": "audio/waitress_1.mp3"}, {"number": 2, "path": "audio/waitress_2.mp3"}, {"number": 3, "path": "audio/waitress_3.mp3"}]}, {"id": "Woman_1", "name": "Женщина 1", "variants": [{"number": 1, "path": "audio/woman_1_1.mp3"}, {"number": 2, "path": "audio/woman_1_2.mp3"}, {"number": 3, "path": "audio/woman_1_3.mp3"}]}, {"id": "Woman_2", "name": "Женщина 2", "variants": [{"number": 1, "path": "audio/woman_2_1.mp3"}, {"number": 2, "path": "audio/woman_2_2.mp3"}, {"number": 3, "path": "audio/woman_2_3.mp3"}]}, {"id": "Woman", "name": "Женщина", "variants": [{"number": 1, "path": "audio/woman_1.mp3"}, {"number": 2, "path": "audio/woman_2.mp3"}, {"number": 3, "path": "audio/woman_3.mp3"}]}, {"id": "Man", "name": "Мужчина", "variants": [{"number": 1, "path": "audio/man_1.mp3"}, {"number": 2, "path": "audio/man_2.mp3"}, {"number": 3, "path": "audio/man_3.mp3"}]}]</script>
+<script>
+'use strict';
+const cast=JSON.parse(document.getElementById('audition-config').textContent);
+const byId=new Map(cast.map(v=>[v.id,v]));
+const STORAGE_KEY='reverse-falls-voice-audition-choices-v1';
+let selected={};
+try{const stored=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');if(stored&&typeof stored==='object'&&!Array.isArray(stored))for(const [id,number] of Object.entries(stored))if(byId.has(id)&&[1,2,3].includes(number))selected[id]=number}catch{}
+const cards=Array.from(document.querySelectorAll('.voice-card'));
+const rows=Array.from(document.querySelectorAll('.variant'));
+const players=Array.from(document.querySelectorAll('audio'));
+function say(text){document.getElementById('message').textContent=text}
+function draw(){for(const row of rows){const active=selected[row.dataset.voice]===Number(row.dataset.number);row.classList.toggle('selected',active);row.querySelector('.choose').setAttribute('aria-pressed',String(active));row.querySelector('.choice-state').textContent=active?'Выбрано':''}document.getElementById('summary').textContent=`Выбрано ${Object.keys(selected).length} из ${cast.length} персонажей · ${cast.length*3} образцов`}
+function persist(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(selected));return true}catch{say('Браузер не сохранил выбор. Скачай JSON, чтобы не потерять его.');return false}}
+for(const button of document.querySelectorAll('.choose'))button.addEventListener('click',()=>{const id=button.dataset.id,number=Number(button.dataset.number);if(!byId.has(id)||![1,2,3].includes(number))return;selected[id]=number;draw();if(persist())say(`Выбрано: ${byId.get(id).name} ${number}`)});
+for(const player of players)player.addEventListener('play',()=>{for(const other of players)if(other!==player)other.pause()});
+document.getElementById('search').addEventListener('input',event=>{const query=event.target.value.trim().toLocaleLowerCase('ru').replace(/ё/g,'е');let visible=0;for(const card of cards){card.hidden=!card.dataset.search.replace(/ё/g,'е').includes(query);if(!card.hidden)visible++}document.getElementById('empty').hidden=visible>0});
+document.getElementById('clear').addEventListener('click',()=>{if(Object.keys(selected).length&&!window.confirm('Сбросить выбранные варианты голосов?'))return;selected={};draw();persist();say('Выбор сброшен.')});
+document.getElementById('export').addEventListener('click',()=>{const choices=cast.filter(v=>selected[v.id]).map(v=>{const number=selected[v.id];return{characterId:v.id,name:v.name,variant:number,path:v.variants.find(row=>row.number===number).path}});const payload={format:'reverse-falls-voice-selection',version:1,exportedAt:new Date().toISOString(),integratedIntoGame:false,choices};const blob=new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'});const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='reverse_falls_voice_choices.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);say('Файл выбора скачан. Он не меняет игру автоматически.')});
+draw();
+</script>
+</body>
+</html>
