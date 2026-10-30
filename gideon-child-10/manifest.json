@@ -1,0 +1,318 @@
+{
+  "version": 1,
+  "status": "auditions_for_user_selection",
+  "character": "Gideon",
+  "targetAge": 12,
+  "language": "Russian",
+  "integratedIntoGame": false,
+  "referencePolicy": "text_designed_only",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "modelRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "runtime": "qwen-tts 0.1.1",
+  "dtype": "bfloat16",
+  "device": "cpu",
+  "processing": "Original generated waveform saved as float32 WAV; MP3 encoding only. No pitch, formant, speed, normalization or other voice effects.",
+  "text": "Привет. Меня зовут Гидеон. Я вижу. Она довольно большая. Нет, я не испугался. Я просто проверяю, где выход.",
+  "variants": [
+    {
+      "number": 1,
+      "label": "Гидеон 1",
+      "direction": "Светлый, ясный мальчишеский голос; спокойная суховатая наблюдательность.",
+      "instruct": "Native Russian speech by a small ten-year-old schoolboy. Clearly high-pitched, bright, light and slightly squeaky child voice, youthful treble resonance and clear boyish articulation. He talks casually and straightforwardly, with small natural pauses and an innocent dry sense of humor. An original fictional boy speaking ordinary dialogue.",
+      "seed": 162103,
+      "requestedSeed": 162103,
+      "samplingBatch": {
+        "size": 3,
+        "index": 0,
+        "seed": 162103
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_1.mp3",
+      "wav": "audio/gideon_1.wav",
+      "sampleRate": 24000,
+      "duration": 9.84,
+      "peak": 0.785156,
+      "rms": 0.08424,
+      "batchRenderSeconds": 56.88,
+      "sha256": "ff87fb025e618ce760ea535050c716793b2fcd1953b1ce28aeb0351717ed3a7c",
+      "wavSha256": "bd7aa7c4cd8e3e0cb0708700596fbf73d9b6be1357cb008f16eac462d16ca930"
+    },
+    {
+      "number": 2,
+      "label": "Гидеон 2",
+      "direction": "Мягкий, тёплый детский тембр; негромко и буднично, с ясной дикцией.",
+      "instruct": "A little nine-year-old Russian boy speaking in his own soft, high, sweetly rounded child voice. Gentle warm treble, small bright resonance, clear youthful vowels and easy conversational rhythm. Quiet everyday speech with a touch of curiosity. His voice is distinctly that of a primary-school child.",
+      "seed": 162103,
+      "requestedSeed": 162217,
+      "samplingBatch": {
+        "size": 3,
+        "index": 1,
+        "seed": 162103
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_2.mp3",
+      "wav": "audio/gideon_2.wav",
+      "sampleRate": 24000,
+      "duration": 10.24,
+      "peak": 0.660156,
+      "rms": 0.122484,
+      "batchRenderSeconds": 56.88,
+      "sha256": "cd9af289c40aa4389ee4d4211d7778ebb0e89b1083c3d05e1cda72130802ade5",
+      "wavSha256": "7f1ef6e319fd4036265cce80c5ae60a23021346342a8edee0e43384509bce360"
+    },
+    {
+      "number": 3,
+      "label": "Гидеон 3",
+      "direction": "Чуть носовой, собранный голос двенадцатилетнего мальчика; точные короткие фразы.",
+      "instruct": "A ten-year-old Russian schoolboy with a high, thin, slightly nasal, naturally squeaky voice. Small forward child resonance, lively clear consonants and compact phrases. He speaks simply and attentively, with the effortless sound of a real little boy talking to a friend. Original fictional child character.",
+      "seed": 162103,
+      "requestedSeed": 162331,
+      "samplingBatch": {
+        "size": 3,
+        "index": 2,
+        "seed": 162103
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_3.mp3",
+      "wav": "audio/gideon_3.wav",
+      "sampleRate": 24000,
+      "duration": 11.12,
+      "peak": 0.511719,
+      "rms": 0.075892,
+      "batchRenderSeconds": 56.88,
+      "sha256": "483b88bc6f3bb8d126d26237c1538c5b3040f9f69c7da969c6cb2c17f7157f5b",
+      "wavSha256": "8fa1754c161c24adba786d50b2549619df5fcb6acb9ee938ca9c261aba8ddbd0"
+    },
+    {
+      "number": 4,
+      "label": "Гидеон 4",
+      "direction": "Тонкий, воздушный, но разборчивый детский голос; задумчивая сдержанность.",
+      "instruct": "A little nine-year-old Russian boy with a thin, high, softly airy child voice. Small bright treble resonance, gentle clear vowels and natural schoolboy articulation. He speaks quietly and straightforwardly in short everyday sentences, with a curious pause and a small innocent excuse at the end.",
+      "seed": 235449,
+      "requestedSeed": 235449,
+      "samplingBatch": {
+        "size": 4,
+        "index": 0,
+        "seed": 235449
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_4.mp3",
+      "wav": "audio/gideon_4.wav",
+      "sampleRate": 24000,
+      "duration": 11.6,
+      "peak": 0.601562,
+      "rms": 0.087,
+      "batchRenderSeconds": 79.12,
+      "sha256": "676daac8a30079d9c6bf7ac3d810d8b1ccc89a87739452c97a31d22acb5cec1e",
+      "wavSha256": "8b1e712117322ce76698edf181841c7c55aa07ea914b97c5e8cfa4c0eb4f692d"
+    },
+    {
+      "number": 5,
+      "label": "Гидеон 5",
+      "direction": "Округлый, живой мальчишеский тембр; едва заметная игривость под спокойной подачей.",
+      "instruct": "A ten-year-old Russian schoolboy speaking in a light, high-pitched, naturally squeaky child voice. Bright youthful treble and small rounded vowels. His conversational rhythm is clear and easy, with a little playful inflection and the simple innocence of a child explaining something he has just noticed.",
+      "seed": 235449,
+      "requestedSeed": 235563,
+      "samplingBatch": {
+        "size": 4,
+        "index": 1,
+        "seed": 235449
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_5.mp3",
+      "wav": "audio/gideon_5.wav",
+      "sampleRate": 24000,
+      "duration": 13.92,
+      "peak": 0.667969,
+      "rms": 0.107137,
+      "batchRenderSeconds": 79.12,
+      "sha256": "dcf176ff3ad7011e542149c525f433e51db8fa024c4d23896a2a5e9ed4188420",
+      "wavSha256": "5f592864c22dadcfaee3de9c7461361514bb0457581224077b3a6e17eeaea15d"
+    },
+    {
+      "number": 6,
+      "label": "Гидеон 6",
+      "direction": "Маленький, чуть придыхательный голос мальчика; близкая, спокойная разговорная подача.",
+      "instruct": "Native Russian dialogue by a nine-year-old boy. A small, soft, high-pitched child voice with a faint airy opening to each phrase, bright gentle treble and clearly boyish vowels. Close, easy everyday speech, a little hesitant on the last explanation. Original fictional little boy.",
+      "seed": 162449,
+      "requestedSeed": 162677,
+      "samplingBatch": {
+        "size": 3,
+        "index": 2,
+        "seed": 162449
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_6.mp3",
+      "wav": "audio/gideon_6.wav",
+      "sampleRate": 24000,
+      "duration": 11.52,
+      "peak": 0.695312,
+      "rms": 0.108603,
+      "batchRenderSeconds": 59.79,
+      "sha256": "2c7cf78ea040935bcddb1ad5ef11b00b4a4990adc3485c6fe85c616510334580",
+      "wavSha256": "e834469587e53d2b77384c039aa5aab2c7efb320899ac374a5c33e84fee7497b"
+    },
+    {
+      "number": 7,
+      "label": "Гидеон 7",
+      "direction": "Негромкий, упругий детский голос; ровная подача и чёткие окончания.",
+      "instruct": "A ten-year-old Russian child boy speaking with a clear, high-pitched, focused treble voice. Naturally youthful thin resonance, clean consonants, small squeaky inflections and a steady simple rhythm. A quiet schoolboy explaining what he sees, with ordinary childlike ease and slightly serious curiosity.",
+      "seed": 162791,
+      "requestedSeed": 162791,
+      "samplingBatch": {
+        "size": 3,
+        "index": 0,
+        "seed": 162791
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_7.mp3",
+      "wav": "audio/gideon_7.wav",
+      "sampleRate": 24000,
+      "duration": 9.6,
+      "peak": 0.652344,
+      "rms": 0.097837,
+      "batchRenderSeconds": 72.53,
+      "sha256": "cf9e136fb9cd02bc04bd7bedf02546dd29157de8667f404a9b702f7d8c9d3a58",
+      "wavSha256": "9cea4dbcf0857cd1267b3a11671adc38f594e472d8742424c81a925c1f11c934"
+    },
+    {
+      "number": 8,
+      "label": "Гидеон 8",
+      "direction": "Чёткий, светлый детский голос; спокойная подача, лёгкая вопросительная интонация.",
+      "instruct": "A little ten-year-old Russian boy with a high, clear, gently nasal child voice and small bright treble resonance. Calm, easy schoolboy dialogue, clean youthful consonants, relaxed vowels and natural pauses. He speaks the short sentences plainly and attentively, with a slight questioning lift in the final explanation.",
+      "seed": 235449,
+      "requestedSeed": 235907,
+      "samplingBatch": {
+        "size": 4,
+        "index": 2,
+        "seed": 235449
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_8.mp3",
+      "wav": "audio/gideon_8.wav",
+      "sampleRate": 24000,
+      "duration": 9.68,
+      "peak": 0.535156,
+      "rms": 0.061872,
+      "batchRenderSeconds": 79.12,
+      "sha256": "2a990754befbff02bb75fd794592236b06b2cef8c87a9bdee9e55f21cbee1b3c",
+      "wavSha256": "c474d57ed103002fb01403905b9857d1ea7eebb337bdbea89f1df150c6b5c1bd"
+    },
+    {
+      "number": 9,
+      "label": "Гидеон 9",
+      "direction": "Мягкий, лёгкий мальчишеский голос; размеренная речь с короткими живыми паузами.",
+      "instruct": "A small nine-year-old Russian boy, high-pitched, soft and slightly squeaky. A light clear child treble with gently rounded youthful vowels and small head resonance. He speaks quietly, plainly and naturally like an observant little schoolboy, pausing briefly before a straightforward innocent explanation.",
+      "seed": 235449,
+      "requestedSeed": 236021,
+      "samplingBatch": {
+        "size": 4,
+        "index": 3,
+        "seed": 235449
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_9.mp3",
+      "wav": "audio/gideon_9.wav",
+      "sampleRate": 24000,
+      "duration": 10.96,
+      "peak": 0.671875,
+      "rms": 0.089564,
+      "batchRenderSeconds": 79.12,
+      "sha256": "cc866fd135ddb32b9f70a6cf5e4ecaae4c6d855f518ab94d626fedcd69a20bea",
+      "wavSha256": "2b5182c9a508bab62029464ed97a4b6de6443d2af90cc2700db9e10ecc98a4ec"
+    },
+    {
+      "number": 10,
+      "label": "Гидеон 10",
+      "direction": "Лёгкий, узкий, подвижный детский голос; внимательная и чуть осторожная будничность.",
+      "instruct": "A nine-year-old Russian boy with a narrow, nimble, high-pitched child voice. Thin bright treble, slightly squeaky youthful vowels and quick clear little articulations. Natural casual schoolboy dialogue, attentive pauses, a hint of childish caution when he checks for the exit. An original fictional voice.",
+      "seed": 163139,
+      "requestedSeed": 163139,
+      "samplingBatch": {
+        "size": 1,
+        "index": 0,
+        "seed": 163139
+      },
+      "generation": {
+        "non_streaming_mode": true,
+        "max_new_tokens": 256,
+        "attention": "eager",
+        "torchThreads": 4
+      },
+      "path": "audio/gideon_10.mp3",
+      "wav": "audio/gideon_10.wav",
+      "sampleRate": 24000,
+      "duration": 9.52,
+      "peak": 0.601562,
+      "rms": 0.08423,
+      "batchRenderSeconds": 62.71,
+      "sha256": "027dacf2b5ef1cb36227144d30f5b8100824c474110761bad5fd7b70ff0fdd45",
+      "wavSha256": "1763293b91243a9238c7f054cdcdc1976724fd06d8271ccc59f9dcbed2954fa9"
+    }
+  ],
+  "generationDefaults": {
+    "do_sample": true,
+    "repetition_penalty": 1.05,
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 50,
+    "subtalker_dosample": true,
+    "subtalker_temperature": 0.9,
+    "subtalker_top_p": 1.0,
+    "subtalker_top_k": 50,
+    "max_new_tokens": 256
+  },
+  "selectionNote": "Auditions for listening and choosing a number. Text-designed voices, original model waveforms. Perceived age and naturalness are for user evaluation.",
+  "packageVersions": {
+    "qwen-tts": "0.1.1",
+    "torch": "2.9.1+cpu",
+    "transformers": "4.57.3",
+    "numpy": "2.5.4",
+    "soundfile": "0.14.0"
+  }
+}
