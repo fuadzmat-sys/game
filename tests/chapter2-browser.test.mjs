@@ -211,10 +211,10 @@ try {
  assert.deepEqual(errors, []);
  const english = await newPage(); await importFile(english.page, supplied); await english.page.locator('#flow-close').click();
  await english.page.evaluate(() => game.startChapter(2, { language: 'english' })); await drive(english.page);
- assert.equal(await english.page.evaluate(() => game.engine.state.language), 'english');
+ assert.equal(await english.page.evaluate(() => game.engine.state.language), 'russian');
  assert.equal(await english.page.evaluate(() => game.engine.state.phase), 'credits');
- assert.equal(await english.page.evaluate(() => window.__chapter2Audio.some(path => /ch2_mimic_.*\.mp3/.test(path))), false);
+ assert.equal(await english.page.evaluate(() => window.__chapter2Audio.some(path => /ch2_mimic_.*\.mp3/.test(path))), true);
  assert.equal(await english.page.evaluate(() => window.__chapter2Speech), 0); assert.deepEqual(english.errors, []);
- reports.push('English full play also completes; pending English lure voices stay silent rather than playing Russian recordings or browser TTS');
+ reports.push('An old English language preference starts Russian playback, including Russian lure recordings, without browser TTS');
  console.log(JSON.stringify({ checks: reports.length, reports, errors: [] }, null, 2));
 } finally { for (const context of contexts) await context.close(); await browser.close(); }

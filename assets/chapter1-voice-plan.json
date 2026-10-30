@@ -108,13 +108,13 @@
       "path": null
     },
     {
-      "id": "45448729373d7dc7267ba979",
+      "id": "6f43d428e675c00d3431fda7",
       "chapter": 1,
       "script": "chapter_1_v3/start",
       "language": "russian",
       "sourceLine": 39,
       "speaker": "Narrator",
-      "text": "После вчерашнего кошмара Gravity Falls выглядит раздражающе нормально.",
+      "text": "После вчерашнего кошмара Гравити Фолз выглядит раздражающе нормально.",
       "expression": "neutral",
       "direction": "Optional narration: responsive pacing with real pauses for suspense, humor and quiet moments; do not read staging labels as dialogue.",
       "status": "awaiting_acted_recording",
@@ -4630,13 +4630,13 @@
       "path": null
     },
     {
-      "id": "da2facdd920f7268b989ccbc",
+      "id": "10975084fc45d8c19a6672e6",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 25,
+      "sourceLine": 24,
       "speaker": "Narrator",
-      "text": "BUSTER",
+      "text": "БАСТЕР",
       "expression": "neutral",
       "direction": "Optional narration: responsive pacing with real pauses for suspense, humor and quiet moments; do not read staging labels as dialogue.",
       "status": "awaiting_acted_recording",
@@ -4644,11 +4644,11 @@
       "path": null
     },
     {
-      "id": "755c10879fe9dd137a3e6005",
+      "id": "1bcffffd9ba06c0c7bb5288f",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 28,
+      "sourceLine": 27,
       "speaker": "Pacifica",
       "text": "Это одна из пропавших собак.",
       "expression": "neutral",
@@ -4658,11 +4658,11 @@
       "path": null
     },
     {
-      "id": "b4b121bdfbfc7ace30c96097",
+      "id": "cd6f642bef2703039025246b",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 31,
+      "sourceLine": 30,
       "speaker": "Narrator",
       "text": "Гидеон смотрит вокруг.",
       "expression": "neutral",
@@ -4672,11 +4672,11 @@
       "path": null
     },
     {
-      "id": "eac6caec104d2b96e8685477",
+      "id": "d6fd1743d0b1296d670fab1b",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 34,
+      "sourceLine": 33,
       "speaker": "Pacifica",
       "text": "Что?",
       "expression": "neutral",
@@ -4686,11 +4686,11 @@
       "path": null
     },
     {
-      "id": "0588ff36a0e9e9cab6139719",
+      "id": "02349e7cb4f4536f3a7f7708",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 37,
+      "sourceLine": 36,
       "speaker": "Gideon",
       "text": "Крови нет.",
       "expression": "neutral",
@@ -4700,11 +4700,11 @@
       "path": null
     },
     {
-      "id": "3b872f2e43790d2f5a5c7045",
+      "id": "0d7afef9f26cad2336c0d6b3",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 40,
+      "sourceLine": 39,
       "speaker": "Pacifica",
       "text": "Может, её утащили.",
       "expression": "neutral",
@@ -4714,11 +4714,11 @@
       "path": null
     },
     {
-      "id": "1710cde49de637df2fd8ea49",
+      "id": "bec030da608a2c2caa344b12",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 43,
+      "sourceLine": 42,
       "speaker": "Gideon",
       "text": "Тогда почему снять ошейник?",
       "expression": "neutral",
@@ -4728,11 +4728,11 @@
       "path": null
     },
     {
-      "id": "65d87d74a0d04325057ca139",
+      "id": "b4bd56b1f81c9cc2cf7c413f",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 46,
+      "sourceLine": 45,
       "speaker": "Pacifica",
       "text": "Он мог зацепиться.",
       "expression": "neutral",
@@ -4742,11 +4742,11 @@
       "path": null
     },
     {
-      "id": "dc6509a0efee49de2c2e5648",
+      "id": "619968ab86cffb2035091c3f",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 49,
+      "sourceLine": 48,
       "speaker": "Narrator",
       "text": "Гидеон подходит к кусту.",
       "expression": "neutral",
@@ -4756,11 +4756,11 @@
       "path": null
     },
     {
-      "id": "2063dc618eae5694e399689c",
+      "id": "7112183be0b8727d770d21d2",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 52,
+      "sourceLine": 51,
       "speaker": "Gideon",
       "text": "Тогда он должен был порваться.",
       "expression": "neutral",
@@ -4770,11 +4770,11 @@
       "path": null
     },
     {
-      "id": "14bba389287a94a51cc001f2",
+      "id": "8cdade86c75bdfd78ad38590",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 55,
+      "sourceLine": 54,
       "speaker": "Narrator",
       "text": "Пасифика рассматривает застёжку.",
       "expression": "neutral",
@@ -4784,11 +4784,11 @@
       "path": null
     },
     {
-      "id": "99f9d90530d9e0815f5385ae",
+      "id": "5b470040e162afd7ba0817cd",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 58,
+      "sourceLine": 57,
       "speaker": "Narrator",
       "text": "Она целая.",
       "expression": "neutral",
@@ -4798,11 +4798,11 @@
       "path": null
     },
     {
-      "id": "8bb8a7f55541a8c74643428f",
+      "id": "3eb5d3aefcd1a3dc77bef06e",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 61,
+      "sourceLine": 60,
       "speaker": "Narrator",
       "text": "Ошейник расстёгнут.",
       "expression": "neutral",
@@ -4812,11 +4812,11 @@
       "path": null
     },
     {
-      "id": "44772e78ad599b41f815bf62",
+      "id": "09c511a58c1d26196c2e68bf",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 64,
+      "sourceLine": 63,
       "speaker": "Pacifica",
       "text": "Кто-то его снял.",
       "expression": "neutral",
@@ -4826,11 +4826,11 @@
       "path": null
     },
     {
-      "id": "b8555f3fec294fc4b1da8c14",
+      "id": "6dfd79f495cded723982a111",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 67,
+      "sourceLine": 66,
       "speaker": "Gideon",
       "text": "Похоже на то.",
       "expression": "neutral",
@@ -4840,11 +4840,11 @@
       "path": null
     },
     {
-      "id": "b6ea5c1384bfb5f2c7955304",
+      "id": "f31b21271501ad373ac18142",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 70,
+      "sourceLine": 69,
       "speaker": "Narrator",
       "text": "Впервые Пасифика выглядит действительно неуверенно.",
       "expression": "neutral",
@@ -4854,11 +4854,11 @@
       "path": null
     },
     {
-      "id": "d112f5fdad7677e3b7fdd559",
+      "id": "eb3738cd1cd01a6fab91f55a",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 73,
+      "sourceLine": 72,
       "speaker": "Narrator",
       "text": "Она открывает Дневник.",
       "expression": "neutral",
@@ -4868,11 +4868,11 @@
       "path": null
     },
     {
-      "id": "fb97b61d11303228f230b38a",
+      "id": "c4ad5db071e95be5c788e78a",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 76,
+      "sourceLine": 75,
       "speaker": "Pacifica",
       "text": "Тут ничего такого нет.",
       "expression": "neutral",
@@ -4882,11 +4882,11 @@
       "path": null
     },
     {
-      "id": "41516d7b039e24c8d3b987bb",
+      "id": "a063f67b466b9836ad54cbac",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 79,
+      "sourceLine": 78,
       "speaker": "Gideon",
       "text": "Может, не всё должно быть в книге.",
       "expression": "neutral",
@@ -4896,11 +4896,11 @@
       "path": null
     },
     {
-      "id": "220157a470b9194b1f3a2aa6",
+      "id": "d308f434999d1c9fb851d420",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 82,
+      "sourceLine": 81,
       "speaker": "Pacifica",
       "text": "Это буквально книга про сверхъестественное.",
       "expression": "neutral",
@@ -4910,11 +4910,11 @@
       "path": null
     },
     {
-      "id": "c97f8efcebaacf209ee78abf",
+      "id": "e0f0edb5ef8634587662fbac",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 85,
+      "sourceLine": 84,
       "speaker": "Gideon",
       "text": "Написанная кем-то.",
       "expression": "neutral",
@@ -4924,11 +4924,11 @@
       "path": null
     },
     {
-      "id": "df0a9d2467354d4be8586823",
+      "id": "a0d4648eef667899a082936d",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 88,
+      "sourceLine": 87,
       "speaker": "Pacifica",
       "text": "И?",
       "expression": "neutral",
@@ -4938,11 +4938,11 @@
       "path": null
     },
     {
-      "id": "9a8c6c7acdfdbeb3b71fca4c",
+      "id": "675ddc160df53695e7ad1cc0",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 91,
+      "sourceLine": 90,
       "speaker": "Gideon",
       "text": "Значит, этот кто-то мог чего-то не знать.",
       "expression": "neutral",
@@ -4952,11 +4952,11 @@
       "path": null
     },
     {
-      "id": "94e781eebb7d29141aaf1815",
+      "id": "9ad6f899b5a857cbec72da41",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 94,
+      "sourceLine": 93,
       "speaker": "Pacifica",
       "text": "Или ошибаться.",
       "expression": "neutral",
@@ -4966,11 +4966,11 @@
       "path": null
     },
     {
-      "id": "c531184b808598661af858a8",
+      "id": "93f893dfcc88258458d08d3d",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 97,
+      "sourceLine": 96,
       "speaker": "Gideon",
       "text": "Да.",
       "expression": "neutral",
@@ -4980,11 +4980,11 @@
       "path": null
     },
     {
-      "id": "5b8b5c47564faafa47191c07",
+      "id": "d9d16c393aa14f99a061c545",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 100,
+      "sourceLine": 99,
       "speaker": "Narrator",
       "text": "Пауза.",
       "expression": "neutral",
@@ -4994,11 +4994,11 @@
       "path": null
     },
     {
-      "id": "57f0c936abfe2ce782d5be66",
+      "id": "46305e4e586797bed72ff068",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 103,
+      "sourceLine": 102,
       "speaker": "Narrator",
       "text": "Пасифика смотрит на Дневник.",
       "expression": "neutral",
@@ -5008,11 +5008,11 @@
       "path": null
     },
     {
-      "id": "e28fd156dd48807fb42af1bc",
+      "id": "28ecc5b1dd6795c90f1b17c3",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "russian",
-      "sourceLine": 106,
+      "sourceLine": 105,
       "speaker": "Narrator",
       "text": "Ей явно неприятна эта мысль.",
       "expression": "neutral",
@@ -13310,11 +13310,11 @@
       "path": null
     },
     {
-      "id": "8bb667fb026540da51c00854",
+      "id": "826819a82c34a3b728f56901",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 25,
+      "sourceLine": 24,
       "speaker": "Narrator",
       "text": "BUSTER",
       "expression": "neutral",
@@ -13324,11 +13324,11 @@
       "path": null
     },
     {
-      "id": "9f4116fd56fb0d72b98d3b94",
+      "id": "fcb05fb0dc18ab9fe7d4e942",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 28,
+      "sourceLine": 27,
       "speaker": "Pacifica",
       "text": "That's one of the missing dogs.",
       "expression": "neutral",
@@ -13338,11 +13338,11 @@
       "path": null
     },
     {
-      "id": "a71798567bdc0f0a74d745c2",
+      "id": "fd1364ccbcdc1f45f99be234",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 31,
+      "sourceLine": 30,
       "speaker": "Narrator",
       "text": "Gideon looks around.",
       "expression": "neutral",
@@ -13352,11 +13352,11 @@
       "path": null
     },
     {
-      "id": "290b11ec3d4ab3c4b2cc8c13",
+      "id": "7d273e7a6cfe0efdbd47035f",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 34,
+      "sourceLine": 33,
       "speaker": "Pacifica",
       "text": "What?",
       "expression": "neutral",
@@ -13366,11 +13366,11 @@
       "path": null
     },
     {
-      "id": "7eedaf51d9c56d0e0e86741e",
+      "id": "d8fcbc73cc481caf2b8bfc61",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 37,
+      "sourceLine": 36,
       "speaker": "Gideon",
       "text": "No blood.",
       "expression": "neutral",
@@ -13380,11 +13380,11 @@
       "path": null
     },
     {
-      "id": "53ff768d9db030033950b825",
+      "id": "e2afb8e2b16d7f534e074692",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 40,
+      "sourceLine": 39,
       "speaker": "Pacifica",
       "text": "Maybe it was carried off.",
       "expression": "neutral",
@@ -13394,11 +13394,11 @@
       "path": null
     },
     {
-      "id": "556fecd9e38d3f587c913e3e",
+      "id": "5522063340599d3558932fd4",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 43,
+      "sourceLine": 42,
       "speaker": "Gideon",
       "text": "Then why take off the collar?",
       "expression": "neutral",
@@ -13408,11 +13408,11 @@
       "path": null
     },
     {
-      "id": "f5508740cd47e24e2d5f8d4d",
+      "id": "2274df02fa6bcba0c9900778",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 46,
+      "sourceLine": 45,
       "speaker": "Pacifica",
       "text": "It could have caught on something.",
       "expression": "neutral",
@@ -13422,11 +13422,11 @@
       "path": null
     },
     {
-      "id": "f3cc22ddb021aec2a4eb9242",
+      "id": "e1bf9b4b0c7a99deee0bc8c8",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 49,
+      "sourceLine": 48,
       "speaker": "Narrator",
       "text": "Gideon approaches a bush.",
       "expression": "neutral",
@@ -13436,11 +13436,11 @@
       "path": null
     },
     {
-      "id": "a9397d89571cb58f69e79916",
+      "id": "b19b31af36407d69dc242e10",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 52,
+      "sourceLine": 51,
       "speaker": "Gideon",
       "text": "Then it should have torn.",
       "expression": "neutral",
@@ -13450,11 +13450,11 @@
       "path": null
     },
     {
-      "id": "39864c8ff7e1b14e6e31e276",
+      "id": "03ba963935b5079967abf47d",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 55,
+      "sourceLine": 54,
       "speaker": "Narrator",
       "text": "Pacifica examines the clasp.",
       "expression": "neutral",
@@ -13464,11 +13464,11 @@
       "path": null
     },
     {
-      "id": "1a6334d156cb7cbc912b3a33",
+      "id": "d54ca027b98e04c12e4e8183",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 58,
+      "sourceLine": 57,
       "speaker": "Narrator",
       "text": "It is intact.",
       "expression": "neutral",
@@ -13478,11 +13478,11 @@
       "path": null
     },
     {
-      "id": "c8dedf2c008f5fedeaf76b45",
+      "id": "074bde124ca06a7a42ef0e97",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 61,
+      "sourceLine": 60,
       "speaker": "Narrator",
       "text": "The collar was unfastened.",
       "expression": "neutral",
@@ -13492,11 +13492,11 @@
       "path": null
     },
     {
-      "id": "f6b3e8ad27e5da8fc3264ef9",
+      "id": "7283672e55ad31b1cd9db03c",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 64,
+      "sourceLine": 63,
       "speaker": "Pacifica",
       "text": "Someone took it off.",
       "expression": "neutral",
@@ -13506,11 +13506,11 @@
       "path": null
     },
     {
-      "id": "af8af113185cac0845353811",
+      "id": "0cf7aa815a6d3caa9a6df59d",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 67,
+      "sourceLine": 66,
       "speaker": "Gideon",
       "text": "Looks that way.",
       "expression": "neutral",
@@ -13520,11 +13520,11 @@
       "path": null
     },
     {
-      "id": "845d259e3c439aef820e6783",
+      "id": "1b6bc15265291c1694ef248e",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 70,
+      "sourceLine": 69,
       "speaker": "Narrator",
       "text": "For the first time, Pacifica looks genuinely uncertain.",
       "expression": "neutral",
@@ -13534,11 +13534,11 @@
       "path": null
     },
     {
-      "id": "874a6a488689218be0448031",
+      "id": "b31912cd28bbf59c42a4cc7b",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 73,
+      "sourceLine": 72,
       "speaker": "Narrator",
       "text": "She opens the Journal.",
       "expression": "neutral",
@@ -13548,11 +13548,11 @@
       "path": null
     },
     {
-      "id": "87bc5b9226c74411f54bf722",
+      "id": "3acf0a84f6b2fd9acdcafa37",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 76,
+      "sourceLine": 75,
       "speaker": "Pacifica",
       "text": "There's nothing like this in here.",
       "expression": "neutral",
@@ -13562,11 +13562,11 @@
       "path": null
     },
     {
-      "id": "e36fc6715d6b58feaca6301d",
+      "id": "22b464681516d745a14fd487",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 79,
+      "sourceLine": 78,
       "speaker": "Gideon",
       "text": "Maybe not everything has to be in the book.",
       "expression": "neutral",
@@ -13576,11 +13576,11 @@
       "path": null
     },
     {
-      "id": "99a39b8e8c53f4eac6226421",
+      "id": "0cd0ce6cc6e694134b791781",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 82,
+      "sourceLine": 81,
       "speaker": "Pacifica",
       "text": "It's literally a book about the supernatural.",
       "expression": "neutral",
@@ -13590,11 +13590,11 @@
       "path": null
     },
     {
-      "id": "3e0c8b87f21c868f92b2996d",
+      "id": "7ccf6a03a13d3b4f22406e50",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 85,
+      "sourceLine": 84,
       "speaker": "Gideon",
       "text": "Written by someone.",
       "expression": "neutral",
@@ -13604,11 +13604,11 @@
       "path": null
     },
     {
-      "id": "6884c2d188e7d96f9d966c69",
+      "id": "1feb079b5c2365f1b84ea4ff",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 88,
+      "sourceLine": 87,
       "speaker": "Pacifica",
       "text": "And?",
       "expression": "neutral",
@@ -13618,11 +13618,11 @@
       "path": null
     },
     {
-      "id": "a9edebcf47985596e0b5cf6b",
+      "id": "201a679a90b9627432732080",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 91,
+      "sourceLine": 90,
       "speaker": "Gideon",
       "text": "Which means that someone might not have known everything.",
       "expression": "neutral",
@@ -13632,11 +13632,11 @@
       "path": null
     },
     {
-      "id": "4885549ada6f27a1f095397f",
+      "id": "246731dc6a1ba21644452988",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 94,
+      "sourceLine": 93,
       "speaker": "Pacifica",
       "text": "Or might have been wrong.",
       "expression": "neutral",
@@ -13646,11 +13646,11 @@
       "path": null
     },
     {
-      "id": "cde1a6da1113f2f35f9e65ac",
+      "id": "3a323ca43b134bdfa1a91a06",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 97,
+      "sourceLine": 96,
       "speaker": "Gideon",
       "text": "Yes.",
       "expression": "neutral",
@@ -13660,11 +13660,11 @@
       "path": null
     },
     {
-      "id": "bbfe7aba1bf1e2ed6e2ffb48",
+      "id": "1e08d747f5d0cc4a47a70448",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 100,
+      "sourceLine": 99,
       "speaker": "Narrator",
       "text": "A pause.",
       "expression": "neutral",
@@ -13674,11 +13674,11 @@
       "path": null
     },
     {
-      "id": "ff86a7888750c29a23bf2fff",
+      "id": "730d3b1c0198e486aa22a7d5",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 103,
+      "sourceLine": 102,
       "speaker": "Narrator",
       "text": "Pacifica looks at the Journal.",
       "expression": "neutral",
@@ -13688,11 +13688,11 @@
       "path": null
     },
     {
-      "id": "6c57b76139287c9756899aea",
+      "id": "e79a4f0b7db3e72ad9f1024c",
       "chapter": 1,
       "script": "chapter_1_v3/animals",
       "language": "english",
-      "sourceLine": 106,
+      "sourceLine": 105,
       "speaker": "Narrator",
       "text": "The thought clearly bothers her.",
       "expression": "neutral",

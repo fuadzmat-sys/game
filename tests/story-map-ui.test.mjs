@@ -51,7 +51,7 @@ assert.equal(JSON.stringify(fresh), freshBefore);
 console.log('✓ Fresh maps show every implemented option without marking anything seen or canonical');
 
 const page = fs.readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-for (const id of ['chapter2-title', 'chapter2-description', 'chapter2-language', 'chapter2-start', 'chapter2-continue', 'chapter2-unlock-note', 'ending-next-chapter']) assert.ok(page.includes(`id="${id}"`));
+for (const id of ['chapter2-title', 'chapter2-description',  'chapter2-start', 'chapter2-continue', 'chapter2-unlock-note', 'ending-next-chapter']) assert.ok(page.includes(`id="${id}"`));
 for (const chapter of [0, 1, 2, 3]) assert.match(page, new RegExp(`id="flow-chapter${chapter}" data-flow-chapter="${chapter}"`));
 assert.ok(page.indexOf('id="flow-chapter2"') < page.indexOf('id="flow-true-story"'));
 assert.doesNotMatch(page, /id="flow-chapter4"/);

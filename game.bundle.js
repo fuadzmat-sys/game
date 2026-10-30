@@ -2709,7 +2709,7 @@ const copy = {
     title: "Карта решений", kicker: "REVERSE FALLS / ТВОЯ ИСТОРИЯ",
     chapters: ["Глава 0", "Глава 1", "Глава 2", "Глава 3"], subtitles: ["Первая охота", "Следы в лесу", "Не тот монстр", "Чужая находка"],
     close: "Вернуться", all: "Вся схема", full: "Полный режим", pathMode: "Мой путь",
-    trueStory: "Настоящая история", timelineSubtitle: "Одна официальная история · Только просмотр", exportSave: "Сохранить путь", importSave: "Import Save", importTitle: "Загрузить сохранённый путь?", importText: "Текущая основная история будет заменена импортированным сохранением.", importAccept: "Загрузить", path: "Основной путь", alternative: "Альтернатива", discovered: "Открыто ранее", now: "Сейчас", locked: "Не открыто",
+    trueStory: "Настоящая история", timelineSubtitle: "Одна официальная история · Только просмотр", exportSave: "Сохранить путь", importSave: "Загрузить путь", importTitle: "Загрузить сохранённый путь?", importText: "Текущая основная история будет заменена импортированным сохранением.", importAccept: "Загрузить", path: "Основной путь", alternative: "Альтернатива", discovered: "Открыто ранее", now: "Сейчас", locked: "Не открыто",
     progress: (count, total, percent) => `Открыто ${count} из ${total} · ${percent}%`,
     help: "Клик: сведения · Полный режим: альтернативы и изменение пути · Перетаскивай схему · Колесо: масштаб · Esc: вернуться",
     select: "Выбери сцену на схеме", hint: "Просмотр карты не меняет историю. Для работы с решениями выбери «Полный режим».",
@@ -2777,7 +2777,7 @@ function createFlowchart({
   const transforms = new Map();
   let chapter = 0, mapMode = "full", graph, selected = null, zoom = 1, x = 0, y = 0, drag = null;
   let moved = false, returnFocus = null, openedAt = 0, confirmation = null, pending = false;
-  const language = () => getLanguage() === "russian" ? "russian" : "english";
+  const language = () => "russian";
   const t = () => copy[language()];
   const text = value => typeof value === "string" ? value : value?.[language()] || value?.english || "";
   const dimensions = () => ({ width: viewport.clientWidth, height: viewport.clientHeight });
@@ -3485,7 +3485,7 @@ return { cleanSpeech, voiceLineKey, dialogueVoiceAllowed, chapter2VoiceKey, crea
 
 const __mod_app = (() => {
 const { StoryEngine, plainText } = __mod_engine;
-const { CAMPAIGN_KEY, CHAPTERS, CHAPTER_IDS, ENDINGS, CHAPTER2_ENDINGS, CHAPTER3_ENDINGS, normalizeMonster, normalizeChapter, chapterForSnapshot, saveKey, chapterLanguage, chapterTitle, seedFlags, readCampaign, markCompleted, chapter2Handoff } = __mod_campaign;
+const { CAMPAIGN_KEY, CHAPTERS, CHAPTER_IDS, ENDINGS, CHAPTER2_ENDINGS, CHAPTER3_ENDINGS, normalizeMonster, normalizeChapter, chapterForSnapshot, saveKey, chapterTitle, seedFlags, readCampaign, markCompleted, chapter2Handoff } = __mod_campaign;
 const { BitmapText } = __mod_bitmap_font;
 const { FLOW_KEY, readFlowProgress, observeFlow, getFlowGraph } = __mod_flowchart;
 const { createFlowchart } = __mod_flowchart_view;
@@ -3524,7 +3524,9 @@ const storage = { get(k) {
   } catch {
   }
 } };
-const preferences = { chapter: 0, language: "english", textColor: "gradient", master: 1, music: 0.6, voice: 0.8, sound: 0.7, ambience: 0.55, effectsQuality: "high", reducedMotion: false, speed: 20, speech: false, ...storage.get("reverse-falls-preferences") };
+const chapterLanguage = () => "russian";
+const preferences = { chapter: 0, language: "russian", textColor: "gradient", master: 1, music: 0.6, voice: 0.8, sound: 0.7, ambience: 0.55, effectsQuality: "high", reducedMotion: false, speed: 20, speech: false, ...storage.get("reverse-falls-preferences") };
+preferences.language = "russian";
 if (!["high", "medium", "low"].includes(preferences.effectsQuality)) preferences.effectsQuality = "high";
 preferences.reducedMotion = preferences.reducedMotion === true;
 const channelVolume = channel => Math.max(0, Math.min(1, Number(preferences.master ?? 1) * Number(preferences[channel] ?? 1)));
@@ -3618,7 +3620,7 @@ function initializeStory() {
       if (message.includes('restored')) return 'Основная история восстановлена из контрольной точки.';
       return 'Система сохранений обновлена. Проверьте основной путь на карте решений.';
     });
-    return [...(initial?.warnings || []), ...localized];
+    return [...(initial?.warnings || []).map(() => "Старое сохранение перенесено в основную историю. Исходные данные сохранены."), ...localized];
   } catch (error) {
     storyFailure = error;
     storyReady = false;
@@ -3678,7 +3680,7 @@ function savePreferences() {
   storage.set("reverse-falls-preferences", preferences);
 }
 function labels(kind) {
-  const text = scripts[`textes/${preferences.language}/lists/${kind}`] || scripts[`textes/english/lists/${kind}`] || "";
+  const text = scripts[`textes/${preferences.language}/lists/${kind}`] || scripts[`textes/russian/lists/${kind}`] || "";
   return Object.fromEntries([...text.matchAll(/\[([^\s\]]+)(?:\s+[^\]]*)?\]\s*([^\r\n]+)/g)].map((m) => [m[1].toLowerCase(), m[2].trim()]));
 }
 function label(key, fallback) {
@@ -3693,7 +3695,6 @@ function uiText() {
   $("settings").querySelector("h1").textContent = label("option", "OPTION");
   const ids = { "save-button": ["save", "Save"], "load-button": ["reload_last_save", "Reload Last Save"], "restart-button": ["delete_save", "Restart Chapter"], "menu-button": ["return_menu", "Return to Menu"], "settings-close": ["return", "Return"], "settings-quit": ["quit", "Quit"], "save-quit-button": ["save_quit", "Save & Quit"] };
   for (const [id, [k, f]] of Object.entries(ids)) $(id).textContent = label(k, f);
-  $("language-select").value = preferences.language;
   document.documentElement.lang = ru ? "ru" : "en";
   const volumeNames = ru ? { master: "Общая громкость", music: "Музыка", voice: "Голос", sound: "Звуки", ambience: "Атмосфера" } : { master: "Master", music: "Music", voice: "Voice", sound: "SFX", ambience: "Ambience" };
   for (const range of document.querySelectorAll("[data-volume]")) range.closest(".volume-row").querySelector("span").textContent = volumeNames[range.dataset.volume] || range.dataset.volume;
@@ -3949,7 +3950,7 @@ function setupEngine() {
 function applyEffect(event, { fast = skip } = {}) {
   switch (event.type) {
     case "audio":
-      if (event.channel === "voice" && (currentChapter >= 1 || preferences.speech)) break;
+      if (event.channel === "voice") break; // Original short voice clips are in English.
       playAudio(event.channel, event.name, event);
       break;
     case "sfx":
@@ -4296,14 +4297,14 @@ function drawDialogue() {
   const speakerNames = labels("names");
   const isNarrator = String(s.speaker).toLowerCase() === "narrator";
   const castName = currentChapter >= 1 ? chapter1Art.cast?.[String(s.speaker).toLowerCase()]?.name?.[preferences.language] : null;
-  const name = isNarrator ? "" : s.chars[String(s.speaker).toLowerCase()]?.secret ? "???" : castName || speakerNames[String(s.speaker).toLowerCase()] || s.speaker;
+  const name = isNarrator ? "" : s.chars[String(s.speaker).toLowerCase()]?.secret ? "???" : castName || speakerNames[String(s.speaker).toLowerCase()] || "Персонаж";
   let canvas = $("speaker").querySelector("canvas");
   if (!canvas) {
     canvas = document.createElement("canvas");
     $("speaker").replaceChildren(canvas);
   }
   font.draw(canvas, name, { font: currentFont(true), size: 144 * languageScale(), color: preferences.textColor === "white" ? "#fff" : color, gradient: preferences.textColor === "gradient" ? sp?.gradient : null, width: 2276, height: 180, maxWidth: 2276, outline: 2 });
-  font.draw($("text-canvas"), s.text, { font: currentFont(), extendedGlyphs: currentChapter >= 1, size: 124 * languageScale(), color: isNarrator || preferences.textColor === "white" ? "#fff" : color, gradient: preferences.textColor === "gradient" && !isNarrator ? sp?.gradient : null, width: 2276, height: 466, maxWidth: 2276, maxChars: displayed, outline: 2 });
+  font.draw($("text-canvas"), s.text, { font: currentFont(), extendedGlyphs: true, size: 124 * languageScale(), color: isNarrator || preferences.textColor === "white" ? "#fff" : color, gradient: preferences.textColor === "gradient" && !isNarrator ? sp?.gradient : null, width: 2276, height: 466, maxWidth: 2276, maxChars: displayed, outline: 2 });
   $("text-accessible").textContent = plainText(s.text);
   $("speaker").setAttribute("aria-label", name);
   $("advance-mark").hidden = displayed < textCount || s.phase === "choice";
@@ -4431,6 +4432,11 @@ function load(chapter = currentChapter) {
   } catch (error) { storyError(error); }
 }
 function restoreGameSnapshot(selected, data, { publish = true } = {}) {
+  if (data.language !== 'russian' || /Go-Kart|GO-KART|Gravity Falls|Reverse Falls|BUSTER/.test(data.text || '')) {
+    const canon = sessionData().canon;
+    const progress = { ...canon.progress, [selected]: { ...canon.progress[selected], language: 'russian' } };
+    data = replayCanonicalSnapshot(selected, { ...canon, progress }, { ...data, language: 'russian' }, replayResources());
+  }
   flowchart.close();
   currentChapter = selected;
   spokenSequence = -1;
@@ -4706,7 +4712,7 @@ function showCredits(fromMenu = true) {
     p.append(im);
   }
   const text = document.createElement("div");
-  text.textContent = copied || "Reverse Falls — Chapter 0\n\nGiddy Fresh Studios\nHelvest\n\nOriginal characters and world: Alex Hirsch / Disney\n\n" + (preferences.language === "russian" ? "Конец главы 0" : "End of Chapter 0");
+  text.textContent = copied;
   p.append(text);
   render();
 }
@@ -4758,7 +4764,7 @@ function action(name) {
 function showHistory() {
   $("history-list").replaceChildren(...engine.state.history.map((x) => {
     const p = document.createElement("p");
-    p.textContent = (x.speaker === "Narrator" ? "" : x.speaker + ": ") + plainText(x.text);
+    p.textContent = (x.speaker === "Narrator" ? "" : (labels("names")[String(x.speaker).toLowerCase()] || chapter1Art.cast?.[String(x.speaker).toLowerCase()]?.name?.russian || "Персонаж") + ": ") + plainText(x.text);
     return p;
   }));
   visible("history", true);
@@ -4803,21 +4809,6 @@ $("quit-button").addEventListener("click", () => {
   notify(preferences.language === "russian" ? "Игру можно закрыть вместе с этой вкладкой" : "You can close this browser tab");
 });
 $("credits-back").addEventListener("click", showMenu);
-$("language-select").value = preferences.language;
-$("language-select").addEventListener("change", (e) => {
-  const selectedLanguage = chapterLanguage(currentChapter, e.target.value);
-  const active = engine?.state.script && !['menu','credits','ending'].includes(mode);
-  if (active) {
-    // Language scripts have different line layouts: resume the current scene through replay.
-    const oldLanguage = preferences.language, session = sessionData();
-    try {
-      const before = engine.snapshot();
-      const translated = replayCanonicalSnapshot(currentChapter, session.canon, { ...before, language: selectedLanguage }, { ...replayResources(), language: selectedLanguage });
-      restoreGameSnapshot(currentChapter, translated);
-    } catch (error) { preferences.language = oldLanguage; uiText(); storyError(error); }
-  } else { preferences.language = selectedLanguage; savePreferences(); uiText(); paintMenu(); }
-  syncPresentationPreferences();
-});
 for (const b of document.querySelectorAll("[data-action]")) b.addEventListener("click", (e) => {
   e.stopPropagation();
   action(b.dataset.action);
@@ -4994,17 +4985,16 @@ function chapterUI() {
     "chapter0-kicker": "По оригинальной игре",
     "chapter0-title": "Глава 0",
     "chapter0-description": "Первая встреча Гидеона и Пасифики, охота на монстра и загадочный синий свет.",
-    "chapter0-languages": "Семь исходных языков",
+    "chapter0-languages": "Русский",
     "chapter0-start": "Начать главу 0",
     "chapter0-continue": "Продолжить",
     "chapter1-kicker": "Авторское продолжение",
     "chapter1-title": "Следы в лесу",
     "chapter1-description": "Первое расследование: пропавшие животные, странные следы и Дневник, который знает не всё.",
-    "chapter1-languages": "Русский · English",
+    "chapter1-languages": "Русский",
     "chapter1-start": "Начать главу 1",
     "chapter1-continue": "Продолжить",
     "prior-monster-label": "Вчерашняя охота",
-    "chapter1-language-label": "Язык главы",
     "ending-menu": "К выбору глав",
     "ending-replay": "Пройти заново",
     "ending-credits": "Авторы",
@@ -5026,7 +5016,6 @@ function chapterUI() {
     "chapter1-start": "Start chapter 1",
     "chapter1-continue": "Continue",
     "prior-monster-label": "Yesterday's hunt",
-    "chapter1-language-label": "Chapter language",
     "ending-menu": "Choose a chapter",
     "ending-replay": "Play again",
     "ending-credits": "Credits",
@@ -5046,7 +5035,6 @@ function chapterUI() {
   flowButton.title = ru ? "Карта решений (B)" : "Choices map (B)";
   flowButton.setAttribute("aria-label", flowButton.title);
   $("selected-chapter").textContent = (currentChapter >= 1 ? ru ? `Глава ${currentChapter} · ` : `Chapter ${currentChapter} · ` : "") + chapterTitle(currentChapter, preferences.language);
-  for (const option of $("language-select").options) option.disabled = !CHAPTERS[currentChapter].languages.includes(option.value);
   visible("chapter0-continue", hasSave(0));
   visible("chapter1-continue", hasSave(1));
   const canon = storyState.getCanon();
@@ -5056,10 +5044,9 @@ function chapterUI() {
   $('chapter2-kicker').textContent = ru ? 'Продолжение расследования' : 'The investigation continues';
   $('chapter2-title').textContent = ru ? 'Не тот монстр' : 'The Wrong Monster';
   $('chapter2-description').textContent = ru ? 'Два разных следа и пропавшие животные. Друзьям предстоит проверить свою версию и решить, кому можно доверять.' : 'Two different trails and missing animals. The friends must test their theory and decide whom they can trust.';
-  $('chapter2-languages').textContent = 'Русский · English';
+  $('chapter2-languages').textContent = 'Русский';
   $('chapter2-start').textContent = ru ? 'Начать главу 2' : 'Start chapter 2';
   $('chapter2-continue').textContent = ru ? 'Продолжить' : 'Continue';
-  $('chapter2-language-label').textContent = ru ? 'Язык главы' : 'Chapter language';
   $('chapter2-unlock-note').textContent = unlocked ? (ru ? 'Продолжение использует ваш основной путь главы 1.' : 'Continues your official chapter 1 path.') : (ru ? 'Заверши главу 1 или импортируй свой сохранённый путь через карту решений.' : 'Complete chapter 1 or import your saved path through the choices map.');
   const unlockedThree = !!canon.progress[2]?.completed;
   $('chapter3-start').disabled = !unlockedThree;
@@ -5067,10 +5054,9 @@ function chapterUI() {
   $('chapter3-kicker').textContent = ru ? 'Венди · начало новой истории' : 'Wendy · a new investigation';
   $('chapter3-title').textContent = chapterTitle(3, preferences.language);
   $('chapter3-description').textContent = ru ? 'Сдвинутые проходы старой лесопилки и девушка, которой явно есть что скрывать.' : 'Shifting passages at the old sawmill, and a girl who clearly has something to hide.';
-  $('chapter3-languages').textContent = 'Русский · English';
+  $('chapter3-languages').textContent = 'Русский';
   $('chapter3-start').textContent = ru ? 'Начать главу 3' : 'Start chapter 3';
   $('chapter3-continue').textContent = ru ? 'Продолжить' : 'Continue';
-  $('chapter3-language-label').textContent = ru ? 'Язык главы' : 'Chapter language';
   $('chapter3-unlock-note').textContent = unlockedThree ? (ru ? 'Продолжает ваш основной путь глав 0–2.' : 'Continues your official path through chapters 0–2.') : (ru ? 'Заверши последнюю сцену главы 2. Сохранённый путь можно импортировать через карту решений.' : 'Finish the final scene of chapter 2. Import your saved path through the choices map.');
   const monsterNames = ru ? ["Оборотень", "Вендиго", "Вампир"] : ["Werewolf", "Wendigo", "Vampire"];
   [...$("prior-monster").options].forEach((o, i) => o.textContent = monsterNames[i]);
@@ -5081,9 +5067,6 @@ function openChapters() {
   $("prior-monster").value = storyState.getChoice('ch0.creature') || 'Werewolf';
   $("prior-monster").disabled = !!storyState.getChoice('ch0.creature');
   $("prior-monster").title = preferences.language === 'russian' ? 'Прошлый выбор меняется через «Полный режим» карты решений.' : 'Change an earlier choice using Full mode on the choices map.';
-  $("chapter1-language").value = chapterLanguage(1, preferences.language);
-  $("chapter2-language").value = chapterLanguage(2, preferences.language);
-  $("chapter3-language").value = chapterLanguage(3, preferences.language);
   visible("chapter-picker", true);
   $("chapter-picker-close").focus();
 }
@@ -5168,12 +5151,12 @@ function showChapterThreeEnding() {
 $("chapters-button").addEventListener("click", openChapters);
 $("chapter-picker-close").addEventListener("click", () => visible("chapter-picker", false));
 $("chapter0-start").addEventListener("click", () => start(0));
-$("chapter1-start").addEventListener("click", () => start(1, { language: $("chapter1-language").value, monster: $("prior-monster").value }));
+$("chapter1-start").addEventListener("click", () => start(1, { monster: $("prior-monster").value }));
 $("chapter0-continue").addEventListener("click", () => load(0));
 $("chapter1-continue").addEventListener("click", () => load(1));
-$('chapter2-start').addEventListener('click', () => start(2, { language: $('chapter2-language').value }));
+$('chapter2-start').addEventListener('click', () => start(2, {}));
 $('chapter2-continue').addEventListener('click', () => load(2));
-$('chapter3-start').addEventListener('click', () => start(3, { language: $('chapter3-language').value }));
+$('chapter3-start').addEventListener('click', () => start(3, {}));
 $('chapter3-continue').addEventListener('click', () => load(3));
 $('ending-next-chapter').addEventListener('click', () => start(currentChapter + 1, { language: chapterLanguage(currentChapter + 1, preferences.language) }));
 $("ending-menu").addEventListener("click", openChapters);
@@ -5202,7 +5185,7 @@ for (const id of ["flow-menu-button", "ending-flow", "credits-flow"]) $(id).addE
   }
   requestAnimationFrame(tick);
 })().catch((error) => {
-  $("loading").textContent = error.message;
+  $("loading").textContent = "Не удалось загрузить игру. Проверьте, что архив полностью распакован и все файлы доступны.";
   console.error(error);
 });
 

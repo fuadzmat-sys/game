@@ -1856,3 +1856,6 @@ h1 {
 .chapter-cards-four .chapter-button { height: 108px; font-size: 48px; padding: 14px; }
 /* Keep the Chapter 3 close-up beside the trio, clear of faces and dialogue. */
 #scene-item[data-item="ch3_wooden_weight"] { left: 14%; top: 45%; transform: translate(-50%, -50%); }
+/* Russian title uses text so no English lettering is baked into the menu. */
+#title-logo.russian-title { left: 640px; top: 330px; width: 2560px; height: 330px; display: flex; align-items: center; justify-content: center; font: 900 250px/1.1 Georgia, serif; letter-spacing: 12px; color: #e5eaff; text-shadow: 0 12px 8px #000, 0 0 50px #334b91; }
+#subtitle-logo.russian-subtitle { left: 960px; top: 700px; width: 1920px; height: 160px; text-align: center; font: 700 115px/1.2 Georgia, serif; letter-spacing: 50px; color: #c5cce1; text-shadow: 0 8px 8px #000; }

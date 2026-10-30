@@ -6,7 +6,7 @@ const copy = {
     title: "Карта решений", kicker: "REVERSE FALLS / ТВОЯ ИСТОРИЯ",
     chapters: ["Глава 0", "Глава 1", "Глава 2", "Глава 3"], subtitles: ["Первая охота", "Следы в лесу", "Не тот монстр", "Чужая находка"],
     close: "Вернуться", all: "Вся схема", full: "Полный режим", pathMode: "Мой путь",
-    trueStory: "Настоящая история", timelineSubtitle: "Одна официальная история · Только просмотр", exportSave: "Сохранить путь", importSave: "Import Save", importTitle: "Загрузить сохранённый путь?", importText: "Текущая основная история будет заменена импортированным сохранением.", importAccept: "Загрузить", path: "Основной путь", alternative: "Альтернатива", discovered: "Открыто ранее", now: "Сейчас", locked: "Не открыто",
+    trueStory: "Настоящая история", timelineSubtitle: "Одна официальная история · Только просмотр", exportSave: "Сохранить путь", importSave: "Загрузить путь", importTitle: "Загрузить сохранённый путь?", importText: "Текущая основная история будет заменена импортированным сохранением.", importAccept: "Загрузить", path: "Основной путь", alternative: "Альтернатива", discovered: "Открыто ранее", now: "Сейчас", locked: "Не открыто",
     progress: (count, total, percent) => `Открыто ${count} из ${total} · ${percent}%`,
     help: "Клик: сведения · Полный режим: альтернативы и изменение пути · Перетаскивай схему · Колесо: масштаб · Esc: вернуться",
     select: "Выбери сцену на схеме", hint: "Просмотр карты не меняет историю. Для работы с решениями выбери «Полный режим».",
@@ -74,7 +74,7 @@ export function createFlowchart({
   const transforms = new Map();
   let chapter = 0, mapMode = "full", graph, selected = null, zoom = 1, x = 0, y = 0, drag = null;
   let moved = false, returnFocus = null, openedAt = 0, confirmation = null, pending = false;
-  const language = () => getLanguage() === "russian" ? "russian" : "english";
+  const language = () => "russian";
   const t = () => copy[language()];
   const text = value => typeof value === "string" ? value : value?.[language()] || value?.english || "";
   const dimensions = () => ({ width: viewport.clientWidth, height: viewport.clientHeight });

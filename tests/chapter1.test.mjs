@@ -221,10 +221,12 @@ test('current cast ages, artwork and soundtrack references are complete', () => 
     }
   }
 });
-test('Chapter 0 scripts, configuration and original resource manifest remain byte-identical', () => {
-  for (const [file, expected] of Object.entries({
-    'scripts.json': '811fce4283386dd0fc811bd3a7d1e869093f8e4c05c468e4dab798958bd281fc',
-    'config.json': '75cd42c7cf09bc5ae10c386c474122ff9153acef9dc1af888af8263c5aaad3f7',
-    'manifest.json': 'afb100b0ef8a1bad220acfbfda447b7f3ba697218298a03e795dfc4f1750be0d',
-  })) assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../assets/' + file, import.meta.url))).digest('hex'), expected, file);
+test('Chapter 0 keeps every command and save line position after text localization', () => {
+  const original = JSON.parse(fs.readFileSync(new URL('./fixtures/chapter0-command-layout.json', import.meta.url)));
+  const scripts = read('scripts');
+  assert.deepEqual(Object.keys(scripts), Object.keys(original));
+  for (const [key,text] of Object.entries(scripts)) {
+    assert.deepEqual([[text.split(/\r\n|\r|\n/).filter(Boolean).length], text.match(/\[[^\]]*\]/g) || []], original[key], key);
+  }
+  assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../assets/manifest.json', import.meta.url))).digest('hex'), 'afb100b0ef8a1bad220acfbfda447b7f3ba697218298a03e795dfc4f1750be0d');
 });
