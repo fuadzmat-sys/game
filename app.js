@@ -1,19 +1,21 @@
 import { StoryEngine, plainText } from "./engine.js";
-import { CAMPAIGN_KEY, CHAPTERS, ENDINGS, normalizeMonster, normalizeChapter, chapterForSnapshot, saveKey, chapterLanguage, chapterTitle, seedFlags, readCampaign, markCompleted, chapter2Handoff } from "./campaign.js";
+import { CAMPAIGN_KEY, CHAPTERS, CHAPTER_IDS, ENDINGS, CHAPTER2_ENDINGS, CHAPTER3_ENDINGS, normalizeMonster, normalizeChapter, chapterForSnapshot, saveKey, chapterLanguage, chapterTitle, seedFlags, readCampaign, markCompleted, chapter2Handoff } from "./campaign.js";
 import { BitmapText } from "./bitmap-font.js";
 import { FLOW_KEY, readFlowProgress, observeFlow, getFlowGraph } from "./flowchart.js";
 import { createFlowchart } from "./flowchart-view.js";
 import { STORY_KEY, createStoryStateService } from "./story-state.js";
-import { STORY_REGISTRY, choicesFromSnapshot, reconcileSnapshot, progressFromSnapshot, canonicalFlowSnapshot, migrateLegacyStory, replayCanonicalSnapshot, rebuildSnapshotsForRewrite, createCanonicalFlowJump, choiceForFlowNode, boundSnapshotCache } from "./story-bridge.js";
+import { STORY_REGISTRY, choicesFromSnapshot, reconcileSnapshot, progressFromSnapshot, canonicalFlowSnapshot, migrateLegacyStory, replayCanonicalSnapshot, rebuildSnapshotsForRewrite, createCanonicalFlowJump, choiceForFlowNode, boundSnapshotCache, seedChapterFlags, seedChapterInventory } from "./story-bridge.js";
 import { createChapterAudio, voiceLineKey } from "./chapter-audio.js";
 import { AMBIENCE_PRESETS, ANIMATION_PRESETS, EXPRESSION_FALLBACKS, normalizePresentationState } from "./presentation.js";
-const { manifest, config, scripts, chapter1Art = {}, voices = {} } = window.REVERSE_FALLS_DATA;
+const { manifest, config, scripts, chapter1Art: baseChapter1Art = {}, chapter2Art = {}, chapter3Art = {}, chapter2Audio = {}, voices = {} } = window.REVERSE_FALLS_DATA;
+const chapter1Art = { ...baseChapter1Art, ...chapter2Art, ...chapter3Art };
+for (const group of ['backgrounds','characters','sprites','items','cast','emotions']) chapter1Art[group] = { ...baseChapter1Art[group], ...chapter2Art[group], ...chapter3Art[group] };
 const $ = (id) => document.getElementById(id);
 const visible = (id, yes) => {
   $(id).hidden = !yes;
 };
 const lower = (map) => Object.fromEntries(Object.entries(map).map(([k, v]) => [k.toLowerCase(), v]));
-const sprites = lower(manifest.sprites), textures = lower(manifest.textures), audio = lower(manifest.audio);
+const sprites = lower(manifest.sprites), textures = lower(manifest.textures), audio = lower({ ...manifest.audio, ...chapter2Audio.effects, ...chapter2Audio.ambience });
 const storyCharacters = { ...config.characters, ...chapter1Art.characters };
 const characters = lower(storyCharacters), backgrounds = lower(config.backgrounds);
 const font = new BitmapText(config.fonts, manifest);
@@ -40,10 +42,10 @@ const preferences = { chapter: 0, language: "english", textColor: "gradient", ma
 if (!["high", "medium", "low"].includes(preferences.effectsQuality)) preferences.effectsQuality = "high";
 preferences.reducedMotion = preferences.reducedMotion === true;
 const channelVolume = channel => Math.max(0, Math.min(1, Number(preferences.master ?? 1) * Number(preferences[channel] ?? 1)));
-const chapterAudio = createChapterAudio({ voices, getVolume: channel => channelVolume(channel), getVoiceContext: () => ({ chapter: currentChapter, script: engine?.state.script }) });
-const ambienceAudio = createChapterAudio({ getVolume: () => channelVolume("ambience") });
+const chapterAudio = createChapterAudio({ voices, chapter2Audio, getVolume: channel => channelVolume(channel), getVoiceContext: () => ({ chapter: currentChapter, script: engine?.state.script, sourceLine: engine?.state.line - 1, language: preferences.language }) });
+const ambienceAudio = createChapterAudio({ chapter2Audio, getVolume: () => channelVolume("ambience") });
 chapterAudio.setSpeechEnabled(preferences.speech);
-let spokenSequence = -1, speechDeadline = 0, speechPausedAt = 0;
+let spokenSequence = -1, speechDeadline = 0, speechPausedAt = 0, diegeticUntil = 0;
 let currentChapter = normalizeChapter(preferences.chapter);
 let campaign = readCampaign(null);
 let flowProgress = readFlowProgress(null);
@@ -59,7 +61,7 @@ function validateStorySnapshot(snapshot, chapter, canon) {
   for (const [id, option] of Object.entries(choicesFromSnapshot(snapshot))) if (canon.choices[id] !== option) return false;
   const projected = reconcileSnapshot(snapshot, canon);
   if (Object.keys(projected.flags).length !== Object.keys(snapshot.flags || {}).length || Object.entries(projected.flags).some(([key, value]) => snapshot.flags[key] !== value)) return false;
-  if (chapter === 1 && JSON.stringify(projected.inventory) !== JSON.stringify(snapshot.inventory)) return false;
+  if (CHAPTERS[chapter]?.authored && JSON.stringify(projected.inventory) !== JSON.stringify(snapshot.inventory)) return false;
   const variant = snapshot.script.match(/(?:intro_2_|mothman_2_|cafe_|yard_|clearing_)(werewolf|wendigo|vampire)$/);
   return !variant || variant[1] === canon.choices['ch0.creature']?.toLowerCase();
 }
@@ -143,6 +145,7 @@ let engine, mode = "menu", auto = false, skip = false, hidden = false, frameStar
 const charNodes = /* @__PURE__ */ new Map();
 let visualChars = {}, effectTimers = [], effectGeneration = 0, ambienceTimer = null, ambienceName = null, ambienceStep = 0;
 function cancelEffects() {
+  diegeticUntil = 0;
   chapterAudio.stopEffects();
   ambienceAudio.stopEffects();
   for (const timer of effectTimers) clearTimeout(timer);
@@ -273,8 +276,8 @@ function fadeAudio(node, from, to, seconds, onDone) {
   };
   requestAnimationFrame(step);
 }
-function playAudio(channel, name, { muted = false, fade = 0, crossfade = false } = {}) {
-  const targetVolume = muted ? 0 : channelVolume(channel);
+function playAudio(channel, name, { muted = false, fade = 0, crossfade = false, gain = 1 } = {}) {
+  const targetVolume = muted ? 0 : channelVolume(channel) * Math.max(0, Math.min(1, Number(gain) || 0));
   if (channel === "music" && name && soundtrack.name === String(name).toLowerCase()) {
     if (playing.music) {
       playing.music.volume = targetVolume;
@@ -307,7 +310,7 @@ function playAudio(channel, name, { muted = false, fade = 0, crossfade = false }
 function updateVolume() {
   chapterAudio.updateVolume();
   ambienceAudio.updateVolume();
-  for (const ch of ["music", "voice", "ambience"]) if (playing[ch]) playing[ch].volume = ch === "music" && engine?.state.musicMuted ? 0 : channelVolume(ch);
+  for (const ch of ["music", "voice", "ambience"]) if (playing[ch]) playing[ch].volume = ch === "music" && engine?.state.musicMuted ? 0 : channelVolume(ch) * (ch === "music" ? engine?.state.musicGain ?? 1 : 1);
   for (const a of playing.sound) a.volume = channelVolume("sound");
   savePreferences();
 }
@@ -315,7 +318,7 @@ function setBackground(name, instant = false, duration = 2.5) {
   const key = String(name || "black").toLowerCase();
   if (key === renderedBackground) return;
   renderedBackground = key;
-  const replacement = currentChapter === 1 ? chapter1Art.backgrounds?.[key] : null;
+  const replacement = currentChapter >= 1 ? chapter1Art.backgrounds?.[key] : null;
   const path = replacement?.path || asset(backgrounds[key]?.texture || key);
   const filter = replacement?.filter || "none";
   const bg = $("background");
@@ -421,7 +424,7 @@ function playAmbience(name, { fade = .6 } = {}) {
     return;
   }
   const preset = AMBIENCE_PRESETS[name];
-  if (!preset || currentChapter !== 1 || preferences.effectsQuality === "low") return;
+  if (!preset || currentChapter < 1 || preferences.effectsQuality === "low") return;
   const pulse = () => {
     if (ambienceName !== name) return;
     if (!skip && channelVolume("ambience") > 0) {
@@ -460,11 +463,14 @@ function setupEngine() {
 function applyEffect(event, { fast = skip } = {}) {
   switch (event.type) {
     case "audio":
-      if (event.channel === "voice" && (currentChapter === 1 || preferences.speech)) break;
+      if (event.channel === "voice" && (currentChapter >= 1 || preferences.speech)) break;
       playAudio(event.channel, event.name, event);
       break;
     case "sfx":
-      if (!skip && currentChapter === 1) { chapterAudio.effect(event.name); visualCue(event.name); }
+      if (!skip && currentChapter >= 1) {
+        const played = chapterAudio.effect(event.name); visualCue(event.name);
+        if (played && String(event.name).startsWith('ch2_mimic_')) diegeticUntil = performance.now() + (chapter2Audio.effects?.[event.name]?.duration || 0) * 1000;
+      }
       break;
     case "background":
       setBackground(event.name, fast || event.instant, event.duration);
@@ -535,9 +541,9 @@ function handle(result, { restoring = false } = {}) {
   if (restoring) {
     cancelEffects();
     visualChars = JSON.parse(JSON.stringify(engine.state.chars));
-    mode = engine.state.phase === "map" ? "map" : engine.state.phase === "credits" ? currentChapter === 1 ? "ending" : "credits" : "story";
+    mode = engine.state.phase === "map" ? "map" : engine.state.phase === "credits" ? currentChapter >= 1 ? "ending" : "credits" : "story";
     readyAt = 0;
-    playAudio("music", engine.state.music, { muted: engine.state.musicMuted });
+    playAudio("music", engine.state.music, { muted: engine.state.musicMuted, gain: engine.state.musicGain ?? 1 });
     renderedBackground = "";
     setBackground(engine.state.bg, true);
     $("background").classList.toggle("shaking", !!engine.state.shake);
@@ -560,7 +566,7 @@ function handle(result, { restoring = false } = {}) {
     }
     if (event.type === "wait" && !event.inline) delay = Math.max(0, event.duration * 1e3);
     if (event.type === "background") delay = event.instant ? 0 : (event.duration || 2.5) * 1e3;
-    if (event.type === "character") delay = event.instant ? 0 : (event.duration ?? (currentChapter === 1 ? .45 : 2)) * 1e3;
+    if (event.type === "character") delay = event.instant ? 0 : (event.duration ?? (currentChapter >= 1 ? .45 : 2)) * 1e3;
     later(() => applyEffect(event, { fast: speed < 1 }), cursor);
   }
   if (result.state.phase === "pause") cursor += delay * speed;
@@ -578,19 +584,23 @@ function start(chapter = currentChapter, { language, monster } = {}) {
     try { storyState.updateCanonical({ choices: {}, progress: {}, snapshots: {}, currentChapter: 0 }, 'new game', { checkpoint: true }); }
     catch (error) { storyError(error); return false; }
   }
-  if (requested === 1 && data.canon.progress[1]) {
+  if (requested >= 2 && !data.canon.progress[requested - 1]?.completed) {
+    notify(preferences.language === 'russian' ? 'Сначала заверши предыдущую главу в основной истории.' : 'Complete the preceding chapter in your official story first.'); return false;
+  }
+  if (requested >= 1 && data.canon.progress[requested]) {
     storyState.createAlternativeSession({ origin: { chapter: currentChapter, mode, snapshot: engine?.state.script ? engine.snapshot() : null }, startNode: 'start' });
     const temporary = storyState.getAlternativeSession();
-    const choices = Object.fromEntries(Object.entries(temporary.canon.choices).filter(([id]) => STORY_REGISTRY.choices.find(choice => choice.id === id)?.chapterId !== 1));
+    const choices = Object.fromEntries(Object.entries(temporary.canon.choices).filter(([id]) => STORY_REGISTRY.choices.find(choice => choice.id === id)?.chapterId < requested));
     const progress = { ...temporary.canon.progress }, snapshots = { ...temporary.snapshots };
-    delete progress[1]; delete snapshots[1];
-    storyState.updateAlternative({ choices, progress, snapshots, currentChapter: 1 });
+    for (const id of CHAPTER_IDS) if (id >= requested) { delete progress[id]; delete snapshots[id]; }
+    storyState.updateAlternative({ choices, progress, snapshots, currentChapter: requested });
   }
   spokenSequence = -1;
   flowchart.close();
   const selected = normalizeChapter(chapter);
   const canonicalMonster = storyState.getSessionCanon().choices['ch0.creature'];
-  const flags = selected === 1 ? { monster: canonicalMonster || normalizeMonster(monster) } : {};
+  const flags = selected === 0 ? {} : selected === 1 ? { monster: canonicalMonster || normalizeMonster(monster) } : seedChapterFlags(storyState.getSessionCanon(), selected);
+  const inventory = selected >= 2 ? seedChapterInventory(storyState.getSessionCanon(), selected) : [];
   currentChapter = selected;
   preferences.chapter = selected;
   preferences.language = chapterLanguage(selected, language || preferences.language);
@@ -615,7 +625,7 @@ function start(chapter = currentChapter, { language, monster } = {}) {
   readyAt = 0;
   uiText();
   setupEngine();
-  handle(engine.start(CHAPTERS[selected].start, { flags }));
+  handle(engine.start(CHAPTERS[selected].start, { flags, inventory }));
 }
 function next() {
   if (!engine || flowchart.isOpen() || ["menu", "credits", "ending"].includes(mode) || !$("settings").hidden || !$("history").hidden) return;
@@ -625,7 +635,7 @@ function next() {
     return;
   }
   if (mode === "map") return;
-  if (performance.now() < readyAt) return;
+  if (performance.now() < readyAt || !skip && performance.now() < diegeticUntil) return;
   if (displayed < textCount) {
     displayed = textCount;
     const reveal = engine.reveal(Infinity);
@@ -660,9 +670,9 @@ function choose(i) {
 const missingExpressionWarnings = new Set();
 function charSpec(char) {
   const data = characters[char.id] || {};
-  let expression = currentChapter === 1 && char.emotion && char.emotion !== "neutral" ? chapter1Art.emotions?.[char.id]?.[char.emotion] || char.expression : char.expression;
+  let expression = currentChapter >= 1 && char.emotion && char.emotion !== "neutral" ? chapter1Art.emotions?.[char.id]?.[char.emotion] || char.expression : char.expression;
   let expr = data.expressions?.[expression] || data.customExpressions?.[expression];
-  if (!expr && currentChapter === 1) {
+  if (!expr && currentChapter >= 1 && !chapter1Art.sprites?.[char.id]) {
     const fallback = EXPRESSION_FALLBACKS[char.id]?.[expression];
     if (fallback) { expression = fallback; expr = data.expressions?.[expression] || data.customExpressions?.[expression]; }
     if (!expr && expression && expression !== "idle") {
@@ -672,7 +682,9 @@ function charSpec(char) {
   }
   expr ||= {};
   const talk = char.speaking && displayed < textCount && Math.floor(performance.now() / 140) % 2;
-  return { replacement: currentChapter === 1 ? chapter1Art.sprites?.[char.id] : null, data, head: (talk ? expr.talk || data.defaultTalk : expr.shut) || data.default, body: expr.body || data.body };
+  const baseReplacement = currentChapter >= 1 ? chapter1Art.sprites?.[char.id] : null;
+  const replacement = baseReplacement?.expressions?.[expression] || baseReplacement?.expressions?.[char.emotion] || baseReplacement;
+  return { replacement, data, head: (talk ? expr.talk || data.defaultTalk : expr.shut) || data.default, body: expr.body || data.body };
 }
 function renderCharacters(instant = null, duration = null) {
   if (!engine) return;
@@ -696,19 +708,19 @@ function renderCharacters(instant = null, duration = null) {
     }
     const offset = data.offset || { x: 0, y: 0 };
     if (instant !== null) {
-      const seconds = duration ?? (currentChapter === 1 ? .45 : 2);
+      const seconds = duration ?? (currentChapter >= 1 ? .45 : 2);
       el.style.transition = instant ? "none" : `left ${seconds}s ease, bottom ${seconds}s ease, opacity ${Math.min(.45, seconds)}s ease, transform ${Math.min(.4, seconds)}s ease`;
     }
     el.style.left = `${1920 + char.x + offset.x}px`;
     el.style.bottom = `${offset.y}px`;
     el.style.opacity = char.visible ? "1" : "0";
-    el.dataset.emotion = currentChapter === 1 ? char.emotion || "neutral" : "neutral";
+    el.dataset.emotion = currentChapter >= 1 ? char.emotion || "neutral" : "neutral";
     el.style.zIndex = char.order || 0;
     const scaleBase = replacement?.scaleBase || 1;
     el.style.transform = `scale(${(char.flip === "left" ? -1 : 1) * (char.scaleX || 1)/scaleBase},${(char.scaleY || 1)/scaleBase})`;
     const color = char.color || [1, 1, 1];
-    const levels = currentChapter === 1 ? color.slice(0, 3) : color;
-    el.style.filter = levels.every((x) => x >= 0.99) ? "none" : `brightness(${Math.max(...levels)})`;
+    const levels = currentChapter >= 1 ? color.slice(0, 3) : color;
+    el.style.filter = [levels.every((x) => x >= 0.99) ? "" : `brightness(${Math.max(...levels)})`, replacement?.filter || ""].filter(Boolean).join(" ") || "none";
     const bodyData = replacement ? null : sprites[String(body).toLowerCase()], headData = replacement || sprites[String(head).toLowerCase()];
     for (const [part, spec, y] of [["body", bodyData, 0], ["head", headData, bodyData?.height || 0]]) {
       const im = el.querySelector(".character-" + part);
@@ -758,8 +770,8 @@ function renderItem() {
     $("shade").after(el);
   }
   const item = engine?.state.item;
-  el.dataset.item = currentChapter === 1 ? String(item || "") : "";
-  const replacement = currentChapter === 1 ? chapter1Art.items?.[String(item).toLowerCase()] : null;
+  el.dataset.item = currentChapter >= 1 ? String(item || "") : "";
+  const replacement = currentChapter >= 1 ? chapter1Art.items?.[String(item).toLowerCase()] : null;
   const p = replacement?.path || asset(item) || asset(item, sprites);
   el.hidden = !p;
   if (p) {
@@ -792,12 +804,12 @@ function currentFont(bold = false) {
 function drawDialogue() {
   if (!engine) return;
   const s = engine.state;
-  const sp = { ...characters[String(s.speaker).toLowerCase()], ...(currentChapter === 1 ? chapter1Art.cast?.[String(s.speaker).toLowerCase()]?.dialogueStyle : null) };
+  const sp = { ...characters[String(s.speaker).toLowerCase()], ...(currentChapter >= 1 ? chapter1Art.cast?.[String(s.speaker).toLowerCase()]?.dialogueStyle : null) };
   const rgb = sp?.color || [1, 1, 1];
   const color = "#" + rgb.slice(0, 3).map((x) => Math.round(x * 255).toString(16).padStart(2, "0")).join("");
   const speakerNames = labels("names");
   const isNarrator = String(s.speaker).toLowerCase() === "narrator";
-  const castName = currentChapter === 1 ? chapter1Art.cast?.[String(s.speaker).toLowerCase()]?.name?.[preferences.language] : null;
+  const castName = currentChapter >= 1 ? chapter1Art.cast?.[String(s.speaker).toLowerCase()]?.name?.[preferences.language] : null;
   const name = isNarrator ? "" : s.chars[String(s.speaker).toLowerCase()]?.secret ? "???" : castName || speakerNames[String(s.speaker).toLowerCase()] || s.speaker;
   let canvas = $("speaker").querySelector("canvas");
   if (!canvas) {
@@ -805,7 +817,7 @@ function drawDialogue() {
     $("speaker").replaceChildren(canvas);
   }
   font.draw(canvas, name, { font: currentFont(true), size: 144 * languageScale(), color: preferences.textColor === "white" ? "#fff" : color, gradient: preferences.textColor === "gradient" ? sp?.gradient : null, width: 2276, height: 180, maxWidth: 2276, outline: 2 });
-  font.draw($("text-canvas"), s.text, { font: currentFont(), extendedGlyphs: currentChapter === 1, size: 124 * languageScale(), color: isNarrator || preferences.textColor === "white" ? "#fff" : color, gradient: preferences.textColor === "gradient" && !isNarrator ? sp?.gradient : null, width: 2276, height: 466, maxWidth: 2276, maxChars: displayed, outline: 2 });
+  font.draw($("text-canvas"), s.text, { font: currentFont(), extendedGlyphs: currentChapter >= 1, size: 124 * languageScale(), color: isNarrator || preferences.textColor === "white" ? "#fff" : color, gradient: preferences.textColor === "gradient" && !isNarrator ? sp?.gradient : null, width: 2276, height: 466, maxWidth: 2276, maxChars: displayed, outline: 2 });
   $("text-accessible").textContent = plainText(s.text);
   $("speaker").setAttribute("aria-label", name);
   $("advance-mark").hidden = displayed < textCount || s.phase === "choice";
@@ -957,7 +969,7 @@ function restoreGameSnapshot(selected, data, { publish = true } = {}) {
   try { handle(engine.restore(data), { restoring: true }); }
   finally { synchronizingStory = wasSynchronizing; }
   if (data.phase === "credits") {
-    if (selected === 1) showEnding();
+    if (selected >= 1) showEnding();
     else showCredits(false);
   }
 }
@@ -1196,6 +1208,11 @@ function showCredits(fromMenu = true) {
     note.textContent = preferences.language === "russian" ? "Глава 1 «Следы в лесу» — авторское продолжение по сценарию и библии пользователя. Иллюстрации улик и новые фоны созданы для этой версии. Авторы материалов оригинальной игры:" : "Chapter 1: Tracks in the Forest is an original continuation based on the user's script and story bible. Clue illustrations and new backgrounds were created for this version. Original game art and audio credits:";
     p.append(note);
   }
+  if (currentChapter === 2) {
+    const note = document.createElement('p');
+    note.textContent = preferences.language === 'russian' ? 'Глава 2 «Не тот монстр» — авторское продолжение по заданию пользователя. Новые фоны и временные дизайны существ подготовлены для этой версии. Голосовые приманки — независимые вымышленные голоса; полная озвучка пока не готова. Авторы материалов оригинальной игры:' : 'Chapter 2: The Wrong Monster is an original continuation based on the user’s specification. New backgrounds and provisional creature designs were prepared for this version. Spoken lures use independently designed fictional voices; full dialogue voice acting is pending. Original game art and audio credits:';
+    p.append(note);
+  }
   for (const name of ["Giddy_Fresh_Logo", "Helvest_Logo"]) {
     const im = new Image();
     im.src = asset(name);
@@ -1268,7 +1285,7 @@ function tick(t) {
       spokenSequence = engine.state.sequence;
       const recording = voices.lines?.[voiceLineKey(engine.state.text, engine.state.speaker, preferences.language)];
       speechDeadline = t + (recording?.duration ? recording.duration * 1000 + 3000 : Math.min(45000, Math.max(6000, plainText(engine.state.text).length * 100)));
-      chapterAudio.speak({ text: engine.state.text, speaker: engine.state.speaker, language: preferences.language, chapter: currentChapter, script: engine.state.script });
+      chapterAudio.speak({ text: engine.state.text, speaker: engine.state.speaker, language: preferences.language, chapter: currentChapter, script: engine.state.script, sourceLine: engine.state.line - 1 });
     }
     if (chapterAudio.isSpeaking && t > speechDeadline) chapterAudio.stopSpeech();
     if (engine.state.phase === "dialogue" && displayed < textCount && t >= readyAt && t >= inlinePause) {
@@ -1283,7 +1300,7 @@ function tick(t) {
       renderCharacters();
     }
     if (displayed >= textCount && !finishedAt) finishedAt = t;
-    if ((skip || auto) && (!chapterAudio.isSpeaking || skip) && displayed >= textCount && engine.state.phase !== "choice" && t >= Math.max(readyAt, finishedAt + (skip ? 50 : Math.max(900, textCount * 54)))) {
+    if ((skip || auto) && (!chapterAudio.isSpeaking || skip) && displayed >= textCount && engine.state.phase !== "choice" && t >= Math.max(readyAt, skip ? 0 : diegeticUntil, finishedAt + (skip ? 50 : Math.max(900, textCount * 54)))) {
       next();
       frameStart = t;
     }
@@ -1351,7 +1368,7 @@ $("save-button").addEventListener("click", save);
 $("load-button").addEventListener("click", () => load());
 $("restart-button").addEventListener("click", () => {
   visible("settings", false);
-  start(currentChapter, { monster: currentChapter === 1 ? engine.state.flags.monster : void 0 });
+  start(currentChapter, { monster: currentChapter >= 1 ? engine.state.flags.monster : void 0 });
 });
 $("menu-button").addEventListener("click", showMenu);
 $("history-close").addEventListener("click", () => { visible("history", false); syncSpeechPause(); });
@@ -1532,7 +1549,7 @@ function chapterUI() {
   for (const [id, text] of Object.entries(texts)) $(id).textContent = text;
   $("speech-label").textContent = ru ? "Озвучивать диалоги" : "Spoken dialogue";
   const speechMode = chapterAudio.speechMode({ language: preferences.language, chapter: currentChapter, script: CHAPTERS[currentChapter].start });
-  $("speech-note").textContent = speechMode === "pending" ? ru ? "Глава 1: пока без озвучки. Музыка и звуки включены." : "Chapter 1: voice acting pending. Music and effects are available." : speechMode === "recorded" ? ru ? "Готовая озвучка · глава 0" : "Prepared voices · chapter 0" : speechMode === "system" ? ru ? "Голос браузера для этого языка" : "Browser voice for this language" : ru ? "Озвучка недоступна" : "Speech is unavailable";
+  $("speech-note").textContent = speechMode === "pending" ? ru ? `Глава ${currentChapter}: полная озвучка пока не готова. Музыка и звуки включены.` : `Chapter ${currentChapter}: full voice acting is pending. Music and effects are available.` : speechMode === "recorded" ? ru ? "Готовая озвучка · глава 0" : "Prepared voices · chapter 0" : speechMode === "system" ? ru ? "Голос браузера для этого языка" : "Browser voice for this language" : ru ? "Озвучка недоступна" : "Speech is unavailable";
   const speechUnavailable = ["unavailable", "pending"].includes(speechMode);
   $("speech-enabled").disabled = speechUnavailable;
   $("speech-enabled").checked = preferences.speech && !speechUnavailable;
@@ -1542,10 +1559,33 @@ function chapterUI() {
   const flowButton = document.querySelector('[data-action="flowchart"]');
   flowButton.title = ru ? "Карта решений (B)" : "Choices map (B)";
   flowButton.setAttribute("aria-label", flowButton.title);
-  $("selected-chapter").textContent = (currentChapter === 1 ? ru ? "Глава 1 · " : "Chapter 1 · " : "") + chapterTitle(currentChapter, preferences.language);
+  $("selected-chapter").textContent = (currentChapter >= 1 ? ru ? `Глава ${currentChapter} · ` : `Chapter ${currentChapter} · ` : "") + chapterTitle(currentChapter, preferences.language);
   for (const option of $("language-select").options) option.disabled = !CHAPTERS[currentChapter].languages.includes(option.value);
   visible("chapter0-continue", hasSave(0));
   visible("chapter1-continue", hasSave(1));
+  const canon = storyState.getCanon();
+  const unlocked = !!canon.progress[1]?.completed;
+  $('chapter2-start').disabled = !unlocked;
+  visible('chapter2-continue', hasSave(2));
+  $('chapter2-kicker').textContent = ru ? 'Продолжение расследования' : 'The investigation continues';
+  $('chapter2-title').textContent = ru ? 'Не тот монстр' : 'The Wrong Monster';
+  $('chapter2-description').textContent = ru ? 'Два разных следа и пропавшие животные. Друзьям предстоит проверить свою версию и решить, кому можно доверять.' : 'Two different trails and missing animals. The friends must test their theory and decide whom they can trust.';
+  $('chapter2-languages').textContent = 'Русский · English';
+  $('chapter2-start').textContent = ru ? 'Начать главу 2' : 'Start chapter 2';
+  $('chapter2-continue').textContent = ru ? 'Продолжить' : 'Continue';
+  $('chapter2-language-label').textContent = ru ? 'Язык главы' : 'Chapter language';
+  $('chapter2-unlock-note').textContent = unlocked ? (ru ? 'Продолжение использует ваш основной путь главы 1.' : 'Continues your official chapter 1 path.') : (ru ? 'Заверши главу 1 или импортируй свой сохранённый путь через карту решений.' : 'Complete chapter 1 or import your saved path through the choices map.');
+  const unlockedThree = !!canon.progress[2]?.completed;
+  $('chapter3-start').disabled = !unlockedThree;
+  visible('chapter3-continue', hasSave(3));
+  $('chapter3-kicker').textContent = ru ? 'Венди · начало новой истории' : 'Wendy · a new investigation';
+  $('chapter3-title').textContent = chapterTitle(3, preferences.language);
+  $('chapter3-description').textContent = ru ? 'Сдвинутые проходы старой лесопилки и девушка, которой явно есть что скрывать.' : 'Shifting passages at the old sawmill, and a girl who clearly has something to hide.';
+  $('chapter3-languages').textContent = 'Русский · English';
+  $('chapter3-start').textContent = ru ? 'Начать главу 3' : 'Start chapter 3';
+  $('chapter3-continue').textContent = ru ? 'Продолжить' : 'Continue';
+  $('chapter3-language-label').textContent = ru ? 'Язык главы' : 'Chapter language';
+  $('chapter3-unlock-note').textContent = unlockedThree ? (ru ? 'Продолжает ваш основной путь глав 0–2.' : 'Continues your official path through chapters 0–2.') : (ru ? 'Заверши последнюю сцену главы 2. Сохранённый путь можно импортировать через карту решений.' : 'Finish the final scene of chapter 2. Import your saved path through the choices map.');
   const monsterNames = ru ? ["Оборотень", "Вендиго", "Вампир"] : ["Werewolf", "Wendigo", "Vampire"];
   [...$("prior-monster").options].forEach((o, i) => o.textContent = monsterNames[i]);
 }
@@ -1556,6 +1596,8 @@ function openChapters() {
   $("prior-monster").disabled = !!storyState.getChoice('ch0.creature');
   $("prior-monster").title = preferences.language === 'russian' ? 'Прошлый выбор меняется через «Полный режим» карты решений.' : 'Change an earlier choice using Full mode on the choices map.';
   $("chapter1-language").value = chapterLanguage(1, preferences.language);
+  $("chapter2-language").value = chapterLanguage(2, preferences.language);
+  $("chapter3-language").value = chapterLanguage(3, preferences.language);
   visible("chapter-picker", true);
   $("chapter-picker-close").focus();
 }
@@ -1564,10 +1606,12 @@ function completeChapter() {
   recordFlow(snapshot, true);
   try { syncStory(snapshot); } catch (error) { storyError(error); return; }
   refreshCampaignProjection();
-  if (currentChapter === 1) showEnding();
+  if (currentChapter >= 1) showEnding();
   else showCredits(false);
 }
 function showEnding() {
+  if (currentChapter === 3) { showChapterThreeEnding(); return; }
+  if (currentChapter === 2) { showChapterTwoEnding(); return; }
   cancelEffects();
   mode = "ending";
   auto = false;
@@ -1596,7 +1640,43 @@ function showEnding() {
     return p;
   }));
   const handoff = storyState.getAlternativeSession() ? null : chapter2Handoff(campaign);
-  $("ending-next").textContent = ru ? `Далее — глава 2 «Не тот монстр». ${handoff ? "Решения и улики сохранены для продолжения." : ""} Глава пока в разработке.` : `Next — Chapter 2: The Wrong Monster. ${handoff ? "Your decisions and clues are saved for the continuation." : ""} This chapter is still in development.`;
+  $('ending-next-chapter').textContent = ru ? 'Начать главу 2' : 'Start chapter 2';
+  visible('ending-next-chapter', !storyState.getAlternativeSession() && !!storyState.getCanon().progress[1]?.completed);
+  $("ending-next").textContent = ru ? 'Глава 2 «Не тот монстр» доступна. Решения и улики основной истории перейдут в продолжение.' : 'Chapter 2: The Wrong Monster is available. Your official decisions and clues carry into the continuation.';
+  render();
+}
+function showChapterTwoEnding() {
+  cancelEffects(); mode = 'ending'; auto = false; skip = false; hidden = false;
+  for (const channel of ['voice','sound','ambience']) stopAudio(channel);
+  for (const id of ['settings','history','chapter-picker']) visible(id, false);
+  const ru = preferences.language === 'russian', code = engine.state.flags.creature_fate;
+  const ending = CHAPTER2_ENDINGS[code];
+  $('ending-kicker').textContent = ru ? 'Глава 2 завершена' : 'Chapter 2 complete';
+  $('ending-title').textContent = ru ? 'Не тот монстр' : 'The Wrong Monster';
+  $('ending-description').textContent = ending?.description[ru ? 'russian' : 'english'] || '';
+  const labels = ru ? { LargeTracks:'Крупные следы', Journal:'Сравнить с Дневником', Perimeter:'Осмотреть периметр', Distract:'Отвлечь', Block:'Перекрыть проход', Protect:'Защитить вместе' } : { LargeTracks:'Large tracks', Journal:'Compare with the journal', Perimeter:'Inspect the perimeter', Distract:'Distract', Block:'Block the passage', Protect:'Protect together' };
+  const rows = [labels[engine.state.flags.trail_focus], labels[engine.state.flags.threat_plan], ending?.title[ru ? 'russian' : 'english']].filter(Boolean);
+  $('ending-facts').replaceChildren(...rows.map(text => { const p = document.createElement('p'); p.textContent = text; return p; }));
+  $('ending-next').textContent = ru ? 'Решения главы сохранены в вашем основном пути. Символ пока остаётся неизвестным.' : 'Your chapter decisions are saved in your official story. The symbol remains unknown.';
+  if (storyState.getAlternativeSession()) $('ending-next').textContent = ru ? 'Это альтернативный путь. Основная история сохранена отдельно.' : 'This is an alternative path. Your official story remains separate.';
+  $('ending-next-chapter').textContent = ru ? 'Начать главу 3' : 'Start chapter 3';
+  visible('ending-next-chapter', !storyState.getAlternativeSession() && !!storyState.getCanon().progress[2]?.completed);
+  render();
+}
+function showChapterThreeEnding() {
+  cancelEffects(); mode = 'ending'; auto = false; skip = false; hidden = false;
+  for (const channel of ['voice','sound','ambience']) stopAudio(channel);
+  for (const id of ['settings','history','chapter-picker']) visible(id, false);
+  const ru = preferences.language === 'russian', flags = engine.state.flags;
+  const ending = CHAPTER3_ENDINGS[flags.exit_plan];
+  $('ending-kicker').textContent = ru ? 'Глава 3 завершена' : 'Chapter 3 complete';
+  $('ending-title').textContent = chapterTitle(3, preferences.language);
+  $('ending-description').textContent = ending?.description[ru ? 'russian' : 'english'] || '';
+  const labels = ru ? { Direct:'Прямой вопрос', Bargain:'Предложение обмена', Wait:'Наблюдение', Mark:'Метки на пути', Listen:'Движение досок', CheckPlans:'Сравнение проходов' } : { Direct:'A direct question', Bargain:'A proposed trade', Wait:'Observation', Mark:'Path markings', Listen:'Moving boards', CheckPlans:'Comparing passages' };
+  const rows = [labels[flags.wendy_approach], labels[flags.test_method], ending?.title[ru ? 'russian' : 'english']].filter(Boolean);
+  $('ending-facts').replaceChildren(...rows.map(text => { const p = document.createElement('p'); p.textContent = text; return p; }));
+  $('ending-next').textContent = storyState.getAlternativeSession() ? (ru ? 'Это альтернативный путь. Основная история сохранена отдельно.' : 'This is an alternative path. Your official story remains separate.') : (ru ? 'Предмет остался у Венди. История продолжится в главе 4; она пока не реализована.' : 'Wendy still has the object. The story continues in chapter 4, which is not implemented yet.');
+  visible('ending-next-chapter', false);
   render();
 }
 $("chapters-button").addEventListener("click", openChapters);
@@ -1605,8 +1685,13 @@ $("chapter0-start").addEventListener("click", () => start(0));
 $("chapter1-start").addEventListener("click", () => start(1, { language: $("chapter1-language").value, monster: $("prior-monster").value }));
 $("chapter0-continue").addEventListener("click", () => load(0));
 $("chapter1-continue").addEventListener("click", () => load(1));
+$('chapter2-start').addEventListener('click', () => start(2, { language: $('chapter2-language').value }));
+$('chapter2-continue').addEventListener('click', () => load(2));
+$('chapter3-start').addEventListener('click', () => start(3, { language: $('chapter3-language').value }));
+$('chapter3-continue').addEventListener('click', () => load(3));
+$('ending-next-chapter').addEventListener('click', () => start(currentChapter + 1, { language: chapterLanguage(currentChapter + 1, preferences.language) }));
 $("ending-menu").addEventListener("click", openChapters);
-$("ending-replay").addEventListener("click", () => start(1, { monster: engine.state.flags.monster }));
+$("ending-replay").addEventListener("click", () => start(currentChapter, { monster: engine.state.flags.monster }));
 $("ending-credits").addEventListener("click", () => showCredits(false));
 $("credits-next").addEventListener("click", openChapters);
 for (const id of ["flow-menu-button", "ending-flow", "credits-flow"]) $(id).addEventListener("click", openFlowchart);

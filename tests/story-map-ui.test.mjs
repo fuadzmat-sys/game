@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { flowActionContext, projectFlowMap } from '../flowchart-view.js';
 import { getFlowGraph, observeFlow, readFlowProgress } from '../flowchart.js';
 
@@ -40,7 +41,7 @@ for (const id of ['ending_bold','ending_cautious','ending_observation','will']) 
 console.log('✓ Resolution descriptions describe only the seen scene, without future mechanics or implementation flags');
 
 const fresh = readFlowProgress(null), freshBefore = JSON.stringify(fresh);
-for (const chapter of [0, 1]) {
+for (const chapter of [0, 1, 2, 3]) {
   const view = projectFlowMap(chapter, fresh, null, null, { mode: 'full' });
   assert.equal(view.nodes.length, getFlowGraph(chapter).nodes.length);
   assert.ok(view.nodes.every(node => node.visible && !node.discovered && !node.inPath));
@@ -48,3 +49,14 @@ for (const chapter of [0, 1]) {
 }
 assert.equal(JSON.stringify(fresh), freshBefore);
 console.log('✓ Fresh maps show every implemented option without marking anything seen or canonical');
+
+const page = fs.readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+for (const id of ['chapter2-title', 'chapter2-description', 'chapter2-language', 'chapter2-start', 'chapter2-continue', 'chapter2-unlock-note', 'ending-next-chapter']) assert.ok(page.includes(`id="${id}"`));
+for (const chapter of [0, 1, 2, 3]) assert.match(page, new RegExp(`id="flow-chapter${chapter}" data-flow-chapter="${chapter}"`));
+assert.ok(page.indexOf('id="flow-chapter2"') < page.indexOf('id="flow-true-story"'));
+assert.doesNotMatch(page, /id="flow-chapter4"/);
+assert.match(page, /id="chapter2-start"[^>]*disabled/);
+assert.match(page, /id="ending-next-chapter"[^>]*hidden/);
+const description=page.match(/id="chapter2-description">([^<]+)</)[1];
+assert.doesNotMatch(description, /символ|похититель|хищник|species|symbol|predator/i);
+console.log('✓ Chapter 2 reuses the picker and decision map with a gated start, next-chapter action and no fake later chapter');

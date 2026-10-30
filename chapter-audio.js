@@ -31,25 +31,41 @@ export function voiceLineKey(text, speaker = 'Narrator', language = 'english') {
   return `${canonicalLanguage(language)}|${String(speaker).trim().toLowerCase()}|${cleanSpeech(text)}`;
 }
 
-/** Chapter one awaits acted recordings. A matching chapter-zero line is not a
- * recording for this chapter, and system TTS must never silently stand in for it.
- * Accept both chapter and script context so callers cannot accidentally enable
- * old clips while changing scenes, loading saves, or replaying from the map.
- */
-export function dialogueVoiceAllowed({ chapter, script = '' } = {}) {
+/** Authored chapters use their own recorded slots, never old chapter-zero clips or TTS. */
+function authoredChapter({ chapter, script = '' } = {}) {
   const id = String(chapter ?? '').trim().toLowerCase();
   const path = String(script).trim().toLowerCase().replace(/\\/g, '/');
-  return !(['1', 'chapter1'].includes(id) || /^chapter_1(?:_|$)/.test(id)
-    || /(?:^|\/)chapter_1(?:_[a-z0-9]+)?\//.test(path));
+  if (['1', 'chapter1'].includes(id) || /^chapter_1(?:_|$)/.test(id) || /(?:^|\/)chapter_1(?:_[a-z0-9]+)?\//.test(path)) return 1;
+  if (['2', 'chapter2'].includes(id) || /^chapter_2(?:_|$)/.test(id) || /(?:^|\/)chapter_2(?:_[a-z0-9]+)?\//.test(path)) return 2;
+  if (['3', 'chapter3'].includes(id) || /^chapter_3(?:_|$)/.test(id) || /(?:^|\/)chapter_3(?:_[a-z0-9]+)?\//.test(path)) return 3;
+  return null;
+}
+export function dialogueVoiceAllowed(context = {}) { return authoredChapter(context) === null; }
+
+/** Stable, chapter-specific recording slots cannot match an unrelated old text hash. */
+export function chapter2VoiceKey({ script = '', sourceLine, speaker = 'Narrator', language = 'english' } = {}) {
+  const path = String(script).trim().toLowerCase().replace(/\\/g, '/').replace(/^textes\/[a-z]+\//, '');
+  if (!/^chapter_2\/[a-z0-9_/-]+$/.test(path) || !Number.isInteger(sourceLine) || sourceLine < 1) return null;
+  return `${canonicalLanguage(language)}|${path}|${sourceLine}|${String(speaker).trim().toLowerCase()}`;
 }
 
 /** Optional `environment` makes unsupported browsers and cancellation testable.
  * `voices` accepts the prepared manifest's lines map (or the manifest itself).
  */
-export function createChapterAudio({ getVolume = () => .7, getVoiceContext = () => ({}), onSpeechEnd, voices = {}, environment = globalThis } = {}) {
+export function createChapterAudio({ getVolume = () => .7, getVoiceContext = () => ({}), onSpeechEnd, voices = {}, chapter2Audio = {}, environment = globalThis } = {}) {
   let context = null, master = null, speechEnabled = false, activeSpeech = null, generation = 0;
   const records = voices && typeof voices === 'object' ? voices.lines || voices : {};
   const usableRecord = record => record && typeof record.path === 'string' && record.path.length > 0;
+  const chapter2Records = chapter2Audio?.voices?.lines || {};
+  const chapter2Effects = chapter2Audio?.effects || {};
+  const recordedEffects = new Set();
+  const chapter2Record = request => {
+    const key = chapter2VoiceKey(request), record = key && chapter2Records[key];
+    return usableRecord(record) && record.status === 'ready' ? record : null;
+  };
+  const chapter2Available = request => typeof environment.Audio === 'function' &&
+    Object.entries(chapter2Records).some(([key, record]) => usableRecord(record) && record.status === 'ready' &&
+      (!request.language || key.startsWith(`${canonicalLanguage(request.language)}|`)));
   const recordedAvailable = language => typeof environment.Audio === 'function'
     && Object.entries(records).some(([key, record]) => usableRecord(record) && (!language || key.startsWith(`${canonicalLanguage(language)}|`)));
   const groups = new Set();
@@ -62,9 +78,13 @@ export function createChapterAudio({ getVolume = () => .7, getVoiceContext = () 
     && typeof environment.speechSynthesis?.speak === 'function'
     && typeof environment.speechSynthesis?.cancel === 'function';
   const voiceContext = request => ({ ...getVoiceContext(), ...request });
-  const availableSpeech = request => dialogueVoiceAllowed(voiceContext(request)) && (recordedAvailable() || systemAvailable());
+  const availableSpeech = request => {
+    const selected = voiceContext(request);
+    return authoredChapter(selected) === 2 ? chapter2Available(selected) : dialogueVoiceAllowed(selected) && (recordedAvailable() || systemAvailable());
+  };
   const speechMode = request => {
     const context = voiceContext(request);
+    if (authoredChapter(context) === 2) return chapter2Available(context) ? 'recorded' : 'pending';
     if (!dialogueVoiceAllowed(context)) return 'pending';
     return recordedAvailable(context.language || 'english') ? 'recorded' : systemAvailable() ? 'system' : 'unavailable';
   };
@@ -107,7 +127,9 @@ export function createChapterAudio({ getVolume = () => .7, getVoiceContext = () 
   function speak({ text, speaker = 'Narrator', language = 'english', onEnd, ...context } = {}) {
     stopSpeech();
     const spoken = cleanSpeech(text);
-    if (!speechEnabled || !availableSpeech(context) || !spoken || volume('voice') === 0) return false;
+    const selectedContext = voiceContext({ ...context, language, speaker });
+    const recordedOnly = authoredChapter(selectedContext) === 2;
+    if (!speechEnabled || !availableSpeech(selectedContext) || !spoken || volume('voice') === 0 || recordedOnly && !chapter2Record(selectedContext)) return false;
     const request = { token: generation, kind: null, source: null, paused: false };
     activeSpeech = request;
     const current = () => generation === request.token && activeSpeech === request && speechEnabled;
@@ -119,7 +141,7 @@ export function createChapterAudio({ getVolume = () => .7, getVoiceContext = () 
     };
     function startSystem() {
       if (!current()) return false;
-      if (!systemAvailable()) { finished('error'); return false; }
+      if (recordedOnly || !systemAvailable()) { finished('error'); return false; }
       try {
         const utterance = new environment.SpeechSynthesisUtterance(spoken);
         const lang = LANGUAGE_LOCALES[canonicalLanguage(language)];
@@ -144,7 +166,7 @@ export function createChapterAudio({ getVolume = () => .7, getVoiceContext = () 
         return true;
       } catch { finished('error'); return false; }
     }
-    const record = records[voiceLineKey(text, speaker, language)];
+    const record = recordedOnly ? chapter2Record(selectedContext) : records[voiceLineKey(text, speaker, language)];
     if (typeof environment.Audio !== 'function' || !usableRecord(record)) return startSystem();
     let recording;
     try {
@@ -212,6 +234,7 @@ export function createChapterAudio({ getVolume = () => .7, getVoiceContext = () 
   function updateVolume() {
     if (master && context) master.gain.setValueAtTime(volume('sound'), context.currentTime);
     if (activeSpeech?.source) activeSpeech.source.volume = volume('voice');
+    for (const record of recordedEffects) record.source.volume = volume('sound');
   }
 
   function disposeGroup(group, stop = false) {
@@ -226,9 +249,30 @@ export function createChapterAudio({ getVolume = () => .7, getVoiceContext = () 
     group.nodes.clear();
   }
   function stopEffects() {
+    for (const record of recordedEffects) stopRecording(record.source);
+    recordedEffects.clear();
     for (const group of [...groups]) disposeGroup(group, true);
   }
   function effect(name) {
+    const local = chapter2Effects[name];
+    if (usableRecord(local)) {
+      const selectedLanguage = voiceContext({}).language;
+      if (local.language && selectedLanguage && canonicalLanguage(local.language) !== canonicalLanguage(selectedLanguage)) return false;
+      if (volume('sound') === 0 || typeof environment.Audio !== 'function') return false;
+      // A repeat cue replaces itself; only two local one-shots may overlap.
+      for (const record of [...recordedEffects]) if (record.name === name || recordedEffects.size >= 2) {
+        stopRecording(record.source); recordedEffects.delete(record);
+      }
+      try {
+        const source = new environment.Audio(local.path), record = { name, source };
+        source.preload = 'auto'; source.volume = volume('sound'); source.playbackRate = 1;
+        recordedEffects.add(record);
+        const finish = () => { recordedEffects.delete(record); source.onended = null; source.onerror = null; };
+        source.onended = finish; source.onerror = finish;
+        source.play()?.catch?.(() => { if (recordedEffects.has(record)) { stopRecording(source); finish(); } });
+        return true;
+      } catch { return false; }
+    }
     if (!EFFECTS.has(name) || volume("sound") === 0 || !unlock()) return false;
     updateVolume();
     const group = { sources: new Set(), nodes: new Set(), pending: 0 };

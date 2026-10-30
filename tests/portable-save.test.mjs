@@ -42,7 +42,7 @@ test('export reflects only official canon, independently of all discovered creat
   assert.equal(saved.format, CANON_SAVE_FORMAT);
   assert.equal(saved.saveFormatVersion, 1);
   assert.equal(saved.schemaVersion, 1);
-  assert.equal(saved.gameVersion, '3.1.0');
+  assert.equal(saved.gameVersion, '4.1.0');
   assert.ok(Number.isFinite(Date.parse(saved.exportedAt)));
   assert.equal(saved.canon.choices['ch0.creature'], 'Vampire');
   assert.equal('discovery' in saved, false);

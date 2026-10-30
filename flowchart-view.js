@@ -4,7 +4,7 @@ import { buildCanonTimeline } from "./canon-timeline.js";
 const copy = {
   russian: {
     title: "Карта решений", kicker: "REVERSE FALLS / ТВОЯ ИСТОРИЯ",
-    chapters: ["Глава 0", "Глава 1"], subtitles: ["Первая охота", "Следы в лесу"],
+    chapters: ["Глава 0", "Глава 1", "Глава 2", "Глава 3"], subtitles: ["Первая охота", "Следы в лесу", "Не тот монстр", "Чужая находка"],
     close: "Вернуться", all: "Вся схема", full: "Полный режим", pathMode: "Мой путь",
     trueStory: "Настоящая история", timelineSubtitle: "Одна официальная история · Только просмотр", exportSave: "Сохранить путь", importSave: "Import Save", importTitle: "Загрузить сохранённый путь?", importText: "Текущая основная история будет заменена импортированным сохранением.", importAccept: "Загрузить", path: "Основной путь", alternative: "Альтернатива", discovered: "Открыто ранее", now: "Сейчас", locked: "Не открыто",
     progress: (count, total, percent) => `Открыто ${count} из ${total} · ${percent}%`,
@@ -23,7 +23,7 @@ const copy = {
   },
   english: {
     title: "Choices map", kicker: "REVERSE FALLS / YOUR STORY",
-    chapters: ["Chapter 0", "Chapter 1"], subtitles: ["The first hunt", "Tracks in the Forest"],
+    chapters: ["Chapter 0", "Chapter 1", "Chapter 2", "Chapter 3"], subtitles: ["The first hunt", "Tracks in the Forest", "The Wrong Monster", "Someone Else’s Find"],
     close: "Return", all: "Whole map", full: "Full mode", pathMode: "My path",
     trueStory: "True Story", timelineSubtitle: "One official timeline · Read only", exportSave: "Export Save", importSave: "Import Save", importTitle: "Load the saved path?", importText: "Your current main story will be replaced by the imported save.", importAccept: "Load", path: "Main path", alternative: "Alternative", discovered: "Previously discovered", now: "You are here", locked: "Undiscovered",
     progress: (count, total, percent) => `${count} of ${total} discovered · ${percent}%`,
@@ -80,6 +80,8 @@ export function createFlowchart({
   const dimensions = () => ({ width: viewport.clientWidth, height: viewport.clientHeight });
   const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
   const isTimeline = () => chapter === "true-story";
+  const chapterButtons = () => [...overlay.querySelectorAll("[data-flow-chapter]")];
+  const chapterIds = () => chapterButtons().map(button => Number(button.dataset.flowChapter));
   const chapterLabel = id => t().chapters[id] || `${language() === "russian" ? "Глава" : "Chapter"} ${id}`;
   const transformKey = () => `${chapter}:${mapMode}`;
   const remember = () => transforms.set(transformKey(), { zoom, x, y });
@@ -184,9 +186,10 @@ export function createFlowchart({
       "flow-import-confirm-cancel": labels.cancel, "flow-import-confirm-accept": labels.importAccept
     })) $(id).textContent = value;
     for (const [id, value] of [["flow-current", "path"], ["flow-full", "full"], ["flow-fit", "all"]]) $(id).setAttribute("aria-pressed", String(mapMode === value));
-    for (let id = 0; id <= 1; id++) {
-      $("flow-chapter" + id).textContent = labels.chapters[id];
-      $("flow-chapter" + id).setAttribute("aria-pressed", String(chapter === id));
+    for (const button of chapterButtons()) {
+      const id = Number(button.dataset.flowChapter);
+      button.textContent = chapterLabel(id);
+      button.setAttribute("aria-pressed", String(chapter === id));
     }
     $("flow-true-story").setAttribute("aria-pressed", String(isTimeline()));
     $("flow-minus").setAttribute("aria-label", language() === "russian" ? "Уменьшить масштаб" : "Zoom out");
@@ -247,7 +250,7 @@ export function createFlowchart({
     if (returnFocus?.isConnected && !returnFocus.closest("[hidden]")) returnFocus.focus({ preventScroll: true });
   }
   function open(selectedChapter = 0) {
-    returnFocus = document.activeElement; openedAt = performance.now(); chapter = selectedChapter === "true-story" ? "true-story" : selectedChapter === 1 ? 1 : 0; selected = null;
+    returnFocus = document.activeElement; openedAt = performance.now(); chapter = selectedChapter === "true-story" ? "true-story" : chapterIds().includes(Number(selectedChapter)) ? Number(selectedChapter) : chapterIds()[0] ?? 0; selected = null;
     overlay.hidden = false; render(); restorePosition(); $("flow-close").focus({ preventScroll: true });
   }
   function changeMode(next) {
@@ -289,9 +292,9 @@ export function createFlowchart({
   $("flow-confirm-cancel").addEventListener("click", () => { if (!pending) cancelConfirmation(); });
   $("flow-confirm-accept").addEventListener("click", () => { if (confirmation && !pending) runAction(onRewrite, { ...confirmation }); });
   $("flow-close").addEventListener("click", close);
-  for (let id = 0; id <= 1; id++) $("flow-chapter" + id).addEventListener("click", () => {
+  for (const button of chapterButtons()) button.addEventListener("click", () => {
     if (pending || confirmation) return;
-    remember(); chapter = id; selected = null; render(); restorePosition();
+    remember(); chapter = Number(button.dataset.flowChapter); selected = null; render(); restorePosition();
   });
   $("flow-true-story").addEventListener("click", () => {
     if (pending || confirmation) return;

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "provenance": "New Chapter 3 environment illustrations and an isolated wooden weight created with image generation for this implementation. Existing character sprites and Chapter 0–2 source art are preserved. The plain wooden object establishes no origin, affiliation or connection to earlier symbols.",
+  "productionStatus": "Two new runtime backgrounds and one transparent scene prop. Original generated PNG files are copied without cropping or image manipulation.",
+  "backgrounds": {
+    "ch3_lumber_yard": {
+      "path": "assets/chapter3/backgrounds/lumber-yard.png",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "source": "New handpainted 2D illustration: abandoned forest sawmill, open sliding timber gate, stacked wood and a service walkway under overcast afternoon light."
+    },
+    "ch3_cutting_floor": {
+      "path": "assets/chapter3/backgrounds/cutting-floor.png",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "source": "New handpainted 2D illustration: disused sawmill cutting floor, timber guide rails, service walkway and subtly displaced perspective."
+    }
+  },
+  "items": {
+    "ch3_wooden_weight": {
+      "path": "assets/chapter3/items/wooden-weight.png",
+      "width": 390,
+      "height": 585,
+      "sourceWidth": 1024,
+      "sourceHeight": 1536,
+      "name": {
+        "russian": "Деревянный грузик",
+        "english": "Wooden weight"
+      },
+      "source": "New transparent item illustration: a plain worn dark wooden plumb-like weight, dull copper rim and short cord loop; no symbols, runes or inscriptions."
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "status": "generated_draft_cues",
+  "referencePolicy": "Independent fictional descriptions only; no reference audio, actor recording, speaker embedding, or voice cloning API.",
+  "model": {
+    "repository": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "modelLicense": "apache-2.0",
+    "verifiedSha256": {
+      "speech_tokenizer/model.safetensors": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+      "model.safetensors": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522"
+    }
+  },
+  "backend": "CPU float32/eager, 3 threads",
+  "processing": "No voice pitch, formant, time stretching or sound effects; MP3 encoding only.",
+  "cues": [
+    {
+      "id": "ch2_mimic_buster",
+      "text": "Бастер... Бастер, домой...",
+      "seed": 38023,
+      "description": "An independently designed fictional adult Russian woman calling her dog in a quiet outdoor space. Native natural Russian pronunciation, warm ordinary midrange speaking voice, gently calling rather than singing. She repeats the name, then says the short invitation with one slightly misplaced pause. Natural human conversational inflection, no electronic effect, no exaggerated horror growl. This is a new fictional voice, not based on any real person.",
+      "language": "russian",
+      "wav": "ch2_mimic_buster.wav",
+      "mp3": "ch2_mimic_buster.mp3",
+      "sampleRate": 24000,
+      "duration": 3.52,
+      "renderSeconds": 31.9,
+      "wavSha256": "ac85f299ad0eb72f91086adfc6372bc1628c12d8a4d754200ad025a79c7e9241",
+      "mp3Sha256": "7bc7264ce9106325dd0dd35a5299b20df132ebe9fde58995ae7f2e2e781e07e7",
+      "status": "generated_draft",
+      "approved": false,
+      "scriptText": "Бастер... Бастер, домой...",
+      "asr": {
+        "id": "ch2_mimic_buster",
+        "expected": "Бастер... Бастер, домой...",
+        "recognized": "Бастер, бастер, домой.",
+        "exactNormalizedWords": true,
+        "similarity": 1.0,
+        "duration": 3.52
+      }
+    },
+    {
+      "id": "ch2_mimic_pacifica",
+      "text": "Гидеон? Гидеон, иди сюда.",
+      "seed": 24709,
+      "description": "An independently designed fictional teenage girl, approximately fourteen, speaking native Russian. A youthful clear female voice with lively but restrained energy, natural conversational articulation. Say the first name as a short searching question, then repeat it with a quiet invitation and a subtly uneven pause. Human and organic, not monotone or robotic, not a tiny child, not a breathy adult, no growls or electronic processing. No imitation of any real actor.",
+      "language": "russian",
+      "wav": "ch2_mimic_pacifica.wav",
+      "mp3": "ch2_mimic_pacifica.mp3",
+      "sampleRate": 24000,
+      "duration": 4.24,
+      "renderSeconds": 38.67,
+      "wavSha256": "94009fe1c4d8be930b27703e990a66bdfd4d9a5c87f3040a352b68eec53116fe",
+      "mp3Sha256": "424be9baf6c59e250902fa6325aadae74fd4481cf536622824c565495c69c7d3",
+      "status": "generated_draft",
+      "approved": false,
+      "scriptText": "Гидеон? Гидеон, иди сюда.",
+      "asr": {
+        "id": "ch2_mimic_pacifica",
+        "expected": "Гидеон? Гидеон, иди сюда.",
+        "recognized": "Гидион! Гидион иди сюда!",
+        "exactNormalizedWords": false,
+        "similarity": 0.5,
+        "duration": 4.24
+      },
+      "reviewNote": "Unprompted ASR recognized the fictional name as Гидион; the other words match. Proper-name pronunciation and voice performance need human listening review."
+    },
+    {
+      "id": "ch2_mimic_gideon",
+      "text": "Я… рядом.",
+      "seed": 13130,
+      "description": "Новый вымышленный мальчик двенадцати лет. Родной русский язык без акцента. Спокойный, негромкий мальчишеский голос, чёткое раздельное произношение двух слов. Первое слово Я, потом небольшая естественная пауза, потом слово рядом. Сдержанная человеческая интонация, без электронных эффектов, без рычания, без взрослого баса и без писка. Не копировать реальных людей или актёров.",
+      "language": "russian",
+      "wav": "ch2_mimic_gideon.wav",
+      "mp3": "ch2_mimic_gideon.mp3",
+      "sampleRate": 24000,
+      "duration": 2.96,
+      "renderSeconds": 27.52,
+      "wavSha256": "0d85225b3f5e093498c5d226cc7c31ab0012f75f2ad5897d90f290eee7790457",
+      "mp3Sha256": "114723713f72784ca93c9859e215cebfac6326661c19e4c0766036b5513f2a06",
+      "status": "generated_draft",
+      "approved": false,
+      "scriptText": "Я рядом.",
+      "asr": {
+        "id": "ch2_mimic_gideon",
+        "expected": "Я… рядом.",
+        "recognized": "я рядом",
+        "exactNormalizedWords": true,
+        "similarity": 1.0,
+        "duration": 2.96
+      }
+    },
+    {
+      "id": "ch2_mimic_pacifica_here",
+      "text": "Я здесь.",
+      "seed": 24709,
+      "description": "An independently designed fictional girl approximately fourteen, native Russian pronunciation, youthful clear female speaking voice. Natural conversational articulation, lively but restrained. Quietly call the short phrase as if from just outside sight, with a slightly uneven natural pause. No robot, no baby voice, no breathy adult delivery, no growl or electronic effect. The voice is new and does not imitate any real actor.",
+      "language": "russian",
+      "wav": "ch2_mimic_pacifica_here.wav",
+      "mp3": "ch2_mimic_pacifica_here.mp3",
+      "sampleRate": 24000,
+      "duration": 1.2,
+      "renderSeconds": 11.6,
+      "wavSha256": "35b71b3127ab2e2e4f73abfdad6183680f46099be8599be7bb322b760d6d8af3",
+      "mp3Sha256": "21581d01d13ed6461355c410c184d3f0857e9cb5e4df3b9f7f379898d1769dd2",
+      "status": "generated_draft",
+      "approved": false,
+      "scriptText": "Я здесь.",
+      "asr": {
+        "id": "ch2_mimic_pacifica_here",
+        "expected": "Я здесь.",
+        "recognized": "Я здесь!",
+        "exactNormalizedWords": true,
+        "similarity": 1.0,
+        "duration": 1.2
+      }
+    }
+  ],
+  "approved": false,
+  "quality": "Actual generated independent speech, intelligibility checked with unprompted local ASR. Acting, age and naturalness have not received human approval; this is not a finished character dub."
+}

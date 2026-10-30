@@ -11,13 +11,13 @@ const originalScenes = {
   moth_heat: 'part_3_mothman/mothman_2_wendigo', moth_reflection: 'part_3_mothman/mothman_2_vampire',
   finale: 'part_3_mothman/mothman_3'
 };
-const registrations = [
-  { chapterId: 0, entry: 'intro', exit: 'finale', prefix: 'chapter_0/', scenes: originalScenes,
-    phaseNodes: { map: 'town' }, visits: { arcade: 'arcade', hardware: 'hardware_store', tent: 'telepathy_tent' },
-    label: { russian: 'Глава 0', english: 'Chapter 0' } },
-  { chapterId: 1, entry: 'start', exit: 'will', prefix: 'chapter_1_v3/',
-    label: { russian: 'Глава 1', english: 'Chapter 1' } }
-];
+const registrations = STORY_REGISTRY.chapters.map(chapter => chapter.chapterId === 0
+  ? { chapterId: 0, entry: 'intro', exit: 'finale', prefix: 'chapter_0/', scenes: originalScenes,
+      phaseNodes: { map: 'town' }, visits: { arcade: 'arcade', hardware: 'hardware_store', tent: 'telepathy_tent' },
+      label: { russian: 'Глава 0', english: 'Chapter 0' } }
+  : { chapterId: chapter.chapterId, entry: chapter.entry, exit: chapter.exit, prefix: chapter.namespace + '/',
+      label: { russian: `Глава ${chapter.chapterId}`, english: `Chapter ${chapter.chapterId}` } });
+
 export const CANON_TIMELINE_CHAPTERS = registrations.map(registration => {
   const graph = STORY_REGISTRY.graphs.find(item => item.chapter === registration.chapterId);
   return {

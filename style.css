@@ -1822,3 +1822,37 @@ h1 {
 #flow-import-confirm-accept { border-color: #81d9ff; background: #24475b; }
 
 #flow-import-error { position: absolute; top: 90px; right: 0; width: 1600px; margin: 4px 0; color: #ffd4c6; font-size: 32px; line-height: 1.2; text-align: right; }
+
+/* A third implemented chapter reuses the existing picker and ending controls. */
+.chapter-cards-three { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 72px; }
+.chapter-cards-three .chapter-art { height: 300px; }
+.chapter-cards-three .chapter-card-body { height: calc(100% - 300px); gap: 22px; padding: 36px; }
+.chapter-cards-three .chapter-card-body .chapter-eyebrow { font-size: 44px; }
+.chapter-cards-three .chapter-card h2 { font-size: 88px; }
+.chapter-cards-three .chapter-summary { min-height: 185px; font-size: 50px; }
+.chapter-cards-three .chapter-languages { font-size: 44px; }
+.chapter-cards-three .chapter-setup label { min-height: 90px; gap: 20px; font-size: 44px; }
+.chapter-cards-three .chapter-setup label > span { width: 43%; }
+.chapter-cards-three .chapter-setup select { width: 57%; height: 86px; padding: 10px 18px; font-size: 44px; }
+.chapter-cards-three .chapter-actions { grid-template-columns: 1fr; gap: 16px; }
+.chapter-cards-three .chapter-button { height: 112px; font-size: 54px; padding: 14px 20px; }
+.chapter-unlock-note { margin: 0; color: #abc5d8; font-size: 39px; line-height: 1.25; }
+.chapter-button:disabled { opacity: .5; cursor: default; }
+.ending-actions:has(#ending-next-chapter:not([hidden])) { grid-template-columns: 1.3fr 1.15fr 1.15fr .8fr 1.2fr; gap: 30px; }
+.ending-actions:has(#ending-next-chapter:not([hidden])) .chapter-button { font-size: 60px; }
+
+/* Four installed chapters share the existing picker and scrolling overlay. */
+.chapter-cards-four { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 44px; }
+.chapter-cards-four .chapter-art { height: 290px; }
+.chapter-cards-four .chapter-card-body { height: calc(100% - 290px); gap: 22px; padding: 30px; }
+.chapter-cards-four .chapter-card-body .chapter-eyebrow { font-size: 36px; }
+.chapter-cards-four .chapter-card h2 { font-size: 74px; }
+.chapter-cards-four .chapter-summary { min-height: 220px; font-size: 44px; }
+.chapter-cards-four .chapter-languages { font-size: 40px; }
+.chapter-cards-four .chapter-setup label { min-height: 85px; gap: 15px; font-size: 38px; }
+.chapter-cards-four .chapter-setup label > span { width: 43%; }
+.chapter-cards-four .chapter-setup select { width: 57%; height: 84px; padding: 10px; font-size: 40px; }
+.chapter-cards-four .chapter-actions { grid-template-columns: 1fr; gap: 16px; }
+.chapter-cards-four .chapter-button { height: 108px; font-size: 48px; padding: 14px; }
+/* Keep the Chapter 3 close-up beside the trio, clear of faces and dialogue. */
+#scene-item[data-item="ch3_wooden_weight"] { left: 14%; top: 45%; transform: translate(-50%, -50%); }

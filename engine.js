@@ -64,6 +64,7 @@ class StoryEngine {
       history: [],
       music: null,
       musicMuted: false,
+      musicGain: 1,
       voice: null,
       light: null,
       item: null,
@@ -121,13 +122,14 @@ class StoryEngine {
     this.state.inline = [];
     this._event("script", { path: this.state.script, resource });
   }
-  start(path = START, { flags = {} } = {}) {
+  start(path = START, { flags = {}, inventory = [] } = {}) {
     this._clearEvents();
     this.state = this._initialState();
     // Campaign carryover is copied before the first conditional script command.
     // No argument preserves the original chapter-zero start behavior.
     const initialFlags = flags && typeof flags === "object" && !Array.isArray(flags) ? clone(flags) : {};
     this.state.flags = Object.fromEntries(Object.entries(initialFlags).map(([key, value]) => [key.toLowerCase(), value]));
+    this.state.inventory = Array.isArray(inventory) ? [...new Set(inventory.filter(value => typeof value === "string" && value))] : [];
     this._load(path);
     this._run();
     return this._result();
@@ -221,6 +223,10 @@ class StoryEngine {
         break;
       }
       const source = lines[this.state.line++], parsed = parseLine(source);
+      // Generic authored conditional paragraphs. Guards affect this engine projection only;
+      // canonical values still come from the existing story service and registered choices.
+      const guards = parsed.segments.filter(segment => segment.type === "command" && segment.args[0]?.toLowerCase() === "when");
+      if (guards.some(segment => String(this.state.flags[segment.args[1]?.toLowerCase()]).toLowerCase() !== String(segment.args.slice(2).join(" ")).toLowerCase())) continue;
       if (!parsed.segments.length || !parsed.text.trim() && !parsed.segments.some((s) => s.type === "command")) continue;
       this.state.text = "";
       this.state.segments = [];
@@ -368,6 +374,8 @@ class StoryEngine {
     const args = original.map(String), words = args.map((s) => s.toLowerCase()), command = words[0];
     this._event("command", { args: [...args], ...meta });
     switch (command) {
+      case "when":
+        break;
       case "emotion": {
         const emotion = words[2];
         if (!["neutral", "laugh", "sly", "afraid", "tremble", "panic", "embarrassed"].includes(emotion)) break;
@@ -471,6 +479,7 @@ class StoryEngine {
       case "music": {
         const fade = optionNumber(args, "fade", 0);
         const crossfade = words.includes("crossfade");
+        this.state.musicGain = optionNumber(args, "volume", 1, 0, 1);
         if (words[1] === "mute") this.state.musicMuted = true;
         else if (words[1] === "stop") {
           this.state.music = null;
@@ -479,7 +488,7 @@ class StoryEngine {
           this.state.music = args[1] || null;
           this.state.musicMuted = false;
         }
-        this._event("audio", { channel: "music", name: this.state.music, muted: this.state.musicMuted, fade, crossfade, ...meta });
+        this._event("audio", { channel: "music", name: this.state.music, muted: this.state.musicMuted, gain: this.state.musicGain, fade, crossfade, ...meta });
         break;
       }
       case "sound":

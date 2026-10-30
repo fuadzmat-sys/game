@@ -1,3 +1,4 @@
+import { CHAPTERS, CHAPTER_IDS, normalizeChapter } from "./campaign.js";
 // Progress is deliberately separate from manual saves. A map records discoveries,
 // while the highlighted route always comes from the currently loaded story.
 const FLOW_KEY = "reverse-falls-flowchart-v1";
@@ -104,6 +105,79 @@ const chapter1 = {
   ]
 };
 
+
+const chapter2 = {
+  chapter: 2, width: 7570, height: 1280,
+  nodes: [
+    node('start', 0, 540, 'Утро, 10:30', 'Morning, 10:30', 'Друзья встречаются в кафе и решают проверить факты, а не подтверждать готовую версию.', 'The friends meet at the café and decide to test the evidence instead of confirming a theory.', 'start'),
+    node('two_tracks', 1, 540, 'Два следа', 'Two tracks', 'Большие и маленькие следы могут принадлежать разным существам. Что проверить?', 'The large and small tracks may belong to different creatures. What should they inspect?', 'choice'),
+    node('trail_largetracks', 2, 220, 'Большие следы', 'Large tracks', 'На коре найдена светлая грубая нить.', 'A pale coarse fibre is caught on the bark.'),
+    node('trail_journal', 2, 540, 'Сравнить с Дневником', 'Compare with the journal', 'Распределение веса не совпадает с рисунком в Дневнике.', 'The weight distribution does not match the drawing in the journal.'),
+    node('trail_perimeter', 2, 860, 'Осмотреть периметр', 'Inspect the perimeter', 'Маленькие следы огибают большие.', 'The smaller tracks curve around the larger ones.'),
+    node('watch_hut', 3, 540, 'Слишком удобно', 'Too convenient', 'Старая сторожка: царапины, разная шерсть и чистая вода. Следы выглядят слишком подходящими.', 'An old watch hut: scratches, different fur and clean water. The evidence seems too convenient.'),
+    node('rock_hollow', 4, 540, 'Нашли', 'Found', 'Неизвестное Существо говорит, что животные живы.', 'An unfamiliar creature says the animals are alive.'),
+    node('hidden_shelter', 5, 540, 'Не он', 'Not him', 'Бастер и другие животные живы. Из леса доносится странный человеческий зов.', 'Buster and the other animals are alive. An odd human call comes from the woods.'),
+    node('real_picture', 6, 540, 'Настоящая картина', 'The real picture', 'Гидеон связывает следы и сломанный забор. У входа в водосток звучит голос Пасифики.', 'Gideon connects the tracks and broken fence. Pacifica’s voice comes from the drainage entrance.'),
+    node('real_threat', 7, 540, 'Настоящая угроза', 'The real threat', 'В тоннеле заперта живая собака. Как действовать вместе?', 'A living dog is trapped in the tunnel. How should the friends act together?', 'choice'),
+    node('plan_distract', 8, 220, 'Отвлечь', 'Distract', 'Пасифика отвлекает Хищника, пока Гидеон освобождает собаку.', 'Pacifica distracts the predator while Gideon frees the dog.'),
+    node('plan_block', 8, 540, 'Перекрыть путь', 'Block the passage', 'Гидеон замечает решётку; герои используют её, чтобы задержать преследователя.', 'Gideon notices a gate; the friends use it to delay their pursuer.'),
+    node('plan_protect', 8, 860, 'Держаться вместе', 'Stay together', 'Герои не разделяются и вместе выводят собаку.', 'The friends stay together and lead the dog out.'),
+    node('water_climax', 9, 540, 'Вода в тоннеле', 'Water in the tunnel', 'Гидеон замечает избегание воды. Пасифика помогает открыть старый вентиль.', 'Gideon notices it avoids the water. Pacifica helps open an old valve.'),
+    node('creature_question', 10, 540, 'Что делать с монстром', 'What to do with the monster', 'Существо помогло животным, но решало за них. Какие границы установить?', 'The creature helped the animals, but made decisions for them. What boundaries should be set?', 'choice'),
+    node('fate_help', 11, 220, 'Помочь', 'Help', 'Животные возвращаются домой; Существо может уйти глубже в лес без огласки.', 'The animals return home; the creature may move deeper into the forest without exposure.'),
+    node('fate_expel', 11, 540, 'Попросить уйти', 'Ask it to leave', 'Животные возвращаются к хозяевам; Существо должно покинуть окрестности города.', 'The animals return to their owners; the creature must leave the area around town.'),
+    node('fate_neutralize', 11, 860, 'Установить границы', 'Set firm boundaries', 'Не приближаться к домам и больше не забирать животных. Герои выбирают сдерживание, не жестокость.', 'Stay away from homes and stop taking animals. The friends choose containment, without cruelty.'),
+    node('symbol', 12, 540, 'Символ', 'Symbol', 'На старой дороге найден знак, которого нет в Дневнике. Его смысл неизвестен.', 'A mark is found on the old road, with no match in the journal. Its meaning is unknown.', 'ending')
+  ],
+  edges: [
+    edge('start','two_tracks'),
+    ...connect('two_tracks',['trail_largetracks','trail_journal','trail_perimeter']),
+    ...['trail_largetracks','trail_journal','trail_perimeter'].map(id=>edge(id,'watch_hut')),
+    edge('watch_hut','rock_hollow'),edge('rock_hollow','hidden_shelter'),edge('hidden_shelter','real_picture'),edge('real_picture','real_threat'),
+    ...connect('real_threat',['plan_distract','plan_block','plan_protect']),
+    ...['plan_distract','plan_block','plan_protect'].map(id=>edge(id,'water_climax')),
+    edge('water_climax','creature_question'),
+    ...connect('creature_question',['fate_help','fate_expel','fate_neutralize']),
+    ...['fate_help','fate_expel','fate_neutralize'].map(id=>edge(id,'symbol'))
+  ]
+};
+
+// Only the installed chapter-three investigation is described here. Its mystery
+// remains open; no future chapter outcome or assumed alliance appears on the map.
+const chapter3 = {
+  chapter: 3, width: 6900, height: 1280,
+  nodes: [
+    node('start', 0, 540, 'То, чего нет в Дневнике', 'What the journal does not say', 'Герои коротко вспоминают неизвестный знак. Ответа пока нет; впереди новое происшествие.', 'The friends briefly revisit the unknown mark. There is still no answer; a new incident needs attention.', 'start'),
+    node('yard', 1, 540, 'За воротами', 'Beyond the gate', 'У лесопилки не сходятся расстояния и привычные ориентиры.', 'Distances and familiar landmarks do not agree near the lumber yard.'),
+    node('first_talk', 2, 540, 'Ничего не видела', 'Saw nothing', 'Венди избегает расспросов. Как начать разговор, не выдавая догадку за факт?', 'Wendy avoids questions. How should they approach her without treating a guess as a fact?', 'choice'),
+    node('approach_direct', 3, 220, 'Спросить прямо', 'Ask directly', 'Пасифика настаивает на прямом ответе. Венди становится настороженнее.', 'Pacifica insists on a straight answer. Wendy becomes more guarded.'),
+    node('approach_bargain', 3, 540, 'Предложить обмен', 'Offer a trade', 'Герои предлагают обменяться проверяемыми сведениями, а не обещаниями дружбы.', 'The friends offer verifiable information in exchange, not a promise of friendship.'),
+    node('approach_wait', 3, 860, 'Не торопить', 'Wait and watch', 'Гидеон замечает, как Венди выбирает место и старается не подходить к воротам.', 'Gideon notices where Wendy stands and how she avoids the gate.'),
+    node('waymarks', 4, 540, 'Неверные ориентиры', 'Unreliable landmarks', 'Нужно проверить происходящее независимо от уверенности Венди.', 'They need to test what is happening without relying on Wendy’s confidence.', 'choice'),
+    node('test_mark', 5, 220, 'Оставить метки', 'Leave marks', 'Собственные отметки позволяют заметить изменение расположения ориентиров.', 'Their own marks reveal that the positions of landmarks have changed.'),
+    node('test_listen', 5, 540, 'Прислушаться', 'Listen carefully', 'Звуки шагов помогают сравнить путь с тем, что герои видят.', 'Footsteps help compare the route with what the friends can see.'),
+    node('test_checkplans', 5, 860, 'Сверить план', 'Check the plans', 'План участка и реальные расстояния противоречат друг другу.', 'The site plan and the actual distances contradict one another.'),
+    node('cutting_floor', 6, 540, 'Пустой цех', 'The empty cutting shed', 'Внутри лесопилки странность становится опасной. Шутки прекращаются.', 'Inside the lumber yard, the anomaly turns dangerous. The jokes stop.'),
+    node('service_walk', 7, 540, 'Служебный проход', 'The service passage', 'Пасифика и Гидеон проверяют путь к выходу. Венди знает больше, чем говорила.', 'Pacifica and Gideon test a way out. Wendy knows more than she admitted.'),
+    node('bag', 8, 540, 'Чужая находка', 'Someone else’s find', 'Венди показывает предмет, который забрала из леса. Его связь с нынешним происшествием становится очевидной.', 'Wendy reveals the object she took from the forest. Its involvement in the present incident becomes clear.'),
+    node('crossing', 9, 540, 'Узкий выход', 'The narrow exit', 'Чтобы выбраться, нужно согласовать действия. Доверие ещё не заменяет проверку.', 'To get out, they must coordinate their actions. Trust still does not replace checking.', 'choice'),
+    node('exit_holdgate', 10, 220, 'Удержать проход', 'Hold the passage', 'Пасифика и Гидеон вместе удерживают проход, пока Венди выбирается.', 'Pacifica and Gideon hold the passage together while Wendy gets out.'),
+    node('exit_guide', 10, 540, 'Провести по меткам', 'Guide by landmarks', 'Герои сверяют каждый шаг, а Венди приходится слушать их указания.', 'The friends check each step, and Wendy has to follow their directions.'),
+    node('exit_securebag', 10, 860, 'Закрепить сумку', 'Secure the bag', 'Они удерживают сумку с находкой неподвижно, не присваивая предмет.', 'They keep the bag and its object still without taking ownership of it.'),
+    node('night_gate', 11, 540, 'До темноты', 'Before dark', 'Из цеха удалось выбраться. Венди всё ещё хранит находку, а происшествие не закончилось.', 'They have escaped the shed. Wendy still keeps the object, and the incident is not over.', 'ending')
+  ],
+  edges: [
+    edge('start', 'yard'), edge('yard', 'first_talk'),
+    ...connect('first_talk', ['approach_direct', 'approach_bargain', 'approach_wait']),
+    ...['approach_direct', 'approach_bargain', 'approach_wait'].map(id => edge(id, 'waymarks')),
+    ...connect('waymarks', ['test_mark', 'test_listen', 'test_checkplans']),
+    ...['test_mark', 'test_listen', 'test_checkplans'].map(id => edge(id, 'cutting_floor')),
+    edge('cutting_floor', 'service_walk'), edge('service_walk', 'bag'), edge('bag', 'crossing'),
+    ...connect('crossing', ['exit_holdgate', 'exit_guide', 'exit_securebag']),
+    ...['exit_holdgate', 'exit_guide', 'exit_securebag'].map(id => edge(id, 'night_gate'))
+  ]
+};
+
 const map0 = {
   "part_1_intro/intro_1": "intro", "part_1_intro/intro_2_werewolf": "werewolf",
   "part_1_intro/intro_2_wendigo": "wendigo", "part_1_intro/intro_2_vampire": "vampire",
@@ -113,7 +187,7 @@ const map0 = {
   "part_3_mothman/mothman_2_wendigo": "moth_heat", "part_3_mothman/mothman_2_vampire": "moth_reflection",
   "part_3_mothman/mothman_3": "finale"
 };
-const map1 = Object.fromEntries(chapter1.nodes.map(node => [node.id, node.id]));
+const nodeMaps = { 0: map0, ...Object.fromEntries([chapter1, chapter2, chapter3].map(graph => [graph.chapter, Object.fromEntries(graph.nodes.map(node => [node.id, node.id]))])) };
 
 function deepFreeze(value) {
   if (value && typeof value === "object") {
@@ -122,23 +196,23 @@ function deepFreeze(value) {
   }
   return value;
 }
-const graphs = [chapter0, chapter1].map(deepFreeze);
+const graphs = [chapter0, chapter1, chapter2, chapter3].map(deepFreeze);
 const index = graphs.map(graph => ({
   nodes: new Set(graph.nodes.map(item => item.id)),
   edges: new Set(graph.edges.map(item => item.id))
 }));
-const selectChapter = value => value === 1 || value === "1" || (value === "chapter_1" || value === "chapter_1_v3") ? 1 : 0;
+const selectChapter = normalizeChapter;
 const record = value => value !== null && typeof value === "object" && !Array.isArray(value);
 function getFlowGraph(chapter) { return graphs[selectChapter(chapter)]; }
 function readFlowProgress(value) {
   if (typeof value === "string") {
     try { value = JSON.parse(value); } catch { value = null; }
   }
-  const result = { version: 3, chapters: { 0: { nodes: [], edges: [] }, 1: { nodes: [], edges: [] } } };
+  const result = { version: 3, chapters: Object.fromEntries(CHAPTER_IDS.map(id => [id, { nodes: [], edges: [] }])) };
   if (!record(value) || ![1, 2, 3].includes(value.version) || !record(value.chapters)) return result;
-  for (const chapter of [0, 1]) {
+  for (const chapter of CHAPTER_IDS) {
     // Old chapter-one nodes belong to an entirely different story.
-    if (chapter === 1 && value.version !== 3) continue;
+    if (chapter > 0 && value.version !== 3) continue;
     const source = value.chapters[chapter];
     if (!record(source)) continue;
     for (const key of ["nodes", "edges"]) {
@@ -156,9 +230,9 @@ function readFlowProgress(value) {
 function parsePath(value) {
   if (typeof value !== "string") return null;
   const path = value.toLowerCase().replace(/\\/g, "/").replace(/^textes\/[a-z]+\//, "");
-  const match = path.match(/^(chapter_0|chapter_1_v3)\/(.+)$/);
-  if (!match) return null;
-  const chapter = match[1] === "chapter_0" ? 0 : 1, id = (chapter === 0 ? map0 : map1)[match[2]];
+  const chapter = CHAPTER_IDS.find(id => path.startsWith(CHAPTERS[id].namespace + '/'));
+  if (chapter === undefined) return null;
+  const id = nodeMaps[chapter][path.slice(CHAPTERS[chapter].namespace.length + 1)];
   return id ? { chapter, id } : null;
 }
 function route(snapshot, chapter) {
@@ -183,12 +257,12 @@ function route(snapshot, chapter) {
   result.nodes = [...new Set(steps)];
   result.edges = [...new Set(steps.slice(1).map((to, i) => `${steps[i]}>${to}`).filter(id => index[chapter].edges.has(id)))];
   result.currentNodeId = steps.at(-1) ?? null;
-  result.completed = snapshot.phase === "credits" && (chapter === 0 ? current.id === "finale" : current.id === "will");
+  result.completed = snapshot.phase === "credits" && getFlowGraph(chapter).nodes.some(node => node.id === current.id && node.kind === "ending");
   return result;
 }
 function observeFlow(progress, snapshot) {
   const result = readFlowProgress(progress);
-  for (const chapter of [0, 1]) {
+  for (const chapter of CHAPTER_IDS) {
     const observed = route(snapshot, chapter), target = result.chapters[chapter];
     target.nodes = [...new Set([...target.nodes, ...observed.nodes])].sort();
     target.edges = [...new Set([...target.edges, ...observed.edges])].sort();

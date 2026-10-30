@@ -1,5 +1,5 @@
 import { StoryEngine } from './engine.js';
-import { CHAPTERS, CHAPTER1_CHOICES, chapterForSnapshot, chapterLanguage, readCampaign } from './campaign.js';
+import { CHAPTERS, CHAPTER_IDS, CHAPTER1_CHOICES, CHAPTER2_CHOICES, CHAPTER3_CHOICES, chapterForSnapshot, chapterLanguage, readCampaign } from './campaign.js';
 import { getFlowGraph, readFlowProgress } from './flowchart.js';
 import { createFlowJump } from './flow-jump.js';
 import { createStoryEnvelope, deriveStoryState } from './story-state.js';
@@ -12,6 +12,7 @@ const effect = (type, key, value) => ({ type, key, value });
 const flag = (key, value) => effect('flag', key, value);
 const counter = key => effect('counter', key, 1);
 const relationship = () => effect('relationship', 'pacifica_gideon', 1);
+const knowledge = key => ['pacifica', 'gideon'].map(character => ({ type: 'knowledge', character, key }));
 const MONSTERS = ['Werewolf', 'Wendigo', 'Vampire'];
 const CITIES = ['arcade', 'hardware_store', 'telepathy_tent'];
 const C0_PATHS = {
@@ -48,7 +49,37 @@ const choices = [
     ['Bold', 'ending_bold', [flag('chapter1_bold_end', true)]],
     ['Cautious', 'ending_cautious', [flag('chapter1_cautious_end', true)]],
     ['Observation', 'ending_observation', [flag('chapter1_observation_end', true)]]
-  ], 'blue_glow')
+  ], 'blue_glow'),
+  makeChoice('ch2.trail_focus', 2, 'trail_focus', 'chapter_2/two_tracks', [
+    ['LargeTracks', 'trail_largetracks', knowledge('ch2_large_fiber')],
+    ['Journal', 'trail_journal', knowledge('ch2_track_mismatch')],
+    ['Perimeter', 'trail_perimeter', knowledge('ch2_tracks_separate')]
+  ], 'watch_hut'),
+  makeChoice('ch2.threat_plan', 2, 'threat_plan', 'chapter_2/real_threat', [
+    ['Distract', 'plan_distract', []],
+    ['Block', 'plan_block', knowledge('ch2_predator_reacts_to_motion')],
+    ['Protect', 'plan_protect', [relationship()]]
+  ], 'water_climax'),
+  makeChoice('ch2.creature_fate', 2, 'creature_fate', 'chapter_2/creature_question', [
+    ['Help', 'fate_help', [effect('relationship', 'creature_trust', 1)]],
+    ['Expel', 'fate_expel', []],
+    ['Neutralize', 'fate_neutralize', []]
+  ], 'symbol'),
+  makeChoice('ch3.wendy_approach', 3, 'wendy_approach', 'chapter_3/first_talk', [
+    ['Direct', 'approach_direct', [flag('ch3_wendy_guarded', true)]],
+    ['Bargain', 'approach_bargain', [effect('relationship', 'wendy_respect', 1)]],
+    ['Wait', 'approach_wait', knowledge('ch3_wendy_avoids_gate')]
+  ], 'waymarks'),
+  makeChoice('ch3.test_method', 3, 'test_method', 'chapter_3/waymarks', [
+    ['Mark', 'test_mark', knowledge('ch3_moving_waymarks')],
+    ['Listen', 'test_listen', knowledge('ch3_steps_return')],
+    ['CheckPlans', 'test_checkplans', knowledge('ch3_route_mismatch')]
+  ], 'cutting_floor'),
+  makeChoice('ch3.exit_plan', 3, 'exit_plan', 'chapter_3/crossing', [
+    ['HoldGate', 'exit_holdgate', [relationship(), ...knowledge('ch3_wendy_has_object'), effect('quest', 'wendy_forest_object', 'unresolved')]],
+    ['Guide', 'exit_guide', [effect('relationship', 'wendy_respect', 1), ...knowledge('ch3_wendy_has_object'), effect('quest', 'wendy_forest_object', 'unresolved')]],
+    ['SecureBag', 'exit_securebag', [flag('ch3_object_secured', true), ...knowledge('ch3_wendy_has_object'), effect('quest', 'wendy_forest_object', 'unresolved')]]
+  ], 'night_gate')
 ];
 const byId = Object.fromEntries(choices.map(choice => [choice.id, choice]));
 const choiceForNode = Object.fromEntries(choices.flatMap(choice => choice.options.map(option => [`${choice.chapterId}:${option.nodeId}`, { choiceId: choice.id, optionId: option.id }])));
@@ -58,15 +89,15 @@ for (const [nodeId, optionId] of Object.entries(monsterNodes)) choiceForNode[`0:
 
 /** All story IDs stay language independent; released option values remain intact. */
 export const STORY_REGISTRY = {
-  chapterIds: [0, 1], choices,
-  baseEffects: [{ type: 'item', key: 'journal_3', value: true, source: 'chapter1.start', chapterId: 1 }],
-  chapters: [0, 1].map(chapterId => ({ chapterId, start: CHAPTERS[chapterId].start, available: true })),
-  graphs: [0, 1].map(chapterId => {
+  chapterIds: [...CHAPTER_IDS], choices,
+  baseEffects: [{ type: 'item', key: 'journal_3', value: true, source: 'chapter1.start', chapterId: 1 }, { type: 'item', key: 'journal_3', value: true, source: 'chapter2.carryover', chapterId: 2 }, { type: 'item', key: 'journal_3', value: true, source: 'chapter3.carryover', chapterId: 3 }],
+  chapters: CHAPTER_IDS.map(chapterId => ({ chapterId, start: CHAPTERS[chapterId].start, namespace: CHAPTERS[chapterId].namespace, title: { ...CHAPTERS[chapterId].title }, entry: chapterId === 0 ? 'intro' : 'start', exit: chapterId === 0 ? 'finale' : CHAPTERS[chapterId].exit.split('/').at(-1), available: true })),
+  graphs: CHAPTER_IDS.map(chapterId => {
     const graph = getFlowGraph(chapterId);
     return { ...clone(graph), nodes: graph.nodes.map(node => {
       const selection = choiceForNode[`${chapterId}:${node.id}`];
       const definition = selection && byId[selection.choiceId];
-      return { ...clone(node), nodeId: node.id, chapterId,
+      return { ...clone(node), nodeId: node.id, chapterId, sceneId: chapterId === 0 ? C0_PATHS[node.id] ?? null : `${CHAPTERS[chapterId].namespace}/${node.id}`,
         parents: graph.edges.filter(edge => edge.to === node.id).map(edge => edge.from),
         children: graph.edges.filter(edge => edge.from === node.id).map(edge => edge.to),
         requirements: selection ? [{ choiceId: selection.choiceId, optionId: selection.optionId }] : [],
@@ -84,7 +115,7 @@ export function choicesFromSnapshot(snapshot) {
   const chapter = chapterForSnapshot(snapshot), result = {};
   if (chapter === null || !record(snapshot.flags)) return result;
   for (const choice of choices) {
-    if (choice.chapterId !== chapter && choice.id !== 'ch0.creature') continue;
+    if (choice.chapterId > chapter) continue;
     const option = selected(snapshot.flags[choice.legacyKey], choice.options.map(option => option.id));
     if (option) result[choice.id] = option;
   }
@@ -100,6 +131,7 @@ const FLAG_DEFAULTS = {
 function scalarFlags(derived) {
   const result = Object.fromEntries(Object.entries(derived.flags ?? {}).map(([key, entry]) => [key, entry.value]));
   result.pacifica_gideon_trust = derived.relationships?.pacifica_gideon?.total ?? 0;
+  for (const [key, entry] of Object.entries(derived.relationships ?? {})) if (key !== 'pacifica_gideon') result[key] = entry.total;
   return result;
 }
 
@@ -110,18 +142,40 @@ export function reconcileSnapshot(snapshot, canon) {
   const reached = choicesFromSnapshot(result), active = {};
   for (const choice of choices) {
     if (!Object.hasOwn(canon.choices ?? {}, choice.id)) continue;
-    if (Object.hasOwn(reached, choice.id) || chapter === 1 && choice.id === 'ch0.creature') active[choice.id] = canon.choices[choice.id];
+    if (Object.hasOwn(reached, choice.id) || choice.chapterId < chapter) active[choice.id] = canon.choices[choice.id];
   }
-  const projection = { ...clone(canon), choices: active, currentChapter: chapter, progress: { [chapter]: { sceneId: result.script } } };
+  const projection = { ...clone(canon), choices: active, currentChapter: chapter, progress: { ...Object.fromEntries(Object.entries(canon.progress ?? {}).filter(([id]) => Number(id) < chapter)), [chapter]: { sceneId: result.script } } };
   const derived = deriveStoryState(projection, STORY_REGISTRY);
   result.flags = record(result.flags) ? result.flags : {};
   for (const choice of choices) delete result.flags[choice.legacyKey];
-  if (chapter === 1) Object.assign(result.flags, FLAG_DEFAULTS);
+  if (chapter >= 1) Object.assign(result.flags, FLAG_DEFAULTS);
+  if (chapter >= 2) result.flags.creature_trust = 0;
+  if (chapter >= 3) Object.assign(result.flags, { wendy_respect: 0, ch3_wendy_guarded: false, ch3_object_secured: false });
   for (const choice of choices) if (active[choice.id]) result.flags[choice.legacyKey] = active[choice.id];
   Object.assign(result.flags, scalarFlags(derived));
   if (chapter === 0) delete result.flags.pacifica_gideon_trust;
-  if (chapter === 1) result.inventory = Object.keys(derived.inventory ?? {});
+  if (chapter >= 1) result.inventory = Object.keys(derived.inventory ?? {});
   return result;
+}
+
+
+/** Starting a chapter reads the actual earlier official choices, not a preferred playthrough. */
+function chapterSeedProjection(canon, chapter) {
+  if (!CHAPTER_IDS.includes(chapter)) throw new Error('Unknown chapter seed');
+  const earlier = Object.fromEntries(choices.filter(choice => choice.chapterId < chapter && canon.choices?.[choice.id]).map(choice => [choice.id, canon.choices[choice.id]]));
+  const projection = { ...clone(canon), schemaVersion: 1, choices: earlier, currentChapter: chapter,
+    progress: { ...Object.fromEntries(Object.entries(canon.progress ?? {}).filter(([id]) => Number(id) < chapter)), [chapter]: { sceneId: CHAPTERS[chapter].start } } };
+  const derived = deriveStoryState(projection, STORY_REGISTRY);
+  return { earlier, derived };
+}
+export function seedChapterFlags(canon, chapter) {
+  if (chapter === 0) return {};
+  const { earlier, derived } = chapterSeedProjection(canon, chapter);
+  return { ...scalarFlags(derived), ...Object.fromEntries(choices.filter(choice => earlier[choice.id]).map(choice => [choice.legacyKey, earlier[choice.id]])) };
+}
+export function seedChapterInventory(canon, chapter) {
+  if (chapter === 0) return [];
+  return Object.keys(chapterSeedProjection(canon, chapter).derived.inventory);
 }
 
 export function progressFromSnapshot(snapshot) {
@@ -146,10 +200,10 @@ export function boundSnapshotCache(snapshots, currentChapter, limit = 2) {
 
 function nodeForScene(chapter, sceneId) {
   const normalized = path(sceneId);
-  if (chapter === 1) return getFlowGraph(1).nodes.find(node => normalized === `chapter_1_v3/${node.id}`)?.id ?? null;
+  if (chapter > 0) return getFlowGraph(chapter).nodes.find(node => normalized === `${CHAPTERS[chapter].namespace}/${node.id}`)?.id ?? null;
   return Object.keys(C0_PATHS).find(id => C0_PATHS[id] === normalized) ?? null;
 }
-function sceneForNode(chapter, nodeId) { return chapter === 0 ? C0_PATHS[nodeId] : `chapter_1_v3/${nodeId}`; }
+function sceneForNode(chapter, nodeId) { return chapter === 0 ? C0_PATHS[nodeId] : `${CHAPTERS[chapter].namespace}/${nodeId}`; }
 function routeNodeAllowed(chapter, node, canon) {
   const required = choiceForNode[`${chapter}:${node.id}`];
   return !required || canon.choices?.[required.choiceId] === required.optionId;
@@ -240,9 +294,9 @@ function canonicalScene(sceneId, canon) {
   let result = path(sceneId);
   const creature = canon.choices?.['ch0.creature'];
   if (creature) result = result.replace(/(intro_2_|mothman_2_|cafe_|yard_|clearing_)(werewolf|wendigo|vampire)$/, (_, prefix) => prefix + creature.toLowerCase());
-  for (const choice of choices.filter(choice => choice.chapterId === 1)) {
-    const prefix = choice.legacyKey;
-    if (new RegExp(`/(${prefix})_(?:${choice.options.map(option => option.id.toLowerCase()).join('|')})$`).test(result) && canon.choices?.[choice.id]) result = `chapter_1_v3/${prefix}_${canon.choices[choice.id].toLowerCase()}`;
+  for (const choice of choices.filter(choice => choice.chapterId > 0)) {
+    const selectedOption = choice.options.find(option => option.id === canon.choices?.[choice.id]);
+    if (selectedOption && choice.options.some(option => result === sceneForNode(choice.chapterId, option.nodeId))) result = sceneForNode(choice.chapterId, selectedOption.nodeId);
   }
   return result;
 }
@@ -256,7 +310,7 @@ export function replayCanonicalSnapshot(chapter, canon, oldSnapshot, { scripts, 
   const targetLine = Number.isInteger(target.line) ? target.line : oldSnapshot?.line ?? 0;
   const cityOrder = [...new Set([...(target.visited ?? []).filter(id => CITIES.includes(id)), ...CITIES])];
   const engine = new StoryEngine({ scripts, characters, language: chosenLanguage });
-  engine.start(CHAPTERS[chapter].start, { flags: chapter === 1 ? { monster: canon.choices?.['ch0.creature'] ?? 'Werewolf' } : {} });
+  engine.start(CHAPTERS[chapter].start, { flags: { ...(chapter > 0 ? { monster: canon.choices?.['ch0.creature'] ?? 'Werewolf' } : {}), ...seedChapterFlags(canon, chapter) }, inventory: seedChapterInventory(canon, chapter) });
   const done = () => reconcileSnapshot(engine.snapshot(), canon);
   const initialCheckpoint = engine.snapshot();
   let targetEntry = null;
@@ -327,6 +381,6 @@ export function rebuildSnapshotsForRewrite(candidate, old, resources = {}) {
 /** Enter an already unlocked node with explicit choices. No save is mutated. */
 export function createCanonicalFlowJump({ chapter, nodeId, canon, snapshots = {}, ...resources }) {
   return createFlowJump({ ...resources, chapter, nodeId, snapshot: null,
-    canonicalChoices: canon.choices ?? {}, monster: canon.choices?.['ch0.creature'] ?? 'Werewolf',
+    canonicalChoices: canon.choices ?? {}, initialFlags: seedChapterFlags(canon, chapter), initialInventory: seedChapterInventory(canon, chapter), monster: canon.choices?.['ch0.creature'] ?? 'Werewolf',
     cityOrder: canon.progress?.[chapter]?.visited ?? snapshots[chapter]?.visited ?? [] });
 }

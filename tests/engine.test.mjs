@@ -195,3 +195,19 @@ test('traversals cover all 91 playable localized script resources',()=>{
  assert.equal(expected.length,91);
  assert.deepEqual([...coveredResources].filter(path=>path.includes('/chapter_0/')).sort(),expected.sort());
 });
+
+test('conditional paragraphs never execute their text or commands when a carried choice differs',()=>{
+ const conditional={'textes/russian/test/guard':'[when monster Vampire][flag set wrong true][Pacifica]Неверная версия.\n[when monster Wendigo][Gideon]Верная версия.\n[Narrator]\nПродолжение.\n[scene credits]'};
+ const engine=new StoryEngine({scripts:conditional,language:'russian'});engine.start('test/guard',{flags:{monster:'Wendigo'}});
+ assert.equal(engine.state.text,'Верная версия.');assert.equal(engine.state.flags.wrong,undefined);
+ engine.advance();assert.equal(engine.state.text,'Продолжение.');assert.equal(engine.state.history.length,2);
+});
+test('chapter carryover inventory is copied before the first authored paragraph',()=>{
+ const inventory=['journal_3','cloth_scrap','journal_3'];const engine=new StoryEngine({scripts:{'textes/english/test/start':'[Narrator]\nA new morning.'}});
+ engine.start('test/start',{inventory});inventory.push('unrelated');assert.deepEqual(engine.state.inventory,['journal_3','cloth_scrap']);
+});
+test('authored music attenuation survives a snapshot and resets on the next normal music cue',()=>{
+ const engine=new StoryEngine({scripts:{'textes/english/test/start':'[music conversation_1 volume .3 fade .5]\n[Narrator]\nA quiet question.\n[music forest_day_1]\nA forest path.'}});
+ const first=engine.start('test/start');assert.equal(engine.state.musicGain,.3);assert.equal(first.events.find(event=>event.type==='audio').gain,.3);
+ const saved=engine.snapshot();engine.advance();assert.equal(engine.state.musicGain,1);engine.restore(saved);assert.equal(engine.state.musicGain,.3);
+});

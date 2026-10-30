@@ -39,7 +39,7 @@ test('routing accepts only the original prologue and the new namespace, includin
   assert.equal(chapterForSnapshot(snapshot(1)), 1);
   assert.equal(chapterForSnapshot({ ...snapshot(), script: 'textes/russian/chapter_1_v3/start' }), 1);
   assert.equal(chapterForSnapshot({ ...snapshot(), script: 'Chapter_0\\Part_1_Intro\\Intro_1' }), 0);
-  for (const script of ['', 'chapter_2/start', '../chapter_1/start', 'chapter_1/../../secrets', 'chapter_1/start?next=x', 'textes/unknown/chapter_1_v3/start', 'chapter_1/start', 'chapter_1/epilogue_anchor', 'chapter_1_v2/start', 'textes/russian/chapter_1_v2/ending_ask']) {
+  for (const script of ['', 'chapter_4/start', '../chapter_1/start', 'chapter_1/../../secrets', 'chapter_1/start?next=x', 'textes/unknown/chapter_1_v3/start', 'chapter_1/start', 'chapter_1/epilogue_anchor', 'chapter_1_v2/start', 'textes/russian/chapter_1_v2/ending_ask']) {
     assert.equal(chapterForSnapshot({ ...snapshot(), script }), null, script);
   }
   assert.equal(chapterForSnapshot({ ...snapshot(), version: 2 }), null);
@@ -59,7 +59,7 @@ test('new metadata names the investigation and keeps all original prologue langu
   assert.equal(normalizeChapter('chapter_1_v3'), 1);
   assert.equal(normalizeChapter('chapter_9'), 0);
   assert.equal(CHAPTERS[1].nextChapter.title.russian, 'Не тот монстр');
-  assert.equal(CHAPTERS[1].nextChapter.available, false);
+  assert.equal(CHAPTERS[1].nextChapter.available, true);
   assert.deepEqual(Object.keys(CHAPTER1_CHOICES), ['reason', 'tracks', 'descent', 'ending']);
   assert.ok(Object.values(CHAPTER1_CHOICES).every(values => values.length === 3));
 });
@@ -157,7 +157,7 @@ test('chapter-two handoff retains every combination and applies only the authore
     const save = finalSave({ reason, tracks, descent, ending });
     const campaign = markCompleted(null, save), hook = chapter2Handoff(campaign);
     assert.equal(campaign.chapters[1].completed, true);
-    assert.equal(hook.available, false);
+    assert.equal(hook.available, true);
     assert.equal(hook.toChapter, 2);
     assert.equal(hook.title.russian, 'Не тот монстр');
     assert.deepEqual(hook.flags, save.flags);

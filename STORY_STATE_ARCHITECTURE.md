@@ -264,8 +264,8 @@ facts, while an unrelated decision remains. A much later chapter can query that
 knowledge/quest or require this choice without traversing old scripts. Add
 tests for dependent/independent rewrites and migration before releasing IDs.
 
-Only chapters 0 and 1 are currently playable. Chapter 2 **The Wrong Monster**
-remains a future handoff, not an implemented episode. The generic state service
+Chapters 0–3 are currently playable. Chapter 4 remains unimplemented;
+Chapter 3 ends with its story arc unresolved. The generic state service
 does not require one giant branch per possible 60-chapter combination.
 
 ## Rules for future work
@@ -337,7 +337,7 @@ state, even during an alternative. The UI downloads `reverse_falls_canon_save.js
   "format": "reverse-falls-canon-save",
   "saveFormatVersion": 1,
   "schemaVersion": 1,
-  "gameVersion": "3.1.0",
+  "gameVersion": "4.0.0",
   "exportedAt": "2026-10-29T12:00:00.000Z",
   "canon": {
     "schemaVersion": 1,
@@ -411,7 +411,7 @@ that scene take their first options; the rewrite confirmation explicitly explain
 this. These prerequisite selections, their sourced effects and the target cursor
 are committed together, never by a preview or a normal node click.
 
-Only installed chapter graphs are shown. There are no Chapter 2–60 placeholders,
+Only installed chapter graphs are shown. There are no Chapter 4–60 placeholders,
 secret future nodes or future callback/consequence disclosures. Descriptions for
 current ending choices explain the current scene, not unreleased future effects.
 
@@ -439,10 +439,60 @@ chapter label, nodes with stable IDs and scene IDs/choice requirements, and grap
 edges. Optional `phaseNodes` maps special cursors (e.g. town travel), and optional
 `visitKey` orders visited locations. The existing chapter registrations adapt their
 old scene naming; the traversal and rendering have no Chapter 0/1 switch.
-A mock Chapter 2 test supplies a third descriptor and proves cross-chapter linking
+A mock Chapter 4 test supplies an additional descriptor and proves cross-chapter linking
 without a renderer change. This mock is test data only and is never shipped as
 playable or visible future content.
 
 Every opening/refresh builds from the current official canon, so rewrite and import
 are reflected immediately. Alternatives cannot supply input to this view. Export,
 My path and True Story all read the same authoritative StoryState.
+
+## CHAPTER 2 REGISTRATION
+
+Chapter 2 is installed at `chapter_2/`, with nineteen resources per language,
+nine macro scenes and three registered decisions: `ch2.trail_focus`,
+`ch2.threat_plan`, and `ch2.creature_fate`. Its graph has nineteen nodes and
+twenty-four edges. The existing projection, import/export, alternatives and
+transactional rewrites use this registration without a second story store.
+Chapter 1's completed official cursor unlocks Chapter 2. No bundled example save
+is automatically imported, and no future chapter is exposed.
+
+The save schema and portable format remain version one. Chapter 0/1 choice IDs,
+resource paths and save keys are unchanged. New exports identify game version
+4.1.0; older valid saves keep their imported provenance. Chapter 2 seeds flags
+and inventory from earlier official choices before its first paragraph. Existing
+`journal_3` is carried forward; mundane preparation creates no permanent loot.
+All new relationship and knowledge effects have registered choice sources, so
+replays and rewrites recompute them rather than incrementing stored counters.
+
+
+## CHAPTER 3 REGISTRATION
+
+Chapter 3 **Чужая находка / Someone Else’s Find** is installed at `chapter_3/`.
+It has nine main scenes, three converging choices, eighteen resources per language
+and an eighteen-node/twenty-three-edge graph. Normal play unlocks it only after
+actual completion of chapter 2. The supplied `выборы.json` remains unchanged:
+its chapter 2 cursor is `chapter_2/symbol`, line 14, dialogue, incomplete. Import
+preserves that cursor; finishing the remaining scene sets completion normally.
+No bundled save is automatically imported and no chapter is silently completed.
+
+Stable decisions are `ch3.wendy_approach` (Direct/Bargain/Wait), `ch3.test_method`
+(Mark/Listen/CheckPlans), and `ch3.exit_plan` (HoldGate/Guide/SecureBag). Effects
+use the same existing sourced flag/relationship/knowledge/quest registry.
+Wendy's respect is small and distinct from friendship/alliance. Final options
+record both protagonists' `ch3_wendy_has_object` knowledge and the unresolved
+`wendy_forest_object` quest. The object remains Wendy's, never a player inventory
+reward. The earlier symbol stays unknown, with no inferred affiliation or origin.
+
+The existing journal is carried forward; no ordinary preparation creates loot.
+Chapter 3 preserves all earlier choices, creature trust, path-specific knowledge
+and items. New registered choices are appended; the save schema and portable
+format remain version one. Existing validation, recovery, transactional rewrites,
+alternatives and generic True Story projection include the new chapter without
+an independent history, map save or automatic promotion of previews.
+
+Authored source is `tools/chapter3-content-part1.json` plus `part2.json`, compiled
+by `tools/build-chapter3.py`. Directions/emotions/cues use existing Presentation
+System commands, restrained animations and soft camera values. Original engine,
+presentation presets and chapters 0–2 resources remain unchanged. Chapter 3
+recording slots are separate/pending; old recordings and Web Speech are blocked.

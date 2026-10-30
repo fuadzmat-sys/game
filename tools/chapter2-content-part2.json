@@ -1,0 +1,1667 @@
+{
+  "resources": {
+    "real_picture": {
+      "scene": 6,
+      "title": {
+        "russian": "Настоящая картина",
+        "english": "The Real Picture"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "За укрытием тропа сразу сужается. Пасифика отводит ветку, пропуская Гидеона, и сама шагает следом.",
+          "en": "The path narrows just beyond the shelter. Pacifica holds a branch aside for Gideon, then follows him."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Только до ручья. Посмотрим, откуда звали, и вернёмся.",
+          "en": "Just as far as the stream. We see where the voice came from, then come back."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Запомню эту версию плана.",
+          "en": "I'll remember this version of the plan."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она хочет ответить, но вместо этого проверяет, видны ли ещё корни над входом в укрытие.",
+          "en": "She starts to answer, then checks that the roots above the shelter entrance are still visible."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Может, оно само их позвало, а теперь валит всё на другое существо?",
+          "en": "Maybe it called them out itself, and now it's blaming something else?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Может. Поэтому я смотрю на землю, а не на его честные глаза.",
+          "en": "Maybe. That's why I'm watching the ground instead of its honest eyes."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Впереди крупный отпечаток пересекает узкую цепочку следов. Гидеон приседает, придерживая рукав.",
+          "en": "A large print crosses a narrow trail ahead. Gideon crouches, holding back his sleeve."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Тут опять два размера.",
+          "en": "Two sizes again."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "И порядок. Смотри на край.",
+          "en": "And an order. Look at the edge."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Тяжёлая лапа смяла половину маленького следа. Тот уходит под неё, а не появляется поверх.",
+          "en": "The heavy foot has crushed half a small print. The small one runs underneath it, not across the top."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Большое прошло позже.",
+          "en": "The big one came through later."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "На этом месте — да.",
+          "en": "At this spot, yes."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Но это ещё не значит, что оно не охотилось.",
+          "en": "That still doesn't mean it wasn't hunting."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Не значит. Я не выдаю ему справку о хорошем поведении.",
+          "en": "It doesn't. I'm not giving it a good-behavior certificate."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика опускается рядом. Вблизи вмятина выглядит гораздо менее похожей на рисунок из Дневника.",
+          "en": "Pacifica crouches beside him. Up close, the impression looks much less like the journal drawing."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы вчера всё время спрашивали, на что это похоже.",
+          "en": "Yesterday we kept asking what it looked like."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "А стоило спросить, что здесь случилось.",
+          "en": "We should've asked what happened here."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он разгибает пальцы по одному, будто раскладывает на столе вещи из разных карманов.",
+          "en": "He opens his fingers one at a time, as though laying out things from different pockets."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Забор был сломан наружу. Собака выбралась сама.",
+          "en": "The fence broke outward. The dog got out by itself."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "И крови возле забора почти не было.",
+          "en": "And there was hardly any blood by the fence."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Она пошла не туда, где безопаснее. Она пошла на чей-то зов.",
+          "en": "It didn't go where it was safer. It went toward someone calling."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы ещё не знаем, как именно оно её позвало.",
+          "en": "We still don't know exactly how it called her."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Зато только что услышали, как оно пытается сделать это снова.",
+          "en": "But we just heard it trying to do it again."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Из укрытия больше не слышно ни собак, ни металлического звона мисок.",
+          "en": "No dogs or clattering metal bowls can be heard from the shelter now."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Бастер хотел идти на голос. Даже когда понял, что что-то не так.",
+          "en": "Buster wanted to follow the voice. Even after he noticed something was wrong."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Ошейник сняли потом. Уже в укрытии. Не у забора.",
+          "en": "The collar came off later. At the shelter. Not at the fence."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Значит, ошейник на поляне не доказывал нападение.",
+          "en": "So the collar in the clearing didn't prove there'd been an attack."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Только то, что собака перестала его носить.",
+          "en": "Just that the dog stopped wearing it."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика касается застёжки рюкзака и тут же убирает руку. Щелчок здесь кажется лишним.",
+          "en": "Pacifica touches her backpack clasp, then moves her hand away. Even a small click feels unnecessary here."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "А маленькие следы были раньше больших.",
+          "en": "And the little tracks were there before the big ones."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "По крайней мере эти. И они идут к домам, а потом от домов.",
+          "en": "At least these were. They head toward the houses, then away from them."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "То есть мелкое не гналось за тем большим.",
+          "en": "So the little one wasn't chasing the big one."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Оно шло первым.",
+          "en": "It was first."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она переводит взгляд с затоптанной земли на лес, который всё утро казался одной большой стеной.",
+          "en": "She looks from the trampled earth to the forest, which has seemed like one solid wall all morning."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Оно не догоняло животных. Оно их вело.",
+          "en": "It wasn't catching up to the animals. It was leading them."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "А большое находило их уже после. Если его рассказ правдивый, он наконец совпадает со следами.",
+          "en": "And the big one found them afterward. If its story is true, it finally fits the tracks."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "И всё равно оно могло что-нибудь не договорить.",
+          "en": "And it still could have left something out."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Могло. Поэтому заберём животных, а не будем селиться у него под деревом.",
+          "en": "It could. That's why we're taking the animals, not moving in under its tree."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "На краю отпечатка лежит сосновая игла. Пасифика поднимает её, проверяя глубину вмятины, и возвращает точно на место.",
+          "en": "A pine needle lies at the edge of the print. Pacifica lifts it to check the impression's depth, then puts it back exactly where it was."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Хотя бы вот это я могу проверить сама. Без обещаний и картинок.",
+          "en": "At least I can check this myself. Without promises or pictures."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Вот это уже похоже на расследование.",
+          "en": "That sounds more like an investigation."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она не отвечает колкостью. Просто выпрямляется и выбирает следующую точку, где можно разглядеть землю.",
+          "en": "She doesn't answer with a jab. She simply stands and picks the next patch where the ground is visible."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы выбрали самую большую лапу, потому что уже искали самого большого монстра.",
+          "en": "We picked the biggest footprint because we were already looking for the biggest monster."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Большие улики. Удобно заметить.",
+          "en": "Big clues. Easy to spot."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Не надо делать вид, что ты вообще ни разу не поверил.",
+          "en": "Don't act like you never believed it for a second."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Я поверил достаточно, чтобы прийти сюда второй день подряд.",
+          "en": "I believed it enough to come here two days in a row."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она коротко кивает. Гидеон поднимается и отряхивает колено, не дожидаясь ответа.",
+          "en": "She gives a brief nod. Gideon stands and brushes off his knee without waiting for an answer."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Между камнями впереди блестит вода. Две цепочки следов расходятся ещё до берега.",
+          "en": "Water glints between the stones ahead. The two sets of prints separate before reaching the bank.",
+          "cue": "stream"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Большое перешло прямо по воде.",
+          "en": "The big one went straight through the water."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "А маленькое искало сухие камни.",
+          "en": "And the little one looked for dry stones."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они двигаются вдоль берега. Пасифика каждый раз сначала пробует камень носком, потом переносит вес.",
+          "en": "They follow the bank. Each time, Pacifica tests a stone with her toe before putting her weight on it."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Теперь я понимаю, почему тут никто не гуляет.",
+          "en": "Now I understand why nobody takes walks here."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Плохие отзывы. Сложная парковка.",
+          "en": "Bad reviews. Difficult parking."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Из-за поваленного дерева доносится короткий сиплый лай.",
+          "en": "A short, hoarse bark comes from behind a fallen tree."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Через несколько секунд он повторяется. С тем же обрывом посередине.",
+          "en": "A few seconds later it repeats. With the same break in the middle."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Слышал?",
+          "en": "Hear that?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Один и тот же кашель. Даже собаки обычно стараются разнообразнее.",
+          "en": "The same cough. Even dogs usually try for more variety."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика берётся за фонарик. Её пальцы лежат на выключателе, но она пока не включает свет.",
+          "en": "Pacifica takes her flashlight. Her fingers rest on the switch, but she leaves it off."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Под откосом виднеется бетонная арка. Её край оплели корни, снизу темнеет мокрая полоса.",
+          "en": "A concrete arch appears below the slope. Roots grip its rim, and a wet stripe darkens its base.",
+          "cue": "drainage_entrance"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Старая водосточная труба. Или проход для рабочих.",
+          "en": "An old drain. Or a maintenance passage."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Надеюсь, у рабочих был другой вход.",
+          "en": "I hope the workers had another entrance."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "У арки маленькие отпечатки становятся чётче. Они обходят влажную землю вдоль самой стены.",
+          "en": "The small prints become clearer near the arch. They skirt the wet earth right along the wall."
+        },
+        {
+          "speaker": "Mimic",
+          "ru": "Гидеон?",
+          "en": "Gideon?",
+          "cue": "mimic_pacifica"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика замирает. Её рот закрыт. Фонарик направлен в землю.",
+          "en": "Pacifica goes still. Her mouth is closed. Her flashlight points at the ground."
+        },
+        {
+          "speaker": "Mimic",
+          "ru": "Гидеон, иди сюда.",
+          "en": "Gideon, come here."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Голос похож. Только последнее слово тянется чуть дольше, чем нужно, будто ждёт разрешения закончиться.",
+          "en": "The voice is close. Only the last word lasts a little too long, as though waiting for permission to end."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Я здесь.",
+          "en": "I'm here."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Да. В этом и проблема.",
+          "en": "Yes. That's the problem."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он смотрит на неё, пока не убеждается, что она тоже смотрит на него.",
+          "en": "He watches her until he is certain she is looking back at him."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Если снова услышишь меня впереди, сначала проверь, где настоящий.",
+          "en": "If you hear me up ahead again, check where the real one is first."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Проверю. И ты проверяй.",
+          "en": "I will. You check too."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она включает фонарик и первой спускается к арке. На этот раз — достаточно медленно, чтобы он успел рядом.",
+          "en": "She switches on the flashlight and leads the way down to the arch. This time, slowly enough for him to stay beside her."
+        }
+      ]
+    },
+    "real_threat": {
+      "scene": 7,
+      "title": {
+        "russian": "Настоящая угроза",
+        "english": "The Real Threat"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "В проходе пахнет мокрым бетоном и ржавчиной. Свет выхватывает трубы под низким потолком.",
+          "en": "The passage smells of wet concrete and rust. The beam catches pipes beneath the low ceiling."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Не отходи далеко от света.",
+          "en": "Don't get too far from the light."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Я рассчитывал не отходить далеко от выхода.",
+          "en": "I was planning not to get too far from the exit."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика поднимает луч. На болте висит разорванный ошейник, ниже лежит ещё один.",
+          "en": "Pacifica raises the beam. A torn collar hangs from a bolt, with another lying below it.",
+          "cue": "metal"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Эти не расстегнули.",
+          "en": "These weren't unfastened."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "На бетонном выступе отпечатались маленькие лапы. Рядом идёт глубокая царапина, заканчивающаяся у мокрой полосы.",
+          "en": "Small paws have marked the concrete ledge. A deep scratch runs beside them, ending at the wet stripe."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Они добрались сюда. Не все успели выбраться.",
+          "en": "They made it here. Not all of them got out."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Одного ещё успеем забрать.",
+          "en": "We can still get one out."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он говорит тихо, почти буднично. Только смотрит не на ошейники, а дальше по стене, ищет свободный путь назад.",
+          "en": "He speaks quietly, almost casually. But he looks past the collars, following the wall for a clear way back."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Вижу.",
+          "en": "I see."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она не тянется за ними. Острый край кожи ещё торчит из пряжки.",
+          "en": "She doesn't reach for them. A sharp strip of leather still sticks out of the buckle."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Вода занимает середину пола. Вдоль стены тянется сухой выступ, прерывающийся у перекошенной решётки.",
+          "en": "Water covers the middle of the floor. A dry ledge runs along the wall, broken by a crooked grate."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Из-за неё доносится скуление. Маленькая собака пятится, но поводок зацепился за выступ металла.",
+          "en": "Whining comes from behind it. A small dog backs away, but its lead is caught on a metal projection.",
+          "cue": "dog_whine"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Эй. Тихо, мы тебя вытащим.",
+          "en": "Hey. Easy, we'll get you out."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Паси...",
+          "en": "Paci..."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он не успевает договорить. Две точки отражают свет за правым поворотом.",
+          "en": "He doesn't finish. Two points reflect the light beyond the bend on the right.",
+          "cue": "predator_eyes"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Луч опускается. В темноте шевелится низкая длинная спина.",
+          "en": "The beam drops. A low, long back shifts in the darkness."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Это совсем не...",
+          "en": "That isn't anything like..."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Да.",
+          "en": "No."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Передние лапы переступают по сухому выступу. Существо ниже большого, но проход от этого не кажется шире.",
+          "en": "Its forelegs move along the dry ledge. It is lower than the big creature, but the passage feels no wider.",
+          "cue": "predator_reveal"
+        },
+        {
+          "speaker": "Mimic",
+          "ru": "Я здесь.",
+          "en": "I'm here.",
+          "cue": "mimic_pacifica"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Теперь голос звучит из-за поворота. Пасифика узнаёт собственную фразу и крепче сжимает фонарик.",
+          "en": "Now the voice comes from around the bend. Pacifica recognizes her own words and grips the flashlight harder."
+        },
+        {
+          "speaker": "Mimic",
+          "ru": "Я здесь.",
+          "en": "I'm here."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Не отвечай.",
+          "en": "Don't answer it."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Я не собиралась.",
+          "en": "I wasn't going to."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Луч дрожит и на мгновение соскальзывает на потолок. Пасифика удерживает фонарик второй рукой.",
+          "en": "The beam shakes and briefly slips up to the ceiling. Pacifica steadies the flashlight with her other hand."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Гидеон?..",
+          "en": "Gideon...?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Я рядом.",
+          "en": "I'm right here."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она проверяет это взглядом, хотя он стоит совсем близко. За стеной что-то переступает по сухому бетону.",
+          "en": "She checks with a glance, though he is standing close. Something steps along dry concrete beyond the wall."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Не следи только за глазами. Выход тоже должен оставаться виден.",
+          "en": "Don't just watch its eyes. Keep the way out in sight too."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Знаю. Знаю.",
+          "en": "I know. I know."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она отодвигает ногой упавший кусок трубы, чтобы потом не споткнуться об него в темноте.",
+          "en": "She pushes a fallen piece of pipe aside with her foot so they won't trip over it in the dark later."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Хищник двигает головой, когда она говорит. Остальное тело остаётся неподвижным.",
+          "en": "The predator moves its head when she speaks. The rest of its body stays still."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Ему надо, чтобы один из нас пошёл туда. Другой останется у собаки.",
+          "en": "It wants one of us to go over there. The other stays with the dog."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы не пойдём.",
+          "en": "We won't."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он снова смотрит на решётку. Петля поводка натянута так, что издалека кажется частью ржавой проволоки.",
+          "en": "He looks back at the grate. The tight loop of the lead almost looks like part of the rusty wire."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Тогда собаку придётся освобождать здесь. И оно это видит.",
+          "en": "Then we have to free the dog here. And it can see that."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Собака тихо дёргается. Решётка отвечает коротким звоном.",
+          "en": "The dog gives a small tug. The grate answers with a brief ring."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ладно. Давай решать, пока оно не решило за нас.",
+          "en": "All right. Let's decide before it decides for us."
+        }
+      ]
+    },
+    "plan_distract": {
+      "scene": 7,
+      "title": {
+        "russian": "Отвлечь",
+        "english": "Distract"
+      },
+      "rows": [
+        {
+          "speaker": "Pacifica",
+          "ru": "Я уведу его взгляд. Ты освободи поводок.",
+          "en": "I'll keep its eyes on me. You free the lead."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Взгляд. Не всю голову вместе с зубами.",
+          "en": "Its eyes. Not its whole head with the teeth."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика переступает к стене и коротко стучит фонариком по трубе, не выпуская его из руки.",
+          "en": "Pacifica steps toward the wall and taps the pipe with her flashlight without letting go of it."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Голова хищника поворачивается. Она отступает на один шаг, оставляя между собой и ним мокрый пол.",
+          "en": "The predator turns its head. She takes one step back, keeping the wet floor between them."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Сюда. Да, на меня смотри.",
+          "en": "Here. Yes, look at me."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон приседает у решётки. Петля впилась в металл; потянуть просто сильнее не получится.",
+          "en": "Gideon crouches beside the grate. The loop is wedged into the metal; pulling harder won't work."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Почти.",
+          "en": "Almost."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он ослабляет поводок со стороны собаки и пропускает сгиб обратно через щель.",
+          "en": "He loosens the lead from the dog's side and works the fold back through the gap."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика перестаёт стучать ровно в тот миг, когда лапы на выступе сгибаются.",
+          "en": "Pacifica stops tapping just as the legs on the ledge begin to bend."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Гидеон, сейчас.",
+          "en": "Gideon, now."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Петля соскальзывает. Он подхватывает собаку, и Пасифика возвращается к нему, не поворачиваясь спиной.",
+          "en": "The loop slips free. He scoops up the dog, and Pacifica rejoins him without turning her back."
+        }
+      ]
+    },
+    "plan_block": {
+      "scene": 7,
+      "title": {
+        "russian": "Перекрыть проход",
+        "english": "Block the Passage"
+      },
+      "rows": [
+        {
+          "speaker": "Gideon",
+          "ru": "Решётка на петлях. Если опустить её дальше, она закроет сухой выступ.",
+          "en": "The grate is hinged. Lower it farther and it'll close off the dry ledge."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "А нас не прижмёт?",
+          "en": "Will it trap us too?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Если встанем под неё — очень вероятно.",
+          "en": "If we stand underneath it, very likely."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика переводит свет на крепление. Цепь висит достаточно низко, чтобы до неё дотянуться.",
+          "en": "Pacifica moves the light to the bracket. The chain hangs low enough to reach."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон взмахивает свободным концом поводка. Голова хищника следует за движением, игнорируя тихую собаку.",
+          "en": "Gideon flicks the loose end of the lead. The predator follows the movement, ignoring the quiet dog."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Он смотрит туда, где движется. Держи луч в стороне от меня.",
+          "en": "It's looking where things move. Keep the beam away from me."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика делает резкое движение рукой. Хищник подаётся за ним — ровно к краю решётки.",
+          "en": "Pacifica moves her arm sharply. The predator leans after it, right to the edge of the grate."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Давай!",
+          "en": "Now!"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они тянут цепь вместе. Металл падает на выступ и на секунду отрезает хищнику дорогу.",
+          "en": "They pull the chain together. The metal drops onto the ledge, cutting off the predator for a moment.",
+          "cue": "metal"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика удерживает её, пока Гидеон освобождает поводок. Решётка скребёт по бетону под первым ударом.",
+          "en": "Pacifica holds it while Gideon frees the lead. The grate scrapes the concrete under the first impact."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Ненадолго. Уходим.",
+          "en": "Not for long. Let's go."
+        }
+      ]
+    },
+    "plan_protect": {
+      "scene": 7,
+      "title": {
+        "russian": "Держаться вместе",
+        "english": "Stay Together"
+      },
+      "rows": [
+        {
+          "speaker": "Pacifica",
+          "ru": "Не разделяемся. Я держу свет, ты снимаешь петлю. Потом вместе назад.",
+          "en": "We stay together. I'll hold the light, you get the loop off. Then we back out together."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Это будет медленно.",
+          "en": "That'll be slow."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Зато никто не останется один.",
+          "en": "But neither of us will be alone."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он перестаёт смотреть на боковой проход и кивает. Пасифика встаёт так, чтобы видеть обе его руки.",
+          "en": "He stops watching the side passage and nods. Pacifica positions herself so she can see both his hands."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Собака прижимается к решётке. Гидеон не тянет её к себе, а сначала даёт поводку провиснуть.",
+          "en": "The dog presses against the grate. Instead of pulling it closer, Gideon gives the lead some slack first."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Слева от меня. Не ставь ногу в щель.",
+          "en": "On my left. Don't put your foot in the gap."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Хищник соскальзывает с дальнего выступа ближе. Пасифика вздрагивает, но не опускает свет.",
+          "en": "The predator slips closer along the far ledge. Pacifica flinches but keeps the beam steady."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Вижу. Продолжай.",
+          "en": "I see it. Keep going."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон вытаскивает петлю по сантиметру. Только освободив её, он поднимает собаку и выпрямляется.",
+          "en": "Gideon works the loop free inch by inch. Only then does he lift the dog and straighten up."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они начинают отступать одновременно. Пасифика ждёт его шага, хотя ей хочется сделать два.",
+          "en": "They start backing away together. Pacifica waits for his step, though she wants to take two."
+        }
+      ]
+    },
+    "water_climax": {
+      "scene": 7,
+      "title": {
+        "russian": "Вода",
+        "english": "Water"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "У выхода из узкого места они снова оказываются на одном сухом выступе. Собака тяжело дышит у Гидеона на руках.",
+          "en": "Beyond the narrow section, they are back on the same dry ledge. The dog pants in Gideon's arms."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Сзади раздаётся удар. На этот раз металл звучит глуше.",
+          "en": "An impact sounds behind them. This time the metal sounds duller."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Оно всё ещё идёт.",
+          "en": "It's still coming."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Да. Но не прямо.",
+          "en": "Yes. But not straight toward us."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Хищник перескакивает с одного сухого участка на другой. Возле широкой лужи он задерживается.",
+          "en": "The predator jumps between dry patches. It hesitates beside a wide puddle."
+        },
+        {
+          "speaker": "Mimic",
+          "ru": "Я рядом.",
+          "en": "I'm right here.",
+          "cue": "mimic_gideon"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон узнаёт собственный голос. Он не оборачивается к звуку, только сильнее прижимает собаку.",
+          "en": "Gideon recognizes his own voice. He doesn't turn toward it, only holds the dog more securely."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Отлично. Теперь оно ещё и издевается.",
+          "en": "Great. Now it's making fun of us too."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Оно повторяет. Не обязательно понимает.",
+          "en": "It's repeating us. It doesn't necessarily understand."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика направляет луч к выходу. Впереди вода перерезает выступ полосой шириной в шаг.",
+          "en": "Pacifica aims the beam toward the exit. Ahead, a strip of water cuts across the ledge, a stride wide."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "За спиной коротко скребут когти. Хищник снова выбирает длинный обход вдоль стены.",
+          "en": "Claws scrape briefly behind them. The predator takes the longer way around the wall again."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Пасифика. Вода.",
+          "en": "Pacifica. The water."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Я вижу, сейчас перепрыгнем.",
+          "en": "I see it. We'll jump across."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон переводит взгляд на следы у их ног. Сухая грязь с когтей остаётся на выступе, но ни одного отпечатка в воде нет.",
+          "en": "Gideon looks at the tracks beside their feet. Dry mud from the claws marks the ledge, but there is not one print in the water."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "При первом ударе он принял обход за попытку зайти сбоку. При втором заметил, что боковой путь длиннее.",
+          "en": "At the first impact, he'd thought it was trying to flank them. At the second, he'd noticed the route was longer."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Он мог достать нас быстрее. Но каждый раз выбирал сухое.",
+          "en": "It could've reached us faster. But every time, it picked the dry way."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Тогда ищем, как сделать сухого поменьше.",
+          "en": "Then we find a way to make less of it dry."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Не нам мешает. Ему.",
+          "en": "It's in its way. Not ours."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он показывает на мокрый пол. Следы заканчиваются перед каждой лужей и начинаются сбоку.",
+          "en": "He points at the wet floor. The prints stop before each puddle and pick up at the side."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Он её обходит. Снаружи по камням. Здесь по выступу.",
+          "en": "It's going around it. Stones outside. The ledge in here."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Думаешь, вода его остановит?",
+          "en": "You think water will stop it?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Думаю, она заставит его отступить. На минуту мне хватит.",
+          "en": "I think it'll make it back off. A minute is enough for me."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Луч скользит вверх. Над полом идёт толстая труба, у стены торчит старый вентиль.",
+          "en": "The beam moves upward. A thick pipe runs above the floor, with an old valve sticking out by the wall.",
+          "cue": "valve"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Тогда открываем.",
+          "en": "Then we open it."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она перескакивает лужу и хватается за колесо. Оно не двигается.",
+          "en": "She jumps the puddle and grabs the wheel. It doesn't move."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ржавое.",
+          "en": "Rusted shut."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Неожиданно для ржавой трубы.",
+          "en": "Unexpected, for a rusty pipe."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Удар за спиной гасит остаток шутки. Пасифика упирается ногой в основание стены.",
+          "en": "The next impact kills what remains of the joke. Pacifica braces a foot against the wall."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "А если ты ошибся? Откуда ты знаешь?",
+          "en": "What if you're wrong? How do you know?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "ПОТОМУ ЧТО ОН ТРИ РАЗА ОБОШЁЛ ВОДУ! ПОВОРАЧИВАЙ!",
+          "en": "BECAUSE IT WENT AROUND THE WATER THREE TIMES! TURN IT!"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она смотрит на него всего мгновение. Потом разворачивается к вентилю и переносит на него весь вес.",
+          "en": "She looks at him for just a moment. Then she turns back to the valve and puts her full weight into it."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон опускает собаку за лужей. Она жмётся к его ботинку, дрожа всем телом.",
+          "en": "Gideon puts the dog down beyond the puddle. It presses against his shoe, trembling all over."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Вместе. На три.",
+          "en": "Together. On three."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он берётся ниже её рук. Колесо сдвигается с коротким металлическим стоном.",
+          "en": "He grips the wheel below her hands. It shifts with a short metallic groan."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ты не досчитал.",
+          "en": "You didn't finish counting."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Ещё пол-оборота даются тяжелее. Пасифика меняет хват, чтобы мокрые пальцы не соскользнули с обода.",
+          "en": "The next half-turn is harder. Pacifica changes her grip so her wet fingers won't slide off the rim."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон не смотрит назад. Если он отпустит сейчас, ей придётся удерживать колесо одной.",
+          "en": "Gideon doesn't look back. If he lets go now, she'll have to hold the wheel alone."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Держу. Ещё чуть-чуть.",
+          "en": "I've got it. A little farther."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Три.",
+          "en": "Three."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "В трубе что-то стучит. Из повреждённого соединения вырывается струя, ударяя в стену и разливаясь по выступу.",
+          "en": "Something knocks inside the pipe. Water bursts from a damaged joint, hits the wall, and spreads across the ledge.",
+          "cue": "rushing_water"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика отшатывается от холодных брызг, но не бросает колесо, пока вода не закрывает сухой промежуток.",
+          "en": "Pacifica recoils from the cold spray but holds the wheel until water covers the dry gap."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Хищник резко подаётся назад. Передняя лапа скользит по мокрому краю, затем исчезает в боковом проходе.",
+          "en": "The predator jerks backward. A foreleg slips on the wet edge, then vanishes into the side passage.",
+          "cue": "predator_retreat"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они ждут ещё один удар. Слышат только бегущую воду.",
+          "en": "They wait for another impact. They hear only running water."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ушло?",
+          "en": "Gone?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "В другой проход. Не проверяем, насколько далеко.",
+          "en": "Into another passage. We aren't checking how far."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика подхватывает собаку, пока он отступает к арке. Теперь фонарик держит Гидеон.",
+          "en": "Pacifica picks up the dog while he backs toward the arch. Gideon holds the flashlight now."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ты на меня накричал.",
+          "en": "You shouted at me."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Ты плохо слышала за трубой.",
+          "en": "You couldn't hear me over the pipe."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она смотрит на его мокрый рукав. Он смотрит на свой дрожащий большой палец и прячет его под ладонью.",
+          "en": "She looks at his wet sleeve. He looks at his trembling thumb and folds it into his hand."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ладно. Услышала.",
+          "en": "All right. I heard you."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они выбираются наружу. За аркой остаётся шум воды — и ни одного ответа, которому можно верить.",
+          "en": "They climb outside. The rush of water remains behind the arch, with no answer they can trust."
+        }
+      ]
+    },
+    "creature_question": {
+      "scene": 8,
+      "title": {
+        "russian": "Что делать с монстром",
+        "english": "What to Do with the Monster"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "До укрытия они идут медленнее. Солнце уже ниже корней, и знакомая тропа кажется длиннее.",
+          "en": "They take their time returning to the shelter. The sun is already below the roots, and the familiar path feels longer."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Бастер встречает маленькую собаку первым. Та утыкается носом в его бок и наконец перестаёт скулить.",
+          "en": "Buster reaches the little dog first. It presses its nose into his side and finally stops whining."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Живой.",
+          "en": "Alive."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Живой. То, что было в трубе, ушло в другой проход.",
+          "en": "Alive. The thing in the tunnel went down another passage."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Вернётся.",
+          "en": "Will come back."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Ты знаешь или думаешь?",
+          "en": "Do you know, or do you think so?"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Существо медленно поворачивает голову к нижней тропе. Долго ничего не говорит.",
+          "en": "The creature slowly turns its head toward the lower path. It says nothing for a long time."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Думаю.",
+          "en": "Think."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Хорошо. Это важно.",
+          "en": "All right. That matters."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она ставит собаку на ткань рядом с миской. Воды здесь всё ещё достаточно, и всё ещё нет ответа на главный вопрос.",
+          "en": "She puts the dog on the cloth beside a bowl. There is still plenty of water, and still no answer to the main question."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Почему ты не вернул их домой?",
+          "en": "Why didn't you take them home?"
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Там. Голос.",
+          "en": "There. Voice."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Ты решил за них. И за людей, которые их ищут.",
+          "en": "You decided for them. And for the people looking for them."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Когда ты привёл первого, остальные уже были здесь?",
+          "en": "When you brought the first one, were the others already here?"
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Потом. Ещё.",
+          "en": "Later. More."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Существо показывает на миски, будто их количество должно само объяснить принятое решение.",
+          "en": "The creature points to the bowls, as though their number should explain its decision by itself."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Ты продолжал собирать их. Даже когда видел, что люди приходят в лес.",
+          "en": "You kept gathering them. Even when you saw people coming into the forest."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Люди. Кричат.",
+          "en": "People. Shout."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Они ищут своих животных. Они не могут знать, что ты принёс им воду.",
+          "en": "They're looking for their animals. They can't know you brought them water."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она смотрит на чистую миску, затем на пальцы, которыми Существо держится за корень. Обе детали остаются настоящими.",
+          "en": "She looks at the clean bowl, then at the fingers gripping the root. Both details remain real."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Мы можем признать, что ты помог. И всё равно не согласиться с тем, что ты сделал потом.",
+          "en": "We can admit you helped. And still disagree with what you did afterward."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Существо отступает к корням, загораживая край укрытия плечом. Сразу вспоминается, насколько оно выше их.",
+          "en": "The creature backs toward the roots, blocking the edge of the shelter with its shoulder. They are reminded how much taller it is."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Здесь. Живы.",
+          "en": "Here. Alive."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Да. Но люди этого не знали. Они думают, что их животных съели.",
+          "en": "Yes. But the people didn't know. They think something ate their animals."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Бастер тянется к её руке. На месте ошейника шерсть примята светлой полосой.",
+          "en": "Buster reaches toward her hand. A pale band of flattened fur marks where his collar was."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Если сюда придут искать, они увидят тебя. И решат то же, что мы сначала.",
+          "en": "If they come looking, they'll see you. And decide what we decided at first."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Не хочу.",
+          "en": "Don't want."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы тоже не хотели ошибаться.",
+          "en": "We didn't want to be wrong either."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она выпрямляется. На лице ещё есть грязь от трубы, и на этот раз она её не замечает.",
+          "en": "She straightens up. There is still dirt from the pipe on her face, and this time she doesn't notice."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Животных надо вернуть. Сегодня. Это не обсуждается.",
+          "en": "The animals have to go home. Today. That isn't up for debate."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Шум.",
+          "en": "Noise."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Будем вести тихо. Ты помог им, но спрятать всех навсегда — не решение.",
+          "en": "We'll keep them quiet. You helped them, but hiding everyone forever isn't a solution."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Существо сжимает длинные пальцы, потом разжимает. Оно не становится менее опасным от того, что понимает слова.",
+          "en": "The creature curls its long fingers, then opens them. Understanding the words doesn't make it less dangerous."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы не знаем, что ты ещё делал. И не можем просто сказать всем, что тут безопасно.",
+          "en": "We don't know what else you've done. And we can't just tell everyone it's safe here."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Но и притвориться, что собаки спаслись сами, не получится.",
+          "en": "But we can't pretend the dogs saved themselves either."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика и Гидеон переглядываются. Впервые сегодня спор не сводится к тому, кто первым заметил след.",
+          "en": "Pacifica and Gideon exchange a look. For once today, the argument isn't about who noticed a footprint first."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Надо решить, как мы разойдёмся. Чтобы никто не решил это за нас.",
+          "en": "We need to decide how we leave this. Before someone decides for us."
+        }
+      ]
+    },
+    "fate_help": {
+      "scene": 8,
+      "title": {
+        "russian": "Помочь",
+        "english": "Help"
+      },
+      "rows": [
+        {
+          "speaker": "Pacifica",
+          "ru": "Поможем вернуть животных. Потом ты уйдёшь глубже в лес. Мы не будем приводить сюда людей.",
+          "en": "We'll help take the animals back. Then you go deeper into the forest. We won't bring people here."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Не гнать?",
+          "en": "Not drive away?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Не станем охотиться на тебя просто за то, что ты здесь. Это не обещание закрывать глаза на всё остальное.",
+          "en": "We won't hunt you just for being here. That isn't a promise to ignore everything else."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Больше никаких спрятанных собак. Если им нужна помощь, нельзя просто решить, что теперь они твои.",
+          "en": "No more hidden dogs. If they need help, you can't just decide they belong to you now."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Существо смотрит на животных, затем сдвигается в сторону, освобождая выход из-под корней.",
+          "en": "The creature looks at the animals, then moves aside, leaving the way out from under the roots clear."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Понял.",
+          "en": "Understood."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Если мы ещё встретимся, сначала разговариваем. Не прячемся и не хватаем никого за шкирку.",
+          "en": "If we meet again, we talk first. No hiding, and no grabbing anyone by the scruff."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Говорить. Немного.",
+          "en": "Talk. Little."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Для начала хватит.",
+          "en": "Enough for a start."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон ждёт, пока оно отойдёт, прежде чем наклониться к самой маленькой собаке.",
+          "en": "Gideon waits until it steps away before bending toward the smallest dog."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Начнём с Бастера. Он знает дорогу.",
+          "en": "Buster first. He knows the way."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она протягивает животному руку, не Существу. Оно остаётся у корней и не пытается идти вместе с ними.",
+          "en": "She holds out her hand to the dog, not the creature. It stays beside the roots and makes no attempt to follow them."
+        }
+      ]
+    },
+    "fate_expel": {
+      "scene": 8,
+      "title": {
+        "russian": "Потребовать уйти",
+        "english": "Send It Away"
+      },
+      "rows": [
+        {
+          "speaker": "Pacifica",
+          "ru": "Ты помог им. Мы это видим. Но рядом с домами оставаться нельзя.",
+          "en": "You helped them. We see that. But you can't stay near the houses."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Здесь. Тихо.",
+          "en": "Here. Quiet."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Пока. Потом сюда придут искать собак. Или нас. Тихо уже не будет.",
+          "en": "For now. Then they'll come looking for the dogs. Or us. It won't stay quiet."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Уходи из этой части леса. Животных мы вернём сами.",
+          "en": "Leave this part of the forest. We'll take the animals home ourselves."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Существо долго не двигается. Гидеон не пытается занять проход и не делает вид, что может заставить его силой.",
+          "en": "The creature doesn't move for a long time. Gideon doesn't block its way or pretend he can force it."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Вы — гнать.",
+          "en": "You — drive away."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Да. Потому что люди живут совсем рядом. И мы не знаем, как оставить всё так, чтобы никто не пострадал.",
+          "en": "Yes. Because people live nearby. And we don't know how to leave things this way without someone getting hurt."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Не надо ждать, пока сюда придут с фонарями. Мы уйдём к дороге, ты — в другую сторону.",
+          "en": "Don't wait until people come here with flashlights. We'll head to the road. You go the other way."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она показывает направление открытой ладонью. Ни оружия, ни обещания погони в этом жесте нет.",
+          "en": "She indicates the direction with an open hand. There is no weapon or promise of pursuit in the gesture."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Оно отходит к деревьям. Шаги слышны дольше, чем видна высокая спина.",
+          "en": "It moves away toward the trees. They hear its steps longer than they can see its tall back."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Собираем собак. До дороги ещё идти.",
+          "en": "Let's gather the dogs. We've still got to reach the road."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она говорит это чуть громче, чем нужно, и начинает проверять, все ли животные встали.",
+          "en": "She says it a little too loudly and starts checking that all the animals are on their feet."
+        }
+      ]
+    },
+    "fate_neutralize": {
+      "scene": 8,
+      "title": {
+        "russian": "Установить границы",
+        "english": "Set Boundaries"
+      },
+      "rows": [
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы не можем просто поверить тебе. Но это не значит, что мы пришли тебя убивать.",
+          "en": "We can't just trust you. But that doesn't mean we came to kill you."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Существо опускает голову. Гидеон остаётся рядом с Пасификой, не делая шага вперёд.",
+          "en": "The creature lowers its head. Gideon stays beside Pacifica without stepping forward."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "К домам не подходить. Животных больше не уносить. Даже если решишь, что им так лучше.",
+          "en": "Stay away from the houses. Don't take animals again. Even if you decide it's better for them."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Держись дальше от города. Если это повторится, мы не сможем сделать вид, что ничего не произошло.",
+          "en": "Keep away from town. If it happens again, we won't be able to pretend nothing happened."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "А голос?",
+          "en": "And voice?"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она на секунду замолкает. Простого ответа у неё нет даже теперь.",
+          "en": "She falls silent for a moment. Even now, she doesn't have an easy answer."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы знаем про него. Но это не даёт тебе права забирать чужих животных.",
+          "en": "We know about it. But that doesn't give you the right to take other people's animals."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Сегодня они идут домой. Ты остаёшься здесь, пока мы не уйдём.",
+          "en": "Today they go home. You stay here until we've left."
+        },
+        {
+          "speaker": "Creature",
+          "ru": "Не верить.",
+          "en": "Not trust."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Пока нет.",
+          "en": "Not yet."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она не смягчает ответ обещанием, которого не уверена, что сможет выполнить. Гидеон проверяет путь к выходу и ждёт её.",
+          "en": "She doesn't soften the answer with a promise she isn't sure she can keep. Gideon checks the way out and waits for her."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Существо медленно отступает за корни. Оно не кивает и не улыбается. Только оставляет проход свободным.",
+          "en": "The creature slowly steps behind the roots. It doesn't nod or smile. It simply leaves the way clear."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Пойдём, Бастер.",
+          "en": "Come on, Buster."
+        }
+      ]
+    },
+    "symbol": {
+      "scene": 9,
+      "title": {
+        "russian": "Символ",
+        "english": "Symbol"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "На старой дороге становится теплее. Деревья уже не смыкаются над головой, и собаки прибавляют шаг.",
+          "en": "It grows warmer on the old road. The trees no longer meet overhead, and the dogs pick up their pace."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Кошки сидят в найденной в укрытии коробке. Гидеон держит её осторожно, будто внутри лежит что-то сердитое и хрупкое.",
+          "en": "The cats sit in a box from the shelter. Gideon carries it carefully, as though it holds something angry and fragile."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Кажется, меня осуждают.",
+          "en": "I think I'm being judged."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Кошки или я?",
+          "en": "By the cats or me?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Очередь пока не определилась.",
+          "en": "They haven't worked out the order yet."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика улыбается, но быстро смотрит назад. За ними только вытоптанная тропа.",
+          "en": "Pacifica smiles, then quickly looks back. Only the trampled path lies behind them."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы не знаем, правильно ли решили.",
+          "en": "We don't know if we made the right decision."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Нет.",
+          "en": "No."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Обычно ты добавляешь что-нибудь раздражающее.",
+          "en": "Usually you add something annoying."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Устал.",
+          "en": "Tired."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она перехватывает ручку коробки, помогая ему пройти неровное место. Потом снова идёт впереди, придерживая Бастера.",
+          "en": "She takes one of the box handles to help him over rough ground, then leads on again, keeping Buster close."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Я утром хотела просто доказать, что разобралась.",
+          "en": "This morning I just wanted to prove I'd figured it out."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "А теперь у нас мокрые ботинки и кошки.",
+          "en": "And now we've got wet shoes and cats."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "И живые животные.",
+          "en": "And living animals."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Это тоже заметный результат.",
+          "en": "That's a fairly noticeable result too."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика достаёт Дневник, придерживая его под локтем. На обложке осталась узкая полоса засохшей грязи.",
+          "en": "Pacifica takes out the journal, holding it under her elbow. A thin stripe of dried mud marks the cover."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Дневник был полезен. Но если бы мы просто ему поверили...",
+          "en": "The journal was useful. But if we'd simply believed it..."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Мы бы нашли не того монстра.",
+          "en": "We would've found the wrong monster."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она проводит большим пальцем по краю страниц и закрывает книгу. На этот раз — без раздражения.",
+          "en": "She runs her thumb along the page edges and closes the book. This time, without irritation."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "До первого дома проводим всех вместе. Потом можно будет сесть где-нибудь и ничего не расследовать.",
+          "en": "We take everyone to the first house together. Then we can sit somewhere and investigate absolutely nothing."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Мне нравится эта часть плана.",
+          "en": "I like this part of the plan."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "У первых домов Бастер сам тянет к знакомой калитке. Пасифика придерживает его, пока дверь наконец не открывается.",
+          "en": "At the first houses, Buster pulls toward a familiar gate. Pacifica holds him back until the door finally opens."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Человек на крыльце сначала смотрит на грязных детей, потом узнаёт собаку. Дальше объяснять уже почти ничего не нужно.",
+          "en": "The person on the porch first sees two muddy children, then recognizes the dog. There is little left to explain after that."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Остальных забирают не сразу. Приходится подождать у забора и ещё раз пересчитать всех, кого вынесли из укрытия.",
+          "en": "The others aren't collected right away. They wait by the fence and count everyone they brought out of the shelter again."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Собаки. Кошки. Все на месте.",
+          "en": "The dogs. The cats. Everyone accounted for."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Коробку возвращать в лес не надо?",
+          "en": "We don't have to take the box back to the forest, do we?"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Нет. Сегодня точно нет.",
+          "en": "No. Definitely not today."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Только когда последняя кошка оказывается в чужих руках, Пасифика отпускает край коробки. Ногти оставили на картоне маленькие вмятины.",
+          "en": "Only when the last cat is in someone else's arms does Pacifica let go of the box. Her nails have left small dents in the cardboard."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "До развилки они идут уже налегке. Старый столбик у края лесной дороги отбрасывает длинную тень на гравий.",
+          "en": "They walk to the junction empty-handed. The old post beside the forest road casts a long shadow across the gravel."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "У обочины он вдруг останавливается и придерживает Пасифику за край рукава. Она уже собиралась повернуть к домам.",
+          "en": "He suddenly stops beside the road and catches the edge of Pacifica’s sleeve. She was about to turn toward the houses."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Что ещё?",
+          "en": "What now?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "На столбике. Ниже гвоздя.",
+          "en": "On the post. Below the nail."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "На старом столбике у дерева вырезана неровная незамкнутая окружность. Внутри — короткая вертикальная черта.",
+          "en": "An uneven, incomplete ring is carved into an old post beside the tree. Inside it is a short vertical mark.",
+          "cue": "symbol_reveal"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "С одной стороны видны две угловатые зарубки. Внизу линия намеренно обрывается, оставляя широкий просвет.",
+          "en": "Two angular notches mark one side. At the bottom, the line deliberately stops, leaving a broad gap."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Метка на тропе?",
+          "en": "A trail mark?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Не знаю. Она не похожа на остальные царапины.",
+          "en": "I don't know. It doesn't look like the other scratches."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он отходит на шаг, освобождая ей место. Пасифика снова открывает Дневник, теперь уже ища конкретную форму.",
+          "en": "He steps aside to make room for her. Pacifica opens the journal again, this time looking for one particular shape."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она проверяет поля, несколько страниц с рисунками, возвращается назад. Ничего похожего нет.",
+          "en": "She checks the margins and several illustrated pages, then goes back. There is nothing like it."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Здесь такого нет.",
+          "en": "It isn't in here."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Тогда не будем делать вид, что знаем, что это.",
+          "en": "Then let's not pretend we know what it is."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она закрывает книгу. Некоторое время они оба молча смотрят на зарубки.",
+          "en": "She closes the book. For a while, they both watch the cuts in silence."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Ветер шевелит траву у столбика. Последний солнечный свет задерживается на краю незамкнутого кольца.",
+          "en": "The wind stirs the grass beside the post. The last sunlight rests on the edge of the unfinished ring."
+        }
+      ]
+    }
+  }
+}

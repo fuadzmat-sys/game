@@ -1,0 +1,1070 @@
+{
+  "resources": {
+    "cutting_floor": {
+      "scene": 5,
+      "title": {
+        "russian": "Между досками",
+        "english": "Between the Boards"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "За порогом пахнет старой смолой. Два ряда направляющих пересекают цех от распахнутого входа до тёмных ворот. Между ними лежат короткие брёвна, оставленные здесь много лет назад.",
+          "en": "Old resin scents the air beyond the threshold. Two rows of rails cross the mill floor from the open entrance to a dark gate. Short logs lie between them, abandoned here years ago."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Не наступаем на направляющие. И сначала смотрим, куда ставим ногу.",
+          "en": "Stay off the rails. And look before you put your feet down.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "А я собиралась закрыть глаза и выбрать направление по настроению.",
+          "en": "I was going to close my eyes and let my mood pick a direction.",
+          "emotion": "lazy"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика закатывает глаза, но проверяет первую доску носком ботинка. Та выдерживает. Гидеон остаётся у дверного косяка, сравнивая расстояние до дальнего окна.",
+          "en": "Pacifica rolls her eyes but tests the first board with her toe. It holds. Gideon stays by the doorframe, judging the distance to the far window."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Снаружи это окно было рядом с углом. Отсюда до него шагов двадцать.",
+          "en": "Outside, that window was beside the corner. In here it's twenty paces away.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "На стене возле него висит открытый щиток. Рубильник опущен, толстый кабель под ним обрезан. Диски старых пил стоят неподвижно, а с потолочных крюков свисают пустые цепи.",
+          "en": "An open electrical panel hangs on the wall beside him. The switch is down, the thick cable beneath it cut. The old saw blades stand still; empty chains hang from ceiling hooks."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Здесь ничего не включали. Даже если где-то ещё есть электричество, до этого щитка оно не доберётся.",
+          "en": "Nothing's been switched on here. Even if there's power somewhere else, it can't reach this panel."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Тогда не трогаем оборудование. Посмотрим от входа и решим, стоит ли вообще идти дальше.",
+          "en": "Then leave the equipment alone. We'll look from the entrance and decide whether we should go any farther."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Не нравится размер помещения — напиши владельцу. Если откопаешь его адрес.",
+          "en": "Don't like the room dimensions? Write to the owner. If you can dig up an address."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она отвечает слишком быстро. Взгляд Венди скользит к узкой лестнице вдоль стены и сразу возвращается к детям. Пасифика замечает это, но не успевает спросить.",
+          "en": "She answers too quickly. Wendy glances at a narrow stair along the wall, then back at the children. Pacifica notices, but doesn't get a chance to ask."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Под правой направляющей что-то темнеет. Не отдельное пятно: чёрная полоса переходит из щели в щель, против света от окон. За ней доски поднимаются по одной.",
+          "en": "Something darkens beneath the right-hand rail. It isn't an isolated patch: a black strip passes from crack to crack, against the light from the windows. Behind it, boards rise one by one.",
+          "cue": "wood_shift"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "У них за спиной с ударом сдвигается дверной косяк. Створку выталкивает внутрь, прямо на Венди. Она отскакивает с порога; Гидеон и Пасифика следуют за ней, освобождая тесный вход. Теперь до него несколько шагов вместо одного.",
+          "en": "The doorframe shifts with a bang behind them. The door swings inward, straight at Wendy. She jumps clear of the threshold; Gideon and Pacifica follow, clearing the narrow entrance. It's now several paces away instead of one."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Вы тоже это...",
+          "en": "Do you both see...",
+          "emotion": "surprised"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Ближайшее бревно перекатывается через стопор. Глухой удар отдаётся в подошвах. Пасифика резко отступает и упирается пяткой в рельс, которого секунду назад за спиной не было.",
+          "en": "The nearest log rolls over its stop. A dull impact travels through their soles. Pacifica steps back sharply and catches her heel on a rail that wasn't behind her a second ago."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Справа не уходи. Там пол складывается.",
+          "en": "Don't go right. The floor is folding there.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Я вижу. Просто проверяла другой путь.",
+          "en": "I see it. I was checking another way.",
+          "emotion": "embarrassed"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Проверь этот. Где пока есть доски.",
+          "en": "Check this one. Where there are still boards."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он показывает узкий промежуток у стены. Пасифика кивает; спорить с ним сейчас не хочется. Венди уже снимает ногу с ближайшей направляющей, лицо у неё перестаёт быть скучающим.",
+          "en": "He points to a narrow space beside the wall. Pacifica nods; she doesn't feel like arguing. Wendy is already stepping off the nearest rail. The bored look leaves her face."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "К стене. Не прыгайте на середину, там под настилом пусто.",
+          "en": "To the wall. Don't jump into the middle. There's nothing under that flooring.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ты могла сказать это до того, как мы вошли!",
+          "en": "You could've said that before we came in!",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Тогда оно держалось.",
+          "en": "It was holding up then."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди не добавляет шутку. Вместо этого она подхватывает с пола обломок доски и кладёт поперёк тёмной щели. Дальний конец сразу уходит вниз, хотя ближний остаётся под её ботинком.",
+          "en": "Wendy doesn't add a joke. She picks up a broken board and lays it across the dark gap. Its far end drops immediately, though the near end stays beneath her boot."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Не дыра. Два края уходят в разные стороны.",
+          "en": "It isn't a hole. The two edges are moving apart."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди приподнимает обломок. Он целый, но теперь лежит по диагонали, словно его дальний конец переставили. Из щели не тянет воздухом; в ней просто невозможно разглядеть опоры пола.",
+          "en": "Wendy lifts the broken board. It's intact, but now lies diagonally, as though someone moved its far end. No draft comes from the gap; they simply can't make out the supports beneath the floor."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Не наклоняйся туда. Мы не знаем, насколько там глубоко.",
+          "en": "Don't lean over it. We don't know how deep it goes."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Треск проходит от одного конца цеха до другого. Пасифика поднимает голову: тяжёлая цепь над проходом вытягивается почти горизонтально, будто стены медленно раздвигают.",
+          "en": "A crack runs the length of the mill. Pacifica looks up: a heavy chain above the aisle stretches almost horizontal, as though the walls are slowly being pulled apart."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Назад. Нам здесь больше нечего проверять.",
+          "en": "Back. There's nothing else we need to check in here.",
+          "emotion": "afraid"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Вход остаётся открытым. Только между ним и Гидеоном теперь лежат три бревна вместо одного. Ближнее катится медленно, без уклона, сдирая с досок длинную светлую стружку.",
+          "en": "The entrance remains open. But three logs now lie between it and Gideon instead of one. The nearest rolls slowly across level flooring, peeling a long pale shaving from the boards."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон проверяет просвет под первым бревном и сразу отступает. Оно прижимает к полу сорванную скобу; железо сминается, как тонкая проволока. Даже проползти там больше нельзя.",
+          "en": "Gideon checks beneath the first log and immediately backs away. It pins a loose bracket to the floor; the iron crumples like thin wire. They couldn't even crawl through now."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Назад уже поздно. Лестница слева. Наверху проход вдоль стены.",
+          "en": "Too late for back. Stairs on the left. There's a walkway along the wall.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика смотрит на лестницу, потом на Венди. Та уже идёт туда, прижимая сумку локтем. Чёрная полоса под полом меняет направление вслед за ней.",
+          "en": "Pacifica looks from the stairs to Wendy. Wendy is already heading that way, holding her bag against her side. The black strip under the floor changes direction after her."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "По одному. Наступай туда же, куда я.",
+          "en": "One at a time. Step where I step.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон проверяет край доски и переносит вес. Пасифика следует за ним, удерживая руки в стороне для равновесия. За спиной металлический стопор срывается с крепления и ударяет в закрытую раму окна.",
+          "en": "Gideon tests the edge of a board and shifts his weight. Pacifica follows with her arms out for balance. Behind them, a metal stop tears loose and strikes a closed window frame.",
+          "cue": "escape"
+        }
+      ]
+    },
+    "service_walk": {
+      "scene": 6,
+      "title": {
+        "russian": "Выше пола",
+        "english": "Above the Floor"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "На лестнице нет двух нижних ступеней. Венди легко перешагивает пустоту, цепляясь за боковую стойку. Пасифика подтягивается следом и только наверху замечает, как сильно дрожат колени.",
+          "en": "The stairs are missing their two bottom steps. Wendy climbs over the gap easily, using the side post. Pacifica pulls herself up after her and only then notices how badly her knees are shaking."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Прекрасно. Теперь у нас ещё и вид на всё это сверху.",
+          "en": "Great. Now we get to see all of it from above.",
+          "emotion": "afraid"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она пытается улыбнуться. Получается криво. Гидеон останавливается на площадке, не касаясь шаткого ограждения, и ждёт, пока она сама выпрямится.",
+          "en": "She tries to smile. It comes out crooked. Gideon stops on the landing without touching the loose railing and waits for her to straighten up."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Можем секунду постоять.",
+          "en": "We can stop for a second.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Секунду. Идти я могу.",
+          "en": "One second. I can walk."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она проверяет опору ладонью и выпрямляется сама. Страх ещё держит горло, зато пальцы уже слушаются; теперь можно выбирать следующий шаг.",
+          "en": "She tests the support with her palm and straightens up on her own. Fear still tightens her throat, but her fingers obey again; she can choose her next step."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Стоять тоже лучше там, где есть крепления. Сюда.",
+          "en": "Better stand where the brackets are, too. Here.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Приподнятый проход тянется вдоль стены. У каждой опоры сохранилась узкая металлическая площадка, дальше начинается дерево. Венди выбирает металл, даже не глядя под ноги.",
+          "en": "The raised walkway runs along the wall. Each support has a narrow metal platform; wood begins beyond it. Wendy chooses the metal without even looking down."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ты здесь явно не первый раз.",
+          "en": "You've clearly been here before.",
+          "emotion": "suspicious"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "И что? Мне восемнадцать, я умею гулять без разрешения.",
+          "en": "So? I'm eighteen. I can take a walk without permission.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Я спросила не про разрешение. Ты знала, что проход целый.",
+          "en": "I didn't ask about permission. You knew the walkway was intact."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Был целый. Теперь не ручаюсь. И вообще я не нанималась водить экскурсии по гнилым сараям.",
+          "en": "It was intact. Can't promise anything now. And I didn't sign up to give tours of rotten sheds."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Когда был целый? Год назад? Вчера? Это сейчас имеет значение.",
+          "en": "When was it intact? Last year? Yesterday? That matters right now."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Меньше часа назад. Прошла с той стороны, поднялась и вышла во двор. Тогда ещё можно было выйти.",
+          "en": "Less than an hour ago. Came in from that side, went up, walked out to the yard. You could still get out then.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она указывает не на главный вход, а на тёмный угол под площадкой. Пасифика запоминает направление. Венди успела побывать в цехе раньше них и почему-то не захотела об этом рассказывать.",
+          "en": "She points toward the dark corner beneath the landing, rather than the main entrance. Pacifica remembers the direction. Wendy was in the mill before them and, for some reason, didn't want to say so."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон смотрит на её левый рукав. На локте свежая древесная пыль, такая же светлая, как у сломанного ограждения впереди. Он переводит взгляд на пролом и пока ничего не говорит.",
+          "en": "Gideon looks at her left sleeve. Fresh wood dust marks the elbow, as pale as the broken railing ahead. He glances at the break and says nothing yet."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Внизу брёвна сходятся над местом, где они только что стояли. Первое прижимает второе к рельсу. Кора лопается; звук короткий и влажный. Пасифика сжимает ладони, чтобы не схватиться за перила.",
+          "en": "Below, logs converge on the spot they just left. One pins another against a rail. Bark splits with a short, wet sound. Pacifica clenches her hands to keep from grabbing the railing."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Сверху видно то, чего они не замечали у входа: чёрная полоса огибает неподвижные ящики, но пересекает железные направляющие. Она не похожа на тень ни одного предмета над ними.",
+          "en": "From above they can see what they missed at the entrance: the black strip curves around stationary crates but crosses the iron rails. It matches no shadow cast by the objects overhead."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Не отстаём друг от друга. Если снова изменится проход, хотя бы будем на одной стороне.",
+          "en": "Stay close. If the passage changes again, at least we'll be on the same side."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Они двигаются не вместе с полом. Смотри: гвозди остаются, бревно идёт поперёк.",
+          "en": "They aren't moving with the floor. Look: the nails stay put; the log moves across them.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Значит, дело не только в том, что цех разваливается.",
+          "en": "So this is more than the mill falling apart."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Разбираться будете снаружи.",
+          "en": "Figure it out outside."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она протискивается мимо накренённого столба. Сумка цепляется за край. Венди дёргает ремень, и ближняя стенная опора с металлическим стоном уходит в сторону.",
+          "en": "She squeezes past a leaning post. Her bag catches on the edge. Wendy tugs the strap, and the nearest wall support shifts sideways with a metallic groan.",
+          "cue": "wood_shift"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика машинально ставит ногу на следующий участок настила. Между досками проступает чернота, широкая и ровная, словно под ними внезапно убрали весь дневной свет.",
+          "en": "Pacifica automatically steps toward the next stretch of flooring. Darkness shows between the boards, broad and even, as though all the daylight beneath them has suddenly been removed."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Пасифика. Стой.",
+          "en": "Pacifica. Stop.",
+          "emotion": "afraid"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она ещё переносит вес. Гидеон хватает её за предплечье. Его обычное спокойное выражение исчезает; он смотрит не на неё, а на отрывающийся край площадки.",
+          "en": "She's still shifting her weight. Gideon catches her forearm. His usual calm expression is gone; he's looking past her at the edge pulling away from the platform."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "НАЗАД! Сейчас!",
+          "en": "BACK! Now!",
+          "emotion": "afraid",
+          "cue": "real_warning"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика отшатывается к опоре. Настил проваливается без единого треска и ударяет по брёвнам далеко внизу. Она ещё секунду держит ногу на весу, не веря пустоте перед собой.",
+          "en": "Pacifica recoils toward the support. The flooring drops without a single crack and hits the logs far below. For another second she keeps her foot raised, unable to believe the empty space ahead."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Хорошо. Увидел. Я поняла.",
+          "en": "Okay. You saw it. I understand.",
+          "emotion": "afraid"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон отпускает её руку не сразу. Венди молча подаёт обломок ограждения поперёк промежутка, делая узкую опору. На этот раз никто не торопится первым назвать происходящее смешным.",
+          "en": "Gideon doesn't release her arm straight away. Wendy silently lays a broken railing across the gap as a narrow support. This time nobody hurries to find anything funny."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "До бетонной площадки три шага. Там спуск к воротам. По этой штуке только держаться, не вставать.",
+          "en": "Three steps to the concrete landing. There's a way down to the gate. Use this to hold on. Don't stand on it.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они перебираются боком. На бетоне Венди наконец вытаскивает зацепившуюся сумку. Из разошедшегося бокового кармана выскальзывает короткая петля, а следом показывается тусклый медный край.",
+          "en": "They edge across. On the concrete, Wendy finally frees her caught bag. A short loop slips from a split side pocket, followed by a dull copper edge.",
+          "cue": "bag_glimpse"
+        }
+      ]
+    },
+    "bag": {
+      "scene": 7,
+      "title": {
+        "russian": "В сумке",
+        "english": "In the Bag"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "Венди быстро прикрывает карман ладонью. Поздно: Пасифика уже смотрит на него. Гидеон опускается возле края площадки, откуда видны направляющие внизу.",
+          "en": "Wendy quickly covers the pocket with her hand. Too late: Pacifica is already looking at it. Gideon crouches by the edge of the landing, where he can see the rails below."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Что у тебя там?",
+          "en": "What have you got in there?",
+          "emotion": "suspicious"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Мои вещи. Карман не трогай, я сама посмотрю, что порвалось.",
+          "en": "My belongings. Leave the pocket alone. I'll check what's torn myself.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Когда ты дёрнула ремень, опора сдвинулась. До этого тёмная полоса повернула вслед за тобой.",
+          "en": "When you pulled the strap, the support moved. Before that, the dark strip turned after you.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Там всё двигается. Выберите что-нибудь другое и обвините его.",
+          "en": "Everything's moving down there. Pick something else and blame that."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы пока никого не обвиняем. Но ты прижимаешь эту сумку с тех пор, как началось.",
+          "en": "We haven't blamed anyone yet. But you've been holding that bag tight since this started."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди смотрит на разрыв кармана. Потом на спуск: его нижняя ступень уже касается катящегося бревна. Она выдыхает сквозь зубы и ставит сумку на бетон между ботинками.",
+          "en": "Wendy looks at the torn pocket. Then at the way down: its bottom step already touches a rolling log. She exhales through her teeth and puts the bag on the concrete between her boots."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Руками не лезть.",
+          "en": "Keep your hands out.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она сама отгибает ткань. Внутри лежит тёмный деревянный предмет длиной с ладонь, широкий сверху и сужающийся к низу. Верх охватывает медный ободок; к нему прикреплена короткая петля.",
+          "en": "She folds back the fabric herself. Inside is a dark wooden object as long as a palm, broad at the top and tapering downward. A copper rim circles its top, with a short loop attached.",
+          "cue": "object_reveal"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Похож на отвес. Только я не знаю, деревянные вообще делают?",
+          "en": "Looks like a plumb bob. Though I don't know if they make wooden ones."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Дерево гладкое, местами потёртое. На нём нет ни букв, ни рисунка. Вмятина на медном ободке набита грязью. Предмет выглядит достаточно обычным, чтобы лежать среди старых инструментов.",
+          "en": "The wood is smooth and worn in places. There are no letters or designs. Dirt fills a dent in the copper rim. The object looks ordinary enough to lie among old tools."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Где ты его взяла?",
+          "en": "Where did you get it?"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "В лесу. Под вымытыми корнями, у оврага. Торчала петля, я потянула. Не было таблички с запретом.",
+          "en": "In the woods. Under some washed-out roots, by a ravine. The loop was sticking out, so I pulled it. There wasn't a sign saying not to."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "И ты просто унесла?",
+          "en": "And you just took it?",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Да, унесла. Часа два назад. Хотела посмотреть при нормальном свете. На вид обычная деревяшка, я не собиралась торчать с ней в овраге.",
+          "en": "Yes, I took it. About two hours ago. Wanted to look at it in decent light. It looked like an ordinary bit of wood. I wasn't staying in that ravine to study it.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "А странности когда заметила? До того, как вытащила, или потом?",
+          "en": "When did you notice things getting strange? Before you pulled it out, or afterwards?"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди переводит взгляд с него на выход. На лице появляется упрямое выражение, знакомое Пасифике по собственным спорам. Неприятный ответ явно уже есть; произносить его Венди не хочет.",
+          "en": "Wendy looks from him to the exit. A stubborn expression appears, one Pacifica recognizes from her own arguments. Wendy clearly has an uncomfortable answer already; she doesn't want to say it."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Потом. Тропа стала длиннее. Я подумала, что свернула не туда, и пошла через двор. Там проход тоже оказался не на месте.",
+          "en": "Afterwards. The path got longer. I thought I'd taken a wrong turn and cut through the yard. The passage there wasn't where it should be either.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Так вот почему ты сидела у штабеля и никуда не шла.",
+          "en": "So that's why you were sitting by the lumber and going nowhere."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Я проверяла, вернётся ли всё обратно. А потом явились вы с вопросами.",
+          "en": "I was checking whether everything would go back. Then you two turned up with questions."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика открывает рот, но Гидеон поднимает ладонь. Под площадкой скрипит металл. Он ждёт, пока звук закончится, и показывает на свободное место справа от сумки.",
+          "en": "Pacifica opens her mouth, but Gideon raises a hand. Metal creaks beneath the landing. He waits for the sound to stop and points to the empty space beside the bag."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Передвинь её немного. Не поднимай предмет. Только сумку, по бетону.",
+          "en": "Move it a little. Don't lift the object. Just the bag, along the concrete.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "И если всё рухнет?",
+          "en": "And if everything collapses?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Остановись при первом движении. Мы уже видели, что бывает, когда её дёргают.",
+          "en": "Stop at the first movement. We've already seen what happens when it's jerked."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди толкает сумку на несколько пальцев вправо. Внизу крайняя направляющая ползёт поперёк досок в ту же сторону. Пасифика видит оставшуюся под ней светлую полосу и резко втягивает воздух.",
+          "en": "Wendy pushes the bag a few inches to the right. Below, the outer rail crawls across the boards in the same direction. Pacifica sees the pale strip it leaves behind and draws a sharp breath.",
+          "cue": "wood_shift"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Стоп. Больше не надо.",
+          "en": "Stop. That's enough.",
+          "emotion": "afraid"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди останавливает сумку. Направляющая замирает. Дальнее бревно продолжает катиться и налетает на неё, так что неподвижность сумки не делает цех безопасным.",
+          "en": "Wendy stops the bag. The rail stops. A distant log keeps rolling and crashes into it; keeping the bag still doesn't make the mill safe."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Сам вес не мог сдвинуть рельс через бетон. И направление совпало. Это связано с тем, что внутри.",
+          "en": "Its weight couldn't move a rail through concrete. And the direction matched. This is connected to what's inside."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Почему сразу с этим? Остального моего барахла вы даже не видели.",
+          "en": "Why that thing? You haven't even seen the rest of my junk.",
+          "emotion": "defensive"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ты нашла его сегодня. Сегодня здесь начали исчезать расстояния. Мы можем проверить остальное, когда нас не будет пытаться раздавить.",
+          "en": "You found it today. Today distances started disappearing here. We can check the rest when we aren't about to get crushed."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди проводит пальцем по краю кармана и замолкает. Она всё ещё закрывает предмет от чужих рук, но больше не притворяется, что разговор её забавляет.",
+          "en": "Wendy runs a finger along the pocket's edge and falls silent. She still shields the object from their hands, but no longer pretends to find the conversation amusing."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Ты знала, что здесь происходит, и всё равно молчала, пока мы лезли внутрь?",
+          "en": "You knew what was happening here, and still kept quiet while we went inside?",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Я вас внутрь не звала. Вы хотели разбираться — разбирались. Теперь я тоже хочу наружу. Этого пока достаточно.",
+          "en": "I didn't invite you in. You wanted to investigate, so you did. Now I want out too. That'll have to do for now.",
+          "emotion": "defensive"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Мы не знаем, что именно оно делает. Но резких движений лучше не добавлять.",
+          "en": "We don't know exactly what it does. But we'd better avoid any sudden movements."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Я поняла с первого раза. Сумка остаётся у меня.",
+          "en": "I understood the first time. The bag stays with me.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Тогда держи её ровно. И больше не решай за нас, что можно не говорить.",
+          "en": "Then hold it steady. And stop deciding what you don't need to tell us.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди поднимает сумку двумя руками, медленно, прижимая к животу. Под бетоном протягивается низкий скрежет. Внизу тёмная полоса достигает основания лестницы и остаётся там, закрывая последнюю нижнюю ступень.",
+          "en": "Wendy lifts the bag slowly with both hands and holds it against her stomach. A low scrape travels beneath the concrete. Below, the dark strip reaches the foot of the stairs and stays there, covering the last bottom step."
+        }
+      ]
+    },
+    "crossing": {
+      "scene": 8,
+      "title": {
+        "russian": "Через цех",
+        "english": "Across the Mill"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "Спуск выводит на поперечный проход перед воротами. Отсюда до светлой щели под створкой всего несколько метров. Пасифика смотрит на неё, заставляя себя видеть путь, а не брёвна по сторонам.",
+          "en": "The stairs lead to a cross aisle in front of the gate. The bright gap beneath it is only a few yards away. Pacifica watches it, making herself see the route rather than the logs on either side."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Ворота сдвигаются вправо. Нижний паз забит, поэтому сначала надо потянуть за верхнюю ручку.",
+          "en": "The gate slides right. The bottom groove's clogged, so pull the upper handle first.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Снова очень полезное знание, которое почему-то появляется в последнюю секунду.",
+          "en": "Another useful thing you somehow only mention at the last second.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Я сказала, как открыть. Собираешься выходить или спорить со мной прямо здесь?",
+          "en": "I told you how it opens. Are you going out or arguing with me right here?"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди сходит с бетона, не выпуская сумки. Дальнее бревно разворачивается поперёк прохода. Она немедленно замирает; бревно продолжает двигаться, но щель между ним и воротами больше не уменьшается.",
+          "en": "Wendy steps off the concrete without letting go of the bag. A distant log turns across the aisle. She stops at once. The log keeps moving, but the gap between it and the gate stops narrowing."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "От движения меняется расстояние. А то, что уже покатилось, само не остановится.",
+          "en": "Movement changes the distance. But something that's already rolling won't stop on its own.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Над ними натягивается цепь с пустым захватом. Захват раскачивается и бьёт по столбу. Из крепления высыпается ржавая крошка, поэтому держаться за эту сторону стены больше нельзя.",
+          "en": "Above them, a chain with an empty grapple pulls taut. The grapple swings into a post. Rust spills from its bracket, making that side of the wall unsafe to hold on to."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Ниже захвата не идём. Если сорвётся, попадёт поперёк всего прохода.",
+          "en": "Stay out from under the grapple. If it breaks loose, it'll fall across the whole aisle."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Услышала. Сумку сейчас не уроню, на другое смотри.",
+          "en": "Heard you. I'm not dropping the bag. Watch everything else."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он говорит быстро, следя сразу за двумя концами прохода. Теперь в его голосе нет привычной ленцы. Пасифика замечает это и перестаёт тратить дыхание на спор с Венди.",
+          "en": "He speaks quickly, watching both ends of the aisle. The usual drawl is gone from his voice. Pacifica notices and stops wasting breath arguing with Wendy."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Сначала до ручки. Потом все наружу. Никто не пытается вынести ещё что-нибудь.",
+          "en": "Get to the handle first. Then everybody out. Nobody tries to carry anything else away.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она протискивается между ограждением и торцом бревна. До дерева остаётся ладонь. Доска под ботинком гнётся, но Пасифика не прыгает: медленно переносит вес на поперечную балку.",
+          "en": "She squeezes between the railing and the end of a log, a hand's width from the wood. The board beneath her boot bends, but Pacifica doesn't jump: she slowly transfers her weight to a crossbeam."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон движется по той же балке, придерживаясь за болт в стене. Венди идёт последней. Когда ремень сползает с плеча, она ловит его локтем, не давая сумке качнуться.",
+          "en": "Gideon follows the same beam, holding a bolt in the wall. Wendy comes last. When the strap slips off her shoulder, she catches it with her elbow before the bag can swing."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "На середине пути Гидеон останавливается: торчащий гвоздь зацепил штанину. Он приседает, аккуратно снимает ткань и показывает Пасифике продолжать. Та дожидается, пока он встанет; ни слова о задержке не звучит.",
+          "en": "Halfway across, Gideon stops: a protruding nail has caught his trouser leg. He crouches, carefully frees the fabric, and gestures for Pacifica to continue. She waits until he's standing. Neither comments on the delay."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди наблюдает за ними из-за плеча, затем переставляет ногу на освободившуюся балку. Обычное замечание про медлительность не появляется. Она только проверяет, хватает ли места для следующего шага.",
+          "en": "Wendy watches over his shoulder, then steps onto the cleared beam. The usual comment about being slow never comes. She only checks whether there's room for another step."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Дверь. Сейчас.",
+          "en": "Gate. Now."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика тянет верхнюю ручку обеими руками. Створка нехотя подаётся. В щель врывается холодный воздух, пахнущий влажной землёй, и она почти смеётся от облегчения.",
+          "en": "Pacifica pulls the upper handle with both hands. The gate reluctantly gives. Cold air smelling of damp earth rushes through the gap, and she almost laughs with relief."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Потом снаружи ударяет металл. Створку ведёт обратно, прямо на её пальцы. Пасифика отдёргивает руку; удар проходит по всему цеху, и сверху сыплется пыль.",
+          "en": "Then metal strikes outside. The gate slides back toward her fingers. Pacifica snatches her hand away. The impact runs through the mill, shaking dust from above.",
+          "cue": "gate_slam"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Боковая направляющая перекосилась. Она снова захлопнется.",
+          "en": "The side rail's twisted. It'll slam shut again."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика смотрит на площадку позади них. Отколовшаяся доска завалила нижние ступени; назад уже не подняться. Она заставляет себя повернуться к воротам, где хотя бы остаётся свет.",
+          "en": "Pacifica looks at the landing behind them. A fallen board blocks the lower steps; they can't climb back up. She makes herself turn toward the gate, where there's still light."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Венди, когда мы начнём, не меняй направление без предупреждения. Даже если увидишь другой выход.",
+          "en": "Wendy, once we start, don't change direction without warning. Even if you see another way out."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Тогда говорите быстро. У меня под ногами уже ходит балка.",
+          "en": "Then talk fast. The beam under my feet is already moving.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "За спиной с треском выламывается стопор. Два бревна начинают сходиться над проходом. Внизу между досками движется чёрная полоса; теперь она тянется к месту, где Венди стоит с сумкой.",
+          "en": "Behind them, a stop tears loose with a crack. Two logs begin closing over the aisle. The black strip moves between the boards below, now stretching toward Wendy and the bag."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Одного рывка не хватит. Нужно либо удержать ворота, либо найти просвет между брёвнами.",
+          "en": "One pull won't be enough. We need to hold the gate or find a gap between the logs.",
+          "emotion": "afraid"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "И сумку нельзя раскачивать. Каждый раз всё сдвигается сильнее.",
+          "en": "And the bag can't swing. Everything moves farther each time."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди прижимает сумку к боку и смотрит на узкий выход. На этот раз она ждёт, пока кто-то закончит говорить. На полу перед воротами появляется новая светлая трещина.",
+          "en": "Wendy presses the bag against her side and looks at the narrow exit. This time she waits for someone to finish speaking. A new pale crack opens in the floor before the gate."
+        }
+      ]
+    },
+    "exit_holdgate": {
+      "scene": 8,
+      "title": {
+        "russian": "Удержать ворота",
+        "english": "Hold the Gate"
+      },
+      "rows": [
+        {
+          "speaker": "Pacifica",
+          "ru": "Гидеон, вместе. Берёмся выше, пальцы с края убери.",
+          "en": "Gideon, together. Grab higher. Keep your fingers clear of the edge.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они тянут створку, упираясь подошвами в поперечную балку. Гидеон меняет хват, и Пасифика чувствует, как тяжесть наконец распределяется между ними.",
+          "en": "They pull the gate with their feet braced against the crossbeam. Gideon shifts his grip, and Pacifica feels the weight finally spread between them."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Держим. Венди, нижний стопор застрял под колёсиком.",
+          "en": "Holding. Wendy, the bottom stop's jammed under the roller."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди прижимает сумку локтем и выбивает обломок пяткой. Створка освобождается, наваливаясь на руки детей. Они удерживают её достаточно долго, чтобы Венди протиснулась наружу.",
+          "en": "Wendy pins the bag under her elbow and kicks the broken piece free. The gate releases, bearing down on the children's arms. They hold it long enough for Wendy to squeeze outside."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "По очереди! Не толкайтесь, щель одна.",
+          "en": "One at a time! Don't shove. There's only one gap.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика пропускает Гидеона, затем выскальзывает следом. Он снаружи придерживает верхнюю ручку до последнего. Створка бьёт по раме уже за её спиной.",
+          "en": "Pacifica lets Gideon through, then slips after him. From outside, he holds the upper handle until the last moment. The gate hits its frame behind her."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика касается локтем его плеча, проверяя, что он рядом. Он коротко кивает и отходит вместе с ней, освобождая место перед створкой.",
+          "en": "Pacifica touches her elbow to his shoulder, checking he's beside her. He gives a brief nod and steps away with her, clearing the space before the gate."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Руки целы?",
+          "en": "Hands okay?"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Да. В следующий раз придержим что-нибудь полегче.",
+          "en": "Yes. Next time we hold something lighter.",
+          "emotion": "focused"
+        }
+      ]
+    },
+    "exit_guide": {
+      "scene": 8,
+      "title": {
+        "russian": "Показать путь",
+        "english": "Guide Them Through"
+      },
+      "rows": [
+        {
+          "speaker": "Gideon",
+          "ru": "За ближним бревном есть просвет. Идите по светлой доске, потом налево к ручке.",
+          "en": "There's a gap behind the nearest log. Follow the pale board, then left to the handle.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Там тупик.",
+          "en": "That's a dead end.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Был. Смотри на пыль: дальнее бревно отходит. Сейчас можно пройти.",
+          "en": "It was. Look at the dust: the far log's moving away. We can get through now."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди смотрит туда, куда он показывает, и коротко кивает. Она идёт первой, осторожно удерживая сумку. Пасифика следит за ближним бревном, пока Гидеон отмеряет момент.",
+          "en": "Wendy looks where he points and gives a brief nod. She goes first, holding the bag carefully. Pacifica watches the nearest log while Gideon judges the timing."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Теперь. Не бегите, ещё два шага.",
+          "en": "Now. Don't run. Two more steps."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они пересекают открывшийся промежуток. Венди наваливается на ручку; Пасифика подставляет доску под створку. Гидеон проходит последним, прежде чем бревно перекрывает его следы.",
+          "en": "They cross the opening. Wendy leans on the handle; Pacifica jams a board beneath the gate. Gideon goes through last, before the log covers his footprints."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Ладно. Заметил вовремя.",
+          "en": "Fine. Good timing.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика ещё раз смотрит на просвет, который он выбрал. Теперь его совсем не видно. Она выдыхает и опускает руку, всё ещё показывавшую направление наружу.",
+          "en": "Pacifica looks again at the opening he chose. It's already gone. She breathes out and lowers the hand still pointing the way outside."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она говорит это, уже отворачиваясь. Гидеон не просит повторить. За ними вылетает обломок доски, и ворота захлопываются.",
+          "en": "She says it while already turning away. Gideon doesn't ask her to repeat it. The broken board shoots out behind them, and the gate slams shut."
+        }
+      ]
+    },
+    "exit_securebag": {
+      "scene": 8,
+      "title": {
+        "russian": "Закрепить сумку",
+        "english": "Secure the Bag"
+      },
+      "rows": [
+        {
+          "speaker": "Pacifica",
+          "ru": "Укороти ремень. Прижми сумку к спине, чтобы предмет не болтался.",
+          "en": "Shorten the strap. Hold the bag against your back so the object can't swing.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Только не лезь внутрь.",
+          "en": "Just stay out of it.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика показывает пустые ладони и берётся за свободный конец ремня. Венди сама затягивает пряжку. Теперь сумка плотно сидит у неё под лопаткой, зажатая предплечьем.",
+          "en": "Pacifica shows her empty hands and takes the loose end of the strap. Wendy tightens the buckle herself. The bag now rests snugly below her shoulder blade, pinned by her forearm."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Направляющая остановилась. Идём вместе, без рывков.",
+          "en": "The rail's stopped. Move together. No sudden movements."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Брёвна продолжают катиться, но выход перестаёт отдаляться. Гидеон вытаскивает из нижнего паза щепку; Венди освобождённой рукой тянет ручку, а Пасифика придерживает створку плечом.",
+          "en": "The logs keep rolling, but the exit stops receding. Gideon pulls a splinter from the bottom groove. Wendy pulls the handle with her free hand while Pacifica braces the gate with her shoulder."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Сейчас. Все наружу.",
+          "en": "Now. Everyone out."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Они проходят боком, не разрывая шага. Последней выходит Венди. Она проверяет ремень и отстраняется от Пасифики, едва та отпускает край сумки.",
+          "en": "They edge through without breaking stride. Wendy comes out last. She checks the strap and pulls away from Pacifica as soon as she releases the bag's edge."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пряжка удерживает вес. Венди пробует повернуть плечо и останавливается, заметив движение створки. Она делает ещё один медленный шаг, прежде чем позволяет себе выдохнуть.",
+          "en": "The buckle holds the weight. Wendy starts to turn her shoulder, then stops when she sees the gate move. She takes another slow step before letting herself breathe out."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Всё. Дальше сама.",
+          "en": "That's it. I've got it from here.",
+          "emotion": "serious"
+        }
+      ]
+    },
+    "night_gate": {
+      "scene": 9,
+      "title": {
+        "russian": "Другой край леса",
+        "english": "Another Forest Edge"
+      },
+      "rows": [
+        {
+          "speaker": "Narrator",
+          "ru": "По эту сторону ворот земля твёрдая и неподвижная. Пасифика отходит от стены и останавливается, упершись ладонями в колени. Только теперь получается вдохнуть полной грудью.",
+          "en": "On this side of the gate the ground is firm and still. Pacifica steps away from the wall and stops with her hands on her knees. Only now can she take a full breath."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Гидеон стоит рядом, слушая грохот внутри. Его пальцы ещё напряжены, словно он продолжает держаться за что-то. Он распрямляет их по одному и проверяет, не идёт ли трещина по наружной стене.",
+          "en": "Gideon stands nearby, listening to the crashing inside. His fingers are still tense, as though he's holding on to something. He straightens them one at a time and checks the outer wall for cracks."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Все вышли. Хорошо. Тогда дальше от стены.",
+          "en": "Everybody's out. Good. Then farther from the wall.",
+          "emotion": "relieved"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Из цеха доносится долгий треск. За мутным окном медленно падает балка; рама выдавливается наружу и остаётся висеть под неправильным углом. Они отходят ещё на несколько шагов.",
+          "en": "A long crack comes from the mill. Behind a cloudy window, a beam falls slowly. The frame pushes outward and hangs at an impossible angle. They move several more steps away.",
+          "cue": "escape"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Не сбивайтесь перед дверью. Если створку вырвет, сюда полетит.",
+          "en": "Don't bunch up in front of the door. If that gate comes loose, it'll come this way.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика поворачивается к ней, готовая резко ответить, но только кивает. Венди проверяет сумку, потом смотрит на дверь. Вид у неё злой и очень сосредоточенный.",
+          "en": "Pacifica turns toward her, ready with a sharp answer, but only nods. Wendy checks her bag, then looks at the door. She looks angry and intensely focused."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Теперь ты покажешь овраг, где это нашла.",
+          "en": "Now you're going to show us the ravine where you found it.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Теперь я собираюсь уйти с этой свалки. Что делать с вещью, решу по дороге.",
+          "en": "Now I'm getting away from this dump. I'll decide what to do with the thing on the way.",
+          "emotion": "annoyed"
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "После того, что произошло, ты всё ещё...",
+          "en": "After what just happened, you're still..."
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Потом. Сначала найдём дорогу.",
+          "en": "Later. Find the road first.",
+          "emotion": "focused"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он смотрит на двор. Пасифика следует за его взглядом и постепенно выпрямляется. За воротами должен быть гравийный проезд, штабель с обвалившимся верхом и забор с просветом к дороге.",
+          "en": "He looks across the yard. Pacifica follows his gaze and slowly straightens. Beyond the gate there should be a gravel lane, a partly collapsed stack of lumber, and a gap in the fence leading to the road."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Штабель на месте. Забор тоже. Но между ними стоят ели. Их мокрые нижние ветви закрывают проход, а корни уходят под гравий, словно росли здесь десятилетиями.",
+          "en": "The lumber stack is there. So is the fence. But fir trees stand between them. Their wet lower branches block the way, and roots extend under the gravel as though they've grown here for decades.",
+          "cue": "forest_reveal"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика находит глазами знакомый столб у проезда. Он должен стоять в нескольких шагах от ворот; теперь между ними тянется полоса мха. У основания столба лежит старая жестяная банка, которую она запомнила ещё снаружи.",
+          "en": "Pacifica finds the familiar post beside the lane. It should be a few steps from the gate; a strip of moss now lies between them. An old tin can she noticed earlier still sits at its base."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Двор тот же. Но между его частями теперь другой лес.",
+          "en": "It's the same yard. But there's a different stretch of forest between its parts.",
+          "emotion": "surprised"
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Нет. Я утром здесь проходила.",
+          "en": "No. I walked through here this morning.",
+          "emotion": "surprised"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Мы тоже видели этот двор снаружи. Их не было.",
+          "en": "We saw this yard from outside, too. They weren't here."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди делает шаг к забору. Сумка слегка меняет положение, и просвет между двумя стволами сужается. Она останавливается раньше, чем Пасифика успевает её окликнуть.",
+          "en": "Wendy steps toward the fence. The bag shifts slightly, and the gap between two trunks narrows. She stops before Pacifica can call out to her."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "Не надо. Я сама вижу.",
+          "en": "Don't. I can see it.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Назад в цех нельзя. Вдоль стены тоже не пройдём: там брёвна упёрлись в забор. Пока остаётся этот просвет.",
+          "en": "We can't go back into the mill. We can't follow the wall either: logs are jammed against the fence there. For now, that gap's all we have."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он не предлагает бежать. Пасифика проверяет правую сторону, Венди левую; другого выхода действительно не видно. За деревьями должна проходить дорога, но между ветвями нет ни полоски асфальта.",
+          "en": "He doesn't suggest running. Pacifica checks the right side, Wendy the left. There really is no other exit. The road should be beyond the trees, but no strip of asphalt shows between the branches."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Над лесом ещё светлое небо, но во дворе уже сумерки. Длинная тень от ближайшей ели пересекает носки её ботинок. Другие тени лежат в противоположную сторону.",
+          "en": "The sky over the forest is still bright, but the yard is already in twilight. A long shadow from the nearest fir crosses the toes of her boots. The other shadows point the opposite way."
+        },
+        {
+          "speaker": "Pacifica",
+          "ru": "Мы выбрались из цеха. Значит, выберемся и отсюда.",
+          "en": "We got out of the mill. We can get out of here too.",
+          "emotion": "afraid"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "На этот раз уверенность звучит скорее как решение, чем как обещание. Пасифика больше не делает шаг первой, пока не проверит, куда смотрят остальные двое.",
+          "en": "This time her confidence sounds more like a decision than a promise. Pacifica no longer takes the first step without checking where the other two are looking."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она говорит ровно, хотя смотрит на деревья слишком пристально. Гидеон становится сбоку, оставляя им обоим место для отступления. Венди не пытается снова пройти первой.",
+          "en": "She speaks steadily, though she stares too hard at the trees. Gideon moves to one side, leaving room for both of them to retreat. Wendy doesn't try to go first again."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Из-за забора доносится скрежет. Тяжёлое дерево волокут по гравию, медленно, с остановками. Звук проходит за первым стволом, за вторым и приближается к узкому просвету перед ними.",
+          "en": "A scraping comes from beyond the fence. Heavy wood drags across gravel, slowly, with pauses. The sound passes behind one trunk, then another, approaching the narrow gap ahead.",
+          "cue": "approach"
+        },
+        {
+          "speaker": "Gideon",
+          "ru": "Венди. Держи сумку неподвижно.",
+          "en": "Wendy. Keep the bag still.",
+          "emotion": "afraid"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она прижимает её обеими руками. Медный ободок скрытого предмета касается пряжки и тихо звякает. За деревьями скрежет сразу обрывается, словно там остановились послушать.",
+          "en": "She holds it with both hands. The hidden object's copper rim touches the buckle with a faint clink. Beyond the trees, the scraping stops at once, as though something has paused to listen."
+        },
+        {
+          "speaker": "Wendy",
+          "ru": "И что теперь?",
+          "en": "Now what?",
+          "emotion": "serious"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Пасифика не успевает ответить. По другую сторону забора что-то тяжёлое поднимается над гравием. Сквозь ветви ничего не видно, но ближайшие стволы медленно расходятся, освобождая проход прямо к Венди.",
+          "en": "Pacifica doesn't get to answer. Something heavy lifts off the gravel beyond the fence. Nothing is visible through the branches, but the nearest trunks slowly move apart, opening a path straight toward Wendy.",
+          "cue": "cliffhanger"
+        }
+      ]
+    }
+  }
+}

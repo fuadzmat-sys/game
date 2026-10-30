@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#00000f">
-  <title>Reverse Falls — Chapters 0–1</title>
+  <title>Reverse Falls — Chapters 0–2</title>
   <link rel="icon" href="assets/textures/Cursor_Default.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -49,7 +49,7 @@
           <h1 id="chapter-picker-title">Выбери главу</h1>
           <button id="chapter-picker-close" class="chapter-close" aria-label="Закрыть выбор главы">К меню</button>
         </header>
-        <div class="chapter-cards">
+        <div class="chapter-cards chapter-cards-four">
           <article class="chapter-card" aria-labelledby="chapter0-title">
             <div class="chapter-art chapter-art-original"><img src="assets/textures/Journal_3.png" alt="" draggable="false"></div>
             <div class="chapter-card-body">
@@ -84,6 +84,37 @@
               </div>
             </div>
           </article>
+          <article class="chapter-card chapter-card-new" aria-labelledby="chapter2-title">
+            <div class="chapter-art"><img src="assets/textures/forest_5.png" alt="" draggable="false"><span class="chapter-art-number" aria-hidden="true">02</span></div>
+            <div class="chapter-card-body">
+              <p class="chapter-eyebrow" id="chapter2-kicker">Продолжение расследования</p>
+              <h2 id="chapter2-title">Не тот монстр</h2>
+              <p class="chapter-summary" id="chapter2-description">Два разных следа и пропавшие животные. Пасифика и Гидеон проверяют улики, которые больше не складываются в прежнюю версию.</p>
+              <p class="chapter-languages" id="chapter2-languages">Русский · English</p>
+              <div class="chapter-setup">
+                <label for="chapter2-language"><span id="chapter2-language-label">Язык главы</span>
+                  <select id="chapter2-language"><option value="russian">Русский</option><option value="english">English</option></select>
+                </label>
+              </div>
+              <p id="chapter2-unlock-note" class="chapter-unlock-note">Продолжение открывается после завершения главы 1 в основной истории.</p>
+              <div class="chapter-actions">
+                <button id="chapter2-start" class="chapter-button" disabled>Начать главу 2</button>
+                <button id="chapter2-continue" class="chapter-button chapter-button-secondary" hidden>Продолжить</button>
+              </div>
+            </div>
+          </article>
+          <article class="chapter-card chapter-card-new" aria-labelledby="chapter3-title">
+            <div class="chapter-art"><img src="assets/chapter3/backgrounds/lumber-yard.png" alt="" draggable="false"><span class="chapter-art-number" aria-hidden="true">03</span></div>
+            <div class="chapter-card-body">
+              <p class="chapter-eyebrow" id="chapter3-kicker">Венди · новое расследование</p>
+              <h2 id="chapter3-title">Чужая находка</h2>
+              <p class="chapter-summary" id="chapter3-description">Странные происшествия у лесопилки и Венди, которая знает больше, чем говорит.</p>
+              <p class="chapter-languages" id="chapter3-languages">Русский · English</p>
+              <div class="chapter-setup"><label for="chapter3-language"><span id="chapter3-language-label">Язык главы</span><select id="chapter3-language"><option value="russian">Русский</option><option value="english">English</option></select></label></div>
+              <p id="chapter3-unlock-note" class="chapter-unlock-note">Продолжение открывается после завершения главы 2 в основной истории.</p>
+              <div class="chapter-actions"><button id="chapter3-start" class="chapter-button" disabled>Начать главу 3</button><button id="chapter3-continue" class="chapter-button chapter-button-secondary" hidden>Продолжить</button></div>
+            </div>
+          </article>
         </div>
         <p id="legacy-chapter1-note" hidden></p>
       </section>
@@ -97,6 +128,7 @@
           <p id="ending-next"></p>
         </div>
         <div class="ending-actions">
+          <button id="ending-next-chapter" class="chapter-button" hidden>Начать следующую главу</button>
           <button id="ending-menu" class="chapter-button">К выбору глав</button>
           <button id="ending-replay" class="chapter-button chapter-button-secondary">Пройти заново</button>
           <button id="ending-credits" class="chapter-button chapter-button-secondary">Авторы</button>
@@ -188,8 +220,10 @@
         </div>
         <div class="flow-controls">
           <div class="flow-chapters" role="group" aria-label="Глава">
-            <button id="flow-chapter0" class="flow-control" aria-pressed="false">Глава 0</button>
-            <button id="flow-chapter1" class="flow-control" aria-pressed="false">Глава 1</button>
+            <button id="flow-chapter0" data-flow-chapter="0" class="flow-control" aria-pressed="false">Глава 0</button>
+            <button id="flow-chapter1" data-flow-chapter="1" class="flow-control" aria-pressed="false">Глава 1</button>
+            <button id="flow-chapter2" data-flow-chapter="2" class="flow-control" aria-pressed="false">Глава 2</button>
+            <button id="flow-chapter3" data-flow-chapter="3" class="flow-control" aria-pressed="false">Глава 3</button>
             <button id="flow-true-story" class="flow-control" aria-pressed="false">Настоящая история</button>
           </div>
           <div class="flow-tools">

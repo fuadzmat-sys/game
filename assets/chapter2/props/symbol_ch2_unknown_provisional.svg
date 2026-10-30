@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+<title id="title">Unknown carved mark on a weathered post — provisional Chapter 2 design</title>
+<desc id="desc">Close view of an old wooden roadside post. Carved into its worn face is an incomplete ring with a lower gap, one short vertical interior stroke and two angular notches on its right side. Its meaning is unknown.</desc>
+<defs>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#7f6145"/><stop offset=".13" stop-color="#b39064"/><stop offset=".42" stop-color="#c0a178"/><stop offset=".76" stop-color="#ab8b62"/><stop offset="1" stop-color="#705139"/>
+  </linearGradient>
+  <linearGradient id="wear" x1="0" y1="0" x2=".2" y2="1">
+    <stop stop-color="#e0c49b" stop-opacity=".5"/><stop offset=".48" stop-color="#d3b98f" stop-opacity="0"/><stop offset="1" stop-color="#2f241b" stop-opacity=".38"/>
+  </linearGradient>
+  <filter id="shadow" x="-15%" y="-10%" width="135%" height="125%"><feDropShadow dx="6" dy="12" stdDeviation="7" flood-color="#100d09" flood-opacity=".55"/></filter>
+  <filter id="woodgrain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".055 .007" numOctaves="3" seed="8" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".17"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+  <filter id="carved" x="-15%" y="-15%" width="130%" height="130%"><feDropShadow dx="2" dy="3" stdDeviation="1" flood-color="#ebd3ad" flood-opacity=".8"/></filter>
+  <path id="post" d="M105 42 L217 31 L222 48 L303 35 L382 38 L387 23 L490 34 L579 28 L583 43 L690 37 L722 53 L731 221 L723 373 L737 549 L728 764 L639 774 L627 756 L562 773 L429 767 L422 784 L301 774 L210 780 L197 760 L111 772 L95 582 L105 421 L96 242 Z"/>
+  <clipPath id="postclip"><use href="#post"/></clipPath>
+</defs>
+<!-- The timber is a physical close-up backing, not a floating sign or lore graphic. -->
+<g filter="url(#shadow)"><use href="#post" fill="url(#wood)" stroke="#302419" stroke-width="9" stroke-linejoin="round"/></g>
+<g clip-path="url(#postclip)">
+  <use href="#post" fill="url(#wear)"/>
+  <use href="#post" fill="#9f825e" opacity=".18" filter="url(#woodgrain)"/>
+  <g fill="none" stroke="#4d3827" stroke-linecap="round" opacity=".33">
+    <path d="M132 49 C146 153 121 224 140 329 S142 502 130 608 L144 774" stroke-width="7"/>
+    <path d="M175 51 C155 199 191 227 169 372 S179 583 165 756" stroke-width="3"/>
+    <path d="M216 72 L204 164 L212 218 M210 577 C198 652 220 696 211 760" stroke-width="5"/>
+    <path d="M276 33 C290 102 262 137 272 205 M267 642 C281 685 255 720 267 783" stroke-width="4"/>
+    <path d="M340 41 L345 121 L329 165 M337 664 L325 735 L333 780" stroke-width="3"/>
+    <path d="M401 47 C380 105 405 139 398 179 M396 672 C411 716 387 746 401 780" stroke-width="4"/>
+    <path d="M466 41 L452 122 L461 162 M478 641 C459 710 479 737 467 780" stroke-width="3"/>
+    <path d="M526 39 C538 111 513 133 523 195 M536 638 L524 703 L537 770" stroke-width="5"/>
+    <path d="M581 58 C566 155 592 181 581 257 M582 517 C567 606 595 657 581 765" stroke-width="3"/>
+    <path d="M664 55 C644 137 664 189 651 242 M659 494 C644 584 676 653 660 774" stroke-width="6"/>
+    <path d="M704 59 L689 159 L702 234 L690 334 M706 434 C688 523 715 621 700 745" stroke-width="5"/>
+  </g>
+  <g fill="none" stroke="#e8ceaa" stroke-width="3" opacity=".38">
+    <path d="M120 54 L126 166 L119 241 M150 359 L158 491 L149 620"/>
+    <path d="M190 61 L185 151 M229 616 L236 751 M293 52 L298 157"/>
+    <path d="M361 71 L366 143 M456 654 L447 748 M508 66 L512 149"/>
+    <path d="M608 70 L614 176 L606 249 M675 530 L683 633 L675 750"/>
+  </g>
+  <g fill="#392b20" opacity=".8">
+    <path d="M219 31 L221 107 L210 76 L211 33 Z"/>
+    <path d="M580 28 L576 106 L587 70 L588 31 Z"/>
+    <path d="M421 784 L414 703 L428 746 L430 775 Z"/>
+    <path d="M196 763 L186 704 L203 734 L209 777 Z"/>
+  </g>
+</g>
+<!-- Symbol geometry is unchanged from the original provisional SVG. -->
+<g fill="none" stroke="#2e2218" stroke-width="34" stroke-linecap="butt" stroke-linejoin="miter" filter="url(#carved)">
+<path d="M310 613 A225 225 0 1 1 486 615"/>
+<path d="M400 303 L400 445"/>
+<path d="M602 319 L650 296 L671 334"/>
+<path d="M620 402 L669 412 L654 452"/>
+</g>
+</svg>

@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "provenance": "Chapter 2 environment illustrations and transparent creature staging created for this implementation. Chapter 0 and Chapter 1 source art are preserved. Intelligent Creature, Predator and Unknown Symbol designs are PROVISIONAL; none establishes species, origin or future lore.",
+  "productionStatus": "Five runtime backgrounds, three distinct Creature postures, three distinct Predator postures and an isolated eye reflection integrated. Creature alert aliases neutral; distrustful aliases defensive; calmer aliases listening. Dark silhouettes reuse existing art with a CSS filter. All three new designs remain provisional.",
+  "backgrounds": {
+    "ch2_watch_hut_interior": {
+      "path": "assets/chapter2/backgrounds/watch-hut-interior.png",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "source": "New Chapter 2 illustration; original environment direction, no new lore"
+    },
+    "ch2_rock_hollow": {
+      "path": "assets/chapter2/backgrounds/rock-hollow.png",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "source": "New Chapter 2 illustration; original environment direction, no new lore"
+    },
+    "ch2_hidden_shelter": {
+      "path": "assets/chapter2/backgrounds/hidden-shelter.png",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "source": "New Chapter 2 illustration; original environment direction, no new lore"
+    },
+    "ch2_drainage_entrance": {
+      "path": "assets/chapter2/backgrounds/drainage-entrance.png",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "source": "New Chapter 2 illustration; original environment direction, no new lore"
+    },
+    "ch2_drainage_tunnel": {
+      "path": "assets/chapter2/backgrounds/drainage-tunnel.png",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "source": "New Chapter 2 illustration; original environment direction, no new lore"
+    }
+  },
+  "characters": {
+    "Creature": {
+      "name": "Creature",
+      "color": [
+        0.65,
+        0.72,
+        0.52,
+        1
+      ],
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "default": "creature",
+      "expressions": {},
+      "customExpressions": {}
+    },
+    "Predator": {
+      "name": "Predator",
+      "color": [
+        0.67,
+        0.51,
+        0.34,
+        1
+      ],
+      "offset": {
+        "x": 0,
+        "y": 550
+      },
+      "default": "predator",
+      "expressions": {},
+      "customExpressions": {}
+    },
+    "Mimic": {
+      "name": "Mimic",
+      "color": [
+        0.72,
+        0.71,
+        0.66,
+        1
+      ],
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "default": null,
+      "expressions": {},
+      "customExpressions": {}
+    },
+    "SmallDog": {
+      "name": "SmallDog",
+      "color": [
+        0.72,
+        0.67,
+        0.56,
+        1
+      ],
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "default": null,
+      "expressions": {},
+      "customExpressions": {}
+    },
+    "Cat": {
+      "name": "Cat",
+      "color": [
+        0.75,
+        0.7,
+        0.62,
+        1
+      ],
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "default": null,
+      "expressions": {},
+      "customExpressions": {}
+    }
+  },
+  "sprites": {
+    "creature": {
+      "path": "assets/chapter2/sprites/creature-neutral.png",
+      "width": 1100,
+      "height": 2000,
+      "scaleBase": 1,
+      "sourceWidth": 1024,
+      "sourceHeight": 1536,
+      "expressions": {
+        "neutral": {
+          "path": "assets/chapter2/sprites/creature-neutral.png",
+          "width": 1100,
+          "height": 2000,
+          "scaleBase": 1,
+          "sourceWidth": 1024,
+          "sourceHeight": 1536
+        },
+        "alert": {
+          "path": "assets/chapter2/sprites/creature-neutral.png",
+          "width": 1100,
+          "height": 2000,
+          "scaleBase": 1,
+          "sourceWidth": 1024,
+          "sourceHeight": 1536,
+          "poseAliasOf": "neutral"
+        },
+        "defensive": {
+          "path": "assets/chapter2/sprites/creature-defensive.png",
+          "width": 1100,
+          "height": 2000,
+          "scaleBase": 1,
+          "sourceWidth": 1024,
+          "sourceHeight": 1536
+        },
+        "listening": {
+          "path": "assets/chapter2/sprites/creature-listening.png",
+          "width": 1100,
+          "height": 2000,
+          "scaleBase": 1,
+          "sourceWidth": 1024,
+          "sourceHeight": 1536
+        },
+        "calmer": {
+          "path": "assets/chapter2/sprites/creature-listening.png",
+          "width": 1100,
+          "height": 2000,
+          "scaleBase": 1,
+          "sourceWidth": 1024,
+          "sourceHeight": 1536,
+          "poseAliasOf": "listening"
+        },
+        "distrustful": {
+          "path": "assets/chapter2/sprites/creature-defensive.png",
+          "width": 1100,
+          "height": 2000,
+          "scaleBase": 1,
+          "sourceWidth": 1024,
+          "sourceHeight": 1536,
+          "poseAliasOf": "defensive"
+        },
+        "silhouette": {
+          "path": "assets/chapter2/sprites/creature-neutral.png",
+          "width": 1100,
+          "height": 2000,
+          "scaleBase": 1,
+          "sourceWidth": 1024,
+          "sourceHeight": 1536,
+          "filter": "brightness(0.08) saturate(0)"
+        }
+      },
+      "provisional": true,
+      "source": "Original generated 2D staging, provisional design awaiting user art approval."
+    },
+    "predator": {
+      "path": "assets/chapter2/sprites/predator-crouched.png",
+      "width": 1250,
+      "height": 900,
+      "scaleBase": 1,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "expressions": {
+        "crouched": {
+          "path": "assets/chapter2/sprites/predator-crouched.png",
+          "width": 1250,
+          "height": 900,
+          "scaleBase": 1,
+          "sourceWidth": 1536,
+          "sourceHeight": 1024
+        },
+        "aggressive": {
+          "path": "assets/chapter2/sprites/predator-aggressive.png",
+          "width": 1250,
+          "height": 900,
+          "scaleBase": 1,
+          "sourceWidth": 1536,
+          "sourceHeight": 1024
+        },
+        "recoiling": {
+          "path": "assets/chapter2/sprites/predator-recoiling.png",
+          "width": 1250,
+          "height": 900,
+          "scaleBase": 1,
+          "sourceWidth": 1536,
+          "sourceHeight": 1024
+        },
+        "silhouette": {
+          "path": "assets/chapter2/sprites/predator-crouched.png",
+          "width": 1250,
+          "height": 900,
+          "scaleBase": 1,
+          "sourceWidth": 1536,
+          "sourceHeight": 1024,
+          "filter": "brightness(0.06) saturate(0)"
+        },
+        "eyes": {
+          "path": "assets/chapter2/sprites/predator-eyes.png",
+          "width": 1250,
+          "height": 900,
+          "scaleBase": 1,
+          "sourceWidth": 1536,
+          "sourceHeight": 1024,
+          "source": "Dedicated isolated eye reflection, partial reveal with no full body visible."
+        }
+      },
+      "provisional": true,
+      "source": "Original generated 2D staging, provisional design awaiting user art approval."
+    }
+  },
+  "emotions": {},
+  "cast": {
+    "creature": {
+      "name": {
+        "russian": "Существо",
+        "english": "Creature"
+      }
+    },
+    "predator": {
+      "name": {
+        "russian": "Хищник",
+        "english": "Predator"
+      }
+    },
+    "mimic": {
+      "name": {
+        "russian": "Голос из темноты",
+        "english": "Voice in the dark"
+      },
+      "dialogueStyle": {
+        "color": [
+          0.72,
+          0.71,
+          0.66,
+          1
+        ]
+      }
+    }
+  },
+  "items": {
+    "symbol_ch2_unknown_provisional": {
+      "path": "assets/chapter2/props/symbol_ch2_unknown_provisional.svg",
+      "width": 700,
+      "height": 700,
+      "name": {
+        "russian": "Неизвестный вырезанный символ",
+        "english": "Unknown carved symbol"
+      },
+      "provisional": true,
+      "source": "Original replaceable vector mark: incomplete ring, inner vertical stroke, two angular notches, lower gap. Meaning remains unknown."
+    }
+  },
+  "provisional": [
+    "Intelligent Creature design — PROVISIONAL",
+    "Predator design — PROVISIONAL",
+    "Unknown Symbol design — PROVISIONAL"
+  ]
+}

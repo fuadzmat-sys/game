@@ -50,7 +50,7 @@ assert.equal(buildCanonTimeline({ choices: {}, progress: {} }).nodes.length, 0);
 console.log('✓ Starting a later chapter independently does not invent a played earlier chapter');
 
 const mock = {
-  chapterId: 2, available: true, entry: 'arrival', exit: 'departure',
+  chapterId: 4, available: true, entry: 'arrival', exit: 'departure',
   label: { russian: 'Тестовая глава', english: 'Mock chapter' },
   nodes: [
     { id: 'arrival', sceneId: 'mock/arrival', kind: 'start', label: 'Arrival' },
@@ -61,12 +61,12 @@ const mock = {
   edges: [ { from: 'arrival', to: 'investigate' }, { from: 'arrival', to: 'retreat' }, { from: 'investigate', to: 'departure' }, { from: 'retreat', to: 'departure' } ]
 };
 const future = copy(canon);
-future.currentChapter = 2;
+future.currentChapter = 4;
 future.choices['mock.action'] = 'Investigate';
-future.progress[2] = { sceneId: 'mock/departure', completed: true };
+future.progress[4] = { sceneId: 'mock/departure', completed: true };
 const extended = buildCanonTimeline(future, { chapters: [...CANON_TIMELINE_CHAPTERS, mock] });
-assert.ok(extended.edges.some(edge => edge.from === '1:will' && edge.to === '2:arrival' && edge.chapterTransition));
-assert.deepEqual(extended.nodes.filter(node => node.chapterId === 2).map(node => node.nodeId), ['arrival', 'investigate', 'departure']);
-assert.equal(extended.currentNodeId, '2:departure');
-assert.ok(!buildCanonTimeline(canon, { chapters: [...CANON_TIMELINE_CHAPTERS, mock] }).nodes.some(node => node.chapterId === 2));
+assert.ok(extended.edges.some(edge => edge.from === '1:will' && edge.to === '4:arrival' && edge.chapterTransition));
+assert.deepEqual(extended.nodes.filter(node => node.chapterId === 4).map(node => node.nodeId), ['arrival', 'investigate', 'departure']);
+assert.equal(extended.currentNodeId, '4:departure');
+assert.ok(!buildCanonTimeline(canon, { chapters: [...CANON_TIMELINE_CHAPTERS, mock] }).nodes.some(node => node.chapterId === 4));
 console.log('✓ A registered mock future chapter extends the timeline without chapter-specific renderer changes');

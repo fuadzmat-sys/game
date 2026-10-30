@@ -141,7 +141,7 @@ export function createStoryEnvelope(input = {}, registry) {
   canon.derived = deriveStoryState(canon, registry);
   return {
     schemaVersion: STORY_SCHEMA_VERSION, saveFormatVersion: 1,
-    metadata: { saveId: identifier('story'), createdAt: now, updatedAt: now, gameVersion: '3.1.0', checkpoint: null, ...clone(input.metadata || {}), ...cursorMetadata(canon) },
+    metadata: { saveId: identifier('story'), createdAt: now, updatedAt: now, gameVersion: '4.1.0', checkpoint: null, ...clone(input.metadata || {}), ...cursorMetadata(canon) },
     canon, discovery: clone(input.discovery || {}), snapshots: clone(input.snapshots || {}),
     backups: clone(input.backups || []), log: clone(input.log || [])
   };
@@ -352,7 +352,7 @@ export function createStoryStateService({ storage, registry, validateSnapshot, v
       }
       return finish(candidate, initialEnvelope ? 'legacy migration' : 'new story');
     },
-    exportSave({ gameVersion = '3.1.0' } = {}) {
+    exportSave({ gameVersion = '4.1.0' } = {}) {
       if (!initialized) throw new StoryStateError('Initialize the official story before exporting a save.', 'NOT_INITIALIZED');
       assertValid(state);
       if (typeof gameVersion !== 'string' || !gameVersion.trim()) throw new StoryStateError('Invalid game version.', 'INVALID_EXPORT');

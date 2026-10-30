@@ -34,7 +34,8 @@ function envelope() {
 }
 
 test('registry preserves released IDs, traced effects, requirements and rejoining graph metadata', () => {
-  assert.deepEqual(STORY_REGISTRY.choices.map(choice => choice.id), Object.keys(baseChoices));
+  assert.deepEqual(STORY_REGISTRY.choices.filter(choice => choice.chapterId < 2).map(choice => choice.id), Object.keys(baseChoices));
+  assert.deepEqual(STORY_REGISTRY.choices.filter(choice => choice.chapterId === 2).map(choice => choice.id), ['ch2.trail_focus', 'ch2.threat_plan', 'ch2.creature_fate']);
   assert.deepEqual(decisionForNode(1, 'descent_pacifica'), { choiceId: 'ch1.slope', optionId: 'Pacifica' });
   assert.deepEqual(decisionForNode(1, 'cafe_wendigo'), { choiceId: 'ch0.creature', optionId: 'Wendigo' });
   const node = STORY_REGISTRY.graphs[1].nodes.find(node => node.id === 'tracks_search');
