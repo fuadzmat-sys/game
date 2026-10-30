@@ -68,8 +68,18 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "У них за спиной с ударом сдвигается дверной косяк. Створку выталкивает внутрь, прямо на Венди. Она отскакивает с порога; Гидеон и Пасифика следуют за ней, освобождая тесный вход. Теперь до него несколько шагов вместо одного.",
-          "en": "The doorframe shifts with a bang behind them. The door swings inward, straight at Wendy. She jumps clear of the threshold; Gideon and Pacifica follow, clearing the narrow entrance. It's now several paces away instead of one."
+          "ru": "У них за спиной с ударом сдвигается дверной косяк. Створку выталкивает внутрь, прямо на Венди.",
+          "en": "The doorframe shifts with a bang behind them. The door swings inward, straight at Wendy."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она отскакивает с порога; Гидеон и Пасифика следуют за ней, освобождая тесный вход.",
+          "en": "She jumps clear of the threshold; Gideon and Pacifica follow, clearing the narrow entrance."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Теперь до него несколько шагов вместо одного.",
+          "en": "It's now several paces away instead of one."
         },
         {
           "speaker": "Pacifica",
@@ -181,9 +191,14 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Гидеон проверяет край доски и переносит вес. Пасифика следует за ним, удерживая руки в стороне для равновесия. За спиной металлический стопор срывается с крепления и ударяет в закрытую раму окна.",
-          "en": "Gideon tests the edge of a board and shifts his weight. Pacifica follows with her arms out for balance. Behind them, a metal stop tears loose and strikes a closed window frame.",
+          "ru": "Гидеон проверяет край доски и переносит вес. Пасифика следует за ним, удерживая руки в стороне для равновесия.",
+          "en": "Gideon tests the edge of a board and shifts his weight. Pacifica follows with her arms out for balance.",
           "cue": "escape"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "За спиной металлический стопор срывается с крепления и ударяет в закрытую раму окна.",
+          "en": "Behind them, a metal stop tears loose and strikes a closed window frame."
         }
       ]
     },
@@ -364,9 +379,14 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Они перебираются боком. На бетоне Венди наконец вытаскивает зацепившуюся сумку. Из разошедшегося бокового кармана выскальзывает короткая петля, а следом показывается тусклый медный край.",
-          "en": "They edge across. On the concrete, Wendy finally frees her caught bag. A short loop slips from a split side pocket, followed by a dull copper edge.",
+          "ru": "Они перебираются боком. На бетоне Венди наконец вытаскивает зацепившуюся сумку.",
+          "en": "They edge across. On the concrete, Wendy finally frees her caught bag.",
           "cue": "bag_glimpse"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Из разошедшегося бокового кармана выскальзывает короткая петля, а следом показывается тусклый медный край.",
+          "en": "A short loop slips from a split side pocket, followed by a dull copper edge."
         }
       ]
     },
@@ -575,8 +595,13 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Венди поднимает сумку двумя руками, медленно, прижимая к животу. Под бетоном протягивается низкий скрежет. Внизу тёмная полоса достигает основания лестницы и остаётся там, закрывая последнюю нижнюю ступень.",
-          "en": "Wendy lifts the bag slowly with both hands and holds it against her stomach. A low scrape travels beneath the concrete. Below, the dark strip reaches the foot of the stairs and stays there, covering the last bottom step."
+          "ru": "Венди поднимает сумку двумя руками, медленно, прижимая к животу. Под бетоном протягивается низкий скрежет.",
+          "en": "Wendy lifts the bag slowly with both hands and holds it against her stomach. A low scrape travels beneath the concrete."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Внизу тёмная полоса достигает основания лестницы и остаётся там, закрывая последнюю нижнюю ступень.",
+          "en": "Below, the dark strip reaches the foot of the stairs and stays there, covering the last bottom step."
         }
       ]
     },
@@ -611,8 +636,13 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Венди сходит с бетона, не выпуская сумки. Дальнее бревно разворачивается поперёк прохода. Она немедленно замирает; бревно продолжает двигаться, но щель между ним и воротами больше не уменьшается.",
-          "en": "Wendy steps off the concrete without letting go of the bag. A distant log turns across the aisle. She stops at once. The log keeps moving, but the gap between it and the gate stops narrowing."
+          "ru": "Венди сходит с бетона, не выпуская сумки. Дальнее бревно разворачивается поперёк прохода.",
+          "en": "Wendy steps off the concrete without letting go of the bag. A distant log turns across the aisle."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Она немедленно замирает; бревно продолжает двигаться, но щель между ним и воротами больше не уменьшается.",
+          "en": "She stops at once. The log keeps moving, but the gap between it and the gate stops narrowing."
         },
         {
           "speaker": "Gideon",
@@ -648,8 +678,13 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Она протискивается между ограждением и торцом бревна. До дерева остаётся ладонь. Доска под ботинком гнётся, но Пасифика не прыгает: медленно переносит вес на поперечную балку.",
-          "en": "She squeezes between the railing and the end of a log, a hand's width from the wood. The board beneath her boot bends, but Pacifica doesn't jump: she slowly transfers her weight to a crossbeam."
+          "ru": "Она протискивается между ограждением и торцом бревна. До дерева остаётся ладонь.",
+          "en": "She squeezes between the railing and the end of a log, a hand's width from the wood."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Доска под ботинком гнётся, но Пасифика не прыгает: медленно переносит вес на поперечную балку.",
+          "en": "The board beneath her boot bends, but Pacifica doesn't jump: she slowly transfers her weight to a crossbeam."
         },
         {
           "speaker": "Narrator",
@@ -658,13 +693,28 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "На середине пути Гидеон останавливается: торчащий гвоздь зацепил штанину. Он приседает, аккуратно снимает ткань и показывает Пасифике продолжать. Та дожидается, пока он встанет; ни слова о задержке не звучит.",
-          "en": "Halfway across, Gideon stops: a protruding nail has caught his trouser leg. He crouches, carefully frees the fabric, and gestures for Pacifica to continue. She waits until he's standing. Neither comments on the delay."
+          "ru": "На середине пути Гидеон останавливается: торчащий гвоздь зацепил штанину.",
+          "en": "Halfway across, Gideon stops: a protruding nail has caught his trouser leg."
         },
         {
           "speaker": "Narrator",
-          "ru": "Венди наблюдает за ними из-за плеча, затем переставляет ногу на освободившуюся балку. Обычное замечание про медлительность не появляется. Она только проверяет, хватает ли места для следующего шага.",
-          "en": "Wendy watches over his shoulder, then steps onto the cleared beam. The usual comment about being slow never comes. She only checks whether there's room for another step."
+          "ru": "Он приседает, аккуратно снимает ткань и показывает Пасифике продолжать.",
+          "en": "He crouches, carefully frees the fabric, and gestures for Pacifica to continue."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Та дожидается, пока он встанет; ни слова о задержке не звучит.",
+          "en": "She waits until he's standing. Neither comments on the delay."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Венди наблюдает за ними из-за плеча, затем переставляет ногу на освободившуюся балку.",
+          "en": "Wendy watches over his shoulder, then steps onto the cleared beam."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Обычное замечание про медлительность не появляется. Она только проверяет, хватает ли места для следующего шага.",
+          "en": "The usual comment about being slow never comes. She only checks whether there's room for another step."
         },
         {
           "speaker": "Wendy",
@@ -911,8 +961,13 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Гидеон стоит рядом, слушая грохот внутри. Его пальцы ещё напряжены, словно он продолжает держаться за что-то. Он распрямляет их по одному и проверяет, не идёт ли трещина по наружной стене.",
-          "en": "Gideon stands nearby, listening to the crashing inside. His fingers are still tense, as though he's holding on to something. He straightens them one at a time and checks the outer wall for cracks."
+          "ru": "Гидеон стоит рядом, слушая грохот внутри. Его пальцы ещё напряжены, словно он продолжает держаться за что-то.",
+          "en": "Gideon stands nearby, listening to the crashing inside. His fingers are still tense, as though he's holding on to something."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он распрямляет их по одному и проверяет, не идёт ли трещина по наружной стене.",
+          "en": "He straightens them one at a time and checks the outer wall for cracks."
         },
         {
           "speaker": "Pacifica",
@@ -962,8 +1017,13 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Он смотрит на двор. Пасифика следует за его взглядом и постепенно выпрямляется. За воротами должен быть гравийный проезд, штабель с обвалившимся верхом и забор с просветом к дороге.",
-          "en": "He looks across the yard. Pacifica follows his gaze and slowly straightens. Beyond the gate there should be a gravel lane, a partly collapsed stack of lumber, and a gap in the fence leading to the road."
+          "ru": "Он смотрит на двор. Пасифика следует за его взглядом и постепенно выпрямляется.",
+          "en": "He looks across the yard. Pacifica follows his gaze and slowly straightens."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "За воротами должен быть гравийный проезд, штабель с обвалившимся верхом и забор с просветом к дороге.",
+          "en": "Beyond the gate there should be a gravel lane, a partly collapsed stack of lumber, and a gap in the fence leading to the road."
         },
         {
           "speaker": "Narrator",
@@ -973,8 +1033,18 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Пасифика находит глазами знакомый столб у проезда. Он должен стоять в нескольких шагах от ворот; теперь между ними тянется полоса мха. У основания столба лежит старая жестяная банка, которую она запомнила ещё снаружи.",
-          "en": "Pacifica finds the familiar post beside the lane. It should be a few steps from the gate; a strip of moss now lies between them. An old tin can she noticed earlier still sits at its base."
+          "ru": "Пасифика находит глазами знакомый столб у проезда.",
+          "en": "Pacifica finds the familiar post beside the lane."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Он должен стоять в нескольких шагах от ворот; теперь между ними тянется полоса мха.",
+          "en": "It should be a few steps from the gate; a strip of moss now lies between them."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "У основания столба лежит старая жестяная банка, которую она запомнила ещё снаружи.",
+          "en": "An old tin can she noticed earlier still sits at its base."
         },
         {
           "speaker": "Pacifica",
@@ -1011,8 +1081,13 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Он не предлагает бежать. Пасифика проверяет правую сторону, Венди левую; другого выхода действительно не видно. За деревьями должна проходить дорога, но между ветвями нет ни полоски асфальта.",
-          "en": "He doesn't suggest running. Pacifica checks the right side, Wendy the left. There really is no other exit. The road should be beyond the trees, but no strip of asphalt shows between the branches."
+          "ru": "Он не предлагает бежать. Пасифика проверяет правую сторону, Венди левую; другого выхода действительно не видно.",
+          "en": "He doesn't suggest running. Pacifica checks the right side, Wendy the left. There really is no other exit."
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "За деревьями должна проходить дорога, но между ветвями нет ни полоски асфальта.",
+          "en": "The road should be beyond the trees, but no strip of asphalt shows between the branches."
         },
         {
           "speaker": "Narrator",
@@ -1060,9 +1135,14 @@
         },
         {
           "speaker": "Narrator",
-          "ru": "Пасифика не успевает ответить. По другую сторону забора что-то тяжёлое поднимается над гравием. Сквозь ветви ничего не видно, но ближайшие стволы медленно расходятся, освобождая проход прямо к Венди.",
-          "en": "Pacifica doesn't get to answer. Something heavy lifts off the gravel beyond the fence. Nothing is visible through the branches, but the nearest trunks slowly move apart, opening a path straight toward Wendy.",
+          "ru": "Пасифика не успевает ответить. По другую сторону забора что-то тяжёлое поднимается над гравием.",
+          "en": "Pacifica doesn't get to answer. Something heavy lifts off the gravel beyond the fence.",
           "cue": "cliffhanger"
+        },
+        {
+          "speaker": "Narrator",
+          "ru": "Сквозь ветви ничего не видно, но ближайшие стволы медленно расходятся, освобождая проход прямо к Венди.",
+          "en": "Nothing is visible through the branches, but the nearest trunks slowly move apart, opening a path straight toward Wendy."
         }
       ]
     }

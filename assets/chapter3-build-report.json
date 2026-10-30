@@ -4,11 +4,11 @@
   "choices": 3,
   "counts": {
     "russian": {
-      "paragraphs": 377,
+      "paragraphs": 406,
       "words": 5747
     },
     "english": {
-      "paragraphs": 377,
+      "paragraphs": 406,
       "words": 7444
     }
   },

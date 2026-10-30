@@ -104,6 +104,21 @@ async function downloadSave(page) {
 }
 try {
  const { page, errors } = await newPage();
+ const authoredRows = ['part1','part2'].flatMap(part => Object.values(JSON.parse(fs.readFileSync(new URL(`../tools/chapter3-content-${part}.json`, import.meta.url), 'utf8')).resources).flatMap(section => section.rows));
+ const overflow = await page.evaluate(async rows => {
+  const { BitmapText } = await import('./bitmap-font.js');
+  const { config, manifest } = window.REVERSE_FALLS_DATA;
+  const font = new BitmapText(config.fonts, manifest); await font.load();
+  const failures = [];
+  for (const [index,row] of rows.entries()) for (const language of ['ru','en']) {
+   const layout = font.layout(row[language], { font: language === 'ru' ? 'AccentsRobotoMediumC' : 'AgendaMediumEC', extendedGlyphs: true, size: 124 * (language === 'ru' ? .7 : 1), maxWidth: 2276 });
+   if (layout.height + 6 > 466) failures.push({ index, language, height: layout.height + 6 });
+  }
+  return failures;
+ }, authoredRows);
+ assert.deepEqual(overflow, [], 'Every Russian and English paragraph must fit the actual bitmap text canvas');
+ reports.push('Every authored paragraph in both languages fits the actual bitmap-font dialogue canvas without clipping');
+
  await page.evaluate(() => game.openChapters());
  assert.equal(await page.locator('#chapter3-start').isDisabled(), true);
  const empty = await page.evaluate(() => game.story.getCanon());

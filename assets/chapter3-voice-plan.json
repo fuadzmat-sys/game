@@ -353,106 +353,106 @@
       "language": "russian",
       "sourceLine": 13,
       "speaker": "Narrator",
-      "text": "Склад отделён от дороги сеткой. За ней лежат ровные штабеля досок, дальше темнеет старый цех. У въезда висит выцветшее расписание: погрузки сегодня нет.",
+      "text": "Склад отделён от дороги сеткой. За ней лежат ровные штабеля досок, дальше темнеет старый цех.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|15|pacifica",
+      "key": "russian|chapter_3/yard|15|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
       "sourceLine": 15,
+      "speaker": "Narrator",
+      "text": "У въезда висит выцветшее расписание: погрузки сегодня нет.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/yard|17|pacifica",
+      "script": "chapter_3/yard",
+      "language": "russian",
+      "sourceLine": 17,
       "speaker": "Pacifica",
       "text": "Ну, ворота действительно некрасивые.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|17|gideon",
+      "key": "russian|chapter_3/yard|19|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 17,
+      "sourceLine": 19,
       "speaker": "Gideon",
       "text": "Подожди. Это большие. Моя достопримечательность сбоку.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|19|narrator",
+      "key": "russian|chapter_3/yard|21|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 19,
+      "sourceLine": 21,
       "speaker": "Narrator",
       "text": "Калитка стоит там, где грунтовая тропа прижимается к забору. За её сеткой растёт сосна толщиной с человеческое бедро. Между стволом и створкой не протиснется даже кошка.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|22|pacifica",
+      "key": "russian|chapter_3/yard|24|pacifica",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 22,
+      "sourceLine": 24,
       "speaker": "Pacifica",
       "text": "Может, это очень старый вход. А ты ходил через другой.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|24|narrator",
+      "key": "russian|chapter_3/yard|26|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 24,
+      "sourceLine": 26,
       "speaker": "Narrator",
       "text": "Гидеон показывает на нижнюю петлю. На ней висит паутина, целая от столба до болта. Под деревом нет свежей земли. Корни уходят под бетонное основание забора.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|26|gideon",
+      "key": "russian|chapter_3/yard|28|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 26,
+      "sourceLine": 28,
       "speaker": "Gideon",
       "text": "А утром она открывалась. Я толкнул её, прежде чем увидел за ней дерево.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|28|narrator",
+      "key": "russian|chapter_3/yard|30|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 28,
+      "sourceLine": 30,
       "speaker": "Narrator",
       "text": "Он осторожно тянет ручку. Створка отходит внутрь и останавливается в пальце от коры. Паутинка дрожит, но не рвётся.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|31|pacifica",
+      "key": "russian|chapter_3/yard|33|pacifica",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 31,
+      "sourceLine": 33,
       "speaker": "Pacifica",
       "text": "Вот теперь можно удивляться.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|33|narrator",
+      "key": "russian|chapter_3/yard|35|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 33,
+      "sourceLine": 35,
       "speaker": "Narrator",
       "text": "Она приседает, рассматривая низ сетки. Сухая хвоя просыпана с обеих сторон совершенно одинаково. Нет ни борозды от створки, ни вмятины на стволе.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|35|gideon",
-      "script": "chapter_3/yard",
-      "language": "russian",
-      "sourceLine": 35,
-      "speaker": "Gideon",
-      "text": "Настил был за ней. Доски над канавой, справа от водостока.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/yard|37|narrator",
+      "key": "russian|chapter_3/yard|37|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
       "sourceLine": 37,
-      "speaker": "Narrator",
-      "text": "Через сетку виден водосток. Канава тоже на месте. Вместо досок над ней тянется полоса нетронутой травы, слишком ровная, чтобы быть провалом.",
+      "speaker": "Gideon",
+      "text": "Настил был за ней. Доски над канавой, справа от водостока.",
       "status": "pending"
     },
     {
@@ -461,61 +461,61 @@
       "language": "russian",
       "sourceLine": 39,
       "speaker": "Narrator",
+      "text": "Через сетку виден водосток. Канава тоже на месте. Вместо досок над ней тянется полоса нетронутой травы, слишком ровная, чтобы быть провалом.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/yard|41|narrator",
+      "script": "chapter_3/yard",
+      "language": "russian",
+      "sourceLine": 41,
+      "speaker": "Narrator",
       "text": "Гидеон находит взглядом дальний берег канавы. Там тоже нет обломков. Вода медленно проходит под травой: её не перекрыли землёй, чтобы сделать новую насыпь.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|41|gideon",
+      "key": "russian|chapter_3/yard|43|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 41,
+      "sourceLine": 43,
       "speaker": "Gideon",
       "text": "Если настил разобрали, доски должны были куда-то унести. А следов колёс рядом нет.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|43|pacifica",
+      "key": "russian|chapter_3/yard|45|pacifica",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 43,
+      "sourceLine": 45,
       "speaker": "Pacifica",
       "text": "Руками тоже носят. Пока запишем только то, что мостика нет. Про виноватого — пустое место.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|45|narrator",
+      "key": "russian|chapter_3/yard|47|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 45,
+      "sourceLine": 47,
       "speaker": "Narrator",
       "text": "Он чуть наклоняет голову, признавая поправку. Пасифика явно довольна, что поймала собственную вчерашнюю ошибку у него, но не превращает это в победную речь.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|47|pacifica",
+      "key": "russian|chapter_3/yard|49|pacifica",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 47,
+      "sourceLine": 49,
       "speaker": "Pacifica",
       "text": "Не перелезаем. Сначала нормальный вход.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|49|gideon",
-      "script": "chapter_3/yard",
-      "language": "russian",
-      "sourceLine": 49,
-      "speaker": "Gideon",
-      "text": "Ты это сказала раньше меня. День становится страннее.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/yard|51|narrator",
+      "key": "russian|chapter_3/yard|51|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
       "sourceLine": 51,
-      "speaker": "Narrator",
-      "text": "Пасифика выпрямляется и отряхивает колени с преувеличенным достоинством. У больших ворот обычная щеколда. За ними дощатый проход ведёт между штабелями к наружной стене цеха.",
+      "speaker": "Gideon",
+      "text": "Ты это сказала раньше меня. День становится страннее.",
       "status": "pending"
     },
     {
@@ -524,142 +524,160 @@
       "language": "russian",
       "sourceLine": 53,
       "speaker": "Narrator",
+      "text": "Пасифика выпрямляется и отряхивает колени с преувеличенным достоинством. У больших ворот обычная щеколда. За ними дощатый проход ведёт между штабелями к наружной стене цеха.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/yard|55|narrator",
+      "script": "chapter_3/yard",
+      "language": "russian",
+      "sourceLine": 55,
+      "speaker": "Narrator",
       "text": "У первого поворота на столбе прибита деревянная стрелка без надписи. Вторую, такую же пустую, видно у стены. Обе указывают вдоль прохода.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|55|gideon",
+      "key": "russian|chapter_3/yard|57|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 55,
+      "sourceLine": 57,
       "speaker": "Gideon",
       "text": "Большие ворота пока на месте. Отсюда дорогу видно без поворотов.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|57|narrator",
+      "key": "russian|chapter_3/yard|59|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 57,
+      "sourceLine": 59,
       "speaker": "Narrator",
       "text": "Пасифика оглядывается и запоминает красный пожарный ящик у входа. Мимо по дороге проезжает велосипед. Обычное движение за сеткой почему-то успокаивает сильнее, чем хотелось бы признать.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|59|pacifica",
+      "key": "russian|chapter_3/yard|61|pacifica",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 59,
+      "sourceLine": 61,
       "speaker": "Pacifica",
       "text": "Здесь кто-нибудь есть? Мы насчёт прохода к дороге!",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|62|narrator",
+      "key": "russian|chapter_3/yard|64|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 62,
+      "sourceLine": 64,
       "speaker": "Narrator",
       "text": "От цеха отвечает одиночный стук. Пасифика вздрагивает и тут же делает вид, что поправляет лямку. Гидеон переводит взгляд с её руки на пустые окна.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|65|pacifica",
+      "key": "russian|chapter_3/yard|67|pacifica",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 65,
+      "sourceLine": 67,
       "speaker": "Pacifica",
       "text": "Доски. На солнце рассыхаются.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|67|gideon",
+      "key": "russian|chapter_3/yard|69|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 67,
+      "sourceLine": 69,
       "speaker": "Gideon",
       "text": "Запишем как вариант.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|69|narrator",
+      "key": "russian|chapter_3/yard|71|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 69,
+      "sourceLine": 71,
       "speaker": "Narrator",
       "text": "Они проходят до стены. С этого места калитка должна быть прямо за спиной. Но между ними теперь видно два штабеля, хотя обходили они только один.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|71|pacifica",
+      "key": "russian|chapter_3/yard|73|pacifica",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 71,
+      "sourceLine": 73,
       "speaker": "Pacifica",
       "text": "Мы завернули раньше?",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|74|gideon",
+      "key": "russian|chapter_3/yard|76|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 74,
+      "sourceLine": 76,
       "speaker": "Gideon",
       "text": "Нет. Смотри на стрелку.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|76|narrator",
+      "key": "russian|chapter_3/yard|78|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 76,
+      "sourceLine": 78,
       "speaker": "Narrator",
       "text": "Деревянный острый конец у стены смотрит обратно, к воротам. Шляпки двух гвоздей по-прежнему стоят горизонтально; никаких следов поворота вокруг них нет.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|78|pacifica",
+      "key": "russian|chapter_3/yard|80|pacifica",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 78,
+      "sourceLine": 80,
       "speaker": "Pacifica",
       "text": "Ты видел, как она повернулась?",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|80|gideon",
+      "key": "russian|chapter_3/yard|82|gideon",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 80,
+      "sourceLine": 82,
       "speaker": "Gideon",
       "text": "Нет. Видел, куда смотрела раньше. Это пока разные вещи.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|82|narrator",
+      "key": "russian|chapter_3/yard|84|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 82,
+      "sourceLine": 84,
       "speaker": "Narrator",
       "text": "Пасифика рисует в блокноте два положения, не соединяя их объяснением. За ближним штабелем скрипит подошва. Она резко захлопывает блокнот и оборачивается.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|84|wendy",
+      "key": "russian|chapter_3/yard|86|wendy",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 84,
+      "sourceLine": 86,
       "speaker": "Wendy",
       "text": "Если вы продаёте окна, тут половина уже выбита. Поздно пришли.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/yard|86|narrator",
+      "key": "russian|chapter_3/yard|88|narrator",
       "script": "chapter_3/yard",
       "language": "russian",
-      "sourceLine": 86,
+      "sourceLine": 88,
       "speaker": "Narrator",
-      "text": "На низком штабеле лежит рыжая девушка, упираясь ботинками в соседние доски. Ремень тёмной холщовой сумки переброшен через плечо. Она смотрит на них без малейшего желания вставать.",
+      "text": "На низком штабеле лежит рыжая девушка, упираясь ботинками в соседние доски.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/yard|90|narrator",
+      "script": "chapter_3/yard",
+      "language": "russian",
+      "sourceLine": 90,
+      "speaker": "Narrator",
+      "text": "Ремень тёмной холщовой сумки переброшен через плечо. Она смотрит на них без малейшего желания вставать.",
       "status": "pending"
     },
     {
@@ -1073,16 +1091,16 @@
       "language": "russian",
       "sourceLine": 14,
       "speaker": "Narrator",
-      "text": "Она намеренно не отвечает на обвинение. Пасифика замечает это, но ещё сильнее давить сейчас бессмысленно: Венди уже закрылась. Гидеон показывает ей блокнот, предлагая сохранить вопрос до появления фактов.",
+      "text": "Она намеренно не отвечает на обвинение.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/approach_direct|16|pacifica",
+      "key": "russian|chapter_3/approach_direct|16|narrator",
       "script": "chapter_3/approach_direct",
       "language": "russian",
       "sourceLine": 16,
-      "speaker": "Pacifica",
-      "text": "Обещание отвечать нормально я бы всё равно не приняла на веру.",
+      "speaker": "Narrator",
+      "text": "Пасифика замечает это, но ещё сильнее давить сейчас бессмысленно: Венди уже закрылась.",
       "status": "pending"
     },
     {
@@ -1090,6 +1108,24 @@
       "script": "chapter_3/approach_direct",
       "language": "russian",
       "sourceLine": 18,
+      "speaker": "Narrator",
+      "text": "Гидеон показывает ей блокнот, предлагая сохранить вопрос до появления фактов.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/approach_direct|20|pacifica",
+      "script": "chapter_3/approach_direct",
+      "language": "russian",
+      "sourceLine": 20,
+      "speaker": "Pacifica",
+      "text": "Обещание отвечать нормально я бы всё равно не приняла на веру.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/approach_direct|22|narrator",
+      "script": "chapter_3/approach_direct",
+      "language": "russian",
+      "sourceLine": 22,
       "speaker": "Narrator",
       "text": "Гидеон чуть отодвигает Пасифику локтем, освобождая узкий проход. Венди замечает движение, криво усмехается и идёт к наружной стене. Расстояние между ними никто не сокращает.",
       "status": "pending"
@@ -1190,70 +1226,70 @@
       "language": "russian",
       "sourceLine": 2,
       "speaker": "Narrator",
-      "text": "Гидеон закрывает блокнот. Пасифика с трудом удерживает следующий вопрос и отступает к столбу. Они ждут. Венди демонстративно устраивается удобнее, но больше не закрывает глаза.",
+      "text": "Гидеон закрывает блокнот. Пасифика с трудом удерживает следующий вопрос и отступает к столбу.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/approach_wait|4|wendy",
+      "key": "russian|chapter_3/approach_wait|4|narrator",
       "script": "chapter_3/approach_wait",
       "language": "russian",
       "sourceLine": 4,
+      "speaker": "Narrator",
+      "text": "Они ждут. Венди демонстративно устраивается удобнее, но больше не закрывает глаза.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/approach_wait|6|wendy",
+      "script": "chapter_3/approach_wait",
+      "language": "russian",
+      "sourceLine": 6,
       "speaker": "Wendy",
       "text": "Ну? Кончилось расследование?",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/approach_wait|6|gideon",
+      "key": "russian|chapter_3/approach_wait|8|gideon",
       "script": "chapter_3/approach_wait",
       "language": "russian",
-      "sourceLine": 6,
+      "sourceLine": 8,
       "speaker": "Gideon",
       "text": "Сейчас осмотрим стену. Тебя больше не спрашиваем.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/approach_wait|8|narrator",
+      "key": "russian|chapter_3/approach_wait|10|narrator",
       "script": "chapter_3/approach_wait",
       "language": "russian",
-      "sourceLine": 8,
+      "sourceLine": 10,
       "speaker": "Narrator",
       "text": "Он делает два шага. За спиной шуршит холщовая сумка, затем Венди оказывается на земле. Пасифика поворачивается слишком быстро и прячет довольную улыбку.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/approach_wait|10|wendy",
+      "key": "russian|chapter_3/approach_wait|12|wendy",
       "script": "chapter_3/approach_wait",
       "language": "russian",
-      "sourceLine": 10,
+      "sourceLine": 12,
       "speaker": "Wendy",
       "text": "Туда одним нельзя. Ещё застрянете, потом слушай, кто вас сюда пустил.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/approach_wait|13|pacifica",
+      "key": "russian|chapter_3/approach_wait|15|pacifica",
       "script": "chapter_3/approach_wait",
       "language": "russian",
-      "sourceLine": 13,
+      "sourceLine": 15,
       "speaker": "Pacifica",
       "text": "Что, там можно застрять?",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/approach_wait|15|wendy",
-      "script": "chapter_3/approach_wait",
-      "language": "russian",
-      "sourceLine": 15,
-      "speaker": "Wendy",
-      "text": "Между досками, гений. Пошли уже.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/approach_wait|17|narrator",
+      "key": "russian|chapter_3/approach_wait|17|wendy",
       "script": "chapter_3/approach_wait",
       "language": "russian",
       "sourceLine": 17,
-      "speaker": "Narrator",
-      "text": "Пасифика смотрит на широкий проход, где вполне разойдутся двое. Объяснение слабое. Зато теперь ясно: Венди больше беспокоит, куда они пойдут, чем то, сколько вопросов ещё зададут.",
+      "speaker": "Wendy",
+      "text": "Между досками, гений. Пошли уже.",
       "status": "pending"
     },
     {
@@ -1261,6 +1297,24 @@
       "script": "chapter_3/approach_wait",
       "language": "russian",
       "sourceLine": 19,
+      "speaker": "Narrator",
+      "text": "Пасифика смотрит на широкий проход, где вполне разойдутся двое. Объяснение слабое.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/approach_wait|21|narrator",
+      "script": "chapter_3/approach_wait",
+      "language": "russian",
+      "sourceLine": 21,
+      "speaker": "Narrator",
+      "text": "Зато теперь ясно: Венди больше беспокоит, куда они пойдут, чем то, сколько вопросов ещё зададут.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/approach_wait|23|narrator",
+      "script": "chapter_3/approach_wait",
+      "language": "russian",
+      "sourceLine": 23,
       "speaker": "Narrator",
       "text": "Гидеон не комментирует, как быстро нашлась причина встать. Он просто пропускает её вперёд. Венди идёт к стене, по-прежнему делая вид, что всё это ей страшно надоело.",
       "status": "pending"
@@ -1298,275 +1352,284 @@
       "language": "russian",
       "sourceLine": 17,
       "speaker": "Narrator",
-      "text": "Она отвечает, глядя на нижнюю щель. Гидеон вытягивает рулетку от трубы до дверного косяка. Чуть меньше двух метров. Пасифика записывает число и рисует рядом прямой угол стены.",
+      "text": "Она отвечает, глядя на нижнюю щель. Гидеон вытягивает рулетку от трубы до дверного косяка.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|19|wendy",
+      "key": "russian|chapter_3/waymarks|19|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
       "sourceLine": 19,
+      "speaker": "Narrator",
+      "text": "Чуть меньше двух метров. Пасифика записывает число и рисует рядом прямой угол стены.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/waymarks|21|wendy",
+      "script": "chapter_3/waymarks",
+      "language": "russian",
+      "sourceLine": 21,
       "speaker": "Wendy",
       "text": "Вы правда собираетесь измерить весь склад?",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|22|gideon",
+      "key": "russian|chapter_3/waymarks|24|gideon",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 22,
+      "sourceLine": 24,
       "speaker": "Gideon",
       "text": "Если он будет стоять спокойно, закончим быстрее.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|24|narrator",
+      "key": "russian|chapter_3/waymarks|26|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 24,
+      "sourceLine": 26,
       "speaker": "Narrator",
       "text": "Венди почти улыбается, но сдерживается. Пасифика кладёт маленький камень перед трубой и предлагает пройти до угла, не теряя стену из виду.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|26|pacifica",
+      "key": "russian|chapter_3/waymarks|28|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 26,
+      "sourceLine": 28,
       "speaker": "Pacifica",
       "text": "Не расходимся. Туда и обратно. Никаких дверей и поворотов, пока не проверим это.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|28|wendy",
+      "key": "russian|chapter_3/waymarks|30|wendy",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 28,
+      "sourceLine": 30,
       "speaker": "Wendy",
       "text": "И мне, наверное, надо поднять руку, если захочу уйти?",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|31|pacifica",
+      "key": "russian|chapter_3/waymarks|33|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 31,
+      "sourceLine": 33,
       "speaker": "Pacifica",
       "text": "Хватит. Я не тобой командую. Я пытаюсь понять, где мы стоим.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|33|narrator",
+      "key": "russian|chapter_3/waymarks|35|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 33,
+      "sourceLine": 35,
       "speaker": "Narrator",
       "text": "Гидеон идёт последним, считая шаги. До угла их одиннадцать. На обратном пути к восьмому шагу он уже касается трубы. Камень всё ещё лежит перед ней.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|35|gideon",
+      "key": "russian|chapter_3/waymarks|37|gideon",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 35,
+      "sourceLine": 37,
       "speaker": "Gideon",
       "text": "Я шагал одинаково.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|37|wendy",
+      "key": "russian|chapter_3/waymarks|39|wendy",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 37,
+      "sourceLine": 39,
       "speaker": "Wendy",
       "text": "Может, вырос по дороге.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|39|narrator",
+      "key": "russian|chapter_3/waymarks|41|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 39,
+      "sourceLine": 41,
       "speaker": "Narrator",
       "text": "Он не отвечает. Снова цепляет рулетку за трубу. До двери теперь три метра с лишним. Пасифика берёт другой конец, проверяет зацеп и натяжение.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|42|pacifica",
+      "key": "russian|chapter_3/waymarks|44|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 42,
+      "sourceLine": 44,
       "speaker": "Pacifica",
       "text": "Мы не двигаем её. И стену никто не перестраивает.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|44|narrator",
+      "key": "russian|chapter_3/waymarks|46|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 44,
+      "sourceLine": 46,
       "speaker": "Narrator",
       "text": "Кирпичи между трубой и дверью выглядят целыми. Нет растущей трещины, нет нового участка кладки. От этого ровная стена кажется хуже любого видимого провала.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|46|pacifica",
+      "key": "russian|chapter_3/waymarks|48|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 46,
+      "sourceLine": 48,
       "speaker": "Pacifica",
       "text": "Это не просто мы заблудились. Расстояние меняется, даже когда мы стоим рядом. А почему — пока не знаем.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|48|gideon",
+      "key": "russian|chapter_3/waymarks|50|gideon",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 48,
+      "sourceLine": 50,
       "speaker": "Gideon",
       "text": "И стрелка от этого не становится полезным указателем. Она может поворачиваться вместе со всем остальным.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|50|narrator",
+      "key": "russian|chapter_3/waymarks|52|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 50,
+      "sourceLine": 52,
       "speaker": "Narrator",
       "text": "Пасифика стирает в блокноте стрелку, которую успела поставить у двери. На её месте остаётся пятно. Гидеон достаёт карандаш из её пальцев, пока она не протёрла бумагу насквозь.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|52|pacifica",
+      "key": "russian|chapter_3/waymarks|54|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 52,
+      "sourceLine": 54,
       "speaker": "Pacifica",
       "text": "Я поняла. Просто очень не люблю, когда место врёт лучше человека.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|54|wendy",
+      "key": "russian|chapter_3/waymarks|56|wendy",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 54,
+      "sourceLine": 56,
       "speaker": "Wendy",
       "text": "Ладно. Чудная рулетка. Возвращайтесь завтра с другой.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|56|pacifica",
+      "key": "russian|chapter_3/waymarks|58|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 56,
+      "sourceLine": 58,
       "speaker": "Pacifica",
       "text": "Ты сама видела.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|59|wendy",
+      "key": "russian|chapter_3/waymarks|61|wendy",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 59,
+      "sourceLine": 61,
       "speaker": "Wendy",
       "text": "Видела, как вы возитесь у стены. И теряете время.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|61|narrator",
+      "key": "russian|chapter_3/waymarks|63|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 61,
+      "sourceLine": 63,
       "speaker": "Narrator",
       "text": "Она тянется к дверной ручке, но останавливает руку. Гидеон смотрит на неё. Венди первой отводит глаза и с раздражением пинает маленькую щепку.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|63|gideon",
+      "key": "russian|chapter_3/waymarks|65|gideon",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 63,
+      "sourceLine": 65,
       "speaker": "Gideon",
       "text": "Куда ты хотела зайти?",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|65|wendy",
+      "key": "russian|chapter_3/waymarks|67|wendy",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 65,
+      "sourceLine": 67,
       "speaker": "Wendy",
       "text": "Туда, где не задают вопросов. Не вышло.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|67|narrator",
+      "key": "russian|chapter_3/waymarks|69|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 67,
+      "sourceLine": 69,
       "speaker": "Narrator",
       "text": "Пасифика оборачивается к стрелке. Та снова смотрит к углу. На этот раз Гидеон тоже успевает заметить прежнее положение: ещё секунду назад остриё было обращено к двери.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|69|pacifica",
+      "key": "russian|chapter_3/waymarks|71|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 69,
+      "sourceLine": 71,
       "speaker": "Pacifica",
       "text": "Не следуем за ней. Она уже дважды передумала, куда нас посылать.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|71|narrator",
+      "key": "russian|chapter_3/waymarks|73|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 71,
+      "sourceLine": 73,
       "speaker": "Narrator",
       "text": "Венди проводит ладонью по лицу. Её взгляд на секунду становится совсем трезвым, без ленивой усмешки. Потом она отходит от ручки, освобождая место.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|73|gideon",
+      "key": "russian|chapter_3/waymarks|75|gideon",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 73,
+      "sourceLine": 75,
       "speaker": "Gideon",
       "text": "Нужна проверка, которую нельзя списать на длину шага. Метка, звук или старый план здания. По одному, без прогулки наугад.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|75|pacifica",
+      "key": "russian|chapter_3/waymarks|77|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 75,
+      "sourceLine": 77,
       "speaker": "Pacifica",
       "text": "Если откроем дверь, сначала смотрим с порога. Не бежим за первым звуком.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|77|narrator",
+      "key": "russian|chapter_3/waymarks|79|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 77,
+      "sourceLine": 79,
       "speaker": "Narrator",
       "text": "Венди не спорит с этим единственным правилом. Она только оттягивает плечом тяжёлую лямку, оставившую складку на рубашке, и снова смотрит на нижний край двери.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|79|pacifica",
+      "key": "russian|chapter_3/waymarks|81|pacifica",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 79,
+      "sourceLine": 81,
       "speaker": "Pacifica",
       "text": "Узнаем хотя бы, что остаётся на месте. Потом решим, куда можно идти.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/waymarks|83|narrator",
+      "key": "russian|chapter_3/waymarks|85|narrator",
       "script": "chapter_3/waymarks",
       "language": "russian",
-      "sourceLine": 83,
+      "sourceLine": 85,
       "speaker": "Narrator",
       "text": "За дверью медленно скользит что-то тяжёлое. Венди убирает ногу с порога. На досках остаётся светлая полоса пыли, хотя снаружи никто не двигался.",
       "status": "pending"
@@ -1631,7 +1694,16 @@
       "language": "russian",
       "sourceLine": 15,
       "speaker": "Narrator",
-      "text": "В щели виден пустой цех и две параллельные направляющие, по которым когда-то катили брёвна. Венди упирает ботинок в дверь. Они подходят к порогу вместе, не переступая пыльную полосу.",
+      "text": "В щели виден пустой цех и две параллельные направляющие, по которым когда-то катили брёвна.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/test_mark|17|narrator",
+      "script": "chapter_3/test_mark",
+      "language": "russian",
+      "sourceLine": 17,
+      "speaker": "Narrator",
+      "text": "Венди упирает ботинок в дверь. Они подходят к порогу вместе, не переступая пыльную полосу.",
       "status": "pending"
     },
     {
@@ -1658,34 +1730,34 @@
       "language": "russian",
       "sourceLine": 6,
       "speaker": "Narrator",
-      "text": "Изнутри приходит длинный скрежет. Не повторение стука: по полу что-то волокут. Звук начинается прямо за дверью, а заканчивается слишком далеко, будто внутри целая улица.",
+      "text": "Изнутри приходит длинный скрежет. Не повторение стука: по полу что-то волокут.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_listen|9|gideon",
+      "key": "russian|chapter_3/test_listen|8|narrator",
       "script": "chapter_3/test_listen",
       "language": "russian",
-      "sourceLine": 9,
+      "sourceLine": 8,
+      "speaker": "Narrator",
+      "text": "Звук начинается прямо за дверью, а заканчивается слишком далеко, будто внутри целая улица.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/test_listen|11|gideon",
+      "script": "chapter_3/test_listen",
+      "language": "russian",
+      "sourceLine": 11,
       "speaker": "Gideon",
       "text": "Доски передают вибрацию сюда. Но расстояние по звуку не сходится с размером здания.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_listen|11|pacifica",
-      "script": "chapter_3/test_listen",
-      "language": "russian",
-      "sourceLine": 11,
-      "speaker": "Pacifica",
-      "text": "То есть на слух тоже нельзя выбрать дорогу.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/test_listen|13|narrator",
+      "key": "russian|chapter_3/test_listen|13|pacifica",
       "script": "chapter_3/test_listen",
       "language": "russian",
       "sourceLine": 13,
-      "speaker": "Narrator",
-      "text": "Он кивает и убирает руку. Пальцы на секунду остаются напряжёнными. Проверка дала полезный ответ, но от близкого скрежета за тонкой дверью ему явно не стало спокойнее.",
+      "speaker": "Pacifica",
+      "text": "То есть на слух тоже нельзя выбрать дорогу.",
       "status": "pending"
     },
     {
@@ -1694,7 +1766,25 @@
       "language": "russian",
       "sourceLine": 15,
       "speaker": "Narrator",
-      "text": "Пасифика приоткрывает дверь. Впереди пустой цех, две старые направляющие для брёвен и неподвижные доски. Венди придерживает створку ботинком, раздражённо глядя внутрь. Все трое останавливаются у пыльного порога.",
+      "text": "Он кивает и убирает руку. Пальцы на секунду остаются напряжёнными. Проверка дала полезный ответ, но от близкого скрежета за тонкой дверью ему явно не стало спокойнее.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/test_listen|17|narrator",
+      "script": "chapter_3/test_listen",
+      "language": "russian",
+      "sourceLine": 17,
+      "speaker": "Narrator",
+      "text": "Пасифика приоткрывает дверь. Впереди пустой цех, две старые направляющие для брёвен и неподвижные доски.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/test_listen|19|narrator",
+      "script": "chapter_3/test_listen",
+      "language": "russian",
+      "sourceLine": 19,
+      "speaker": "Narrator",
+      "text": "Венди придерживает створку ботинком, раздражённо глядя внутрь. Все трое останавливаются у пыльного порога.",
       "status": "pending"
     },
     {
@@ -1703,68 +1793,95 @@
       "language": "russian",
       "sourceLine": 2,
       "speaker": "Narrator",
-      "text": "На стене под мутным пластиком висит схема эвакуации. Пасифика смахивает пыль рукавом. На плане вдоль цеха идёт короткий коридор; за дверью должны быть две направляющие для брёвен.",
+      "text": "На стене под мутным пластиком висит схема эвакуации. Пасифика смахивает пыль рукавом.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_checkplans|4|wendy",
+      "key": "russian|chapter_3/test_checkplans|4|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "russian",
       "sourceLine": 4,
+      "speaker": "Narrator",
+      "text": "На плане вдоль цеха идёт короткий коридор; за дверью должны быть две направляющие для брёвен.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/test_checkplans|6|wendy",
+      "script": "chapter_3/test_checkplans",
+      "language": "russian",
+      "sourceLine": 6,
       "speaker": "Wendy",
       "text": "Схема старше вас обоих. Не факт, что её вообще обновляли.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_checkplans|6|gideon",
+      "key": "russian|chapter_3/test_checkplans|8|gideon",
       "script": "chapter_3/test_checkplans",
       "language": "russian",
-      "sourceLine": 6,
+      "sourceLine": 8,
       "speaker": "Gideon",
       "text": "Зато окно на месте. И труба. Проверим третью вещь.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_checkplans|8|narrator",
+      "key": "russian|chapter_3/test_checkplans|10|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "russian",
-      "sourceLine": 8,
+      "sourceLine": 10,
       "speaker": "Narrator",
-      "text": "Пасифика приоткрывает дверь. Направляющие видны. Между ними и ближним окном, судя по схеме, два пролёта. Она считает столбы: три. Пропустить один в таком узком помещении невозможно.",
+      "text": "Пасифика приоткрывает дверь. Направляющие видны.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_checkplans|11|pacifica",
+      "key": "russian|chapter_3/test_checkplans|12|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "russian",
-      "sourceLine": 11,
+      "sourceLine": 12,
+      "speaker": "Narrator",
+      "text": "Между ними и ближним окном, судя по схеме, два пролёта. Она считает столбы: три.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/test_checkplans|14|narrator",
+      "script": "chapter_3/test_checkplans",
+      "language": "russian",
+      "sourceLine": 14,
+      "speaker": "Narrator",
+      "text": "Пропустить один в таком узком помещении невозможно.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/test_checkplans|17|pacifica",
+      "script": "chapter_3/test_checkplans",
+      "language": "russian",
+      "sourceLine": 17,
       "speaker": "Pacifica",
       "text": "План показывает выходы. Длине проходов пока не верим.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_checkplans|13|gideon",
+      "key": "russian|chapter_3/test_checkplans|19|gideon",
       "script": "chapter_3/test_checkplans",
       "language": "russian",
-      "sourceLine": 13,
+      "sourceLine": 19,
       "speaker": "Gideon",
       "text": "И запасной выход сначала проверим глазами. Нарисованная дверь ещё не обещает улицу.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_checkplans|15|narrator",
+      "key": "russian|chapter_3/test_checkplans|21|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "russian",
-      "sourceLine": 15,
+      "sourceLine": 21,
       "speaker": "Narrator",
       "text": "Венди кивает слишком быстро, словно это и так понятно. Пасифика замечает согласие, но не знает, относится оно к старой схеме или к тому, что Венди уже успела здесь увидеть.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/test_checkplans|17|narrator",
+      "key": "russian|chapter_3/test_checkplans|23|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "russian",
-      "sourceLine": 17,
+      "sourceLine": 23,
       "speaker": "Narrator",
       "text": "Она срисовывает расположение дверей. Венди удерживает створку ботинком, нетерпеливо поглядывая через плечо. Они собираются у пыльного порога, перед пустым полом цеха.",
       "status": "pending"
@@ -1874,106 +1991,106 @@
       "language": "russian",
       "sourceLine": 39,
       "speaker": "Narrator",
-      "text": "У них за спиной с ударом сдвигается дверной косяк. Створку выталкивает внутрь, прямо на Венди. Она отскакивает с порога; Гидеон и Пасифика следуют за ней, освобождая тесный вход. Теперь до него несколько шагов вместо одного.",
+      "text": "У них за спиной с ударом сдвигается дверной косяк. Створку выталкивает внутрь, прямо на Венди.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|42|pacifica",
+      "key": "russian|chapter_3/cutting_floor|41|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 42,
+      "sourceLine": 41,
+      "speaker": "Narrator",
+      "text": "Она отскакивает с порога; Гидеон и Пасифика следуют за ней, освобождая тесный вход.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/cutting_floor|43|narrator",
+      "script": "chapter_3/cutting_floor",
+      "language": "russian",
+      "sourceLine": 43,
+      "speaker": "Narrator",
+      "text": "Теперь до него несколько шагов вместо одного.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/cutting_floor|46|pacifica",
+      "script": "chapter_3/cutting_floor",
+      "language": "russian",
+      "sourceLine": 46,
       "speaker": "Pacifica",
       "text": "Вы тоже это...",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|44|narrator",
+      "key": "russian|chapter_3/cutting_floor|48|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 44,
+      "sourceLine": 48,
       "speaker": "Narrator",
       "text": "Ближайшее бревно перекатывается через стопор. Глухой удар отдаётся в подошвах. Пасифика резко отступает и упирается пяткой в рельс, которого секунду назад за спиной не было.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|46|gideon",
+      "key": "russian|chapter_3/cutting_floor|50|gideon",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 46,
+      "sourceLine": 50,
       "speaker": "Gideon",
       "text": "Справа не уходи. Там пол складывается.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|49|pacifica",
+      "key": "russian|chapter_3/cutting_floor|53|pacifica",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 49,
+      "sourceLine": 53,
       "speaker": "Pacifica",
       "text": "Я вижу. Просто проверяла другой путь.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|51|gideon",
+      "key": "russian|chapter_3/cutting_floor|55|gideon",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 51,
+      "sourceLine": 55,
       "speaker": "Gideon",
       "text": "Проверь этот. Где пока есть доски.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|53|narrator",
+      "key": "russian|chapter_3/cutting_floor|57|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 53,
+      "sourceLine": 57,
       "speaker": "Narrator",
       "text": "Он показывает узкий промежуток у стены. Пасифика кивает; спорить с ним сейчас не хочется. Венди уже снимает ногу с ближайшей направляющей, лицо у неё перестаёт быть скучающим.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|56|wendy",
+      "key": "russian|chapter_3/cutting_floor|60|wendy",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 56,
+      "sourceLine": 60,
       "speaker": "Wendy",
       "text": "К стене. Не прыгайте на середину, там под настилом пусто.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|59|pacifica",
+      "key": "russian|chapter_3/cutting_floor|63|pacifica",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 59,
+      "sourceLine": 63,
       "speaker": "Pacifica",
       "text": "Ты могла сказать это до того, как мы вошли!",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|61|wendy",
-      "script": "chapter_3/cutting_floor",
-      "language": "russian",
-      "sourceLine": 61,
-      "speaker": "Wendy",
-      "text": "Тогда оно держалось.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/cutting_floor|63|narrator",
-      "script": "chapter_3/cutting_floor",
-      "language": "russian",
-      "sourceLine": 63,
-      "speaker": "Narrator",
-      "text": "Венди не добавляет шутку. Вместо этого она подхватывает с пола обломок доски и кладёт поперёк тёмной щели. Дальний конец сразу уходит вниз, хотя ближний остаётся под её ботинком.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/cutting_floor|65|gideon",
+      "key": "russian|chapter_3/cutting_floor|65|wendy",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
       "sourceLine": 65,
-      "speaker": "Gideon",
-      "text": "Не дыра. Два края уходят в разные стороны.",
+      "speaker": "Wendy",
+      "text": "Тогда оно держалось.",
       "status": "pending"
     },
     {
@@ -1982,16 +2099,16 @@
       "language": "russian",
       "sourceLine": 67,
       "speaker": "Narrator",
-      "text": "Венди приподнимает обломок. Он целый, но теперь лежит по диагонали, словно его дальний конец переставили. Из щели не тянет воздухом; в ней просто невозможно разглядеть опоры пола.",
+      "text": "Венди не добавляет шутку. Вместо этого она подхватывает с пола обломок доски и кладёт поперёк тёмной щели. Дальний конец сразу уходит вниз, хотя ближний остаётся под её ботинком.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|69|pacifica",
+      "key": "russian|chapter_3/cutting_floor|69|gideon",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
       "sourceLine": 69,
-      "speaker": "Pacifica",
-      "text": "Не наклоняйся туда. Мы не знаем, насколько там глубоко.",
+      "speaker": "Gideon",
+      "text": "Не дыра. Два края уходят в разные стороны.",
       "status": "pending"
     },
     {
@@ -2000,43 +2117,43 @@
       "language": "russian",
       "sourceLine": 71,
       "speaker": "Narrator",
+      "text": "Венди приподнимает обломок. Он целый, но теперь лежит по диагонали, словно его дальний конец переставили. Из щели не тянет воздухом; в ней просто невозможно разглядеть опоры пола.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/cutting_floor|73|pacifica",
+      "script": "chapter_3/cutting_floor",
+      "language": "russian",
+      "sourceLine": 73,
+      "speaker": "Pacifica",
+      "text": "Не наклоняйся туда. Мы не знаем, насколько там глубоко.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/cutting_floor|75|narrator",
+      "script": "chapter_3/cutting_floor",
+      "language": "russian",
+      "sourceLine": 75,
+      "speaker": "Narrator",
       "text": "Треск проходит от одного конца цеха до другого. Пасифика поднимает голову: тяжёлая цепь над проходом вытягивается почти горизонтально, будто стены медленно раздвигают.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|74|pacifica",
+      "key": "russian|chapter_3/cutting_floor|78|pacifica",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 74,
+      "sourceLine": 78,
       "speaker": "Pacifica",
       "text": "Назад. Нам здесь больше нечего проверять.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|76|narrator",
-      "script": "chapter_3/cutting_floor",
-      "language": "russian",
-      "sourceLine": 76,
-      "speaker": "Narrator",
-      "text": "Вход остаётся открытым. Только между ним и Гидеоном теперь лежат три бревна вместо одного. Ближнее катится медленно, без уклона, сдирая с досок длинную светлую стружку.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/cutting_floor|78|narrator",
-      "script": "chapter_3/cutting_floor",
-      "language": "russian",
-      "sourceLine": 78,
-      "speaker": "Narrator",
-      "text": "Гидеон проверяет просвет под первым бревном и сразу отступает. Оно прижимает к полу сорванную скобу; железо сминается, как тонкая проволока. Даже проползти там больше нельзя.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/cutting_floor|80|wendy",
+      "key": "russian|chapter_3/cutting_floor|80|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
       "sourceLine": 80,
-      "speaker": "Wendy",
-      "text": "Назад уже поздно. Лестница слева. Наверху проход вдоль стены.",
+      "speaker": "Narrator",
+      "text": "Вход остаётся открытым. Только между ним и Гидеоном теперь лежат три бревна вместо одного. Ближнее катится медленно, без уклона, сдирая с досок длинную светлую стружку.",
       "status": "pending"
     },
     {
@@ -2045,25 +2162,52 @@
       "language": "russian",
       "sourceLine": 82,
       "speaker": "Narrator",
+      "text": "Гидеон проверяет просвет под первым бревном и сразу отступает. Оно прижимает к полу сорванную скобу; железо сминается, как тонкая проволока. Даже проползти там больше нельзя.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/cutting_floor|84|wendy",
+      "script": "chapter_3/cutting_floor",
+      "language": "russian",
+      "sourceLine": 84,
+      "speaker": "Wendy",
+      "text": "Назад уже поздно. Лестница слева. Наверху проход вдоль стены.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/cutting_floor|86|narrator",
+      "script": "chapter_3/cutting_floor",
+      "language": "russian",
+      "sourceLine": 86,
+      "speaker": "Narrator",
       "text": "Пасифика смотрит на лестницу, потом на Венди. Та уже идёт туда, прижимая сумку локтем. Чёрная полоса под полом меняет направление вслед за ней.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|84|gideon",
+      "key": "russian|chapter_3/cutting_floor|88|gideon",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 84,
+      "sourceLine": 88,
       "speaker": "Gideon",
       "text": "По одному. Наступай туда же, куда я.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/cutting_floor|88|narrator",
+      "key": "russian|chapter_3/cutting_floor|92|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "russian",
-      "sourceLine": 88,
+      "sourceLine": 92,
       "speaker": "Narrator",
-      "text": "Гидеон проверяет край доски и переносит вес. Пасифика следует за ним, удерживая руки в стороне для равновесия. За спиной металлический стопор срывается с крепления и ударяет в закрытую раму окна.",
+      "text": "Гидеон проверяет край доски и переносит вес. Пасифика следует за ним, удерживая руки в стороне для равновесия.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/cutting_floor|94|narrator",
+      "script": "chapter_3/cutting_floor",
+      "language": "russian",
+      "sourceLine": 94,
+      "speaker": "Narrator",
+      "text": "За спиной металлический стопор срывается с крепления и ударяет в закрытую раму окна.",
       "status": "pending"
     },
     {
@@ -2351,7 +2495,16 @@
       "language": "russian",
       "sourceLine": 88,
       "speaker": "Narrator",
-      "text": "Они перебираются боком. На бетоне Венди наконец вытаскивает зацепившуюся сумку. Из разошедшегося бокового кармана выскальзывает короткая петля, а следом показывается тусклый медный край.",
+      "text": "Они перебираются боком. На бетоне Венди наконец вытаскивает зацепившуюся сумку.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/service_walk|90|narrator",
+      "script": "chapter_3/service_walk",
+      "language": "russian",
+      "sourceLine": 90,
+      "speaker": "Narrator",
+      "text": "Из разошедшегося бокового кармана выскальзывает короткая петля, а следом показывается тусклый медный край.",
       "status": "pending"
     },
     {
@@ -2684,7 +2837,16 @@
       "language": "russian",
       "sourceLine": 99,
       "speaker": "Narrator",
-      "text": "Венди поднимает сумку двумя руками, медленно, прижимая к животу. Под бетоном протягивается низкий скрежет. Внизу тёмная полоса достигает основания лестницы и остаётся там, закрывая последнюю нижнюю ступень.",
+      "text": "Венди поднимает сумку двумя руками, медленно, прижимая к животу. Под бетоном протягивается низкий скрежет.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/bag|101|narrator",
+      "script": "chapter_3/bag",
+      "language": "russian",
+      "sourceLine": 101,
+      "speaker": "Narrator",
+      "text": "Внизу тёмная полоса достигает основания лестницы и остаётся там, закрывая последнюю нижнюю ступень.",
       "status": "pending"
     },
     {
@@ -2729,70 +2891,70 @@
       "language": "russian",
       "sourceLine": 22,
       "speaker": "Narrator",
-      "text": "Венди сходит с бетона, не выпуская сумки. Дальнее бревно разворачивается поперёк прохода. Она немедленно замирает; бревно продолжает двигаться, но щель между ним и воротами больше не уменьшается.",
+      "text": "Венди сходит с бетона, не выпуская сумки. Дальнее бревно разворачивается поперёк прохода.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|25|gideon",
+      "key": "russian|chapter_3/crossing|24|narrator",
       "script": "chapter_3/crossing",
       "language": "russian",
-      "sourceLine": 25,
+      "sourceLine": 24,
+      "speaker": "Narrator",
+      "text": "Она немедленно замирает; бревно продолжает двигаться, но щель между ним и воротами больше не уменьшается.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/crossing|27|gideon",
+      "script": "chapter_3/crossing",
+      "language": "russian",
+      "sourceLine": 27,
       "speaker": "Gideon",
       "text": "От движения меняется расстояние. А то, что уже покатилось, само не остановится.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|27|narrator",
+      "key": "russian|chapter_3/crossing|29|narrator",
       "script": "chapter_3/crossing",
       "language": "russian",
-      "sourceLine": 27,
+      "sourceLine": 29,
       "speaker": "Narrator",
       "text": "Над ними натягивается цепь с пустым захватом. Захват раскачивается и бьёт по столбу. Из крепления высыпается ржавая крошка, поэтому держаться за эту сторону стены больше нельзя.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|29|gideon",
+      "key": "russian|chapter_3/crossing|31|gideon",
       "script": "chapter_3/crossing",
       "language": "russian",
-      "sourceLine": 29,
+      "sourceLine": 31,
       "speaker": "Gideon",
       "text": "Ниже захвата не идём. Если сорвётся, попадёт поперёк всего прохода.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|31|wendy",
+      "key": "russian|chapter_3/crossing|33|wendy",
       "script": "chapter_3/crossing",
       "language": "russian",
-      "sourceLine": 31,
+      "sourceLine": 33,
       "speaker": "Wendy",
       "text": "Услышала. Сумку сейчас не уроню, на другое смотри.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|33|narrator",
+      "key": "russian|chapter_3/crossing|35|narrator",
       "script": "chapter_3/crossing",
       "language": "russian",
-      "sourceLine": 33,
+      "sourceLine": 35,
       "speaker": "Narrator",
       "text": "Он говорит быстро, следя сразу за двумя концами прохода. Теперь в его голосе нет привычной ленцы. Пасифика замечает это и перестаёт тратить дыхание на спор с Венди.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|36|pacifica",
-      "script": "chapter_3/crossing",
-      "language": "russian",
-      "sourceLine": 36,
-      "speaker": "Pacifica",
-      "text": "Сначала до ручки. Потом все наружу. Никто не пытается вынести ещё что-нибудь.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/crossing|38|narrator",
+      "key": "russian|chapter_3/crossing|38|pacifica",
       "script": "chapter_3/crossing",
       "language": "russian",
       "sourceLine": 38,
-      "speaker": "Narrator",
-      "text": "Она протискивается между ограждением и торцом бревна. До дерева остаётся ладонь. Доска под ботинком гнётся, но Пасифика не прыгает: медленно переносит вес на поперечную балку.",
+      "speaker": "Pacifica",
+      "text": "Сначала до ручки. Потом все наружу. Никто не пытается вынести ещё что-нибудь.",
       "status": "pending"
     },
     {
@@ -2801,7 +2963,7 @@
       "language": "russian",
       "sourceLine": 40,
       "speaker": "Narrator",
-      "text": "Гидеон движется по той же балке, придерживаясь за болт в стене. Венди идёт последней. Когда ремень сползает с плеча, она ловит его локтем, не давая сумке качнуться.",
+      "text": "Она протискивается между ограждением и торцом бревна. До дерева остаётся ладонь.",
       "status": "pending"
     },
     {
@@ -2810,7 +2972,7 @@
       "language": "russian",
       "sourceLine": 42,
       "speaker": "Narrator",
-      "text": "На середине пути Гидеон останавливается: торчащий гвоздь зацепил штанину. Он приседает, аккуратно снимает ткань и показывает Пасифике продолжать. Та дожидается, пока он встанет; ни слова о задержке не звучит.",
+      "text": "Доска под ботинком гнётся, но Пасифика не прыгает: медленно переносит вес на поперечную балку.",
       "status": "pending"
     },
     {
@@ -2819,16 +2981,16 @@
       "language": "russian",
       "sourceLine": 44,
       "speaker": "Narrator",
-      "text": "Венди наблюдает за ними из-за плеча, затем переставляет ногу на освободившуюся балку. Обычное замечание про медлительность не появляется. Она только проверяет, хватает ли места для следующего шага.",
+      "text": "Гидеон движется по той же балке, придерживаясь за болт в стене. Венди идёт последней. Когда ремень сползает с плеча, она ловит его локтем, не давая сумке качнуться.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|46|wendy",
+      "key": "russian|chapter_3/crossing|46|narrator",
       "script": "chapter_3/crossing",
       "language": "russian",
       "sourceLine": 46,
-      "speaker": "Wendy",
-      "text": "Дверь. Сейчас.",
+      "speaker": "Narrator",
+      "text": "На середине пути Гидеон останавливается: торчащий гвоздь зацепил штанину.",
       "status": "pending"
     },
     {
@@ -2837,7 +2999,25 @@
       "language": "russian",
       "sourceLine": 48,
       "speaker": "Narrator",
-      "text": "Пасифика тянет верхнюю ручку обеими руками. Створка нехотя подаётся. В щель врывается холодный воздух, пахнущий влажной землёй, и она почти смеётся от облегчения.",
+      "text": "Он приседает, аккуратно снимает ткань и показывает Пасифике продолжать.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/crossing|50|narrator",
+      "script": "chapter_3/crossing",
+      "language": "russian",
+      "sourceLine": 50,
+      "speaker": "Narrator",
+      "text": "Та дожидается, пока он встанет; ни слова о задержке не звучит.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/crossing|52|narrator",
+      "script": "chapter_3/crossing",
+      "language": "russian",
+      "sourceLine": 52,
+      "speaker": "Narrator",
+      "text": "Венди наблюдает за ними из-за плеча, затем переставляет ногу на освободившуюся балку.",
       "status": "pending"
     },
     {
@@ -2846,16 +3026,16 @@
       "language": "russian",
       "sourceLine": 54,
       "speaker": "Narrator",
-      "text": "Потом снаружи ударяет металл. Створку ведёт обратно, прямо на её пальцы. Пасифика отдёргивает руку; удар проходит по всему цеху, и сверху сыплется пыль.",
+      "text": "Обычное замечание про медлительность не появляется. Она только проверяет, хватает ли места для следующего шага.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|56|gideon",
+      "key": "russian|chapter_3/crossing|56|wendy",
       "script": "chapter_3/crossing",
       "language": "russian",
       "sourceLine": 56,
-      "speaker": "Gideon",
-      "text": "Боковая направляющая перекосилась. Она снова захлопнется.",
+      "speaker": "Wendy",
+      "text": "Дверь. Сейчас.",
       "status": "pending"
     },
     {
@@ -2864,25 +3044,7 @@
       "language": "russian",
       "sourceLine": 58,
       "speaker": "Narrator",
-      "text": "Пасифика смотрит на площадку позади них. Отколовшаяся доска завалила нижние ступени; назад уже не подняться. Она заставляет себя повернуться к воротам, где хотя бы остаётся свет.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/crossing|60|pacifica",
-      "script": "chapter_3/crossing",
-      "language": "russian",
-      "sourceLine": 60,
-      "speaker": "Pacifica",
-      "text": "Венди, когда мы начнём, не меняй направление без предупреждения. Даже если увидишь другой выход.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/crossing|62|wendy",
-      "script": "chapter_3/crossing",
-      "language": "russian",
-      "sourceLine": 62,
-      "speaker": "Wendy",
-      "text": "Тогда говорите быстро. У меня под ногами уже ходит балка.",
+      "text": "Пасифика тянет верхнюю ручку обеими руками. Створка нехотя подаётся. В щель врывается холодный воздух, пахнущий влажной землёй, и она почти смеётся от облегчения.",
       "status": "pending"
     },
     {
@@ -2891,32 +3053,77 @@
       "language": "russian",
       "sourceLine": 64,
       "speaker": "Narrator",
+      "text": "Потом снаружи ударяет металл. Створку ведёт обратно, прямо на её пальцы. Пасифика отдёргивает руку; удар проходит по всему цеху, и сверху сыплется пыль.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/crossing|66|gideon",
+      "script": "chapter_3/crossing",
+      "language": "russian",
+      "sourceLine": 66,
+      "speaker": "Gideon",
+      "text": "Боковая направляющая перекосилась. Она снова захлопнется.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/crossing|68|narrator",
+      "script": "chapter_3/crossing",
+      "language": "russian",
+      "sourceLine": 68,
+      "speaker": "Narrator",
+      "text": "Пасифика смотрит на площадку позади них. Отколовшаяся доска завалила нижние ступени; назад уже не подняться. Она заставляет себя повернуться к воротам, где хотя бы остаётся свет.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/crossing|70|pacifica",
+      "script": "chapter_3/crossing",
+      "language": "russian",
+      "sourceLine": 70,
+      "speaker": "Pacifica",
+      "text": "Венди, когда мы начнём, не меняй направление без предупреждения. Даже если увидишь другой выход.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/crossing|72|wendy",
+      "script": "chapter_3/crossing",
+      "language": "russian",
+      "sourceLine": 72,
+      "speaker": "Wendy",
+      "text": "Тогда говорите быстро. У меня под ногами уже ходит балка.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/crossing|74|narrator",
+      "script": "chapter_3/crossing",
+      "language": "russian",
+      "sourceLine": 74,
+      "speaker": "Narrator",
       "text": "За спиной с треском выламывается стопор. Два бревна начинают сходиться над проходом. Внизу между досками движется чёрная полоса; теперь она тянется к месту, где Венди стоит с сумкой.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|67|pacifica",
+      "key": "russian|chapter_3/crossing|77|pacifica",
       "script": "chapter_3/crossing",
       "language": "russian",
-      "sourceLine": 67,
+      "sourceLine": 77,
       "speaker": "Pacifica",
       "text": "Одного рывка не хватит. Нужно либо удержать ворота, либо найти просвет между брёвнами.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|69|gideon",
+      "key": "russian|chapter_3/crossing|79|gideon",
       "script": "chapter_3/crossing",
       "language": "russian",
-      "sourceLine": 69,
+      "sourceLine": 79,
       "speaker": "Gideon",
       "text": "И сумку нельзя раскачивать. Каждый раз всё сдвигается сильнее.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/crossing|71|narrator",
+      "key": "russian|chapter_3/crossing|81|narrator",
       "script": "chapter_3/crossing",
       "language": "russian",
-      "sourceLine": 71,
+      "sourceLine": 81,
       "speaker": "Narrator",
       "text": "Венди прижимает сумку к боку и смотрит на узкий выход. На этот раз она ждёт, пока кто-то закончит говорить. На полу перед воротами появляется новая светлая трещина.",
       "status": "pending"
@@ -3179,169 +3386,169 @@
       "language": "russian",
       "sourceLine": 14,
       "speaker": "Narrator",
-      "text": "Гидеон стоит рядом, слушая грохот внутри. Его пальцы ещё напряжены, словно он продолжает держаться за что-то. Он распрямляет их по одному и проверяет, не идёт ли трещина по наружной стене.",
+      "text": "Гидеон стоит рядом, слушая грохот внутри. Его пальцы ещё напряжены, словно он продолжает держаться за что-то.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|17|pacifica",
+      "key": "russian|chapter_3/night_gate|16|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 17,
+      "sourceLine": 16,
+      "speaker": "Narrator",
+      "text": "Он распрямляет их по одному и проверяет, не идёт ли трещина по наружной стене.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|19|pacifica",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 19,
       "speaker": "Pacifica",
       "text": "Все вышли. Хорошо. Тогда дальше от стены.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|21|narrator",
+      "key": "russian|chapter_3/night_gate|23|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 21,
+      "sourceLine": 23,
       "speaker": "Narrator",
       "text": "Из цеха доносится долгий треск. За мутным окном медленно падает балка; рама выдавливается наружу и остаётся висеть под неправильным углом. Они отходят ещё на несколько шагов.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|24|wendy",
+      "key": "russian|chapter_3/night_gate|26|wendy",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 24,
+      "sourceLine": 26,
       "speaker": "Wendy",
       "text": "Не сбивайтесь перед дверью. Если створку вырвет, сюда полетит.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|26|narrator",
+      "key": "russian|chapter_3/night_gate|28|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 26,
+      "sourceLine": 28,
       "speaker": "Narrator",
       "text": "Пасифика поворачивается к ней, готовая резко ответить, но только кивает. Венди проверяет сумку, потом смотрит на дверь. Вид у неё злой и очень сосредоточенный.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|29|pacifica",
+      "key": "russian|chapter_3/night_gate|31|pacifica",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 29,
+      "sourceLine": 31,
       "speaker": "Pacifica",
       "text": "Теперь ты покажешь овраг, где это нашла.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|32|wendy",
+      "key": "russian|chapter_3/night_gate|34|wendy",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 32,
+      "sourceLine": 34,
       "speaker": "Wendy",
       "text": "Теперь я собираюсь уйти с этой свалки. Что делать с вещью, решу по дороге.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|34|pacifica",
+      "key": "russian|chapter_3/night_gate|36|pacifica",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 34,
+      "sourceLine": 36,
       "speaker": "Pacifica",
       "text": "После того, что произошло, ты всё ещё...",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|37|gideon",
+      "key": "russian|chapter_3/night_gate|39|gideon",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 37,
+      "sourceLine": 39,
       "speaker": "Gideon",
       "text": "Потом. Сначала найдём дорогу.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|39|narrator",
+      "key": "russian|chapter_3/night_gate|41|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 39,
+      "sourceLine": 41,
       "speaker": "Narrator",
-      "text": "Он смотрит на двор. Пасифика следует за его взглядом и постепенно выпрямляется. За воротами должен быть гравийный проезд, штабель с обвалившимся верхом и забор с просветом к дороге.",
+      "text": "Он смотрит на двор. Пасифика следует за его взглядом и постепенно выпрямляется.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|44|narrator",
+      "key": "russian|chapter_3/night_gate|43|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 44,
+      "sourceLine": 43,
+      "speaker": "Narrator",
+      "text": "За воротами должен быть гравийный проезд, штабель с обвалившимся верхом и забор с просветом к дороге.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|48|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 48,
       "speaker": "Narrator",
       "text": "Штабель на месте. Забор тоже. Но между ними стоят ели. Их мокрые нижние ветви закрывают проход, а корни уходят под гравий, словно росли здесь десятилетиями.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|46|narrator",
+      "key": "russian|chapter_3/night_gate|50|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 46,
+      "sourceLine": 50,
       "speaker": "Narrator",
-      "text": "Пасифика находит глазами знакомый столб у проезда. Он должен стоять в нескольких шагах от ворот; теперь между ними тянется полоса мха. У основания столба лежит старая жестяная банка, которую она запомнила ещё снаружи.",
+      "text": "Пасифика находит глазами знакомый столб у проезда.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|49|pacifica",
+      "key": "russian|chapter_3/night_gate|52|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 49,
+      "sourceLine": 52,
+      "speaker": "Narrator",
+      "text": "Он должен стоять в нескольких шагах от ворот; теперь между ними тянется полоса мха.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|54|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 54,
+      "speaker": "Narrator",
+      "text": "У основания столба лежит старая жестяная банка, которую она запомнила ещё снаружи.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|57|pacifica",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 57,
       "speaker": "Pacifica",
       "text": "Двор тот же. Но между его частями теперь другой лес.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|52|wendy",
+      "key": "russian|chapter_3/night_gate|60|wendy",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 52,
+      "sourceLine": 60,
       "speaker": "Wendy",
       "text": "Нет. Я утром здесь проходила.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|54|gideon",
-      "script": "chapter_3/night_gate",
-      "language": "russian",
-      "sourceLine": 54,
-      "speaker": "Gideon",
-      "text": "Мы тоже видели этот двор снаружи. Их не было.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/night_gate|56|narrator",
-      "script": "chapter_3/night_gate",
-      "language": "russian",
-      "sourceLine": 56,
-      "speaker": "Narrator",
-      "text": "Венди делает шаг к забору. Сумка слегка меняет положение, и просвет между двумя стволами сужается. Она останавливается раньше, чем Пасифика успевает её окликнуть.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/night_gate|58|wendy",
-      "script": "chapter_3/night_gate",
-      "language": "russian",
-      "sourceLine": 58,
-      "speaker": "Wendy",
-      "text": "Не надо. Я сама вижу.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/night_gate|60|gideon",
-      "script": "chapter_3/night_gate",
-      "language": "russian",
-      "sourceLine": 60,
-      "speaker": "Gideon",
-      "text": "Назад в цех нельзя. Вдоль стены тоже не пройдём: там брёвна упёрлись в забор. Пока остаётся этот просвет.",
-      "status": "pending"
-    },
-    {
-      "key": "russian|chapter_3/night_gate|62|narrator",
+      "key": "russian|chapter_3/night_gate|62|gideon",
       "script": "chapter_3/night_gate",
       "language": "russian",
       "sourceLine": 62,
-      "speaker": "Narrator",
-      "text": "Он не предлагает бежать. Пасифика проверяет правую сторону, Венди левую; другого выхода действительно не видно. За деревьями должна проходить дорога, но между ветвями нет ни полоски асфальта.",
+      "speaker": "Gideon",
+      "text": "Мы тоже видели этот двор снаружи. Их не было.",
       "status": "pending"
     },
     {
@@ -3350,79 +3557,133 @@
       "language": "russian",
       "sourceLine": 64,
       "speaker": "Narrator",
+      "text": "Венди делает шаг к забору. Сумка слегка меняет положение, и просвет между двумя стволами сужается. Она останавливается раньше, чем Пасифика успевает её окликнуть.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|66|wendy",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 66,
+      "speaker": "Wendy",
+      "text": "Не надо. Я сама вижу.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|68|gideon",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 68,
+      "speaker": "Gideon",
+      "text": "Назад в цех нельзя. Вдоль стены тоже не пройдём: там брёвна упёрлись в забор. Пока остаётся этот просвет.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|70|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 70,
+      "speaker": "Narrator",
+      "text": "Он не предлагает бежать. Пасифика проверяет правую сторону, Венди левую; другого выхода действительно не видно.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|72|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 72,
+      "speaker": "Narrator",
+      "text": "За деревьями должна проходить дорога, но между ветвями нет ни полоски асфальта.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|74|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 74,
+      "speaker": "Narrator",
       "text": "Над лесом ещё светлое небо, но во дворе уже сумерки. Длинная тень от ближайшей ели пересекает носки её ботинок. Другие тени лежат в противоположную сторону.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|67|pacifica",
+      "key": "russian|chapter_3/night_gate|77|pacifica",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 67,
+      "sourceLine": 77,
       "speaker": "Pacifica",
       "text": "Мы выбрались из цеха. Значит, выберемся и отсюда.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|69|narrator",
+      "key": "russian|chapter_3/night_gate|79|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 69,
+      "sourceLine": 79,
       "speaker": "Narrator",
       "text": "На этот раз уверенность звучит скорее как решение, чем как обещание. Пасифика больше не делает шаг первой, пока не проверит, куда смотрят остальные двое.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|71|narrator",
+      "key": "russian|chapter_3/night_gate|81|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 71,
+      "sourceLine": 81,
       "speaker": "Narrator",
       "text": "Она говорит ровно, хотя смотрит на деревья слишком пристально. Гидеон становится сбоку, оставляя им обоим место для отступления. Венди не пытается снова пройти первой.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|75|narrator",
+      "key": "russian|chapter_3/night_gate|85|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 75,
+      "sourceLine": 85,
       "speaker": "Narrator",
       "text": "Из-за забора доносится скрежет. Тяжёлое дерево волокут по гравию, медленно, с остановками. Звук проходит за первым стволом, за вторым и приближается к узкому просвету перед ними.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|78|gideon",
+      "key": "russian|chapter_3/night_gate|88|gideon",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 78,
+      "sourceLine": 88,
       "speaker": "Gideon",
       "text": "Венди. Держи сумку неподвижно.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|80|narrator",
+      "key": "russian|chapter_3/night_gate|90|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 80,
+      "sourceLine": 90,
       "speaker": "Narrator",
       "text": "Она прижимает её обеими руками. Медный ободок скрытого предмета касается пряжки и тихо звякает. За деревьями скрежет сразу обрывается, словно там остановились послушать.",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|82|wendy",
+      "key": "russian|chapter_3/night_gate|92|wendy",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 82,
+      "sourceLine": 92,
       "speaker": "Wendy",
       "text": "И что теперь?",
       "status": "pending"
     },
     {
-      "key": "russian|chapter_3/night_gate|88|narrator",
+      "key": "russian|chapter_3/night_gate|98|narrator",
       "script": "chapter_3/night_gate",
       "language": "russian",
-      "sourceLine": 88,
+      "sourceLine": 98,
       "speaker": "Narrator",
-      "text": "Пасифика не успевает ответить. По другую сторону забора что-то тяжёлое поднимается над гравием. Сквозь ветви ничего не видно, но ближайшие стволы медленно расходятся, освобождая проход прямо к Венди.",
+      "text": "Пасифика не успевает ответить. По другую сторону забора что-то тяжёлое поднимается над гравием.",
+      "status": "pending"
+    },
+    {
+      "key": "russian|chapter_3/night_gate|100|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "russian",
+      "sourceLine": 100,
+      "speaker": "Narrator",
+      "text": "Сквозь ветви ничего не видно, но ближайшие стволы медленно расходятся, освобождая проход прямо к Венди.",
       "status": "pending"
     },
     {
@@ -3774,106 +4035,106 @@
       "language": "english",
       "sourceLine": 13,
       "speaker": "Narrator",
-      "text": "Wire fencing separates the yard from the road. Neat stacks of boards stand behind it, with the old mill building farther back. A faded schedule by the entrance says there are no loads going out today.",
+      "text": "Wire fencing separates the yard from the road. Neat stacks of boards stand behind it, with the old mill building farther back.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|15|pacifica",
+      "key": "english|chapter_3/yard|15|narrator",
       "script": "chapter_3/yard",
       "language": "english",
       "sourceLine": 15,
+      "speaker": "Narrator",
+      "text": "A faded schedule by the entrance says there are no loads going out today.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/yard|17|pacifica",
+      "script": "chapter_3/yard",
+      "language": "english",
+      "sourceLine": 17,
       "speaker": "Pacifica",
       "text": "Well, the gate really is ugly.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|17|gideon",
+      "key": "english|chapter_3/yard|19|gideon",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 17,
+      "sourceLine": 19,
       "speaker": "Gideon",
       "text": "Wait. That's the big one. My landmark is around the side.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|19|narrator",
+      "key": "english|chapter_3/yard|21|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 19,
+      "sourceLine": 21,
       "speaker": "Narrator",
       "text": "The small gate stands where the dirt path meets the fence. Behind its mesh grows a pine as thick as a person's thigh. Even a cat couldn't squeeze between the trunk and the gate.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|22|pacifica",
+      "key": "english|chapter_3/yard|24|pacifica",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 22,
+      "sourceLine": 24,
       "speaker": "Pacifica",
       "text": "Maybe it's a very old entrance, and you used another one.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|24|narrator",
+      "key": "english|chapter_3/yard|26|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 24,
+      "sourceLine": 26,
       "speaker": "Narrator",
       "text": "Gideon points to the lower hinge. A cobweb stretches unbroken from the post to the bolt. There is no fresh soil beneath the tree. Its roots run under the fence's concrete base.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|26|gideon",
+      "key": "english|chapter_3/yard|28|gideon",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 26,
+      "sourceLine": 28,
       "speaker": "Gideon",
       "text": "It opened this morning. I pushed it before I saw the tree behind it.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|28|narrator",
+      "key": "english|chapter_3/yard|30|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 28,
+      "sourceLine": 30,
       "speaker": "Narrator",
       "text": "He gently pulls the handle. The gate swings inward and stops a finger's width from the bark. The cobweb trembles without breaking.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|31|pacifica",
+      "key": "english|chapter_3/yard|33|pacifica",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 31,
+      "sourceLine": 33,
       "speaker": "Pacifica",
       "text": "Now we can be amazed.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|33|narrator",
+      "key": "english|chapter_3/yard|35|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 33,
+      "sourceLine": 35,
       "speaker": "Narrator",
       "text": "She crouches to inspect the bottom of the mesh. Dry needles lie evenly on both sides. There is no scrape from the gate and no dent in the trunk.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|35|gideon",
-      "script": "chapter_3/yard",
-      "language": "english",
-      "sourceLine": 35,
-      "speaker": "Gideon",
-      "text": "The footbridge was behind it. Boards over the ditch, to the right of the drain.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/yard|37|narrator",
+      "key": "english|chapter_3/yard|37|gideon",
       "script": "chapter_3/yard",
       "language": "english",
       "sourceLine": 37,
-      "speaker": "Narrator",
-      "text": "The drain is visible through the mesh. The ditch is still there too. Instead of boards, a strip of undisturbed grass runs over it, far too even to be a collapsed bridge.",
+      "speaker": "Gideon",
+      "text": "The footbridge was behind it. Boards over the ditch, to the right of the drain.",
       "status": "pending"
     },
     {
@@ -3882,61 +4143,61 @@
       "language": "english",
       "sourceLine": 39,
       "speaker": "Narrator",
+      "text": "The drain is visible through the mesh. The ditch is still there too. Instead of boards, a strip of undisturbed grass runs over it, far too even to be a collapsed bridge.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/yard|41|narrator",
+      "script": "chapter_3/yard",
+      "language": "english",
+      "sourceLine": 41,
+      "speaker": "Narrator",
       "text": "Gideon looks across to the far bank of the ditch. No broken boards there either. Water flows slowly beneath the grass: nobody has blocked it with soil to build a new crossing.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|41|gideon",
+      "key": "english|chapter_3/yard|43|gideon",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 41,
+      "sourceLine": 43,
       "speaker": "Gideon",
       "text": "If they took the bridge apart, they had to carry the boards somewhere. But there are no wheel tracks nearby.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|43|pacifica",
+      "key": "english|chapter_3/yard|45|pacifica",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 43,
+      "sourceLine": 45,
       "speaker": "Pacifica",
       "text": "People can carry things by hand too. For now, we just write down that the bridge is gone. Leave whoever did it blank.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|45|narrator",
+      "key": "english|chapter_3/yard|47|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 45,
+      "sourceLine": 47,
       "speaker": "Narrator",
       "text": "He tilts his head slightly, accepting the correction. Pacifica is clearly pleased to catch him making her own mistake from yesterday, but she doesn't turn it into a victory speech.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|47|pacifica",
+      "key": "english|chapter_3/yard|49|pacifica",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 47,
+      "sourceLine": 49,
       "speaker": "Pacifica",
       "text": "We don't climb over. First, a proper entrance.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|49|gideon",
-      "script": "chapter_3/yard",
-      "language": "english",
-      "sourceLine": 49,
-      "speaker": "Gideon",
-      "text": "You said that before I did. This day keeps getting stranger.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/yard|51|narrator",
+      "key": "english|chapter_3/yard|51|gideon",
       "script": "chapter_3/yard",
       "language": "english",
       "sourceLine": 51,
-      "speaker": "Narrator",
-      "text": "Pacifica straightens and brushes off her knees with exaggerated dignity. The main gate has an ordinary latch. Beyond it, a boarded path leads between the stacks toward the mill's outer wall.",
+      "speaker": "Gideon",
+      "text": "You said that before I did. This day keeps getting stranger.",
       "status": "pending"
     },
     {
@@ -3945,142 +4206,160 @@
       "language": "english",
       "sourceLine": 53,
       "speaker": "Narrator",
+      "text": "Pacifica straightens and brushes off her knees with exaggerated dignity. The main gate has an ordinary latch. Beyond it, a boarded path leads between the stacks toward the mill's outer wall.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/yard|55|narrator",
+      "script": "chapter_3/yard",
+      "language": "english",
+      "sourceLine": 55,
+      "speaker": "Narrator",
       "text": "At the first turn, a wooden arrow with no lettering is nailed to a post. A second, equally blank arrow is visible by the wall. Both point along the path.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|55|gideon",
+      "key": "english|chapter_3/yard|57|gideon",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 55,
+      "sourceLine": 57,
       "speaker": "Gideon",
       "text": "The main gate is still where it should be. We can see the road from here without turning any corners.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|57|narrator",
+      "key": "english|chapter_3/yard|59|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 57,
+      "sourceLine": 59,
       "speaker": "Narrator",
       "text": "Pacifica looks back and notes the red fire cabinet by the entrance. A bicycle passes along the road. The ordinary movement beyond the mesh reassures her more than she wants to admit.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|59|pacifica",
+      "key": "english|chapter_3/yard|61|pacifica",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 59,
+      "sourceLine": 61,
       "speaker": "Pacifica",
       "text": "Is anyone here? We're asking about the path to the road!",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|62|narrator",
+      "key": "english|chapter_3/yard|64|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 62,
+      "sourceLine": 64,
       "speaker": "Narrator",
       "text": "A single knock answers from the mill. Pacifica flinches and immediately pretends to adjust her shoulder strap. Gideon looks from her hand to the empty windows.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|65|pacifica",
+      "key": "english|chapter_3/yard|67|pacifica",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 65,
+      "sourceLine": 67,
       "speaker": "Pacifica",
       "text": "Boards. Drying out in the sun.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|67|gideon",
+      "key": "english|chapter_3/yard|69|gideon",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 67,
+      "sourceLine": 69,
       "speaker": "Gideon",
       "text": "We'll write that down as a possibility.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|69|narrator",
+      "key": "english|chapter_3/yard|71|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 69,
+      "sourceLine": 71,
       "speaker": "Narrator",
       "text": "They walk to the wall. From here, the small gate should be directly behind them. Now two stacks stand between them and it, although they only went around one.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|71|pacifica",
+      "key": "english|chapter_3/yard|73|pacifica",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 71,
+      "sourceLine": 73,
       "speaker": "Pacifica",
       "text": "Did we turn too soon?",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|74|gideon",
+      "key": "english|chapter_3/yard|76|gideon",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 74,
+      "sourceLine": 76,
       "speaker": "Gideon",
       "text": "No. Look at the arrow.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|76|narrator",
+      "key": "english|chapter_3/yard|78|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 76,
+      "sourceLine": 78,
       "speaker": "Narrator",
       "text": "The wooden point on the wall faces back toward the gate. The heads of its two nails are still horizontal, with no marks showing that anything rotated around them.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|78|pacifica",
+      "key": "english|chapter_3/yard|80|pacifica",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 78,
+      "sourceLine": 80,
       "speaker": "Pacifica",
       "text": "Did you see it turn?",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|80|gideon",
+      "key": "english|chapter_3/yard|82|gideon",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 80,
+      "sourceLine": 82,
       "speaker": "Gideon",
       "text": "No. I saw where it pointed before. Those are different things for now.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|82|narrator",
+      "key": "english|chapter_3/yard|84|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 82,
+      "sourceLine": 84,
       "speaker": "Narrator",
       "text": "Pacifica sketches both positions in her notebook without adding an explanation. A shoe scrapes behind the nearest stack. She snaps the notebook shut and turns.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|84|wendy",
+      "key": "english|chapter_3/yard|86|wendy",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 84,
+      "sourceLine": 86,
       "speaker": "Wendy",
       "text": "If you're selling windows, half of these are already smashed. You're late.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/yard|86|narrator",
+      "key": "english|chapter_3/yard|88|narrator",
       "script": "chapter_3/yard",
       "language": "english",
-      "sourceLine": 86,
+      "sourceLine": 88,
       "speaker": "Narrator",
-      "text": "A red-haired young woman lounges on a low stack, her boots braced against the boards beside it. The strap of a dark canvas bag runs over her shoulder. She looks at them without the slightest wish to get up.",
+      "text": "A red-haired young woman lounges on a low stack, her boots braced against the boards beside it.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/yard|90|narrator",
+      "script": "chapter_3/yard",
+      "language": "english",
+      "sourceLine": 90,
+      "speaker": "Narrator",
+      "text": "The strap of a dark canvas bag runs over her shoulder. She looks at them without the slightest wish to get up.",
       "status": "pending"
     },
     {
@@ -4494,16 +4773,16 @@
       "language": "english",
       "sourceLine": 14,
       "speaker": "Narrator",
-      "text": "She deliberately leaves the accusation unanswered. Pacifica notices, but pushing harder now would be pointless: Wendy has shut down. Gideon shows her the notebook, suggesting they keep the question until they have facts.",
+      "text": "She deliberately leaves the accusation unanswered.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/approach_direct|16|pacifica",
+      "key": "english|chapter_3/approach_direct|16|narrator",
       "script": "chapter_3/approach_direct",
       "language": "english",
       "sourceLine": 16,
-      "speaker": "Pacifica",
-      "text": "I wouldn't believe a promise to answer properly anyway.",
+      "speaker": "Narrator",
+      "text": "Pacifica notices, but pushing harder now would be pointless: Wendy has shut down.",
       "status": "pending"
     },
     {
@@ -4511,6 +4790,24 @@
       "script": "chapter_3/approach_direct",
       "language": "english",
       "sourceLine": 18,
+      "speaker": "Narrator",
+      "text": "Gideon shows her the notebook, suggesting they keep the question until they have facts.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/approach_direct|20|pacifica",
+      "script": "chapter_3/approach_direct",
+      "language": "english",
+      "sourceLine": 20,
+      "speaker": "Pacifica",
+      "text": "I wouldn't believe a promise to answer properly anyway.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/approach_direct|22|narrator",
+      "script": "chapter_3/approach_direct",
+      "language": "english",
+      "sourceLine": 22,
       "speaker": "Narrator",
       "text": "Gideon shifts Pacifica slightly with his elbow, clearing the narrow passage. Wendy notices, gives a crooked smile, and walks toward the outer wall. Nobody closes the distance between them.",
       "status": "pending"
@@ -4611,70 +4908,70 @@
       "language": "english",
       "sourceLine": 2,
       "speaker": "Narrator",
-      "text": "Gideon closes the notebook. Pacifica struggles to hold back her next question and steps toward the post. They wait. Wendy pointedly settles into a more comfortable position, but she no longer closes her eyes.",
+      "text": "Gideon closes the notebook. Pacifica struggles to hold back her next question and steps toward the post.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/approach_wait|4|wendy",
+      "key": "english|chapter_3/approach_wait|4|narrator",
       "script": "chapter_3/approach_wait",
       "language": "english",
       "sourceLine": 4,
+      "speaker": "Narrator",
+      "text": "They wait. Wendy pointedly settles into a more comfortable position, but she no longer closes her eyes.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/approach_wait|6|wendy",
+      "script": "chapter_3/approach_wait",
+      "language": "english",
+      "sourceLine": 6,
       "speaker": "Wendy",
       "text": "Well? Investigation over?",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/approach_wait|6|gideon",
+      "key": "english|chapter_3/approach_wait|8|gideon",
       "script": "chapter_3/approach_wait",
       "language": "english",
-      "sourceLine": 6,
+      "sourceLine": 8,
       "speaker": "Gideon",
       "text": "We'll look at the wall now. We're done asking you.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/approach_wait|8|narrator",
+      "key": "english|chapter_3/approach_wait|10|narrator",
       "script": "chapter_3/approach_wait",
       "language": "english",
-      "sourceLine": 8,
+      "sourceLine": 10,
       "speaker": "Narrator",
       "text": "He takes two steps. Canvas rustles behind him, then Wendy is on the ground. Pacifica turns too quickly and hides a satisfied smile.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/approach_wait|10|wendy",
+      "key": "english|chapter_3/approach_wait|12|wendy",
       "script": "chapter_3/approach_wait",
       "language": "english",
-      "sourceLine": 10,
+      "sourceLine": 12,
       "speaker": "Wendy",
       "text": "You can't go there on your own. You'll get stuck, then I'll have to hear all about who let you in.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/approach_wait|13|pacifica",
+      "key": "english|chapter_3/approach_wait|15|pacifica",
       "script": "chapter_3/approach_wait",
       "language": "english",
-      "sourceLine": 13,
+      "sourceLine": 15,
       "speaker": "Pacifica",
       "text": "Why, can you get stuck there?",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/approach_wait|15|wendy",
-      "script": "chapter_3/approach_wait",
-      "language": "english",
-      "sourceLine": 15,
-      "speaker": "Wendy",
-      "text": "Between the boards, genius. Come on already.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/approach_wait|17|narrator",
+      "key": "english|chapter_3/approach_wait|17|wendy",
       "script": "chapter_3/approach_wait",
       "language": "english",
       "sourceLine": 17,
-      "speaker": "Narrator",
-      "text": "Pacifica looks at the passage, wide enough for two people to pass each other. It's a weak explanation. But now one thing is clear: Wendy cares more about where they go than how many questions they ask.",
+      "speaker": "Wendy",
+      "text": "Between the boards, genius. Come on already.",
       "status": "pending"
     },
     {
@@ -4682,6 +4979,24 @@
       "script": "chapter_3/approach_wait",
       "language": "english",
       "sourceLine": 19,
+      "speaker": "Narrator",
+      "text": "Pacifica looks at the passage, wide enough for two people to pass each other. It's a weak explanation.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/approach_wait|21|narrator",
+      "script": "chapter_3/approach_wait",
+      "language": "english",
+      "sourceLine": 21,
+      "speaker": "Narrator",
+      "text": "But now one thing is clear: Wendy cares more about where they go than how many questions they ask.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/approach_wait|23|narrator",
+      "script": "chapter_3/approach_wait",
+      "language": "english",
+      "sourceLine": 23,
       "speaker": "Narrator",
       "text": "Gideon doesn't comment on how quickly she found a reason to get up. He simply lets her lead. Wendy heads for the wall, still acting as though the whole thing is unbearably tedious.",
       "status": "pending"
@@ -4719,275 +5034,284 @@
       "language": "english",
       "sourceLine": 17,
       "speaker": "Narrator",
-      "text": "She answers while watching the gap at the bottom. Gideon stretches the tape measure from the pipe to the doorframe. Just under two metres. Pacifica writes down the number and sketches the wall's right angle beside it.",
+      "text": "She answers while watching the gap at the bottom. Gideon stretches the tape measure from the pipe to the doorframe.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|19|wendy",
+      "key": "english|chapter_3/waymarks|19|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
       "sourceLine": 19,
+      "speaker": "Narrator",
+      "text": "Just under two metres. Pacifica writes down the number and sketches the wall's right angle beside it.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/waymarks|21|wendy",
+      "script": "chapter_3/waymarks",
+      "language": "english",
+      "sourceLine": 21,
       "speaker": "Wendy",
       "text": "Are you seriously going to measure the whole yard?",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|22|gideon",
+      "key": "english|chapter_3/waymarks|24|gideon",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 22,
+      "sourceLine": 24,
       "speaker": "Gideon",
       "text": "If it holds still, we'll finish sooner.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|24|narrator",
+      "key": "english|chapter_3/waymarks|26|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 24,
+      "sourceLine": 26,
       "speaker": "Narrator",
       "text": "Wendy nearly smiles, then holds it back. Pacifica places a small stone in front of the pipe and suggests walking to the corner while keeping the wall in sight.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|26|pacifica",
+      "key": "english|chapter_3/waymarks|28|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 26,
+      "sourceLine": 28,
       "speaker": "Pacifica",
       "text": "We stay together. There and back. No doors or turns until we've checked this.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|28|wendy",
+      "key": "english|chapter_3/waymarks|30|wendy",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 28,
+      "sourceLine": 30,
       "speaker": "Wendy",
       "text": "Should I put my hand up if I want to leave?",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|31|pacifica",
+      "key": "english|chapter_3/waymarks|33|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 31,
+      "sourceLine": 33,
       "speaker": "Pacifica",
       "text": "Enough. I'm not ordering you around. I'm trying to work out where we're standing.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|33|narrator",
+      "key": "english|chapter_3/waymarks|35|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 33,
+      "sourceLine": 35,
       "speaker": "Narrator",
       "text": "Gideon walks last, counting his steps. It takes eleven to reach the corner. On the way back he touches the pipe at eight. The stone is still lying in front of it.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|35|gideon",
+      "key": "english|chapter_3/waymarks|37|gideon",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 35,
+      "sourceLine": 37,
       "speaker": "Gideon",
       "text": "My steps were the same length.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|37|wendy",
+      "key": "english|chapter_3/waymarks|39|wendy",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 37,
+      "sourceLine": 39,
       "speaker": "Wendy",
       "text": "Maybe you grew on the way.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|39|narrator",
+      "key": "english|chapter_3/waymarks|41|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 39,
+      "sourceLine": 41,
       "speaker": "Narrator",
       "text": "He doesn't answer. He hooks the tape measure onto the pipe again. The door is now more than three metres away. Pacifica takes the other end and checks the hook and the tension.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|42|pacifica",
+      "key": "english|chapter_3/waymarks|44|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 42,
+      "sourceLine": 44,
       "speaker": "Pacifica",
       "text": "We're not moving it. And nobody's rebuilding the wall.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|44|narrator",
+      "key": "english|chapter_3/waymarks|46|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 44,
+      "sourceLine": 46,
       "speaker": "Narrator",
       "text": "The bricks between the pipe and the door look intact. No widening crack, no new stretch of masonry. That makes the unbroken wall feel worse than any visible hole.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|46|pacifica",
+      "key": "english|chapter_3/waymarks|48|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 46,
+      "sourceLine": 48,
       "speaker": "Pacifica",
       "text": "We haven't just lost our way. The distance changes even while we're standing next to it. We don't know why yet.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|48|gideon",
+      "key": "english|chapter_3/waymarks|50|gideon",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 48,
+      "sourceLine": 50,
       "speaker": "Gideon",
       "text": "And that doesn't make the arrow a useful guide. It could be turning along with everything else.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|50|narrator",
+      "key": "english|chapter_3/waymarks|52|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 50,
+      "sourceLine": 52,
       "speaker": "Narrator",
       "text": "Pacifica erases an arrow she had already drawn beside the door. It leaves a smudge. Gideon takes the pencil from her fingers before she rubs through the paper.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|52|pacifica",
+      "key": "english|chapter_3/waymarks|54|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 52,
+      "sourceLine": 54,
       "speaker": "Pacifica",
       "text": "I get it. I just really hate it when a place lies better than a person.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|54|wendy",
+      "key": "english|chapter_3/waymarks|56|wendy",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 54,
+      "sourceLine": 56,
       "speaker": "Wendy",
       "text": "Fine. Funny tape measure. Come back tomorrow with another one.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|56|pacifica",
+      "key": "english|chapter_3/waymarks|58|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 56,
+      "sourceLine": 58,
       "speaker": "Pacifica",
       "text": "You saw it yourself.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|59|wendy",
+      "key": "english|chapter_3/waymarks|61|wendy",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 59,
+      "sourceLine": 61,
       "speaker": "Wendy",
       "text": "I saw you fussing around by a wall. And wasting time.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|61|narrator",
+      "key": "english|chapter_3/waymarks|63|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 61,
+      "sourceLine": 63,
       "speaker": "Narrator",
       "text": "She reaches toward the door handle, then stops herself. Gideon looks at her. Wendy looks away first and irritably kicks a small wood chip.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|63|gideon",
+      "key": "english|chapter_3/waymarks|65|gideon",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 63,
+      "sourceLine": 65,
       "speaker": "Gideon",
       "text": "Where were you about to go?",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|65|wendy",
+      "key": "english|chapter_3/waymarks|67|wendy",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 65,
+      "sourceLine": 67,
       "speaker": "Wendy",
       "text": "Somewhere nobody asks questions. Didn't work out.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|67|narrator",
+      "key": "english|chapter_3/waymarks|69|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 67,
+      "sourceLine": 69,
       "speaker": "Narrator",
       "text": "Pacifica turns toward the arrow. It points at the corner again. This time Gideon also catches the previous position: a second ago, its point faced the door.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|69|pacifica",
+      "key": "english|chapter_3/waymarks|71|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 69,
+      "sourceLine": 71,
       "speaker": "Pacifica",
       "text": "We don't follow it. It's already changed its mind twice about where to send us.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|71|narrator",
+      "key": "english|chapter_3/waymarks|73|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 71,
+      "sourceLine": 73,
       "speaker": "Narrator",
       "text": "Wendy rubs a hand over her face. For a second her eyes are completely clear, without the lazy smirk. Then she steps away from the handle, making room.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|73|gideon",
+      "key": "english|chapter_3/waymarks|75|gideon",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 73,
+      "sourceLine": 75,
       "speaker": "Gideon",
       "text": "We need a test we can't blame on stride length. A mark, a sound, or an old building plan. One at a time, without wandering at random.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|75|pacifica",
+      "key": "english|chapter_3/waymarks|77|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 75,
+      "sourceLine": 77,
       "speaker": "Pacifica",
       "text": "If we open the door, we look from the threshold first. We don't run after the first sound.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|77|narrator",
+      "key": "english|chapter_3/waymarks|79|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 77,
+      "sourceLine": 79,
       "speaker": "Narrator",
       "text": "Wendy doesn't argue with that one rule. She merely shifts the heavy strap with her shoulder, where it has creased her shirt, and looks again at the bottom edge of the door.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|79|pacifica",
+      "key": "english|chapter_3/waymarks|81|pacifica",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 79,
+      "sourceLine": 81,
       "speaker": "Pacifica",
       "text": "We'll find out what stays in place, at least. Then we'll decide where we can go.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/waymarks|83|narrator",
+      "key": "english|chapter_3/waymarks|85|narrator",
       "script": "chapter_3/waymarks",
       "language": "english",
-      "sourceLine": 83,
+      "sourceLine": 85,
       "speaker": "Narrator",
       "text": "Something heavy slides slowly behind the door. Wendy takes her foot off the threshold. A pale streak of dust remains on the boards, although nobody outside has moved.",
       "status": "pending"
@@ -5052,7 +5376,16 @@
       "language": "english",
       "sourceLine": 15,
       "speaker": "Narrator",
-      "text": "Through the opening they see an empty mill floor and two parallel tracks once used to roll logs along. Wendy braces the door with her boot. They approach the threshold together without crossing the strip of dust.",
+      "text": "Through the opening they see an empty mill floor and two parallel tracks once used to roll logs along.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/test_mark|17|narrator",
+      "script": "chapter_3/test_mark",
+      "language": "english",
+      "sourceLine": 17,
+      "speaker": "Narrator",
+      "text": "Wendy braces the door with her boot. They approach the threshold together without crossing the strip of dust.",
       "status": "pending"
     },
     {
@@ -5079,34 +5412,34 @@
       "language": "english",
       "sourceLine": 6,
       "speaker": "Narrator",
-      "text": "A long scrape comes from inside. It doesn't repeat the taps: something is dragging across the floor. The sound starts right behind the door and ends impossibly far away, as if there were an entire street inside.",
+      "text": "A long scrape comes from inside. It doesn't repeat the taps: something is dragging across the floor.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_listen|9|gideon",
+      "key": "english|chapter_3/test_listen|8|narrator",
       "script": "chapter_3/test_listen",
       "language": "english",
-      "sourceLine": 9,
+      "sourceLine": 8,
+      "speaker": "Narrator",
+      "text": "The sound starts right behind the door and ends impossibly far away, as if there were an entire street inside.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/test_listen|11|gideon",
+      "script": "chapter_3/test_listen",
+      "language": "english",
+      "sourceLine": 11,
       "speaker": "Gideon",
       "text": "The boards carry the vibration here. But the distance we hear doesn't match the size of the building.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_listen|11|pacifica",
-      "script": "chapter_3/test_listen",
-      "language": "english",
-      "sourceLine": 11,
-      "speaker": "Pacifica",
-      "text": "So we can't choose a route by sound either.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/test_listen|13|narrator",
+      "key": "english|chapter_3/test_listen|13|pacifica",
       "script": "chapter_3/test_listen",
       "language": "english",
       "sourceLine": 13,
-      "speaker": "Narrator",
-      "text": "He nods and takes his hand away. His fingers remain tense for a second. The test gave them a useful answer, but the close scraping behind the thin door clearly hasn't reassured him.",
+      "speaker": "Pacifica",
+      "text": "So we can't choose a route by sound either.",
       "status": "pending"
     },
     {
@@ -5115,7 +5448,25 @@
       "language": "english",
       "sourceLine": 15,
       "speaker": "Narrator",
-      "text": "Pacifica eases the door open. Ahead is an empty mill floor, two old log tracks, and motionless boards. Wendy holds the door with her boot, staring inside irritably. All three stop at the dusty threshold.",
+      "text": "He nods and takes his hand away. His fingers remain tense for a second. The test gave them a useful answer, but the close scraping behind the thin door clearly hasn't reassured him.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/test_listen|17|narrator",
+      "script": "chapter_3/test_listen",
+      "language": "english",
+      "sourceLine": 17,
+      "speaker": "Narrator",
+      "text": "Pacifica eases the door open. Ahead is an empty mill floor, two old log tracks, and motionless boards.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/test_listen|19|narrator",
+      "script": "chapter_3/test_listen",
+      "language": "english",
+      "sourceLine": 19,
+      "speaker": "Narrator",
+      "text": "Wendy holds the door with her boot, staring inside irritably. All three stop at the dusty threshold.",
       "status": "pending"
     },
     {
@@ -5124,68 +5475,95 @@
       "language": "english",
       "sourceLine": 2,
       "speaker": "Narrator",
-      "text": "An evacuation plan hangs on the wall beneath cloudy plastic. Pacifica wipes the dust away with her sleeve. The plan shows a short passage along the mill floor; two log tracks should lie beyond the door.",
+      "text": "An evacuation plan hangs on the wall beneath cloudy plastic. Pacifica wipes the dust away with her sleeve.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_checkplans|4|wendy",
+      "key": "english|chapter_3/test_checkplans|4|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "english",
       "sourceLine": 4,
+      "speaker": "Narrator",
+      "text": "The plan shows a short passage along the mill floor; two log tracks should lie beyond the door.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/test_checkplans|6|wendy",
+      "script": "chapter_3/test_checkplans",
+      "language": "english",
+      "sourceLine": 6,
       "speaker": "Wendy",
       "text": "That plan is older than both of you. Who knows if anyone ever updated it.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_checkplans|6|gideon",
+      "key": "english|chapter_3/test_checkplans|8|gideon",
       "script": "chapter_3/test_checkplans",
       "language": "english",
-      "sourceLine": 6,
+      "sourceLine": 8,
       "speaker": "Gideon",
       "text": "The window's in place, though. And the pipe. Let's check a third thing.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_checkplans|8|narrator",
+      "key": "english|chapter_3/test_checkplans|10|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "english",
-      "sourceLine": 8,
+      "sourceLine": 10,
       "speaker": "Narrator",
-      "text": "Pacifica eases the door open. The tracks are visible. According to the plan, two bays separate them from the nearest window. She counts the posts: three. There's no room to miss one in a space this narrow.",
+      "text": "Pacifica eases the door open. The tracks are visible.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_checkplans|11|pacifica",
+      "key": "english|chapter_3/test_checkplans|12|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "english",
-      "sourceLine": 11,
+      "sourceLine": 12,
+      "speaker": "Narrator",
+      "text": "According to the plan, two bays separate them from the nearest window. She counts the posts: three.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/test_checkplans|14|narrator",
+      "script": "chapter_3/test_checkplans",
+      "language": "english",
+      "sourceLine": 14,
+      "speaker": "Narrator",
+      "text": "There's no room to miss one in a space this narrow.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/test_checkplans|17|pacifica",
+      "script": "chapter_3/test_checkplans",
+      "language": "english",
+      "sourceLine": 17,
       "speaker": "Pacifica",
       "text": "The plan shows the exits. For now, we don't trust the lengths of the passages.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_checkplans|13|gideon",
+      "key": "english|chapter_3/test_checkplans|19|gideon",
       "script": "chapter_3/test_checkplans",
       "language": "english",
-      "sourceLine": 13,
+      "sourceLine": 19,
       "speaker": "Gideon",
       "text": "And we'll check the emergency exit with our eyes first. A door on a drawing doesn't promise a street.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_checkplans|15|narrator",
+      "key": "english|chapter_3/test_checkplans|21|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "english",
-      "sourceLine": 15,
+      "sourceLine": 21,
       "speaker": "Narrator",
       "text": "Wendy nods too quickly, as though that were obvious. Pacifica notices her agreement but can't tell whether it concerns the old plan or something Wendy has already seen here.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/test_checkplans|17|narrator",
+      "key": "english|chapter_3/test_checkplans|23|narrator",
       "script": "chapter_3/test_checkplans",
       "language": "english",
-      "sourceLine": 17,
+      "sourceLine": 23,
       "speaker": "Narrator",
       "text": "She copies the positions of the doors. Wendy holds the door with her boot, glancing impatiently over her shoulder. They gather at the dusty threshold, facing the empty mill floor.",
       "status": "pending"
@@ -5295,106 +5673,106 @@
       "language": "english",
       "sourceLine": 39,
       "speaker": "Narrator",
-      "text": "The doorframe shifts with a bang behind them. The door swings inward, straight at Wendy. She jumps clear of the threshold; Gideon and Pacifica follow, clearing the narrow entrance. It's now several paces away instead of one.",
+      "text": "The doorframe shifts with a bang behind them. The door swings inward, straight at Wendy.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|42|pacifica",
+      "key": "english|chapter_3/cutting_floor|41|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 42,
+      "sourceLine": 41,
+      "speaker": "Narrator",
+      "text": "She jumps clear of the threshold; Gideon and Pacifica follow, clearing the narrow entrance.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/cutting_floor|43|narrator",
+      "script": "chapter_3/cutting_floor",
+      "language": "english",
+      "sourceLine": 43,
+      "speaker": "Narrator",
+      "text": "It's now several paces away instead of one.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/cutting_floor|46|pacifica",
+      "script": "chapter_3/cutting_floor",
+      "language": "english",
+      "sourceLine": 46,
       "speaker": "Pacifica",
       "text": "Do you both see...",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|44|narrator",
+      "key": "english|chapter_3/cutting_floor|48|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 44,
+      "sourceLine": 48,
       "speaker": "Narrator",
       "text": "The nearest log rolls over its stop. A dull impact travels through their soles. Pacifica steps back sharply and catches her heel on a rail that wasn't behind her a second ago.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|46|gideon",
+      "key": "english|chapter_3/cutting_floor|50|gideon",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 46,
+      "sourceLine": 50,
       "speaker": "Gideon",
       "text": "Don't go right. The floor is folding there.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|49|pacifica",
+      "key": "english|chapter_3/cutting_floor|53|pacifica",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 49,
+      "sourceLine": 53,
       "speaker": "Pacifica",
       "text": "I see it. I was checking another way.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|51|gideon",
+      "key": "english|chapter_3/cutting_floor|55|gideon",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 51,
+      "sourceLine": 55,
       "speaker": "Gideon",
       "text": "Check this one. Where there are still boards.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|53|narrator",
+      "key": "english|chapter_3/cutting_floor|57|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 53,
+      "sourceLine": 57,
       "speaker": "Narrator",
       "text": "He points to a narrow space beside the wall. Pacifica nods; she doesn't feel like arguing. Wendy is already stepping off the nearest rail. The bored look leaves her face.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|56|wendy",
+      "key": "english|chapter_3/cutting_floor|60|wendy",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 56,
+      "sourceLine": 60,
       "speaker": "Wendy",
       "text": "To the wall. Don't jump into the middle. There's nothing under that flooring.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|59|pacifica",
+      "key": "english|chapter_3/cutting_floor|63|pacifica",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 59,
+      "sourceLine": 63,
       "speaker": "Pacifica",
       "text": "You could've said that before we came in!",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|61|wendy",
-      "script": "chapter_3/cutting_floor",
-      "language": "english",
-      "sourceLine": 61,
-      "speaker": "Wendy",
-      "text": "It was holding up then.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/cutting_floor|63|narrator",
-      "script": "chapter_3/cutting_floor",
-      "language": "english",
-      "sourceLine": 63,
-      "speaker": "Narrator",
-      "text": "Wendy doesn't add a joke. She picks up a broken board and lays it across the dark gap. Its far end drops immediately, though the near end stays beneath her boot.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/cutting_floor|65|gideon",
+      "key": "english|chapter_3/cutting_floor|65|wendy",
       "script": "chapter_3/cutting_floor",
       "language": "english",
       "sourceLine": 65,
-      "speaker": "Gideon",
-      "text": "It isn't a hole. The two edges are moving apart.",
+      "speaker": "Wendy",
+      "text": "It was holding up then.",
       "status": "pending"
     },
     {
@@ -5403,16 +5781,16 @@
       "language": "english",
       "sourceLine": 67,
       "speaker": "Narrator",
-      "text": "Wendy lifts the broken board. It's intact, but now lies diagonally, as though someone moved its far end. No draft comes from the gap; they simply can't make out the supports beneath the floor.",
+      "text": "Wendy doesn't add a joke. She picks up a broken board and lays it across the dark gap. Its far end drops immediately, though the near end stays beneath her boot.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|69|pacifica",
+      "key": "english|chapter_3/cutting_floor|69|gideon",
       "script": "chapter_3/cutting_floor",
       "language": "english",
       "sourceLine": 69,
-      "speaker": "Pacifica",
-      "text": "Don't lean over it. We don't know how deep it goes.",
+      "speaker": "Gideon",
+      "text": "It isn't a hole. The two edges are moving apart.",
       "status": "pending"
     },
     {
@@ -5421,43 +5799,43 @@
       "language": "english",
       "sourceLine": 71,
       "speaker": "Narrator",
+      "text": "Wendy lifts the broken board. It's intact, but now lies diagonally, as though someone moved its far end. No draft comes from the gap; they simply can't make out the supports beneath the floor.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/cutting_floor|73|pacifica",
+      "script": "chapter_3/cutting_floor",
+      "language": "english",
+      "sourceLine": 73,
+      "speaker": "Pacifica",
+      "text": "Don't lean over it. We don't know how deep it goes.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/cutting_floor|75|narrator",
+      "script": "chapter_3/cutting_floor",
+      "language": "english",
+      "sourceLine": 75,
+      "speaker": "Narrator",
       "text": "A crack runs the length of the mill. Pacifica looks up: a heavy chain above the aisle stretches almost horizontal, as though the walls are slowly being pulled apart.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|74|pacifica",
+      "key": "english|chapter_3/cutting_floor|78|pacifica",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 74,
+      "sourceLine": 78,
       "speaker": "Pacifica",
       "text": "Back. There's nothing else we need to check in here.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|76|narrator",
-      "script": "chapter_3/cutting_floor",
-      "language": "english",
-      "sourceLine": 76,
-      "speaker": "Narrator",
-      "text": "The entrance remains open. But three logs now lie between it and Gideon instead of one. The nearest rolls slowly across level flooring, peeling a long pale shaving from the boards.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/cutting_floor|78|narrator",
-      "script": "chapter_3/cutting_floor",
-      "language": "english",
-      "sourceLine": 78,
-      "speaker": "Narrator",
-      "text": "Gideon checks beneath the first log and immediately backs away. It pins a loose bracket to the floor; the iron crumples like thin wire. They couldn't even crawl through now.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/cutting_floor|80|wendy",
+      "key": "english|chapter_3/cutting_floor|80|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "english",
       "sourceLine": 80,
-      "speaker": "Wendy",
-      "text": "Too late for back. Stairs on the left. There's a walkway along the wall.",
+      "speaker": "Narrator",
+      "text": "The entrance remains open. But three logs now lie between it and Gideon instead of one. The nearest rolls slowly across level flooring, peeling a long pale shaving from the boards.",
       "status": "pending"
     },
     {
@@ -5466,25 +5844,52 @@
       "language": "english",
       "sourceLine": 82,
       "speaker": "Narrator",
+      "text": "Gideon checks beneath the first log and immediately backs away. It pins a loose bracket to the floor; the iron crumples like thin wire. They couldn't even crawl through now.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/cutting_floor|84|wendy",
+      "script": "chapter_3/cutting_floor",
+      "language": "english",
+      "sourceLine": 84,
+      "speaker": "Wendy",
+      "text": "Too late for back. Stairs on the left. There's a walkway along the wall.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/cutting_floor|86|narrator",
+      "script": "chapter_3/cutting_floor",
+      "language": "english",
+      "sourceLine": 86,
+      "speaker": "Narrator",
       "text": "Pacifica looks from the stairs to Wendy. Wendy is already heading that way, holding her bag against her side. The black strip under the floor changes direction after her.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|84|gideon",
+      "key": "english|chapter_3/cutting_floor|88|gideon",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 84,
+      "sourceLine": 88,
       "speaker": "Gideon",
       "text": "One at a time. Step where I step.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/cutting_floor|88|narrator",
+      "key": "english|chapter_3/cutting_floor|92|narrator",
       "script": "chapter_3/cutting_floor",
       "language": "english",
-      "sourceLine": 88,
+      "sourceLine": 92,
       "speaker": "Narrator",
-      "text": "Gideon tests the edge of a board and shifts his weight. Pacifica follows with her arms out for balance. Behind them, a metal stop tears loose and strikes a closed window frame.",
+      "text": "Gideon tests the edge of a board and shifts his weight. Pacifica follows with her arms out for balance.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/cutting_floor|94|narrator",
+      "script": "chapter_3/cutting_floor",
+      "language": "english",
+      "sourceLine": 94,
+      "speaker": "Narrator",
+      "text": "Behind them, a metal stop tears loose and strikes a closed window frame.",
       "status": "pending"
     },
     {
@@ -5772,7 +6177,16 @@
       "language": "english",
       "sourceLine": 88,
       "speaker": "Narrator",
-      "text": "They edge across. On the concrete, Wendy finally frees her caught bag. A short loop slips from a split side pocket, followed by a dull copper edge.",
+      "text": "They edge across. On the concrete, Wendy finally frees her caught bag.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/service_walk|90|narrator",
+      "script": "chapter_3/service_walk",
+      "language": "english",
+      "sourceLine": 90,
+      "speaker": "Narrator",
+      "text": "A short loop slips from a split side pocket, followed by a dull copper edge.",
       "status": "pending"
     },
     {
@@ -6105,7 +6519,16 @@
       "language": "english",
       "sourceLine": 99,
       "speaker": "Narrator",
-      "text": "Wendy lifts the bag slowly with both hands and holds it against her stomach. A low scrape travels beneath the concrete. Below, the dark strip reaches the foot of the stairs and stays there, covering the last bottom step.",
+      "text": "Wendy lifts the bag slowly with both hands and holds it against her stomach. A low scrape travels beneath the concrete.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/bag|101|narrator",
+      "script": "chapter_3/bag",
+      "language": "english",
+      "sourceLine": 101,
+      "speaker": "Narrator",
+      "text": "Below, the dark strip reaches the foot of the stairs and stays there, covering the last bottom step.",
       "status": "pending"
     },
     {
@@ -6150,70 +6573,70 @@
       "language": "english",
       "sourceLine": 22,
       "speaker": "Narrator",
-      "text": "Wendy steps off the concrete without letting go of the bag. A distant log turns across the aisle. She stops at once. The log keeps moving, but the gap between it and the gate stops narrowing.",
+      "text": "Wendy steps off the concrete without letting go of the bag. A distant log turns across the aisle.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|25|gideon",
+      "key": "english|chapter_3/crossing|24|narrator",
       "script": "chapter_3/crossing",
       "language": "english",
-      "sourceLine": 25,
+      "sourceLine": 24,
+      "speaker": "Narrator",
+      "text": "She stops at once. The log keeps moving, but the gap between it and the gate stops narrowing.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/crossing|27|gideon",
+      "script": "chapter_3/crossing",
+      "language": "english",
+      "sourceLine": 27,
       "speaker": "Gideon",
       "text": "Movement changes the distance. But something that's already rolling won't stop on its own.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|27|narrator",
+      "key": "english|chapter_3/crossing|29|narrator",
       "script": "chapter_3/crossing",
       "language": "english",
-      "sourceLine": 27,
+      "sourceLine": 29,
       "speaker": "Narrator",
       "text": "Above them, a chain with an empty grapple pulls taut. The grapple swings into a post. Rust spills from its bracket, making that side of the wall unsafe to hold on to.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|29|gideon",
+      "key": "english|chapter_3/crossing|31|gideon",
       "script": "chapter_3/crossing",
       "language": "english",
-      "sourceLine": 29,
+      "sourceLine": 31,
       "speaker": "Gideon",
       "text": "Stay out from under the grapple. If it breaks loose, it'll fall across the whole aisle.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|31|wendy",
+      "key": "english|chapter_3/crossing|33|wendy",
       "script": "chapter_3/crossing",
       "language": "english",
-      "sourceLine": 31,
+      "sourceLine": 33,
       "speaker": "Wendy",
       "text": "Heard you. I'm not dropping the bag. Watch everything else.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|33|narrator",
+      "key": "english|chapter_3/crossing|35|narrator",
       "script": "chapter_3/crossing",
       "language": "english",
-      "sourceLine": 33,
+      "sourceLine": 35,
       "speaker": "Narrator",
       "text": "He speaks quickly, watching both ends of the aisle. The usual drawl is gone from his voice. Pacifica notices and stops wasting breath arguing with Wendy.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|36|pacifica",
-      "script": "chapter_3/crossing",
-      "language": "english",
-      "sourceLine": 36,
-      "speaker": "Pacifica",
-      "text": "Get to the handle first. Then everybody out. Nobody tries to carry anything else away.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/crossing|38|narrator",
+      "key": "english|chapter_3/crossing|38|pacifica",
       "script": "chapter_3/crossing",
       "language": "english",
       "sourceLine": 38,
-      "speaker": "Narrator",
-      "text": "She squeezes between the railing and the end of a log, a hand's width from the wood. The board beneath her boot bends, but Pacifica doesn't jump: she slowly transfers her weight to a crossbeam.",
+      "speaker": "Pacifica",
+      "text": "Get to the handle first. Then everybody out. Nobody tries to carry anything else away.",
       "status": "pending"
     },
     {
@@ -6222,7 +6645,7 @@
       "language": "english",
       "sourceLine": 40,
       "speaker": "Narrator",
-      "text": "Gideon follows the same beam, holding a bolt in the wall. Wendy comes last. When the strap slips off her shoulder, she catches it with her elbow before the bag can swing.",
+      "text": "She squeezes between the railing and the end of a log, a hand's width from the wood.",
       "status": "pending"
     },
     {
@@ -6231,7 +6654,7 @@
       "language": "english",
       "sourceLine": 42,
       "speaker": "Narrator",
-      "text": "Halfway across, Gideon stops: a protruding nail has caught his trouser leg. He crouches, carefully frees the fabric, and gestures for Pacifica to continue. She waits until he's standing. Neither comments on the delay.",
+      "text": "The board beneath her boot bends, but Pacifica doesn't jump: she slowly transfers her weight to a crossbeam.",
       "status": "pending"
     },
     {
@@ -6240,16 +6663,16 @@
       "language": "english",
       "sourceLine": 44,
       "speaker": "Narrator",
-      "text": "Wendy watches over his shoulder, then steps onto the cleared beam. The usual comment about being slow never comes. She only checks whether there's room for another step.",
+      "text": "Gideon follows the same beam, holding a bolt in the wall. Wendy comes last. When the strap slips off her shoulder, she catches it with her elbow before the bag can swing.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|46|wendy",
+      "key": "english|chapter_3/crossing|46|narrator",
       "script": "chapter_3/crossing",
       "language": "english",
       "sourceLine": 46,
-      "speaker": "Wendy",
-      "text": "Gate. Now.",
+      "speaker": "Narrator",
+      "text": "Halfway across, Gideon stops: a protruding nail has caught his trouser leg.",
       "status": "pending"
     },
     {
@@ -6258,7 +6681,25 @@
       "language": "english",
       "sourceLine": 48,
       "speaker": "Narrator",
-      "text": "Pacifica pulls the upper handle with both hands. The gate reluctantly gives. Cold air smelling of damp earth rushes through the gap, and she almost laughs with relief.",
+      "text": "He crouches, carefully frees the fabric, and gestures for Pacifica to continue.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/crossing|50|narrator",
+      "script": "chapter_3/crossing",
+      "language": "english",
+      "sourceLine": 50,
+      "speaker": "Narrator",
+      "text": "She waits until he's standing. Neither comments on the delay.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/crossing|52|narrator",
+      "script": "chapter_3/crossing",
+      "language": "english",
+      "sourceLine": 52,
+      "speaker": "Narrator",
+      "text": "Wendy watches over his shoulder, then steps onto the cleared beam.",
       "status": "pending"
     },
     {
@@ -6267,16 +6708,16 @@
       "language": "english",
       "sourceLine": 54,
       "speaker": "Narrator",
-      "text": "Then metal strikes outside. The gate slides back toward her fingers. Pacifica snatches her hand away. The impact runs through the mill, shaking dust from above.",
+      "text": "The usual comment about being slow never comes. She only checks whether there's room for another step.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|56|gideon",
+      "key": "english|chapter_3/crossing|56|wendy",
       "script": "chapter_3/crossing",
       "language": "english",
       "sourceLine": 56,
-      "speaker": "Gideon",
-      "text": "The side rail's twisted. It'll slam shut again.",
+      "speaker": "Wendy",
+      "text": "Gate. Now.",
       "status": "pending"
     },
     {
@@ -6285,25 +6726,7 @@
       "language": "english",
       "sourceLine": 58,
       "speaker": "Narrator",
-      "text": "Pacifica looks at the landing behind them. A fallen board blocks the lower steps; they can't climb back up. She makes herself turn toward the gate, where there's still light.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/crossing|60|pacifica",
-      "script": "chapter_3/crossing",
-      "language": "english",
-      "sourceLine": 60,
-      "speaker": "Pacifica",
-      "text": "Wendy, once we start, don't change direction without warning. Even if you see another way out.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/crossing|62|wendy",
-      "script": "chapter_3/crossing",
-      "language": "english",
-      "sourceLine": 62,
-      "speaker": "Wendy",
-      "text": "Then talk fast. The beam under my feet is already moving.",
+      "text": "Pacifica pulls the upper handle with both hands. The gate reluctantly gives. Cold air smelling of damp earth rushes through the gap, and she almost laughs with relief.",
       "status": "pending"
     },
     {
@@ -6312,32 +6735,77 @@
       "language": "english",
       "sourceLine": 64,
       "speaker": "Narrator",
+      "text": "Then metal strikes outside. The gate slides back toward her fingers. Pacifica snatches her hand away. The impact runs through the mill, shaking dust from above.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/crossing|66|gideon",
+      "script": "chapter_3/crossing",
+      "language": "english",
+      "sourceLine": 66,
+      "speaker": "Gideon",
+      "text": "The side rail's twisted. It'll slam shut again.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/crossing|68|narrator",
+      "script": "chapter_3/crossing",
+      "language": "english",
+      "sourceLine": 68,
+      "speaker": "Narrator",
+      "text": "Pacifica looks at the landing behind them. A fallen board blocks the lower steps; they can't climb back up. She makes herself turn toward the gate, where there's still light.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/crossing|70|pacifica",
+      "script": "chapter_3/crossing",
+      "language": "english",
+      "sourceLine": 70,
+      "speaker": "Pacifica",
+      "text": "Wendy, once we start, don't change direction without warning. Even if you see another way out.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/crossing|72|wendy",
+      "script": "chapter_3/crossing",
+      "language": "english",
+      "sourceLine": 72,
+      "speaker": "Wendy",
+      "text": "Then talk fast. The beam under my feet is already moving.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/crossing|74|narrator",
+      "script": "chapter_3/crossing",
+      "language": "english",
+      "sourceLine": 74,
+      "speaker": "Narrator",
       "text": "Behind them, a stop tears loose with a crack. Two logs begin closing over the aisle. The black strip moves between the boards below, now stretching toward Wendy and the bag.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|67|pacifica",
+      "key": "english|chapter_3/crossing|77|pacifica",
       "script": "chapter_3/crossing",
       "language": "english",
-      "sourceLine": 67,
+      "sourceLine": 77,
       "speaker": "Pacifica",
       "text": "One pull won't be enough. We need to hold the gate or find a gap between the logs.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|69|gideon",
+      "key": "english|chapter_3/crossing|79|gideon",
       "script": "chapter_3/crossing",
       "language": "english",
-      "sourceLine": 69,
+      "sourceLine": 79,
       "speaker": "Gideon",
       "text": "And the bag can't swing. Everything moves farther each time.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/crossing|71|narrator",
+      "key": "english|chapter_3/crossing|81|narrator",
       "script": "chapter_3/crossing",
       "language": "english",
-      "sourceLine": 71,
+      "sourceLine": 81,
       "speaker": "Narrator",
       "text": "Wendy presses the bag against her side and looks at the narrow exit. This time she waits for someone to finish speaking. A new pale crack opens in the floor before the gate.",
       "status": "pending"
@@ -6600,169 +7068,169 @@
       "language": "english",
       "sourceLine": 14,
       "speaker": "Narrator",
-      "text": "Gideon stands nearby, listening to the crashing inside. His fingers are still tense, as though he's holding on to something. He straightens them one at a time and checks the outer wall for cracks.",
+      "text": "Gideon stands nearby, listening to the crashing inside. His fingers are still tense, as though he's holding on to something.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|17|pacifica",
+      "key": "english|chapter_3/night_gate|16|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 17,
+      "sourceLine": 16,
+      "speaker": "Narrator",
+      "text": "He straightens them one at a time and checks the outer wall for cracks.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|19|pacifica",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 19,
       "speaker": "Pacifica",
       "text": "Everybody's out. Good. Then farther from the wall.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|21|narrator",
+      "key": "english|chapter_3/night_gate|23|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 21,
+      "sourceLine": 23,
       "speaker": "Narrator",
       "text": "A long crack comes from the mill. Behind a cloudy window, a beam falls slowly. The frame pushes outward and hangs at an impossible angle. They move several more steps away.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|24|wendy",
+      "key": "english|chapter_3/night_gate|26|wendy",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 24,
+      "sourceLine": 26,
       "speaker": "Wendy",
       "text": "Don't bunch up in front of the door. If that gate comes loose, it'll come this way.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|26|narrator",
+      "key": "english|chapter_3/night_gate|28|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 26,
+      "sourceLine": 28,
       "speaker": "Narrator",
       "text": "Pacifica turns toward her, ready with a sharp answer, but only nods. Wendy checks her bag, then looks at the door. She looks angry and intensely focused.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|29|pacifica",
+      "key": "english|chapter_3/night_gate|31|pacifica",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 29,
+      "sourceLine": 31,
       "speaker": "Pacifica",
       "text": "Now you're going to show us the ravine where you found it.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|32|wendy",
+      "key": "english|chapter_3/night_gate|34|wendy",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 32,
+      "sourceLine": 34,
       "speaker": "Wendy",
       "text": "Now I'm getting away from this dump. I'll decide what to do with the thing on the way.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|34|pacifica",
+      "key": "english|chapter_3/night_gate|36|pacifica",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 34,
+      "sourceLine": 36,
       "speaker": "Pacifica",
       "text": "After what just happened, you're still...",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|37|gideon",
+      "key": "english|chapter_3/night_gate|39|gideon",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 37,
+      "sourceLine": 39,
       "speaker": "Gideon",
       "text": "Later. Find the road first.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|39|narrator",
+      "key": "english|chapter_3/night_gate|41|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 39,
+      "sourceLine": 41,
       "speaker": "Narrator",
-      "text": "He looks across the yard. Pacifica follows his gaze and slowly straightens. Beyond the gate there should be a gravel lane, a partly collapsed stack of lumber, and a gap in the fence leading to the road.",
+      "text": "He looks across the yard. Pacifica follows his gaze and slowly straightens.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|44|narrator",
+      "key": "english|chapter_3/night_gate|43|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 44,
+      "sourceLine": 43,
+      "speaker": "Narrator",
+      "text": "Beyond the gate there should be a gravel lane, a partly collapsed stack of lumber, and a gap in the fence leading to the road.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|48|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 48,
       "speaker": "Narrator",
       "text": "The lumber stack is there. So is the fence. But fir trees stand between them. Their wet lower branches block the way, and roots extend under the gravel as though they've grown here for decades.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|46|narrator",
+      "key": "english|chapter_3/night_gate|50|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 46,
+      "sourceLine": 50,
       "speaker": "Narrator",
-      "text": "Pacifica finds the familiar post beside the lane. It should be a few steps from the gate; a strip of moss now lies between them. An old tin can she noticed earlier still sits at its base.",
+      "text": "Pacifica finds the familiar post beside the lane.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|49|pacifica",
+      "key": "english|chapter_3/night_gate|52|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 49,
+      "sourceLine": 52,
+      "speaker": "Narrator",
+      "text": "It should be a few steps from the gate; a strip of moss now lies between them.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|54|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 54,
+      "speaker": "Narrator",
+      "text": "An old tin can she noticed earlier still sits at its base.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|57|pacifica",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 57,
       "speaker": "Pacifica",
       "text": "It's the same yard. But there's a different stretch of forest between its parts.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|52|wendy",
+      "key": "english|chapter_3/night_gate|60|wendy",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 52,
+      "sourceLine": 60,
       "speaker": "Wendy",
       "text": "No. I walked through here this morning.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|54|gideon",
-      "script": "chapter_3/night_gate",
-      "language": "english",
-      "sourceLine": 54,
-      "speaker": "Gideon",
-      "text": "We saw this yard from outside, too. They weren't here.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/night_gate|56|narrator",
-      "script": "chapter_3/night_gate",
-      "language": "english",
-      "sourceLine": 56,
-      "speaker": "Narrator",
-      "text": "Wendy steps toward the fence. The bag shifts slightly, and the gap between two trunks narrows. She stops before Pacifica can call out to her.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/night_gate|58|wendy",
-      "script": "chapter_3/night_gate",
-      "language": "english",
-      "sourceLine": 58,
-      "speaker": "Wendy",
-      "text": "Don't. I can see it.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/night_gate|60|gideon",
-      "script": "chapter_3/night_gate",
-      "language": "english",
-      "sourceLine": 60,
-      "speaker": "Gideon",
-      "text": "We can't go back into the mill. We can't follow the wall either: logs are jammed against the fence there. For now, that gap's all we have.",
-      "status": "pending"
-    },
-    {
-      "key": "english|chapter_3/night_gate|62|narrator",
+      "key": "english|chapter_3/night_gate|62|gideon",
       "script": "chapter_3/night_gate",
       "language": "english",
       "sourceLine": 62,
-      "speaker": "Narrator",
-      "text": "He doesn't suggest running. Pacifica checks the right side, Wendy the left. There really is no other exit. The road should be beyond the trees, but no strip of asphalt shows between the branches.",
+      "speaker": "Gideon",
+      "text": "We saw this yard from outside, too. They weren't here.",
       "status": "pending"
     },
     {
@@ -6771,79 +7239,133 @@
       "language": "english",
       "sourceLine": 64,
       "speaker": "Narrator",
+      "text": "Wendy steps toward the fence. The bag shifts slightly, and the gap between two trunks narrows. She stops before Pacifica can call out to her.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|66|wendy",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 66,
+      "speaker": "Wendy",
+      "text": "Don't. I can see it.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|68|gideon",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 68,
+      "speaker": "Gideon",
+      "text": "We can't go back into the mill. We can't follow the wall either: logs are jammed against the fence there. For now, that gap's all we have.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|70|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 70,
+      "speaker": "Narrator",
+      "text": "He doesn't suggest running. Pacifica checks the right side, Wendy the left. There really is no other exit.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|72|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 72,
+      "speaker": "Narrator",
+      "text": "The road should be beyond the trees, but no strip of asphalt shows between the branches.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|74|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 74,
+      "speaker": "Narrator",
       "text": "The sky over the forest is still bright, but the yard is already in twilight. A long shadow from the nearest fir crosses the toes of her boots. The other shadows point the opposite way.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|67|pacifica",
+      "key": "english|chapter_3/night_gate|77|pacifica",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 67,
+      "sourceLine": 77,
       "speaker": "Pacifica",
       "text": "We got out of the mill. We can get out of here too.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|69|narrator",
+      "key": "english|chapter_3/night_gate|79|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 69,
+      "sourceLine": 79,
       "speaker": "Narrator",
       "text": "This time her confidence sounds more like a decision than a promise. Pacifica no longer takes the first step without checking where the other two are looking.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|71|narrator",
+      "key": "english|chapter_3/night_gate|81|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 71,
+      "sourceLine": 81,
       "speaker": "Narrator",
       "text": "She speaks steadily, though she stares too hard at the trees. Gideon moves to one side, leaving room for both of them to retreat. Wendy doesn't try to go first again.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|75|narrator",
+      "key": "english|chapter_3/night_gate|85|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 75,
+      "sourceLine": 85,
       "speaker": "Narrator",
       "text": "A scraping comes from beyond the fence. Heavy wood drags across gravel, slowly, with pauses. The sound passes behind one trunk, then another, approaching the narrow gap ahead.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|78|gideon",
+      "key": "english|chapter_3/night_gate|88|gideon",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 78,
+      "sourceLine": 88,
       "speaker": "Gideon",
       "text": "Wendy. Keep the bag still.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|80|narrator",
+      "key": "english|chapter_3/night_gate|90|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 80,
+      "sourceLine": 90,
       "speaker": "Narrator",
       "text": "She holds it with both hands. The hidden object's copper rim touches the buckle with a faint clink. Beyond the trees, the scraping stops at once, as though something has paused to listen.",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|82|wendy",
+      "key": "english|chapter_3/night_gate|92|wendy",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 82,
+      "sourceLine": 92,
       "speaker": "Wendy",
       "text": "Now what?",
       "status": "pending"
     },
     {
-      "key": "english|chapter_3/night_gate|88|narrator",
+      "key": "english|chapter_3/night_gate|98|narrator",
       "script": "chapter_3/night_gate",
       "language": "english",
-      "sourceLine": 88,
+      "sourceLine": 98,
       "speaker": "Narrator",
-      "text": "Pacifica doesn't get to answer. Something heavy lifts off the gravel beyond the fence. Nothing is visible through the branches, but the nearest trunks slowly move apart, opening a path straight toward Wendy.",
+      "text": "Pacifica doesn't get to answer. Something heavy lifts off the gravel beyond the fence.",
+      "status": "pending"
+    },
+    {
+      "key": "english|chapter_3/night_gate|100|narrator",
+      "script": "chapter_3/night_gate",
+      "language": "english",
+      "sourceLine": 100,
+      "speaker": "Narrator",
+      "text": "Nothing is visible through the branches, but the nearest trunks slowly move apart, opening a path straight toward Wendy.",
       "status": "pending"
     }
   ]
